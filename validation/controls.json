@@ -1,0 +1,73 @@
+{
+  "schema": "pkgbridge-controls/1",
+  "frozen": "2026-11-05",
+  "source_repository": "https://github.com/Aethelsirius/pkgbridge",
+  "source_commit": "1a8ba8a2f0e914756cb76c1274d338db7ed55266",
+  "platform": "linux/amd64",
+  "stages": ["S", "B", "M", "I", "K", "F"],
+  "stage_meaning": {
+    "S": "source bytes fetched and verified against a recorded checksum",
+    "B": "native build command exits 0",
+    "M": "built package contains every expected path",
+    "I": "built package installs into a fresh container from the same image",
+    "K": "legacy smoke command from oracle.json exits 0",
+    "F": "prespecified behaviour check exits 0"
+  },
+  "controls": [
+    {
+      "target": "deb",
+      "package": "pigz",
+      "recipe_files": ["dataset/deb/pigz/control", "dataset/deb/pigz/rules", "dataset/deb/pigz/pigz.dsc"],
+      "image": "debian:bullseye@sha256:6f519a81440354a85eb592c5f32109ab80605f6b892455983a6f618bf87fabe9",
+      "repository_snapshot": "20260824T000000Z (snapshot.debian.org timestamp recorded in the image's sources.list)",
+      "expected_paths": ["./usr/bin/pigz", "./usr/bin/unpigz"],
+      "smoke": "pigz -h",
+      "behaviour": "head -c 200000 /dev/urandom > /tmp/in && pigz -k /tmp/in && unpigz -c /tmp/in.gz | cmp - /tmp/in"
+    },
+    {
+      "target": "rpm",
+      "package": "colordiff",
+      "recipe_files": ["dataset/rpm/colordiff/colordiff.spec"],
+      "image": "fedora:44@sha256:15da97ed9aa94dd3d92c3925eb89520f6c80e07ea7ee24cba848d1f8b6912b3e",
+      "platform": "linux/arm64",
+      "platform_reason": "under amd64 emulation GNU tar cannot restore the source archive's extended attributes (ENOSYS); colordiff is noarch",
+      "repository_snapshot": "Fedora 44 GA 'fedora' repository only (content fixed at release); 'updates' repositories disabled; installed NEVRAs recorded",
+      "source_checksum_reference": "https://src.fedoraproject.org/rpms/colordiff/raw/fc2214e3d34f299bf0c226e64487340b2e2d022d/f/sources",
+      "expected_paths": ["/usr/bin/colordiff", "/usr/bin/cdiff", "/etc/colordiffrc"],
+      "smoke": "colordiff --help",
+      "behaviour": "printf 'a\\nb\\n' > /tmp/x && printf 'a\\nc\\n' > /tmp/y && colordiff --color=yes /tmp/x /tmp/y | grep -q $'\\033\\['"
+    },
+    {
+      "target": "pkgbuild",
+      "package": "cloc",
+      "recipe_files": ["dataset/pkgbuild/cloc/PKGBUILD"],
+      "image": "archlinux:base-20261101.0.620205@sha256:ece6c971fec3c532fd508bce299a446deaf469feecbfe7c353e995bc1a5e7bba",
+      "repository_snapshot": "https://archive.archlinux.org/repos/2026/11/01/$repo/os/$arch",
+      "expected_paths": ["usr/bin/cloc"],
+      "smoke": "cloc --help",
+      "behaviour": "printf 'int main(void) {\\n  return 0;\\n}\\n' > /tmp/m.c && cloc --quiet --csv /tmp/m.c | grep -q '^1,C,0,0,3$'"
+    }
+  ],
+  "variants": {
+    "reference": {
+      "description": "target-family reference recipe, unmodified",
+      "expected": {"S": "pass", "B": "pass", "M": "pass", "I": "pass", "K": "pass", "F": "pass"}
+    },
+    "bad_source": {
+      "description": "recorded source checksum (deb, pkgbuild) or source version (rpm) altered",
+      "expected": {"S": "fail", "B": "not_evaluated", "M": "not_evaluated", "I": "not_evaluated", "K": "not_evaluated", "F": "not_evaluated"}
+    },
+    "no_install": {
+      "description": "install step emptied so the built package omits the program",
+      "expected_by_target": {
+        "deb": {"S": "pass", "B": "pass", "M": "fail", "I": "pass", "K": "fail", "F": "fail"},
+        "rpm": {"S": "pass", "B": "fail", "M": "not_evaluated", "I": "not_evaluated", "K": "not_evaluated", "F": "not_evaluated"},
+        "pkgbuild": {"S": "pass", "B": "pass", "M": "fail", "I": "pass", "K": "fail", "F": "fail"}
+      }
+    },
+    "wrong_product": {
+      "description": "install step ships a stub that exits 0 in place of the program: buildable, installable and smoke-passing, but wrong",
+      "expected": {"S": "pass", "B": "pass", "M": "pass", "I": "pass", "K": "pass", "F": "fail"}
+    }
+  }
+}

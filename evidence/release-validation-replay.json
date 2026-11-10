@@ -1,0 +1,496 @@
+{
+  "schema": "pkgbridge-release-validation/1",
+  "controls_sha256": "490e40e755102884648a2b73be1cf7fe545240131a0e691268e467072713d96a",
+  "corpus_selection_commit": "1a8ba8a2f0e914756cb76c1274d338db7ed55266",
+  "provenance_manifest_sha256": "23b770c8c380e4f7a5e60c02054b893693cec153508ff09cc81e0fc3dc4482db",
+  "runs": [
+    {
+      "target": "deb",
+      "package": "pigz",
+      "variant": "reference",
+      "image_requested": "debian:bullseye@sha256:6f519a81440354a85eb592c5f32109ab80605f6b892455983a6f618bf87fabe9",
+      "image_resolved": "debian@sha256:6f519a81440354a85eb592c5f32109ab80605f6b892455983a6f618bf87fabe9",
+      "platform": "linux/amd64",
+      "repository_snapshot": "20260824T000000Z (snapshot.debian.org timestamp recorded in the image's sources.list)",
+      "recipe_sha256": {
+        "control": "81220ca342bdd90f8642809cad971af1da1ac6f40262c566fa94f14609ab5363",
+        "pigz.dsc": "f3e92ab38977147429cb397c6582b9be94072f5fea077894b35e4b7bcb499143",
+        "rules": "4c1c189a99e2766321ed84c0f30a9cbb6af1dac74a98e746934797aa32c334c6"
+      },
+      "mutated_files": [],
+      "reference_files_match_snapshot": {
+        "control": "identical",
+        "rules": "identical"
+      },
+      "observed": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "pass"
+      },
+      "expected": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "pass"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": [],
+      "built_packages": {
+        "pigz_2.6-1_amd64.deb": "9ee7e443fb92f5226139be9ed8e596606f9aa0b55837b39fc13ec27658d1ae06"
+      },
+      "toolchain_sha256": "b618b61be3e145fac06de128e4d0d92ad42b07730cb6cc5b09246d88ec556a28",
+      "seconds": 101,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/deb-pigz-reference"
+    },
+    {
+      "target": "deb",
+      "package": "pigz",
+      "variant": "bad_source",
+      "image_requested": "debian:bullseye@sha256:6f519a81440354a85eb592c5f32109ab80605f6b892455983a6f618bf87fabe9",
+      "image_resolved": "debian@sha256:6f519a81440354a85eb592c5f32109ab80605f6b892455983a6f618bf87fabe9",
+      "platform": "linux/amd64",
+      "repository_snapshot": "20260824T000000Z (snapshot.debian.org timestamp recorded in the image's sources.list)",
+      "recipe_sha256": {
+        "control": "81220ca342bdd90f8642809cad971af1da1ac6f40262c566fa94f14609ab5363",
+        "pigz.dsc": "fec6643847c6a0e34ce606b577d68c9b1df1323c1eab0b5d651d99b1e59009d7",
+        "rules": "4c1c189a99e2766321ed84c0f30a9cbb6af1dac74a98e746934797aa32c334c6"
+      },
+      "mutated_files": [
+        "pigz.dsc"
+      ],
+      "reference_files_match_snapshot": {},
+      "observed": {
+        "S": "fail",
+        "B": "not_evaluated",
+        "M": "not_evaluated",
+        "I": "not_evaluated",
+        "K": "not_evaluated",
+        "F": "not_evaluated"
+      },
+      "expected": {
+        "S": "fail",
+        "B": "not_evaluated",
+        "M": "not_evaluated",
+        "I": "not_evaluated",
+        "K": "not_evaluated",
+        "F": "not_evaluated"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": null,
+      "built_packages": {},
+      "toolchain_sha256": "b618b61be3e145fac06de128e4d0d92ad42b07730cb6cc5b09246d88ec556a28",
+      "seconds": 62,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/deb-pigz-bad_source"
+    },
+    {
+      "target": "deb",
+      "package": "pigz",
+      "variant": "no_install",
+      "image_requested": "debian:bullseye@sha256:6f519a81440354a85eb592c5f32109ab80605f6b892455983a6f618bf87fabe9",
+      "image_resolved": "debian@sha256:6f519a81440354a85eb592c5f32109ab80605f6b892455983a6f618bf87fabe9",
+      "platform": "linux/amd64",
+      "repository_snapshot": "20260824T000000Z (snapshot.debian.org timestamp recorded in the image's sources.list)",
+      "recipe_sha256": {
+        "control": "81220ca342bdd90f8642809cad971af1da1ac6f40262c566fa94f14609ab5363",
+        "pigz.dsc": "f3e92ab38977147429cb397c6582b9be94072f5fea077894b35e4b7bcb499143",
+        "rules": "d702242c0c0e6d26c765e2ae40eaba66a4852391fe49188e689697dd3e0c1138"
+      },
+      "mutated_files": [
+        "rules"
+      ],
+      "reference_files_match_snapshot": {
+        "control": "identical",
+        "rules": "differs"
+      },
+      "observed": {
+        "S": "pass",
+        "B": "pass",
+        "M": "fail",
+        "I": "pass",
+        "K": "fail",
+        "F": "fail"
+      },
+      "expected": {
+        "S": "pass",
+        "B": "pass",
+        "M": "fail",
+        "I": "pass",
+        "K": "fail",
+        "F": "fail"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": [
+        "./usr/bin/pigz",
+        "./usr/bin/unpigz"
+      ],
+      "built_packages": {
+        "pigz_2.6-1_amd64.deb": "bb87558fb045009d943fc7e2fea02a64c1ae9220bdb97c28c011f97a517b0bd6"
+      },
+      "toolchain_sha256": "b618b61be3e145fac06de128e4d0d92ad42b07730cb6cc5b09246d88ec556a28",
+      "seconds": 115,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/deb-pigz-no_install"
+    },
+    {
+      "target": "deb",
+      "package": "pigz",
+      "variant": "wrong_product",
+      "image_requested": "debian:bullseye@sha256:6f519a81440354a85eb592c5f32109ab80605f6b892455983a6f618bf87fabe9",
+      "image_resolved": "debian@sha256:6f519a81440354a85eb592c5f32109ab80605f6b892455983a6f618bf87fabe9",
+      "platform": "linux/amd64",
+      "repository_snapshot": "20260824T000000Z (snapshot.debian.org timestamp recorded in the image's sources.list)",
+      "recipe_sha256": {
+        "control": "81220ca342bdd90f8642809cad971af1da1ac6f40262c566fa94f14609ab5363",
+        "pigz.dsc": "f3e92ab38977147429cb397c6582b9be94072f5fea077894b35e4b7bcb499143",
+        "rules": "cc15e873b804129f9abdd8ab88e5d14867f3c535a82177e229745e368c0f7551"
+      },
+      "mutated_files": [
+        "rules"
+      ],
+      "reference_files_match_snapshot": {
+        "control": "identical",
+        "rules": "differs"
+      },
+      "observed": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "fail"
+      },
+      "expected": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "fail"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": [],
+      "built_packages": {
+        "pigz_2.6-1_amd64.deb": "866b576096e7e13d62bd648f814329cce196bdf9335e6f448c7ae4f77b604b0e"
+      },
+      "toolchain_sha256": "b618b61be3e145fac06de128e4d0d92ad42b07730cb6cc5b09246d88ec556a28",
+      "seconds": 126,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/deb-pigz-wrong_product"
+    },
+    {
+      "target": "rpm",
+      "package": "colordiff",
+      "variant": "reference",
+      "image_requested": "fedora:44@sha256:15da97ed9aa94dd3d92c3925eb89520f6c80e07ea7ee24cba848d1f8b6912b3e",
+      "image_resolved": "fedora@sha256:15da97ed9aa94dd3d92c3925eb89520f6c80e07ea7ee24cba848d1f8b6912b3e",
+      "platform": "linux/arm64",
+      "repository_snapshot": "Fedora 44 GA 'fedora' repository only (content fixed at release); 'updates' repositories disabled; installed NEVRAs recorded",
+      "recipe_sha256": {
+        "colordiff.spec": "526d609e965e9b52d5c63103e5e3b3bfeb5427826f8bbef36d03d58069b9ae55"
+      },
+      "mutated_files": [],
+      "reference_files_match_snapshot": {},
+      "observed": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "pass"
+      },
+      "expected": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "pass"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": [],
+      "built_packages": {
+        "colordiff-1.0.22-1.fc44.noarch.rpm": "a4439f1efcc4c6d25db3b35ba931d630a5caa3410cce122cdd88f3b6f9260e6d"
+      },
+      "toolchain_sha256": "481ff915a73e8d457871cb40c408c12e9a595973557cbb0422b1a6b4b9945d77",
+      "seconds": 126,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/rpm-colordiff-reference"
+    },
+    {
+      "target": "rpm",
+      "package": "colordiff",
+      "variant": "bad_source",
+      "image_requested": "fedora:44@sha256:15da97ed9aa94dd3d92c3925eb89520f6c80e07ea7ee24cba848d1f8b6912b3e",
+      "image_resolved": "fedora@sha256:15da97ed9aa94dd3d92c3925eb89520f6c80e07ea7ee24cba848d1f8b6912b3e",
+      "platform": "linux/arm64",
+      "repository_snapshot": "Fedora 44 GA 'fedora' repository only (content fixed at release); 'updates' repositories disabled; installed NEVRAs recorded",
+      "recipe_sha256": {
+        "colordiff.spec": "1d0eb9daa02578f82805c7defc9283c32be81d204c33df4ea46b12983c77716c"
+      },
+      "mutated_files": [
+        "colordiff.spec"
+      ],
+      "reference_files_match_snapshot": {},
+      "observed": {
+        "S": "fail",
+        "B": "not_evaluated",
+        "M": "not_evaluated",
+        "I": "not_evaluated",
+        "K": "not_evaluated",
+        "F": "not_evaluated"
+      },
+      "expected": {
+        "S": "fail",
+        "B": "not_evaluated",
+        "M": "not_evaluated",
+        "I": "not_evaluated",
+        "K": "not_evaluated",
+        "F": "not_evaluated"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": null,
+      "built_packages": {},
+      "toolchain_sha256": "481ff915a73e8d457871cb40c408c12e9a595973557cbb0422b1a6b4b9945d77",
+      "seconds": 82,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/rpm-colordiff-bad_source"
+    },
+    {
+      "target": "rpm",
+      "package": "colordiff",
+      "variant": "no_install",
+      "image_requested": "fedora:44@sha256:15da97ed9aa94dd3d92c3925eb89520f6c80e07ea7ee24cba848d1f8b6912b3e",
+      "image_resolved": "fedora@sha256:15da97ed9aa94dd3d92c3925eb89520f6c80e07ea7ee24cba848d1f8b6912b3e",
+      "platform": "linux/arm64",
+      "repository_snapshot": "Fedora 44 GA 'fedora' repository only (content fixed at release); 'updates' repositories disabled; installed NEVRAs recorded",
+      "recipe_sha256": {
+        "colordiff.spec": "5c87a982350e8d60118d2ccf50998b5225b0efba298766edbf945009388879cd"
+      },
+      "mutated_files": [
+        "colordiff.spec"
+      ],
+      "reference_files_match_snapshot": {},
+      "observed": {
+        "S": "pass",
+        "B": "fail",
+        "M": "not_evaluated",
+        "I": "not_evaluated",
+        "K": "not_evaluated",
+        "F": "not_evaluated"
+      },
+      "expected": {
+        "S": "pass",
+        "B": "fail",
+        "M": "not_evaluated",
+        "I": "not_evaluated",
+        "K": "not_evaluated",
+        "F": "not_evaluated"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": null,
+      "built_packages": {},
+      "toolchain_sha256": "481ff915a73e8d457871cb40c408c12e9a595973557cbb0422b1a6b4b9945d77",
+      "seconds": 31,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/rpm-colordiff-no_install"
+    },
+    {
+      "target": "rpm",
+      "package": "colordiff",
+      "variant": "wrong_product",
+      "image_requested": "fedora:44@sha256:15da97ed9aa94dd3d92c3925eb89520f6c80e07ea7ee24cba848d1f8b6912b3e",
+      "image_resolved": "fedora@sha256:15da97ed9aa94dd3d92c3925eb89520f6c80e07ea7ee24cba848d1f8b6912b3e",
+      "platform": "linux/arm64",
+      "repository_snapshot": "Fedora 44 GA 'fedora' repository only (content fixed at release); 'updates' repositories disabled; installed NEVRAs recorded",
+      "recipe_sha256": {
+        "colordiff.spec": "1a47488773d964ee4063032ac6c40921060876b5ec693ae84dfc4c2f977373b8"
+      },
+      "mutated_files": [
+        "colordiff.spec"
+      ],
+      "reference_files_match_snapshot": {},
+      "observed": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "fail"
+      },
+      "expected": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "fail"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": [],
+      "built_packages": {
+        "colordiff-1.0.22-1.fc44.noarch.rpm": "de339374be8319eb849fbb2feec5fa6fcb72c024952ecd079e1bda7a0b38cadf"
+      },
+      "toolchain_sha256": "481ff915a73e8d457871cb40c408c12e9a595973557cbb0422b1a6b4b9945d77",
+      "seconds": 632,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/rpm-colordiff-wrong_product"
+    },
+    {
+      "target": "pkgbuild",
+      "package": "cloc",
+      "variant": "reference",
+      "image_requested": "archlinux:base-20261101.0.620205@sha256:ece6c971fec3c532fd508bce299a446deaf469feecbfe7c353e995bc1a5e7bba",
+      "image_resolved": "archlinux@sha256:ece6c971fec3c532fd508bce299a446deaf469feecbfe7c353e995bc1a5e7bba",
+      "platform": "linux/amd64",
+      "repository_snapshot": "https://archive.archlinux.org/repos/2026/11/01/$repo/os/$arch",
+      "recipe_sha256": {
+        "PKGBUILD": "cc860597ff9ac0b3f8d6c4a25e4a63ac58156501db89e52ba9588bf23cb945ef"
+      },
+      "mutated_files": [],
+      "reference_files_match_snapshot": {},
+      "observed": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "pass"
+      },
+      "expected": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "pass"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": [],
+      "built_packages": {
+        "cloc-2.08-1-any.pkg.tar.zst": "82d72502ee4e03c85e9d146375b293955429bfc7c5fa03279417c34513ea9874"
+      },
+      "toolchain_sha256": "5223c5779c3eb8188c9a0f4bee35914d0007374e44a372372387f8536cd56d01",
+      "seconds": 218,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/pkgbuild-cloc-reference"
+    },
+    {
+      "target": "pkgbuild",
+      "package": "cloc",
+      "variant": "bad_source",
+      "image_requested": "archlinux:base-20261101.0.620205@sha256:ece6c971fec3c532fd508bce299a446deaf469feecbfe7c353e995bc1a5e7bba",
+      "image_resolved": "archlinux@sha256:ece6c971fec3c532fd508bce299a446deaf469feecbfe7c353e995bc1a5e7bba",
+      "platform": "linux/amd64",
+      "repository_snapshot": "https://archive.archlinux.org/repos/2026/11/01/$repo/os/$arch",
+      "recipe_sha256": {
+        "PKGBUILD": "a464e61c71e36fe681166e614312aff117aea1d249a1125a431a43281a015535"
+      },
+      "mutated_files": [
+        "PKGBUILD"
+      ],
+      "reference_files_match_snapshot": {},
+      "observed": {
+        "S": "fail",
+        "B": "not_evaluated",
+        "M": "not_evaluated",
+        "I": "not_evaluated",
+        "K": "not_evaluated",
+        "F": "not_evaluated"
+      },
+      "expected": {
+        "S": "fail",
+        "B": "not_evaluated",
+        "M": "not_evaluated",
+        "I": "not_evaluated",
+        "K": "not_evaluated",
+        "F": "not_evaluated"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": null,
+      "built_packages": {},
+      "toolchain_sha256": "5223c5779c3eb8188c9a0f4bee35914d0007374e44a372372387f8536cd56d01",
+      "seconds": 37,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/pkgbuild-cloc-bad_source"
+    },
+    {
+      "target": "pkgbuild",
+      "package": "cloc",
+      "variant": "no_install",
+      "image_requested": "archlinux:base-20261101.0.620205@sha256:ece6c971fec3c532fd508bce299a446deaf469feecbfe7c353e995bc1a5e7bba",
+      "image_resolved": "archlinux@sha256:ece6c971fec3c532fd508bce299a446deaf469feecbfe7c353e995bc1a5e7bba",
+      "platform": "linux/amd64",
+      "repository_snapshot": "https://archive.archlinux.org/repos/2026/11/01/$repo/os/$arch",
+      "recipe_sha256": {
+        "PKGBUILD": "364c1b8a28648c2132bb38f7ed94ab18a1861c0b09622ddbb4659f995b4ad859"
+      },
+      "mutated_files": [
+        "PKGBUILD"
+      ],
+      "reference_files_match_snapshot": {},
+      "observed": {
+        "S": "pass",
+        "B": "pass",
+        "M": "fail",
+        "I": "pass",
+        "K": "fail",
+        "F": "fail"
+      },
+      "expected": {
+        "S": "pass",
+        "B": "pass",
+        "M": "fail",
+        "I": "pass",
+        "K": "fail",
+        "F": "fail"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": [
+        "usr/bin/cloc"
+      ],
+      "built_packages": {
+        "cloc-2.08-1-any.pkg.tar.zst": "b785b706623ecbbd8d98358711dc5d5e933ade759f3b2d5960205303f2fd0b84"
+      },
+      "toolchain_sha256": "5223c5779c3eb8188c9a0f4bee35914d0007374e44a372372387f8536cd56d01",
+      "seconds": 205,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/pkgbuild-cloc-no_install"
+    },
+    {
+      "target": "pkgbuild",
+      "package": "cloc",
+      "variant": "wrong_product",
+      "image_requested": "archlinux:base-20261101.0.620205@sha256:ece6c971fec3c532fd508bce299a446deaf469feecbfe7c353e995bc1a5e7bba",
+      "image_resolved": "archlinux@sha256:ece6c971fec3c532fd508bce299a446deaf469feecbfe7c353e995bc1a5e7bba",
+      "platform": "linux/amd64",
+      "repository_snapshot": "https://archive.archlinux.org/repos/2026/11/01/$repo/os/$arch",
+      "recipe_sha256": {
+        "PKGBUILD": "2f3605b394af539b23fded72c0cb77eebf9563339947fcc9b7db9609c2c9e95e"
+      },
+      "mutated_files": [
+        "PKGBUILD"
+      ],
+      "reference_files_match_snapshot": {},
+      "observed": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "fail"
+      },
+      "expected": {
+        "S": "pass",
+        "B": "pass",
+        "M": "pass",
+        "I": "pass",
+        "K": "pass",
+        "F": "fail"
+      },
+      "agrees_with_expectation": true,
+      "missing_expected_paths": [],
+      "built_packages": {
+        "cloc-2.08-1-any.pkg.tar.zst": "7be30424f195f93618582c3fd21263b7fe0d11ddd610d6957960c15dd8230049"
+      },
+      "toolchain_sha256": "5223c5779c3eb8188c9a0f4bee35914d0007374e44a372372387f8536cd56d01",
+      "seconds": 242,
+      "work_dir": "/Users/mrshu/.cache/pkgbridge/validation-replay/pkgbuild-cloc-wrong_product"
+    }
+  ]
+}

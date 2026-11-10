@@ -1,0 +1,261 @@
+{
+  "schema": "pkgbridge-scale-mismatch-causes/1",
+  "total": 5710,
+  "by_cause": {
+    "compression_or_rename_only": 2161,
+    "forge_archive": 1648,
+    "debian_repack": 954,
+    "other": 882,
+    "crate_vs_archive": 65
+  },
+  "by_pair": {
+    "deb-ebuild": {
+      "debian_repack": 418,
+      "other": 112,
+      "crate_vs_archive": 2,
+      "compression_or_rename_only": 750,
+      "forge_archive": 608
+    },
+    "deb-pkgbuild": {
+      "forge_archive": 468,
+      "debian_repack": 197,
+      "compression_or_rename_only": 172,
+      "other": 54
+    },
+    "deb-rpm": {
+      "debian_repack": 339,
+      "other": 547,
+      "compression_or_rename_only": 861,
+      "crate_vs_archive": 60
+    },
+    "ebuild-pkgbuild": {
+      "compression_or_rename_only": 74,
+      "forge_archive": 144,
+      "other": 23,
+      "crate_vs_archive": 1
+    },
+    "ebuild-rpm": {
+      "other": 90,
+      "compression_or_rename_only": 205,
+      "forge_archive": 218,
+      "crate_vs_archive": 2
+    },
+    "pkgbuild-rpm": {
+      "forge_archive": 210,
+      "compression_or_rename_only": 99,
+      "other": 56
+    }
+  },
+  "examples": {
+    "forge_archive": [
+      [
+        "deb:puppet-mode@0.4-5",
+        "ebuild:app-emacs/puppet-mode@0.4-r1"
+      ],
+      [
+        "pkgbuild:liferea@1.16.12-1",
+        "ebuild:net-news/liferea@1.16.12"
+      ],
+      [
+        "deb:flask-htmlmin@3.0.0-1",
+        "ebuild:dev-python/flask-htmlmin@3.0.0"
+      ],
+      [
+        "deb:palp@2.21-2",
+        "ebuild:sci-mathematics/palp@2.21"
+      ],
+      [
+        "deb:zeroc-ice@3.7.10-4",
+        "pkgbuild:zeroc-ice@3.7.10-3"
+      ],
+      [
+        "deb:libkiwix@14.2.1-0.1",
+        "pkgbuild:libkiwix@14.2.1-2"
+      ],
+      [
+        "rpm:haxe@4.3.7-9.fc46",
+        "ebuild:dev-lang/haxe@4.3.7"
+      ],
+      [
+        "deb:gpp@2.28-2",
+        "ebuild:dev-util/gpp@2.28"
+      ],
+      [
+        "pkgbuild:gajim@2.7.0-1",
+        "ebuild:net-im/gajim@2.7.0"
+      ],
+      [
+        "rpm:genimage@20-3.fc45",
+        "ebuild:sys-fs/genimage@20"
+      ]
+    ],
+    "debian_repack": [
+      [
+        "deb:fbreader@0.99.4+dfsg-6",
+        "pkgbuild:fbreader@0.99.4-15"
+      ],
+      [
+        "deb:libnoise@1.0.0+repack-3",
+        "pkgbuild:libnoise@1.0.0-8"
+      ],
+      [
+        "deb:bemenu@0.6.23+dfsg-1",
+        "pkgbuild:bemenu@0.6.23-1"
+      ],
+      [
+        "deb:libchdr@0.3.0+dfsg-1",
+        "ebuild:media-libs/libchdr@0.3.0"
+      ],
+      [
+        "deb:rust-rustls@0.23.46+ds-1",
+        "rpm:rust-rustls@0.23.46-1.fc46"
+      ],
+      [
+        "deb:libpgf@7.21.7+ds-3",
+        "ebuild:media-libs/libpgf@7.21.7-r2"
+      ],
+      [
+        "deb:rust-actix-service@2.0.3+dfsg-1",
+        "rpm:rust-actix-service@2.0.3-4.fc45"
+      ],
+      [
+        "deb:net-snmp@5.9.5.2+dfsg-3",
+        "rpm:net-snmp@1:5.9.5.2-10.fc45"
+      ],
+      [
+        "deb:plplot@5.15.0+dfsg3-6",
+        "rpm:plplot@5.15.0-117.fc46"
+      ],
+      [
+        "deb:mono@6.14.1+ds2-3",
+        "ebuild:dev-lang/mono@6.14.1-r1"
+      ]
+    ],
+    "other": [
+      [
+        "deb:scite@5.6.9-1",
+        "pkgbuild:scite@5.6.9-1"
+      ],
+      [
+        "rpm:logiops@0.3.5-7.fc45",
+        "ebuild:app-misc/logiops@0.3.5"
+      ],
+      [
+        "deb:python-cups@2.0.4-3",
+        "rpm:python-cups@2.0.4-11.fc45"
+      ],
+      [
+        "deb:python-hacking@8.1.0-2",
+        "rpm:python-hacking@8.1.0-2.fc45"
+      ],
+      [
+        "deb:python-cssselect2@0.10.1-1",
+        "rpm:python-cssselect2@0.10.1-1.fc46"
+      ],
+      [
+        "rpm:stfl@0.24-3.newsboat.gitbbb2404.fc45",
+        "ebuild:dev-libs/stfl@0.24-r6"
+      ],
+      [
+        "deb:python-qtpy@2.4.3-5",
+        "rpm:python-QtPy@2.4.3-9.fc45"
+      ],
+      [
+        "rpm:lrcalc@2.1-18.fc45",
+        "ebuild:dev-python/lrcalc@2.1-r3"
+      ],
+      [
+        "rpm:bpython@0.26-5.fc46",
+        "pkgbuild:bpython@0.26-2"
+      ],
+      [
+        "deb:guvcview@2.2.2-1",
+        "rpm:guvcview@2.2.2-4.fc46"
+      ]
+    ],
+    "compression_or_rename_only": [
+      [
+        "deb:heroes@0.21-24",
+        "ebuild:games-action/heroes@0.21-r3"
+      ],
+      [
+        "deb:plyvel@1.5.1-1",
+        "ebuild:dev-python/plyvel@1.5.1"
+      ],
+      [
+        "deb:dsh@0.25.10-2",
+        "ebuild:app-shells/dsh@0.25.10-r2"
+      ],
+      [
+        "deb:libecoli@0.11.8-1",
+        "rpm:libecoli@0.11.8-1.fc46"
+      ],
+      [
+        "rpm:postfwd@2.03-14.fc45",
+        "pkgbuild:postfwd@2.03-3"
+      ],
+      [
+        "deb:pluma-plugins@1.28.0-1",
+        "rpm:pluma-plugins@1.28.0-11.fc45"
+      ],
+      [
+        "rpm:qd@2.3.24-8.fc45",
+        "ebuild:sci-libs/qd@2.3.24"
+      ],
+      [
+        "deb:libiec61883@1.2.0-8",
+        "ebuild:media-libs/libiec61883@1.2.0-r2"
+      ],
+      [
+        "deb:sarg@2.4.0-4",
+        "pkgbuild:sarg@2.4.0-4"
+      ],
+      [
+        "deb:wm-icons@0.4.0-11.2",
+        "ebuild:x11-themes/wm-icons@0.4.0"
+      ]
+    ],
+    "crate_vs_archive": [
+      [
+        "deb:rust-mp4parse@0.17.0-4",
+        "rpm:rust-mp4parse@0.17.0-4.fc45"
+      ],
+      [
+        "rpm:netavark@2:2.1.0-1.fc46",
+        "ebuild:app-containers/netavark@2.1.0"
+      ],
+      [
+        "deb:rust-smol@2.0.2-6",
+        "rpm:rust-smol@2.0.2-5.fc45"
+      ],
+      [
+        "deb:rust-findshlibs@0.10.2-2",
+        "rpm:rust-findshlibs@0.10.2-11.fc45"
+      ],
+      [
+        "deb:rust-bitvec@1.0.1-1",
+        "rpm:rust-bitvec@1.0.1-8.fc45"
+      ],
+      [
+        "deb:rust-natord@1.0.9-1",
+        "rpm:rust-natord@1.0.9-26.fc45"
+      ],
+      [
+        "deb:rust-freedesktop-icons@0.4.0-3",
+        "rpm:rust-freedesktop-icons@0.4.0-6.fc46"
+      ],
+      [
+        "deb:rust-fluent-bundle@0.16.0-1",
+        "rpm:rust-fluent-bundle@0.16.0-3.fc45"
+      ],
+      [
+        "deb:rust-memmem@0.1.1-1",
+        "rpm:rust-memmem@0.1.1-11.fc45"
+      ],
+      [
+        "deb:rust-cmac@0.7.2-1",
+        "rpm:rust-cmac@0.7.2-8.fc45"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "pkgbridge-reconstruction/1",
+  "date": "2026-11-05",
+  "manifest_sha256": "23b770c8c380e4f7a5e60c02054b893693cec153508ff09cc81e0fc3dc4482db",
+  "counts": {
+    "verified": 650
+  },
+  "seconds": 48.9,
+  "rebuilt_tree": {
+    "files": 910,
+    "sha256": "e6a20c9659e7da309a568ead88e7a9970cff1b2479afb506ec89a91b87f7c3b6"
+  },
+  "compared_tree": {
+    "files": 910,
+    "sha256": "e6a20c9659e7da309a568ead88e7a9970cff1b2479afb506ec89a91b87f7c3b6"
+  },
+  "trees_identical": true
+}

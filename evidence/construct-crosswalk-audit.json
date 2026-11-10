@@ -1,0 +1,1360 @@
+{
+  "source_repository": "https://github.com/Aethelsirius/pkgbridge",
+  "source_commit": "1a8ba8a2f0e914756cb76c1274d338db7ed55266",
+  "method": "Automated-agent static source checking; no IR inspection or parser/build/model execution. Purposive construct coverage, not a random accuracy sample.",
+  "selection_frozen_before_detailed_source_comparison": true,
+  "selection_basis": "Catalog rows and filenames; targeted original-source searches to establish construct coverage. Entr was prespecified from the earlier version example. No new IR was inspected.",
+  "selected_identities": [
+    {
+      "package": "entr",
+      "criterion": "Literal declarations and known Debian companion-version mismatch."
+    },
+    {
+      "package": "bat",
+      "criterion": "Catalog acquisition aliases rust-bat and a possible bat/batcat executable rename, to be checked against source evidence."
+    },
+    {
+      "package": "ffmpeg",
+      "criterion": "Debian multi-binary/split-source recipe; Package stanzas confirmed during construct selection."
+    },
+    {
+      "package": "ripgrep",
+      "criterion": "Conditional dependency declarations; withPCRE2/lib.optional source lines confirmed during construct selection."
+    },
+    {
+      "package": "elinks",
+      "criterion": "Live/helper-derived Gentoo recipe; filename 9999, inherited helpers and EGIT_REPO_URI established during construct selection."
+    }
+  ],
+  "observations": [
+    {
+      "canonical_identity": "entr",
+      "ecosystem": "deb",
+      "catalog_identifier": "entr",
+      "actual_files": [
+        "dataset/deb/entr/control",
+        "dataset/deb/entr/entr.dsc",
+        "dataset/deb/entr/rules"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "eradman.com/entrproject; GitHub eradman/entr",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/deb/entr/control",
+          "line_start": 1,
+          "line_end": 1,
+          "text": "Source: entr",
+          "sha256": "0531c479f544e2ee33a63527449c6d44b34426edba4476971f7a33217e568670",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/entr/control#L1"
+        },
+        {
+          "path": "dataset/deb/entr/control",
+          "line_start": 11,
+          "line_end": 11,
+          "text": "Homepage: https://eradman.com/entrproject/",
+          "sha256": "0531c479f544e2ee33a63527449c6d44b34426edba4476971f7a33217e568670",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/entr/control#L11"
+        },
+        {
+          "path": "dataset/deb/entr/entr.dsc",
+          "line_start": 8,
+          "line_end": 11,
+          "text": "Version: 4.7-1\nMaintainer: Yuri D'Elia <wavexx@thregr.org>\nUploaders: Otto Kekäläinen <otto@debian.org>\nHomepage: https://eradman.com/entrproject/",
+          "sha256": "64432bb41af3caf839849b3bba6dc8aa2f89d89f1a102ce010573c1a9050378b",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/entr/entr.dsc#L8-L11"
+        }
+      ],
+      "version": {
+        "kind": "literal_with_packaging_revision",
+        "declared": "4.7-1",
+        "upstream_version": null,
+        "reason": "Literal source-package version includes distribution epoch/revision; no general normalization is performed.",
+        "path": "dataset/deb/entr/entr.dsc",
+        "line": 8,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/entr/entr.dsc#L8"
+      }
+    },
+    {
+      "canonical_identity": "entr",
+      "ecosystem": "rpm",
+      "catalog_identifier": "entr",
+      "actual_files": [
+        "dataset/rpm/entr/entr.spec"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "eradman.com/entrproject; GitHub eradman/entr",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/rpm/entr/entr.spec",
+          "line_start": 1,
+          "line_end": 9,
+          "text": "Name:           entr\nVersion:        5.8\nRelease:        1%{?dist}\nSummary:        Run arbitrary commands when files change\n\n# The entire source code is ISC except missing/sys/event.h which is BSD-2-Clause\nLicense:        ISC AND BSD-2-Clause\nURL:            http://eradman.com/entrproject/\nSource0:        %{url}/code/%{name}-%{version}.tar.gz",
+          "sha256": "89e10443e873ee72388765ff057a99312f3ac8323fa16ea668d81dae5452dcc8",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/entr/entr.spec#L1-L9"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "5.8",
+        "upstream_version": "5.8",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/rpm/entr/entr.spec",
+        "line": 2,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/entr/entr.spec#L2"
+      }
+    },
+    {
+      "canonical_identity": "entr",
+      "ecosystem": "pkgbuild",
+      "catalog_identifier": "entr",
+      "actual_files": [
+        "dataset/pkgbuild/entr/PKGBUILD"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "eradman.com/entrproject; GitHub eradman/entr",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/pkgbuild/entr/PKGBUILD",
+          "line_start": 4,
+          "line_end": 14,
+          "text": "pkgname=entr\npkgver=5.8\npkgrel=1\npkgdesc=\"Run arbitrary commands when files change\"\nurl=\"http://eradman.com/entrproject\"\narch=('x86_64')\nlicense=('MIT')\ndepends=('glibc')\ncheckdepends=('procps-ng' 'git' 'vim' 'tmux')\nsource=(\"${pkgname}-${pkgver}.tar.gz::https://github.com/eradman/entr/archive/refs/tags/${pkgver}.tar.gz\")\nsha512sums=('ceae34406930cffc931d139857cde17757fe1fc5727d9b0d278d9615f93cb007c238378ed4f852db40a62e1031e5c8f7f6569de75a50f11b518c1eefdccafbe8')",
+          "sha256": "a717eabbe70d0057d5f33e2a2b4ed1c999d092bfe8c741fee56ddd17b1fb0e53",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/pkgbuild/entr/PKGBUILD#L4-L14"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "5.8",
+        "upstream_version": "5.8",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/pkgbuild/entr/PKGBUILD",
+        "line": 5,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/pkgbuild/entr/PKGBUILD#L5"
+      }
+    },
+    {
+      "canonical_identity": "entr",
+      "ecosystem": "ebuild",
+      "catalog_identifier": "app-admin/entr",
+      "actual_files": [
+        "dataset/ebuild/entr/entr-5.8.ebuild"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "eradman.com/entrproject; GitHub eradman/entr",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/ebuild/entr/entr-5.8.ebuild",
+          "line_start": 6,
+          "line_end": 13,
+          "text": "inherit edo toolchain-funcs\n\nDESCRIPTION=\"Run arbitrary commands when files change\"\nHOMEPAGE=\"\n\thttps://eradman.com/entrproject/\n\thttps://github.com/eradman/entr\n\"\nSRC_URI=\"https://eradman.com/entrproject/code/${P}.tar.gz\"",
+          "sha256": "9295a658cd8caaca195d66aff74556a4aad7dacb08dfcc8bd7000b58b8fd4456",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/entr/entr-5.8.ebuild#L6-L13"
+        }
+      ],
+      "version": {
+        "kind": "filename_literal",
+        "declared": "5.8",
+        "upstream_version": "5.8",
+        "reason": "Version is readable from the selected ebuild filename; no evaluation performed.",
+        "path": "dataset/ebuild/entr/entr-5.8.ebuild",
+        "line": null,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/entr/entr-5.8.ebuild"
+      }
+    },
+    {
+      "canonical_identity": "entr",
+      "ecosystem": "nix",
+      "catalog_identifier": "entr",
+      "actual_files": [
+        "dataset/nixpkgs/entr/default.nix"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "eradman.com/entrproject; GitHub eradman/entr",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/nixpkgs/entr/default.nix",
+          "line_start": 8,
+          "line_end": 15,
+          "text": "stdenv.mkDerivation (finalAttrs: {\n  pname = \"entr\";\n  version = \"5.8\";\n\n  src = fetchurl {\n    url = \"https://eradman.com/entrproject/code/entr-${finalAttrs.version}.tar.gz\";\n    hash = \"sha256-3Jor3FVrK+kAwdjN9DLeJkkt5a8/+t4ADUv9l/MSK/s=\";\n  };",
+          "sha256": "b679d153b50a77aaa606ea910b713a1e9ffb3aa0abc5700d866efde16d67459a",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/entr/default.nix#L8-L15"
+        },
+        {
+          "path": "dataset/nixpkgs/entr/default.nix",
+          "line_start": 29,
+          "line_end": 29,
+          "text": "    homepage = \"https://eradman.com/entrproject/\";",
+          "sha256": "b679d153b50a77aaa606ea910b713a1e9ffb3aa0abc5700d866efde16d67459a",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/entr/default.nix#L29"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "5.8",
+        "upstream_version": "5.8",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/nixpkgs/entr/default.nix",
+        "line": 10,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/entr/default.nix#L10"
+      }
+    },
+    {
+      "canonical_identity": "bat",
+      "ecosystem": "deb",
+      "catalog_identifier": "rust-bat",
+      "actual_files": [
+        "dataset/deb/bat/bat.dsc",
+        "dataset/deb/bat/control",
+        "dataset/deb/bat/rules"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub sharkdp/bat",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/deb/bat/control",
+          "line_start": 1,
+          "line_end": 1,
+          "text": "Source: rust-bat",
+          "sha256": "3034aa2009b7f92fb39a03a88958ded8a06803e0cb26ac357f8de800ed0946c4",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/bat/control#L1"
+        },
+        {
+          "path": "dataset/deb/bat/control",
+          "line_start": 38,
+          "line_end": 40,
+          "text": "Homepage: https://github.com/sharkdp/bat\n\nPackage: bat",
+          "sha256": "3034aa2009b7f92fb39a03a88958ded8a06803e0cb26ac357f8de800ed0946c4",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/bat/control#L38-L40"
+        },
+        {
+          "path": "dataset/deb/bat/control",
+          "line_start": 63,
+          "line_end": 64,
+          "text": " In this package the executable and its manpage have been renamed from ‘bat’ to\n ‘batcat’ because of a file name clash with another Debian package.",
+          "sha256": "3034aa2009b7f92fb39a03a88958ded8a06803e0cb26ac357f8de800ed0946c4",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/bat/control#L63-L64"
+        },
+        {
+          "path": "dataset/deb/bat/rules",
+          "line_start": 9,
+          "line_end": 10,
+          "text": "\tdh_auto_install\n\tmv debian/bat/usr/bin/bat debian/bat/usr/bin/batcat",
+          "sha256": "1587176c0258d84cf0f63066af9e3528b60af5f982df5873fdd1881fa673c828",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/bat/rules#L9-L10"
+        },
+        {
+          "path": "dataset/deb/bat/bat.dsc",
+          "line_start": 8,
+          "line_end": 11,
+          "text": "Version: 0.12.1-6\nMaintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>\nUploaders:  Paride Legovini <paride@debian.org>, Helen Koike <helen@koikeco.de>, Sylvestre ledru <sylvestre@debian.org>\nHomepage: https://github.com/sharkdp/bat",
+          "sha256": "3e0fb5a081a84d531e170b034dc83f73710b8bb5e04e3e1b850c6f3e5f9f1ac5",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/bat/bat.dsc#L8-L11"
+        }
+      ],
+      "version": {
+        "kind": "literal_with_packaging_revision",
+        "declared": "0.12.1-6",
+        "upstream_version": null,
+        "reason": "Literal source-package version includes distribution epoch/revision; no general normalization is performed.",
+        "path": "dataset/deb/bat/bat.dsc",
+        "line": 8,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/bat/bat.dsc#L8"
+      }
+    },
+    {
+      "canonical_identity": "bat",
+      "ecosystem": "rpm",
+      "catalog_identifier": "rust-bat",
+      "actual_files": [
+        "dataset/rpm/bat/bat.spec"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub sharkdp/bat",
+      "reason": "The rust-bat crate URL/name is supplemented by two explicit sharkdp/bat upstream patch links; this supports the intended project mapping, not resolution of crates_source.",
+      "source_evidence": [
+        {
+          "path": "dataset/rpm/bat/bat.spec",
+          "line_start": 4,
+          "line_end": 15,
+          "text": "%global crate bat\n\nName:           rust-bat\nVersion:        0.26.1\nRelease:        %autorelease\nSummary:        Cat(1) clone with wings\n\n# * bat crate: MIT OR Apache-2.0\n# * bundled content: Apache-2.0, BSD-2-Clause, BSD-2-Clause-Views, BSD-3-Clause, CC-BY-SA-3.0, MIT, Unlicense, WTFPL, UltraPermissive\nLicense:        (MIT OR Apache-2.0) AND Apache-2.0 AND BSD-2-Clause AND BSD-2-Clause-Views AND BSD-3-Clause AND CC-BY-SA-3.0 AND MIT AND Unlicense AND WTFPL AND LicenseRef-Fedora-UltraPermissive\nURL:            https://crates.io/crates/bat\nSource:         %{crates_source}",
+          "sha256": "2ed0811ce67d714191994945eb517bc3f20618b9cef2740ad71f0f844c84218d",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/bat/bat.spec#L4-L15"
+        },
+        {
+          "path": "dataset/rpm/bat/bat.spec",
+          "line_start": 19,
+          "line_end": 26,
+          "text": "# * port from path_abs to path-absolutize:\n#   https://github.com/sharkdp/bat/pull/1025\n# * adapt license tag to reflect bundled content\n# * drop unused lessopen feature and its dependencies\nPatch:          bat-fix-metadata.diff\n# * port from path_abs to path-absolutize:\n#   https://github.com/sharkdp/bat/pull/1025\nPatch10:        0001-port-from-path_abs-to-path-absolutize.patch",
+          "sha256": "2ed0811ce67d714191994945eb517bc3f20618b9cef2740ad71f0f844c84218d",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/bat/bat.spec#L19-L26"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "0.26.1",
+        "upstream_version": "0.26.1",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/rpm/bat/bat.spec",
+        "line": 7,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/bat/bat.spec#L7"
+      }
+    },
+    {
+      "canonical_identity": "bat",
+      "ecosystem": "pkgbuild",
+      "catalog_identifier": "bat",
+      "actual_files": [
+        "dataset/pkgbuild/bat/PKGBUILD"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub sharkdp/bat",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/pkgbuild/bat/PKGBUILD",
+          "line_start": 5,
+          "line_end": 14,
+          "text": "pkgname=bat\npkgver=0.26.1\npkgrel=2\npkgdesc='Cat clone with syntax highlighting and git integration'\narch=(x86_64)\nurl='https://github.com/sharkdp/bat'\nlicense=('Apache-2.0 OR MIT')\ndepends=(libgcc glibc libgit2 oniguruma zlib)\nmakedepends=(cargo-edit clang cmake git rust)\nsource=(\"git+$url.git#tag=v$pkgver\")",
+          "sha256": "943605e62b1eebdde997b87c0dc2facfc46baaa63c1e3aad17a4a793bf847d7b",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/pkgbuild/bat/PKGBUILD#L5-L14"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "0.26.1",
+        "upstream_version": "0.26.1",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/pkgbuild/bat/PKGBUILD",
+        "line": 6,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/pkgbuild/bat/PKGBUILD#L6"
+      }
+    },
+    {
+      "canonical_identity": "bat",
+      "ecosystem": "ebuild",
+      "catalog_identifier": "sys-apps/bat",
+      "actual_files": [
+        "dataset/ebuild/bat/bat-0.26.1.ebuild"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub sharkdp/bat",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/ebuild/bat/bat-0.26.1.ebuild",
+          "line_start": 266,
+          "line_end": 275,
+          "text": "inherit cargo shell-completion\n\nDESCRIPTION=\"cat(1) clone with syntax highlighting and Git integration\"\nHOMEPAGE=\"https://github.com/sharkdp/bat\"\nSRC_URI=\"\n\thttps://github.com/sharkdp/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz\n\t${CARGO_CRATE_URIS}\n\"\n\nLICENSE=\"|| ( MIT Apache-2.0 )\"",
+          "sha256": "00f4d45945bba0b95aa5c6fc0ab271682f0b5eda23f51bdbc049d2a66ad27d53",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/bat/bat-0.26.1.ebuild#L266-L275"
+        }
+      ],
+      "version": {
+        "kind": "filename_literal",
+        "declared": "0.26.1",
+        "upstream_version": "0.26.1",
+        "reason": "Version is readable from the selected ebuild filename; no evaluation performed.",
+        "path": "dataset/ebuild/bat/bat-0.26.1.ebuild",
+        "line": null,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/bat/bat-0.26.1.ebuild"
+      }
+    },
+    {
+      "canonical_identity": "bat",
+      "ecosystem": "nix",
+      "catalog_identifier": "bat",
+      "actual_files": [
+        "dataset/nixpkgs/bat/default.nix"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub sharkdp/bat",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/nixpkgs/bat/default.nix",
+          "line_start": 14,
+          "line_end": 22,
+          "text": "  pname = \"bat\";\n  version = \"0.26.1\";\n\n  src = fetchFromGitHub {\n    owner = \"sharkdp\";\n    repo = \"bat\";\n    rev = \"v${finalAttrs.version}\";\n    hash = \"sha256-IbTvFT37BFo0tKOiApDL9sT+/nMD33MO3TXuho+lF2c=\";\n  };",
+          "sha256": "f6def711039dc7dfbc70ebcec54112a251af932a9292cbe7423b6b7c2eed3218",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/bat/default.nix#L14-L22"
+        },
+        {
+          "path": "dataset/nixpkgs/bat/default.nix",
+          "line_start": 84,
+          "line_end": 85,
+          "text": "    homepage = \"https://github.com/sharkdp/bat\";\n    changelog = \"https://github.com/sharkdp/bat/raw/v${finalAttrs.version}/CHANGELOG.md\";",
+          "sha256": "f6def711039dc7dfbc70ebcec54112a251af932a9292cbe7423b6b7c2eed3218",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/bat/default.nix#L84-L85"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "0.26.1",
+        "upstream_version": "0.26.1",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/nixpkgs/bat/default.nix",
+        "line": 15,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/bat/default.nix#L15"
+      }
+    },
+    {
+      "canonical_identity": "ffmpeg",
+      "ecosystem": "deb",
+      "catalog_identifier": "ffmpeg",
+      "actual_files": [
+        "dataset/deb/ffmpeg/control",
+        "dataset/deb/ffmpeg/ffmpeg.dsc",
+        "dataset/deb/ffmpeg/rules"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "ffmpeg.org; official FFmpeg git repositories",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/deb/ffmpeg/control",
+          "line_start": 1,
+          "line_end": 1,
+          "text": "Source: ffmpeg",
+          "sha256": "abac764589ce8647516f951153c999eff599f25ff59612c77d2c4fec73106a12",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ffmpeg/control#L1"
+        },
+        {
+          "path": "dataset/deb/ffmpeg/control",
+          "line_start": 11,
+          "line_end": 11,
+          "text": "Homepage: https://ffmpeg.org/",
+          "sha256": "abac764589ce8647516f951153c999eff599f25ff59612c77d2c4fec73106a12",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ffmpeg/control#L11"
+        },
+        {
+          "path": "dataset/deb/ffmpeg/control",
+          "line_start": 190,
+          "line_end": 190,
+          "text": "Package: ffmpeg",
+          "sha256": "abac764589ce8647516f951153c999eff599f25ff59612c77d2c4fec73106a12",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ffmpeg/control#L190"
+        },
+        {
+          "path": "dataset/deb/ffmpeg/control",
+          "line_start": 215,
+          "line_end": 215,
+          "text": "Package: ffmpeg-doc",
+          "sha256": "abac764589ce8647516f951153c999eff599f25ff59612c77d2c4fec73106a12",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ffmpeg/control#L215"
+        },
+        {
+          "path": "dataset/deb/ffmpeg/control",
+          "line_start": 233,
+          "line_end": 233,
+          "text": "Package: libavcodec58",
+          "sha256": "abac764589ce8647516f951153c999eff599f25ff59612c77d2c4fec73106a12",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ffmpeg/control#L233"
+        },
+        {
+          "path": "dataset/deb/ffmpeg/ffmpeg.dsc",
+          "line_start": 8,
+          "line_end": 11,
+          "text": "Version: 7:4.3.7-0+deb11u1\nMaintainer: Debian Multimedia Maintainers <debian-multimedia@lists.debian.org>\nUploaders: Andreas Cadhalpun <Andreas.Cadhalpun@googlemail.com>, Alexander Strasser <eclipse7@gmx.net>, Reinhard Tartler <siretart@tauware.de>, Balint Reczey <balint@balintreczey.hu>, James Cowgill <jcowgill@debian.org>,\nHomepage: https://ffmpeg.org/",
+          "sha256": "a05f86cc4c80ea4ec497c9178931d0c91ebe27e2ef96c072af1e1558e154dcf4",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ffmpeg/ffmpeg.dsc#L8-L11"
+        }
+      ],
+      "version": {
+        "kind": "literal_with_packaging_revision",
+        "declared": "7:4.3.7-0+deb11u1",
+        "upstream_version": null,
+        "reason": "Literal source-package version includes distribution epoch/revision; no general normalization is performed.",
+        "path": "dataset/deb/ffmpeg/ffmpeg.dsc",
+        "line": 8,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ffmpeg/ffmpeg.dsc#L8"
+      }
+    },
+    {
+      "canonical_identity": "ffmpeg",
+      "ecosystem": "rpm",
+      "catalog_identifier": "ffmpeg",
+      "actual_files": [
+        "dataset/rpm/ffmpeg/ffmpeg.spec"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "ffmpeg.org; official FFmpeg git repositories",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/rpm/ffmpeg/ffmpeg.spec",
+          "line_start": 107,
+          "line_end": 116,
+          "text": "Name:           ffmpeg\n%global pkg_name %{name}%{?pkg_suffix}\n\nVersion:        8.0.1\nRelease:        6%{?dist}\nSummary:        A complete solution to record, convert and stream audio and video\nLicense:        GPL-3.0-or-later\nURL:            https://ffmpeg.org/\nSource0:        https://ffmpeg.org/releases/ffmpeg-%{version}.tar.xz\nSource1:        https://ffmpeg.org/releases/ffmpeg-%{version}.tar.xz.asc",
+          "sha256": "8c52c55aff4b04ae3fcd4a22eeeeb52bdb107584bada92d68359667f641bca80",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/ffmpeg/ffmpeg.spec#L107-L116"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "8.0.1",
+        "upstream_version": "8.0.1",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/rpm/ffmpeg/ffmpeg.spec",
+        "line": 110,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/ffmpeg/ffmpeg.spec#L110"
+      }
+    },
+    {
+      "canonical_identity": "ffmpeg",
+      "ecosystem": "pkgbuild",
+      "catalog_identifier": "ffmpeg",
+      "actual_files": [
+        "dataset/pkgbuild/ffmpeg/PKGBUILD"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "ffmpeg.org; official FFmpeg git repositories",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/pkgbuild/ffmpeg/PKGBUILD",
+          "line_start": 7,
+          "line_end": 13,
+          "text": "pkgname=ffmpeg\npkgver=8.1\npkgrel=3\nepoch=2\npkgdesc='Complete solution to record, convert and stream audio and video'\narch=(x86_64)\nurl=https://ffmpeg.org",
+          "sha256": "fd9a31de3c4eea170220bc0110b17e1c291291936fe842862984557be4e8486d",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/pkgbuild/ffmpeg/PKGBUILD#L7-L13"
+        },
+        {
+          "path": "dataset/pkgbuild/ffmpeg/PKGBUILD",
+          "line_start": 119,
+          "line_end": 123,
+          "text": "_tag=a65b3bfe9dacc3b20597ef199d0afdd8bc8128e2\nsource=(\n  git+https://git.ffmpeg.org/ffmpeg.git?signed#tag=${_tag}\n  0001-Add-av_stream_get_first_dts-for-Chromium.patch\n)",
+          "sha256": "fd9a31de3c4eea170220bc0110b17e1c291291936fe842862984557be4e8486d",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/pkgbuild/ffmpeg/PKGBUILD#L119-L123"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "8.1",
+        "upstream_version": "8.1",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/pkgbuild/ffmpeg/PKGBUILD",
+        "line": 8,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/pkgbuild/ffmpeg/PKGBUILD#L8"
+      }
+    },
+    {
+      "canonical_identity": "ffmpeg",
+      "ecosystem": "ebuild",
+      "catalog_identifier": "media-video/ffmpeg",
+      "actual_files": [
+        "dataset/ebuild/ffmpeg/ffmpeg-9999.ebuild"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "ffmpeg.org; official FFmpeg git repositories",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/ebuild/ffmpeg/ffmpeg-9999.ebuild",
+          "line_start": 11,
+          "line_end": 21,
+          "text": "if [[ ${PV} == 9999 ]]; then\n\tinherit git-r3\n\tEGIT_REPO_URI=(\n\t\thttps://git.ffmpeg.org/ffmpeg.git\n\t\thttps://github.com/FFmpeg/FFmpeg.git\n\t)\nelse\n\tinherit verify-sig\n\tSRC_URI=\"\n\t\thttps://ffmpeg.org/releases/ffmpeg-${PV}.tar.xz\n\t\tverify-sig? ( https://ffmpeg.org/releases/ffmpeg-${PV}.tar.xz.asc )",
+          "sha256": "4b6487ec9c6e208fdc0063555a22809ee87a5acff7a3879a4dec7cc253366120",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/ffmpeg/ffmpeg-9999.ebuild#L11-L21"
+        },
+        {
+          "path": "dataset/ebuild/ffmpeg/ffmpeg-9999.ebuild",
+          "line_start": 30,
+          "line_end": 33,
+          "text": "DESCRIPTION=\"Complete solution to record/convert/stream audio and video\"\nHOMEPAGE=\"\n\thttps://ffmpeg.org/\n\thttps://code.ffmpeg.org/FFmpeg/FFmpeg/",
+          "sha256": "4b6487ec9c6e208fdc0063555a22809ee87a5acff7a3879a4dec7cc253366120",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/ffmpeg/ffmpeg-9999.ebuild#L30-L33"
+        }
+      ],
+      "version": {
+        "kind": "live_marker",
+        "declared": "9999",
+        "upstream_version": null,
+        "reason": "9999 selects a live branch; fetched revision/version unknown.",
+        "path": "dataset/ebuild/ffmpeg/ffmpeg-9999.ebuild",
+        "line": null,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/ffmpeg/ffmpeg-9999.ebuild"
+      }
+    },
+    {
+      "canonical_identity": "ffmpeg",
+      "ecosystem": "nix",
+      "catalog_identifier": "ffmpeg",
+      "actual_files": [
+        "dataset/nixpkgs/ffmpeg/default.nix"
+      ],
+      "identity_status": "rejected",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "ffmpeg.org; official FFmpeg git repositories",
+      "reason": "For the intended FFmpeg program pairing, the copied file is a buildDunePackage recipe described as bindings for ffmpeg libraries. It inherits version/src from absent base.nix and provides no direct FFmpeg-program source locator. Related bindings do not validate the canonical CLI recipe.",
+      "source_evidence": [
+        {
+          "path": "dataset/nixpkgs/ffmpeg/default.nix",
+          "line_start": 1,
+          "line_end": 4,
+          "text": "{\n  buildDunePackage,\n  callPackage,\n  ffmpeg-base ? callPackage ./base.nix { },",
+          "sha256": "d627f7aa0b08b74bca0d2d42dc1f1278c89758a8afa4d1727e919d50ddb1126e",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/ffmpeg/default.nix#L1-L4"
+        },
+        {
+          "path": "dataset/nixpkgs/ffmpeg/default.nix",
+          "line_start": 14,
+          "line_end": 19,
+          "text": "buildDunePackage {\n  pname = \"ffmpeg\";\n\n  minimalOCamlVersion = \"4.12\";\n\n  inherit (ffmpeg-base) version src;",
+          "sha256": "d627f7aa0b08b74bca0d2d42dc1f1278c89758a8afa4d1727e919d50ddb1126e",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/ffmpeg/default.nix#L14-L19"
+        },
+        {
+          "path": "dataset/nixpkgs/ffmpeg/default.nix",
+          "line_start": 34,
+          "line_end": 36,
+          "text": "  meta = ffmpeg-base.meta // {\n    description = \"Bindings for the ffmpeg libraries\";\n  };",
+          "sha256": "d627f7aa0b08b74bca0d2d42dc1f1278c89758a8afa4d1727e919d50ddb1126e",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/ffmpeg/default.nix#L34-L36"
+        }
+      ],
+      "version": {
+        "kind": "helper_derived",
+        "declared": null,
+        "upstream_version": null,
+        "reason": "Version/src inherited from ffmpeg-base; ./base.nix is absent from this copied bundle.",
+        "path": "dataset/nixpkgs/ffmpeg/default.nix",
+        "line": null,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/ffmpeg/default.nix"
+      }
+    },
+    {
+      "canonical_identity": "ripgrep",
+      "ecosystem": "deb",
+      "catalog_identifier": "rust-ripgrep",
+      "actual_files": [
+        "dataset/deb/ripgrep/control",
+        "dataset/deb/ripgrep/ripgrep.dsc",
+        "dataset/deb/ripgrep/rules"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub BurntSushi/ripgrep",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/deb/ripgrep/control",
+          "line_start": 1,
+          "line_end": 1,
+          "text": "Source: rust-ripgrep",
+          "sha256": "d46c5b004d34616bed373970fa1c21949057b16fbee92d24a743cc8d509f0944",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ripgrep/control#L1"
+        },
+        {
+          "path": "dataset/deb/ripgrep/control",
+          "line_start": 30,
+          "line_end": 34,
+          "text": "Homepage: https://github.com/BurntSushi/ripgrep\n\n# FIXME (packages.\"(name)\".section) debcargo auto-generated summaries are very long, consider overriding\n\nPackage: ripgrep",
+          "sha256": "d46c5b004d34616bed373970fa1c21949057b16fbee92d24a743cc8d509f0944",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ripgrep/control#L30-L34"
+        },
+        {
+          "path": "dataset/deb/ripgrep/ripgrep.dsc",
+          "line_start": 8,
+          "line_end": 11,
+          "text": "Version: 12.1.1-1\nMaintainer: Debian Rust Maintainers <pkg-rust-maintainers@alioth-lists.debian.net>\nUploaders:  Sylvestre Ledru <sylvestre@debian.org>\nHomepage: https://github.com/BurntSushi/ripgrep",
+          "sha256": "de3eb1faf1c360714c67eb40a5e1305c16a9b4885070f5afcf5f08868fd85508",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ripgrep/ripgrep.dsc#L8-L11"
+        }
+      ],
+      "version": {
+        "kind": "literal_with_packaging_revision",
+        "declared": "12.1.1-1",
+        "upstream_version": null,
+        "reason": "Literal source-package version includes distribution epoch/revision; no general normalization is performed.",
+        "path": "dataset/deb/ripgrep/ripgrep.dsc",
+        "line": 8,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ripgrep/ripgrep.dsc#L8"
+      }
+    },
+    {
+      "canonical_identity": "ripgrep",
+      "ecosystem": "rpm",
+      "catalog_identifier": "rust-ripgrep",
+      "actual_files": [
+        "dataset/rpm/ripgrep/ripgrep.spec"
+      ],
+      "identity_status": "ambiguous",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub BurntSushi/ripgrep",
+      "reason": "Spec names rust-ripgrep and declares a crates.io/ripgrep URL plus crates_source macro, but copied text does not directly establish the BurntSushi GitHub source lineage. No external crate metadata was fetched.",
+      "source_evidence": [
+        {
+          "path": "dataset/rpm/ripgrep/ripgrep.spec",
+          "line_start": 4,
+          "line_end": 13,
+          "text": "%global crate ripgrep\n\nName:           rust-ripgrep\nVersion:        14.1.1\nRelease:        %autorelease\nSummary:        Line-oriented search tool\n\nLicense:        Unlicense OR MIT\nURL:            https://crates.io/crates/ripgrep\nSource:         %{crates_source}",
+          "sha256": "c71e19fce5352c091a6ad12fbf4164d5317fdce8e89d1fec490d92e8ffad7811",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/ripgrep/ripgrep.spec#L4-L13"
+        },
+        {
+          "path": "dataset/rpm/ripgrep/ripgrep.spec",
+          "line_start": 19,
+          "line_end": 22,
+          "text": "%global _description %{expand:\nRipgrep is a line-oriented search tool that recursively searches the\ncurrent directory for a regex pattern while respecting gitignore rules.\nripgrep has first class support on Windows, macOS and Linux.}",
+          "sha256": "c71e19fce5352c091a6ad12fbf4164d5317fdce8e89d1fec490d92e8ffad7811",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/ripgrep/ripgrep.spec#L19-L22"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "14.1.1",
+        "upstream_version": "14.1.1",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/rpm/ripgrep/ripgrep.spec",
+        "line": 7,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/ripgrep/ripgrep.spec#L7"
+      }
+    },
+    {
+      "canonical_identity": "ripgrep",
+      "ecosystem": "pkgbuild",
+      "catalog_identifier": "ripgrep",
+      "actual_files": [
+        "dataset/pkgbuild/ripgrep/PKGBUILD"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub BurntSushi/ripgrep",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/pkgbuild/ripgrep/PKGBUILD",
+          "line_start": 6,
+          "line_end": 19,
+          "text": "pkgname=ripgrep\npkgver=15.1.0\npkgrel=2\npkgdesc=\"A search tool that combines the usability of ag with the raw speed of grep\"\narch=('x86_64')\nurl=\"https://github.com/BurntSushi/ripgrep\"\nlicense=('MIT OR Unlicense')\ndepends=(\n  'glibc'\n  'libgcc'\n  'pcre2'\n)\nmakedepends=('rust')\nsource=(\"$url/archive/$pkgver/$pkgname-$pkgver.tar.gz\")",
+          "sha256": "9f98618b8923dce1b68194163024f46140e3a3e9161a3db28b76c0c53773f20d",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/pkgbuild/ripgrep/PKGBUILD#L6-L19"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "15.1.0",
+        "upstream_version": "15.1.0",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/pkgbuild/ripgrep/PKGBUILD",
+        "line": 7,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/pkgbuild/ripgrep/PKGBUILD#L7"
+      }
+    },
+    {
+      "canonical_identity": "ripgrep",
+      "ecosystem": "ebuild",
+      "catalog_identifier": "sys-apps/ripgrep",
+      "actual_files": [
+        "dataset/ebuild/ripgrep/ripgrep-15.1.0.ebuild"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub BurntSushi/ripgrep",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/ebuild/ripgrep/ripgrep-15.1.0.ebuild",
+          "line_start": 61,
+          "line_end": 70,
+          "text": "inherit cargo shell-completion\n\nDESCRIPTION=\"Search tool that combines the usability of ag with the raw speed of grep\"\nHOMEPAGE=\"https://github.com/BurntSushi/ripgrep\"\nSRC_URI=\"\n\thttps://github.com/BurntSushi/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz\n\t${CARGO_CRATE_URIS}\n\"\n\nLICENSE=\"Apache-2.0\"",
+          "sha256": "c1ac6709f91bfb65469e5e79629f8c1f10e32eb0c2f2c115f3598aff1bd5dae3",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/ripgrep/ripgrep-15.1.0.ebuild#L61-L70"
+        }
+      ],
+      "version": {
+        "kind": "filename_literal",
+        "declared": "15.1.0",
+        "upstream_version": "15.1.0",
+        "reason": "Version is readable from the selected ebuild filename; no evaluation performed.",
+        "path": "dataset/ebuild/ripgrep/ripgrep-15.1.0.ebuild",
+        "line": null,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/ripgrep/ripgrep-15.1.0.ebuild"
+      }
+    },
+    {
+      "canonical_identity": "ripgrep",
+      "ecosystem": "nix",
+      "catalog_identifier": "ripgrep",
+      "actual_files": [
+        "dataset/nixpkgs/ripgrep/default.nix"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub BurntSushi/ripgrep",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/nixpkgs/ripgrep/default.nix",
+          "line_start": 9,
+          "line_end": 9,
+          "text": "  withPCRE2 ? true,",
+          "sha256": "e8bcda8d4665fec7800f4d46be5d9361d5fa5d2f051d58f0b54b8891b44c754b",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/ripgrep/default.nix#L9"
+        },
+        {
+          "path": "dataset/nixpkgs/ripgrep/default.nix",
+          "line_start": 19,
+          "line_end": 26,
+          "text": "  pname = \"ripgrep\";\n  version = \"15.1.0\";\n\n  src = fetchFromGitHub {\n    owner = \"BurntSushi\";\n    repo = \"ripgrep\";\n    rev = finalAttrs.version;\n    hash = \"sha256-0gjwYMUlXYnmIWQS1SVzF1yQw1lpveRLw5qp049lc3I=\";",
+          "sha256": "e8bcda8d4665fec7800f4d46be5d9361d5fa5d2f051d58f0b54b8891b44c754b",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/ripgrep/default.nix#L19-L26"
+        },
+        {
+          "path": "dataset/nixpkgs/ripgrep/default.nix",
+          "line_start": 35,
+          "line_end": 38,
+          "text": "  ++ lib.optional withPCRE2 pkg-config;\n  buildInputs = lib.optional withPCRE2 pcre2;\n\n  buildFeatures = lib.optional withPCRE2 \"pcre2\";",
+          "sha256": "e8bcda8d4665fec7800f4d46be5d9361d5fa5d2f051d58f0b54b8891b44c754b",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/ripgrep/default.nix#L35-L38"
+        },
+        {
+          "path": "dataset/nixpkgs/ripgrep/default.nix",
+          "line_start": 63,
+          "line_end": 64,
+          "text": "    homepage = \"https://github.com/BurntSushi/ripgrep\";\n    changelog = \"https://github.com/BurntSushi/ripgrep/releases/tag/${finalAttrs.version}\";",
+          "sha256": "e8bcda8d4665fec7800f4d46be5d9361d5fa5d2f051d58f0b54b8891b44c754b",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/ripgrep/default.nix#L63-L64"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "15.1.0",
+        "upstream_version": "15.1.0",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/nixpkgs/ripgrep/default.nix",
+        "line": 20,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/ripgrep/default.nix#L20"
+      }
+    },
+    {
+      "canonical_identity": "elinks",
+      "ecosystem": "deb",
+      "catalog_identifier": "elinks",
+      "actual_files": [
+        "dataset/deb/elinks/control",
+        "dataset/deb/elinks/elinks.dsc",
+        "dataset/deb/elinks/rules"
+      ],
+      "identity_status": "ambiguous",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "Declared ELinks/felinks lineage; exact relationship among fork and repository locators unresolved",
+      "reason": "Debian points to elinks.cz and explicitly declares a felinks-fork basis. Available copied text does not establish the exact relationship of that declared fork to rkd77/elinks and rkd77/felinks locators in the other views; broad project-family lineage is supported. Matching revisions is not required for this source-identity check.",
+      "source_evidence": [
+        {
+          "path": "dataset/deb/elinks/control",
+          "line_start": 1,
+          "line_end": 1,
+          "text": "Source: elinks",
+          "sha256": "d6b73d05bff673c8e4572cd796cc098ac279691726687f95308206c3f84d25f9",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/elinks/control#L1"
+        },
+        {
+          "path": "dataset/deb/elinks/control",
+          "line_start": 17,
+          "line_end": 21,
+          "text": "Homepage: http://elinks.cz/\nVcs-Git: https://salsa.debian.org/aelmahmoudy/elinks.git\nVcs-Browser: https://salsa.debian.org/aelmahmoudy/elinks\n\nPackage: elinks",
+          "sha256": "d6b73d05bff673c8e4572cd796cc098ac279691726687f95308206c3f84d25f9",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/elinks/control#L17-L21"
+        },
+        {
+          "path": "dataset/deb/elinks/elinks.dsc",
+          "line_start": 8,
+          "line_end": 10,
+          "text": "Version: 0.13.2-1\nMaintainer: أحمد المحمودي (Ahmed El-Mahmoudy) <aelmahmoudy@users.sourceforge.net>\nHomepage: http://elinks.cz/",
+          "sha256": "efffa03618c8fae8b717ea0c5bd4854cb71a8f091c73fb95d04de6499d3a518c",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/elinks/elinks.dsc#L8-L10"
+        },
+        {
+          "path": "dataset/deb/elinks/control",
+          "line_start": 41,
+          "line_end": 42,
+          "text": " This package is based on felinks fork, since original elinks seems to be no\n longer maintained.",
+          "sha256": "d6b73d05bff673c8e4572cd796cc098ac279691726687f95308206c3f84d25f9",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/elinks/control#L41-L42"
+        }
+      ],
+      "version": {
+        "kind": "literal_with_packaging_revision",
+        "declared": "0.13.2-1",
+        "upstream_version": null,
+        "reason": "Literal source-package version includes distribution epoch/revision; no general normalization is performed.",
+        "path": "dataset/deb/elinks/elinks.dsc",
+        "line": 8,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/elinks/elinks.dsc#L8"
+      }
+    },
+    {
+      "canonical_identity": "elinks",
+      "ecosystem": "rpm",
+      "catalog_identifier": "elinks",
+      "actual_files": [
+        "dataset/rpm/elinks/elinks.spec"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub rkd77/elinks, with old-domain/live-branch equivalence requiring separate evidence",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/rpm/elinks/elinks.spec",
+          "line_start": 7,
+          "line_end": 13,
+          "text": "Name:      elinks\nSummary:   A text-mode Web browser\nVersion:   0.19.1\nRelease:   1%{?dist}\nLicense:   GPL-2.0-only\nURL:       https://github.com/rkd77/elinks\nSource:    https://github.com/rkd77/elinks/releases/download/v%{version}/elinks-%{version}.tar.xz",
+          "sha256": "d8a3aa827ebaac49c83649bca02541c1be749a0302b6f7c2cb59e95fa0c838ac",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/elinks/elinks.spec#L7-L13"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "0.19.1",
+        "upstream_version": "0.19.1",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/rpm/elinks/elinks.spec",
+        "line": 9,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/rpm/elinks/elinks.spec#L9"
+      }
+    },
+    {
+      "canonical_identity": "elinks",
+      "ecosystem": "pkgbuild",
+      "catalog_identifier": "elinks",
+      "actual_files": [
+        "dataset/pkgbuild/elinks/PKGBUILD"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub rkd77/elinks, with old-domain/live-branch equivalence requiring separate evidence",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/pkgbuild/elinks/PKGBUILD",
+          "line_start": 8,
+          "line_end": 16,
+          "text": "pkgname=elinks\npkgver=0.19.1\npkgrel=3\npkgdesc='Advanced feature-rich text-mode web browser'\narch=(x86_64)\nurl='https://github.com/rkd77/elinks'\nlicense=(GPL-2.0-only)\ndepends=(\n  glibc",
+          "sha256": "ed82ee8b03f2f03e71f2cf9d338408a9d663379cc1f16c0756ee5ee8b8c1615c",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/pkgbuild/elinks/PKGBUILD#L8-L16"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "0.19.1",
+        "upstream_version": "0.19.1",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/pkgbuild/elinks/PKGBUILD",
+        "line": 9,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/pkgbuild/elinks/PKGBUILD#L9"
+      }
+    },
+    {
+      "canonical_identity": "elinks",
+      "ecosystem": "ebuild",
+      "catalog_identifier": "www-client/elinks",
+      "actual_files": [
+        "dataset/ebuild/elinks/elinks-9999.ebuild"
+      ],
+      "identity_status": "ambiguous",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "Declared ELinks/felinks lineage; exact relationship among fork and repository locators unresolved",
+      "reason": "The live branch selects rkd77/felinks, the release branch selects rkd77/elinks, and comments link rkd77/elinks source code. These support declared project lineage but leave the exact relationship among the selected live source and repository locators unresolved. Unknown live revision is recorded separately, not an identity rejection criterion.",
+      "source_evidence": [
+        {
+          "path": "dataset/ebuild/elinks/elinks-9999.ebuild",
+          "line_start": 11,
+          "line_end": 20,
+          "text": "inherit flag-o-matic guile-single meson lua-single python-single-r1\n\nDESCRIPTION=\"Advanced and well-established text-mode web browser\"\nHOMEPAGE=\"http://elinks.or.cz/\"\n\nif [[ ${PV} == *9999 ]] ; then\n\tEGIT_REPO_URI=\"https://github.com/rkd77/felinks\"\n\tinherit git-r3\nelse\n\tSRC_URI=\"https://github.com/rkd77/elinks/releases/download/v${PV}/${P}.tar.xz\"",
+          "sha256": "77ad934385edeffe6acb540759edc65b7ebfc5089f71a74d622ca119fdf96350",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/elinks/elinks-9999.ebuild#L11-L20"
+        },
+        {
+          "path": "dataset/ebuild/elinks/elinks-9999.ebuild",
+          "line_start": 99,
+          "line_end": 100,
+          "text": "\t# https://github.com/rkd77/elinks/blob/d05ce90b35d82109aab320b490e3ca54aa6df057/src/util/lists.h#L14\n\t# https://github.com/rkd77/elinks/blob/d05ce90b35d82109aab320b490e3ca54aa6df057/src/meson.build#L44",
+          "sha256": "77ad934385edeffe6acb540759edc65b7ebfc5089f71a74d622ca119fdf96350",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/elinks/elinks-9999.ebuild#L99-L100"
+        }
+      ],
+      "version": {
+        "kind": "live_marker",
+        "declared": "9999",
+        "upstream_version": null,
+        "reason": "9999 selects a live branch; fetched revision/version unknown.",
+        "path": "dataset/ebuild/elinks/elinks-9999.ebuild",
+        "line": null,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/elinks/elinks-9999.ebuild"
+      }
+    },
+    {
+      "canonical_identity": "elinks",
+      "ecosystem": "nix",
+      "catalog_identifier": "elinks",
+      "actual_files": [
+        "dataset/nixpkgs/elinks/default.nix"
+      ],
+      "identity_status": "confirmed",
+      "identity_scope": "Intended source-level program mapping only; no semantic, build, closure, or historical-version equivalence assertion.",
+      "upstream_anchor": "GitHub rkd77/elinks, with old-domain/live-branch equivalence requiring separate evidence",
+      "reason": "Available source/homepage declarations link this intended catalog entry to its recorded upstream anchor; shared names alone are not the evidence.",
+      "source_evidence": [
+        {
+          "path": "dataset/nixpkgs/elinks/default.nix",
+          "line_start": 35,
+          "line_end": 44,
+          "text": "  pname = \"elinks\";\n  version = \"0.19.0\";\n\n  src = fetchFromGitHub {\n    owner = \"rkd77\";\n    repo = \"elinks\";\n    rev = \"v${finalAttrs.version}\";\n    hash = \"sha256-eFH42PCMF3HPvNqcaXOyIM6AAr3RusgxiRlUa2X8B9U=\";\n  };\n",
+          "sha256": "ff19851373bd19278fbb3a19372e7369a7e3eb8e837229de97183046bb78e060",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/elinks/default.nix#L35-L44"
+        },
+        {
+          "path": "dataset/nixpkgs/elinks/default.nix",
+          "line_start": 59,
+          "line_end": 62,
+          "text": "  ++ lib.optional stdenv.hostPlatform.isLinux gpm\n  ++ lib.optional enableGuile guile\n  ++ lib.optional enablePython python\n  ++ lib.optional enablePerl perl;",
+          "sha256": "ff19851373bd19278fbb3a19372e7369a7e3eb8e837229de97183046bb78e060",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/elinks/default.nix#L59-L62"
+        },
+        {
+          "path": "dataset/nixpkgs/elinks/default.nix",
+          "line_start": 92,
+          "line_end": 92,
+          "text": "    homepage = \"https://github.com/rkd77/elinks\";",
+          "sha256": "ff19851373bd19278fbb3a19372e7369a7e3eb8e837229de97183046bb78e060",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/elinks/default.nix#L92"
+        }
+      ],
+      "version": {
+        "kind": "literal",
+        "declared": "0.19.0",
+        "upstream_version": "0.19.0",
+        "reason": "Literal version observed in original source text; runtime resolution not evaluated.",
+        "path": "dataset/nixpkgs/elinks/default.nix",
+        "line": 36,
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/elinks/default.nix#L36"
+      }
+    }
+  ],
+  "limits": [
+    "No human-author verification or submission gate completion is claimed.",
+    "This selection does not estimate catalog-wide identity accuracy or parser accuracy.",
+    "Confirmed means support from available source declarations under the specified program mapping, not independent retrieval or full source/semantic equivalence.",
+    "Literal distribution package versions are not normalized generally or substituted for runtime/upstream revision.",
+    "Crate macro expansion, eclasses, inherited Nix base files, auxiliary patches and live revisions remain outside this static audit.",
+    "No IR was inspected in this audit, no extraction accuracy measured, and no native/generated builds or API calls were performed.",
+    "The finding does not identify any historical failure cause or imply all other catalog entries are correct."
+  ],
+  "catalog_rows": [
+    {
+      "name": "entr",
+      "deb": "entr",
+      "rpm": "entr",
+      "pkgbuild": "entr",
+      "nix": "entr",
+      "ebuild": "app-admin/entr"
+    },
+    {
+      "name": "bat",
+      "deb": "rust-bat",
+      "rpm": "rust-bat",
+      "pkgbuild": "bat",
+      "nix": "bat",
+      "ebuild": "sys-apps/bat"
+    },
+    {
+      "name": "ffmpeg",
+      "deb": "ffmpeg",
+      "rpm": "ffmpeg",
+      "pkgbuild": "ffmpeg",
+      "nix": "ffmpeg",
+      "ebuild": "media-video/ffmpeg"
+    },
+    {
+      "name": "ripgrep",
+      "deb": "rust-ripgrep",
+      "rpm": "rust-ripgrep",
+      "pkgbuild": "ripgrep",
+      "nix": "ripgrep",
+      "ebuild": "sys-apps/ripgrep"
+    },
+    {
+      "name": "elinks",
+      "deb": "elinks",
+      "rpm": "elinks",
+      "pkgbuild": "elinks",
+      "nix": "elinks",
+      "ebuild": "www-client/elinks"
+    }
+  ],
+  "construct_observations": [
+    {
+      "package": "entr",
+      "construct": "Explicit versions vary across source ecosystems",
+      "evidence": [
+        {
+          "path": "dataset/deb/entr/entr.dsc",
+          "line_start": 8,
+          "line_end": 8,
+          "text": "Version: 4.7-1",
+          "sha256": "64432bb41af3caf839849b3bba6dc8aa2f89d89f1a102ce010573c1a9050378b",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/entr/entr.dsc#L8"
+        },
+        {
+          "path": "dataset/nixpkgs/entr/default.nix",
+          "line_start": 9,
+          "line_end": 10,
+          "text": "  pname = \"entr\";\n  version = \"5.8\";",
+          "sha256": "b679d153b50a77aaa606ea910b713a1e9ffb3aa0abc5700d866efde16d67459a",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/entr/default.nix#L9-L10"
+        }
+      ],
+      "status": "confirmed",
+      "limit": "This is one source-level mismatch, not a corpus-wide rate."
+    },
+    {
+      "package": "bat",
+      "construct": "Different acquisition/source/binary/executable identifiers",
+      "evidence": [
+        {
+          "path": "dataset/deb/bat/control",
+          "line_start": 1,
+          "line_end": 1,
+          "text": "Source: rust-bat",
+          "sha256": "3034aa2009b7f92fb39a03a88958ded8a06803e0cb26ac357f8de800ed0946c4",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/bat/control#L1"
+        },
+        {
+          "path": "dataset/deb/bat/control",
+          "line_start": 38,
+          "line_end": 40,
+          "text": "Homepage: https://github.com/sharkdp/bat\n\nPackage: bat",
+          "sha256": "3034aa2009b7f92fb39a03a88958ded8a06803e0cb26ac357f8de800ed0946c4",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/bat/control#L38-L40"
+        },
+        {
+          "path": "dataset/deb/bat/control",
+          "line_start": 63,
+          "line_end": 64,
+          "text": " In this package the executable and its manpage have been renamed from ‘bat’ to\n ‘batcat’ because of a file name clash with another Debian package.",
+          "sha256": "3034aa2009b7f92fb39a03a88958ded8a06803e0cb26ac357f8de800ed0946c4",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/bat/control#L63-L64"
+        },
+        {
+          "path": "dataset/deb/bat/rules",
+          "line_start": 9,
+          "line_end": 10,
+          "text": "\tdh_auto_install\n\tmv debian/bat/usr/bin/bat debian/bat/usr/bin/batcat",
+          "sha256": "1587176c0258d84cf0f63066af9e3528b60af5f982df5873fdd1881fa673c828",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/bat/rules#L9-L10"
+        }
+      ],
+      "status": "confirmed",
+      "limit": "Confirms the recorded executable rename, not installed command availability."
+    },
+    {
+      "package": "ffmpeg",
+      "construct": "Debian source has 24 Package stanzas",
+      "evidence": [
+        {
+          "path": "dataset/deb/ffmpeg/control",
+          "line_start": 190,
+          "line_end": 190,
+          "text": "Package: ffmpeg",
+          "sha256": "abac764589ce8647516f951153c999eff599f25ff59612c77d2c4fec73106a12",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ffmpeg/control#L190"
+        },
+        {
+          "path": "dataset/deb/ffmpeg/control",
+          "line_start": 215,
+          "line_end": 215,
+          "text": "Package: ffmpeg-doc",
+          "sha256": "abac764589ce8647516f951153c999eff599f25ff59612c77d2c4fec73106a12",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ffmpeg/control#L215"
+        },
+        {
+          "path": "dataset/deb/ffmpeg/control",
+          "line_start": 233,
+          "line_end": 233,
+          "text": "Package: libavcodec58",
+          "sha256": "abac764589ce8647516f951153c999eff599f25ff59612c77d2c4fec73106a12",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/deb/ffmpeg/control#L233"
+        }
+      ],
+      "status": "confirmed",
+      "binary_packages": [
+        "ffmpeg",
+        "ffmpeg-doc",
+        "libavcodec58",
+        "libavcodec-extra58",
+        "libavcodec-extra",
+        "libavcodec-dev",
+        "libavdevice58",
+        "libavdevice-dev",
+        "libavfilter7",
+        "libavfilter-extra7",
+        "libavfilter-extra",
+        "libavfilter-dev",
+        "libavformat58",
+        "libavformat-dev",
+        "libavresample4",
+        "libavresample-dev",
+        "libavutil56",
+        "libavutil-dev",
+        "libpostproc55",
+        "libpostproc-dev",
+        "libswresample3",
+        "libswresample-dev",
+        "libswscale5",
+        "libswscale-dev"
+      ],
+      "limit": "A source bundle is not one binary-package or executable unit."
+    },
+    {
+      "package": "ripgrep",
+      "construct": "withPCRE2 condition changes native/build dependencies and build features",
+      "evidence": [
+        {
+          "path": "dataset/nixpkgs/ripgrep/default.nix",
+          "line_start": 9,
+          "line_end": 9,
+          "text": "  withPCRE2 ? true,",
+          "sha256": "e8bcda8d4665fec7800f4d46be5d9361d5fa5d2f051d58f0b54b8891b44c754b",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/ripgrep/default.nix#L9"
+        },
+        {
+          "path": "dataset/nixpkgs/ripgrep/default.nix",
+          "line_start": 31,
+          "line_end": 38,
+          "text": "  nativeBuildInputs = [\n    installShellFiles\n    writableTmpDirAsHomeHook # required for wine when cross-compiling to Windows\n  ]\n  ++ lib.optional withPCRE2 pkg-config;\n  buildInputs = lib.optional withPCRE2 pcre2;\n\n  buildFeatures = lib.optional withPCRE2 \"pcre2\";",
+          "sha256": "e8bcda8d4665fec7800f4d46be5d9361d5fa5d2f051d58f0b54b8891b44c754b",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/nixpkgs/ripgrep/default.nix#L31-L38"
+        }
+      ],
+      "status": "confirmed",
+      "limit": "Source construct observed; no branch evaluation or IR inspection."
+    },
+    {
+      "package": "elinks",
+      "construct": "Eclass helpers and live branch select a different declared repository URL",
+      "evidence": [
+        {
+          "path": "dataset/ebuild/elinks/elinks-9999.ebuild",
+          "line_start": 11,
+          "line_end": 20,
+          "text": "inherit flag-o-matic guile-single meson lua-single python-single-r1\n\nDESCRIPTION=\"Advanced and well-established text-mode web browser\"\nHOMEPAGE=\"http://elinks.or.cz/\"\n\nif [[ ${PV} == *9999 ]] ; then\n\tEGIT_REPO_URI=\"https://github.com/rkd77/felinks\"\n\tinherit git-r3\nelse\n\tSRC_URI=\"https://github.com/rkd77/elinks/releases/download/v${PV}/${P}.tar.xz\"",
+          "sha256": "77ad934385edeffe6acb540759edc65b7ebfc5089f71a74d622ca119fdf96350",
+          "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/dataset/ebuild/elinks/elinks-9999.ebuild#L11-L20"
+        }
+      ],
+      "status": "confirmed",
+      "limit": "Live source revision and cross-URL lineage unknown; imported eclasses are outside the copied bundle."
+    }
+  ],
+  "source_file_sha256": {
+    "dataset/deb/bat/bat.dsc": "3e0fb5a081a84d531e170b034dc83f73710b8bb5e04e3e1b850c6f3e5f9f1ac5",
+    "dataset/deb/bat/control": "3034aa2009b7f92fb39a03a88958ded8a06803e0cb26ac357f8de800ed0946c4",
+    "dataset/deb/bat/rules": "1587176c0258d84cf0f63066af9e3528b60af5f982df5873fdd1881fa673c828",
+    "dataset/deb/elinks/control": "d6b73d05bff673c8e4572cd796cc098ac279691726687f95308206c3f84d25f9",
+    "dataset/deb/elinks/elinks.dsc": "efffa03618c8fae8b717ea0c5bd4854cb71a8f091c73fb95d04de6499d3a518c",
+    "dataset/deb/elinks/rules": "fcfa566ec1862093ab183d7644ecc07e4d1f32f8e87ed4be94d59273d13c3d96",
+    "dataset/deb/entr/control": "0531c479f544e2ee33a63527449c6d44b34426edba4476971f7a33217e568670",
+    "dataset/deb/entr/entr.dsc": "64432bb41af3caf839849b3bba6dc8aa2f89d89f1a102ce010573c1a9050378b",
+    "dataset/deb/entr/rules": "4c69a087a16e94bd2547b864e0c0eb7bd9ab346865c5f46146cb7087fb4a582e",
+    "dataset/deb/ffmpeg/control": "abac764589ce8647516f951153c999eff599f25ff59612c77d2c4fec73106a12",
+    "dataset/deb/ffmpeg/ffmpeg.dsc": "a05f86cc4c80ea4ec497c9178931d0c91ebe27e2ef96c072af1e1558e154dcf4",
+    "dataset/deb/ffmpeg/rules": "4cfa64f3a94b859dd880ed16a0e00b8c050828cae33fb8b3ff6e36959cbe693f",
+    "dataset/deb/ripgrep/control": "d46c5b004d34616bed373970fa1c21949057b16fbee92d24a743cc8d509f0944",
+    "dataset/deb/ripgrep/ripgrep.dsc": "de3eb1faf1c360714c67eb40a5e1305c16a9b4885070f5afcf5f08868fd85508",
+    "dataset/deb/ripgrep/rules": "fe00dca87518770d00e3ca51a5f9a55bf5bbeeecce5d7d12a96ad3aa370c79cb",
+    "dataset/ebuild/bat/bat-0.26.1.ebuild": "00f4d45945bba0b95aa5c6fc0ab271682f0b5eda23f51bdbc049d2a66ad27d53",
+    "dataset/ebuild/elinks/elinks-9999.ebuild": "77ad934385edeffe6acb540759edc65b7ebfc5089f71a74d622ca119fdf96350",
+    "dataset/ebuild/entr/entr-5.8.ebuild": "9295a658cd8caaca195d66aff74556a4aad7dacb08dfcc8bd7000b58b8fd4456",
+    "dataset/ebuild/ffmpeg/ffmpeg-9999.ebuild": "4b6487ec9c6e208fdc0063555a22809ee87a5acff7a3879a4dec7cc253366120",
+    "dataset/ebuild/ripgrep/ripgrep-15.1.0.ebuild": "c1ac6709f91bfb65469e5e79629f8c1f10e32eb0c2f2c115f3598aff1bd5dae3",
+    "dataset/nixpkgs/bat/default.nix": "f6def711039dc7dfbc70ebcec54112a251af932a9292cbe7423b6b7c2eed3218",
+    "dataset/nixpkgs/elinks/default.nix": "ff19851373bd19278fbb3a19372e7369a7e3eb8e837229de97183046bb78e060",
+    "dataset/nixpkgs/entr/default.nix": "b679d153b50a77aaa606ea910b713a1e9ffb3aa0abc5700d866efde16d67459a",
+    "dataset/nixpkgs/ffmpeg/default.nix": "d627f7aa0b08b74bca0d2d42dc1f1278c89758a8afa4d1727e919d50ddb1126e",
+    "dataset/nixpkgs/ripgrep/default.nix": "e8bcda8d4665fec7800f4d46be5d9361d5fa5d2f051d58f0b54b8891b44c754b",
+    "dataset/pkgbuild/bat/PKGBUILD": "943605e62b1eebdde997b87c0dc2facfc46baaa63c1e3aad17a4a793bf847d7b",
+    "dataset/pkgbuild/elinks/PKGBUILD": "ed82ee8b03f2f03e71f2cf9d338408a9d663379cc1f16c0756ee5ee8b8c1615c",
+    "dataset/pkgbuild/entr/PKGBUILD": "a717eabbe70d0057d5f33e2a2b4ed1c999d092bfe8c741fee56ddd17b1fb0e53",
+    "dataset/pkgbuild/ffmpeg/PKGBUILD": "fd9a31de3c4eea170220bc0110b17e1c291291936fe842862984557be4e8486d",
+    "dataset/pkgbuild/ripgrep/PKGBUILD": "9f98618b8923dce1b68194163024f46140e3a3e9161a3db28b76c0c53773f20d",
+    "dataset/rpm/bat/bat.spec": "2ed0811ce67d714191994945eb517bc3f20618b9cef2740ad71f0f844c84218d",
+    "dataset/rpm/elinks/elinks.spec": "d8a3aa827ebaac49c83649bca02541c1be749a0302b6f7c2cb59e95fa0c838ac",
+    "dataset/rpm/entr/entr.spec": "89e10443e873ee72388765ff057a99312f3ac8323fa16ea668d81dae5452dcc8",
+    "dataset/rpm/ffmpeg/ffmpeg.spec": "8c52c55aff4b04ae3fcd4a22eeeeb52bdb107584bada92d68359667f641bca80",
+    "dataset/rpm/ripgrep/ripgrep.spec": "c71e19fce5352c091a6ad12fbf4164d5317fdce8e89d1fec490d92e8ffad7811",
+    "package_list.json": "984770efd5de304da9bc032e4b076ddd61f237eee4248cbb1326ee58f007f0fb",
+    "scripts/acquire.sh": "a660f9a557c9db15146d8c2f3727362f5bc66da37e83357c5ec98d6540816fc0"
+  },
+  "nix_selection_mechanism": {
+    "classification": "supported_selection_risk_not_historical_cause",
+    "claim": "Nix acquisition first tries two by-name paths, then recursively finds package.nix/default.nix/wrapper.nix in any matching identifier directory and selects head -1. It copies the selected text under the canonical directory without validating upstream program identity. This can admit namespace collisions or helper recipes.",
+    "evidence": [
+      {
+        "path": "scripts/acquire.sh",
+        "line_start": 50,
+        "line_end": 70,
+        "text": "        local prefix=\"${nixos_name:0:2}\"\n        local src=\"${NIXPKGS_REPO}/pkgs/by-name/${prefix}/${nixos_name}/package.nix\"\n\n        local method=\"\"\n        if [[ -f \"$src\" ]] && is_valid_file \"$src\"; then\n            mkdir -p \"$dest\"\n            cp \"$src\" \"$nix_file\"\n            method=\"by-name/package.nix\"\n        else\n            src=\"${NIXPKGS_REPO}/pkgs/by-name/${prefix}/${nixos_name}/default.nix\"\n            if [[ -f \"$src\" ]] && is_valid_file \"$src\"; then\n                mkdir -p \"$dest\"\n                cp \"$src\" \"$nix_file\"\n                method=\"by-name/default.nix\"\n            else\n                local found_src\n                found_src=$(find \"${NIXPKGS_REPO}/pkgs\" \\( -path \"*/${nixos_name}/package.nix\" -o -path \"*/${nixos_name}/default.nix\" -o -path \"*/${nixos_name}/wrapper.nix\" \\) 2>/dev/null | head -1 || true)\n                if [[ -n \"$found_src\" && -f \"$found_src\" ]] && is_valid_file \"$found_src\"; then\n                    mkdir -p \"$dest\"\n                    cp \"$found_src\" \"$nix_file\"\n                    method=\"find/$(basename \"$found_src\")\"",
+        "sha256": "a660f9a557c9db15146d8c2f3727362f5bc66da37e83357c5ec98d6540816fc0",
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/scripts/acquire.sh#L50-L70"
+      },
+      {
+        "path": "scripts/acquire.sh",
+        "line_start": 15,
+        "line_end": 19,
+        "text": "is_valid_file() {\n    local f=\"$1\"\n    [[ ! -s \"$f\" ]] && return 1\n    head -c 200 \"$f\" | grep -qi '<!DOCTYPE\\|<html' && return 1\n    return 0",
+        "sha256": "a660f9a557c9db15146d8c2f3727362f5bc66da37e83357c5ec98d6540816fc0",
+        "url": "https://github.com/Aethelsirius/pkgbridge/blob/1a8ba8a2f0e914756cb76c1274d338db7ed55266/scripts/acquire.sh#L15-L19"
+      }
+    ],
+    "historical_limit": "No retained original nixpkgs path/revision or branch log links this mechanism to the observed FFmpeg file. The actual historical selection cause remains unknown."
+  },
+  "summary": {
+    "intended_identities": 5,
+    "ecosystem_cases": 25,
+    "source_level_assessments": {
+      "confirmed": 21,
+      "rejected": 1,
+      "ambiguous": 3
+    },
+    "debian_ffmpeg_binary_stanzas": 24,
+    "unresolved_actual_upstream_versions": [
+      {
+        "package": "ffmpeg",
+        "ecosystem": "ebuild",
+        "kind": "live_marker"
+      },
+      {
+        "package": "ffmpeg",
+        "ecosystem": "nix",
+        "kind": "helper_derived"
+      },
+      {
+        "package": "elinks",
+        "ecosystem": "ebuild",
+        "kind": "live_marker"
+      }
+    ]
+  }
+}

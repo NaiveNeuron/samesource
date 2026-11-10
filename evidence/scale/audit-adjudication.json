@@ -1,0 +1,14 @@
+{
+  "schema": "pkgbridge-scale-audit-adjudication/1",
+  "date": "2026-11-11",
+  "note": "After the blind labels were compared, the meaning of component_or_split was discussed with the author, who revised the labels below. The blind file audit-human-M.csv is unchanged.",
+  "rater": "M",
+  "revisions": [
+    {"link": ["ebuild:dev-debug/gdb@18.1-r2#0", "pkgbuild:riscv64-elf-gdb@18.1-1#0"],
+     "blind": "same_primary_archive", "revised": "component_or_split",
+     "reason": "cross-target build of the same GDB source"},
+    {"link": ["ebuild:llvm-core/polly@22.1.8#0", "rpm:llvm22@22.1.8-3.fc46#0"],
+     "blind": "same_primary_archive", "revised": "component_or_split",
+     "reason": "Gentoo builds only the Polly sub-project of the LLVM archive"}
+  ]
+}

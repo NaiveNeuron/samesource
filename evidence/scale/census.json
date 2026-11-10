@@ -1,0 +1,98 @@
+{
+  "schema": "pkgbridge-scale-census/1",
+  "records": {
+    "deb": 43129,
+    "rpm": 23145,
+    "pkgbuild": 12345,
+    "ebuild": 33793
+  },
+  "links_total": 57007,
+  "links_by_roles": {
+    "component+primary": 377,
+    "primary+primary": 22162,
+    "component+component": 231,
+    "primary+unknown": 303,
+    "component+unknown": 16717,
+    "component+packaging": 1,
+    "primary+signature": 4,
+    "primary+vendor_bundle": 16130,
+    "unknown+vendor_bundle": 625,
+    "vendor_bundle+vendor_bundle": 2,
+    "signature+signature": 280,
+    "signature+unknown": 4,
+    "unknown+unknown": 49,
+    "patch_bundle+patch_bundle": 3,
+    "packaging+unknown": 7,
+    "component+patch_bundle": 109,
+    "component+signature": 1,
+    "packaging+patch_bundle": 2
+  },
+  "primary_links_by_family_pair": {
+    "deb-pkgbuild": 2234,
+    "deb-rpm": 4871,
+    "pkgbuild-rpm": 2159,
+    "deb-ebuild": 4643,
+    "ebuild-pkgbuild": 2970,
+    "ebuild-rpm": 5285
+  },
+  "groups_spanning_families": 11334,
+  "groups_by_family_count": {
+    "3": 2690,
+    "4": 916,
+    "2": 7728
+  },
+  "groups_by_family_set": {
+    "deb+pkgbuild+rpm": 358,
+    "deb+ebuild+pkgbuild+rpm": 916,
+    "deb+ebuild+rpm": 1279,
+    "deb+rpm": 2288,
+    "deb+pkgbuild": 507,
+    "deb+ebuild+pkgbuild": 437,
+    "deb+ebuild": 1718,
+    "ebuild+rpm": 1894,
+    "ebuild+pkgbuild": 878,
+    "ebuild+pkgbuild+rpm": 616,
+    "pkgbuild+rpm": 443
+  },
+  "name_version_census": {
+    "deb-ebuild": {
+      "linked_same_bytes": 2197,
+      "different_bytes": 1000,
+      "different_bytes_by_size": 890,
+      "no_primary_artifact": 23
+    },
+    "deb-pkgbuild": {
+      "linked_same_bytes": 1506,
+      "different_bytes": 891,
+      "vcs_source": 1455,
+      "no_primary_artifact": 11,
+      "no_common_algorithm": 1
+    },
+    "deb-rpm": {
+      "linked_same_bytes": 3057,
+      "different_bytes": 1807,
+      "no_common_algorithm": 319,
+      "no_primary_artifact": 9
+    },
+    "ebuild-pkgbuild": {
+      "linked_same_bytes": 1594,
+      "vcs_source": 1161,
+      "no_primary_artifact": 31,
+      "no_common_algorithm": 26,
+      "different_bytes": 242
+    },
+    "ebuild-rpm": {
+      "linked_same_bytes": 2237,
+      "different_bytes": 515,
+      "no_common_algorithm": 331,
+      "no_primary_artifact": 18
+    },
+    "pkgbuild-rpm": {
+      "linked_same_bytes": 1536,
+      "different_bytes": 365,
+      "vcs_source": 1480,
+      "no_common_algorithm": 435,
+      "no_primary_artifact": 19
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "tasks": 44324,
+  "by_direction": {
+    "deb->ebuild": {
+      "byte_complete": 4643
+    },
+    "deb->pkgbuild": {
+      "byte_complete": 2234
+    },
+    "deb->rpm": {
+      "byte_complete": 4871
+    },
+    "ebuild->deb": {
+      "byte_complete": 4643
+    },
+    "ebuild->pkgbuild": {
+      "byte_complete": 2970
+    },
+    "ebuild->rpm": {
+      "byte_complete": 5285
+    },
+    "pkgbuild->deb": {
+      "byte_complete": 2234
+    },
+    "pkgbuild->ebuild": {
+      "byte_complete": 2970
+    },
+    "pkgbuild->rpm": {
+      "byte_complete": 2159
+    },
+    "rpm->deb": {
+      "byte_complete": 4871
+    },
+    "rpm->ebuild": {
+      "byte_complete": 5285
+    },
+    "rpm->pkgbuild": {
+      "byte_complete": 2159
+    }
+  },
+  "by_split": {
+    "train": 31146,
+    "dev": 4476,
+    "test": 8702
+  }
+}

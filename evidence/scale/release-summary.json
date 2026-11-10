@@ -1,0 +1,15 @@
+{
+  "sqlite": "samesource.sqlite",
+  "sha256": "ef838c30ea30fb5ae34fbfd502a8d265b3f2e8b305b9fdb7f78307dabe90bd29",
+  "rows": {
+    "records": 112412,
+    "artifacts": 279467,
+    "digests": 533396,
+    "links": 57007,
+    "groups": 11334,
+    "group_members": 27937,
+    "tasks": 44324,
+    "patch_declarations": 27937
+  },
+  "parquet": true
+}

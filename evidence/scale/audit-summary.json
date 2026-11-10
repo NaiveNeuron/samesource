@@ -1,0 +1,165 @@
+{
+  "schema": "pkgbridge-scale-audit-summary/1",
+  "items": 180,
+  "per_pair_sample": 30,
+  "rater_a": {
+    "same_primary_archive": 173,
+    "component_or_split": 7
+  },
+  "rater_b": {
+    "same_primary_archive": 173,
+    "component_or_split": 7
+  },
+  "agreement": 180,
+  "cohen_kappa": 1.0,
+  "both_same_primary_archive": 173,
+  "same_primary_archive_wilson95_unweighted": [
+    0.9219,
+    0.981
+  ],
+  "same_primary_archive_population_weighted": 0.9535,
+  "same_primary_archive_weighted_se": 0.0177,
+  "by_pair": {
+    "deb-pkgbuild": {
+      "sampled": 30,
+      "population": 2234,
+      "same_primary_archive": 30,
+      "wilson95": [
+        0.8865,
+        1.0
+      ]
+    },
+    "deb-rpm": {
+      "sampled": 30,
+      "population": 4871,
+      "same_primary_archive": 28,
+      "wilson95": [
+        0.7868,
+        0.9815
+      ]
+    },
+    "deb-ebuild": {
+      "sampled": 30,
+      "population": 4643,
+      "same_primary_archive": 29,
+      "wilson95": [
+        0.8333,
+        0.9941
+      ]
+    },
+    "ebuild-rpm": {
+      "sampled": 30,
+      "population": 5285,
+      "same_primary_archive": 28,
+      "wilson95": [
+        0.7868,
+        0.9815
+      ]
+    },
+    "ebuild-pkgbuild": {
+      "sampled": 30,
+      "population": 2970,
+      "same_primary_archive": 28,
+      "wilson95": [
+        0.7868,
+        0.9815
+      ]
+    },
+    "pkgbuild-rpm": {
+      "sampled": 30,
+      "population": 2159,
+      "same_primary_archive": 30,
+      "wilson95": [
+        0.8865,
+        1.0
+      ]
+    }
+  },
+  "both_wrong_product_or_vendored": 0,
+  "disagreements": [],
+  "human_raters": {
+    "M": {
+      "verdicts": {
+        "same_primary_archive": 178,
+        "component_or_split": 2
+      },
+      "agrees_with_both_models": 175,
+      "cohen_kappa_vs_models": 0.435,
+      "wrong_product_or_vendored": 0,
+      "unclear": 0,
+      "disagreements": [
+        {
+          "link": [
+            "deb:autoconf@2.73-2#0",
+            "ebuild:app-emacs/autoconf-mode@2.73#0"
+          ],
+          "human": "same_primary_archive",
+          "models": "component_or_split"
+        },
+        {
+          "link": [
+            "deb:libgsm@1.0.24-1#0",
+            "rpm:mingw-gsm@1.0.24-1.fc45#0"
+          ],
+          "human": "same_primary_archive",
+          "models": "component_or_split"
+        },
+        {
+          "link": [
+            "deb:objfw@1.5.7-1#0",
+            "rpm:mingw-objfw@1.5.7-2.fc45#0"
+          ],
+          "human": "same_primary_archive",
+          "models": "component_or_split"
+        },
+        {
+          "link": [
+            "ebuild:dev-debug/gdb@18.1-r2#0",
+            "pkgbuild:riscv64-elf-gdb@18.1-1#0"
+          ],
+          "human": "same_primary_archive",
+          "models": "component_or_split"
+        },
+        {
+          "link": [
+            "ebuild:llvm-core/polly@22.1.8#0",
+            "rpm:llvm22@22.1.8-3.fc46#0"
+          ],
+          "human": "same_primary_archive",
+          "models": "component_or_split"
+        }
+      ],
+      "after_discussion": {
+        "revised": 2,
+        "agrees_with_both_models": 177,
+        "remaining_disagreements": [
+          {
+            "link": [
+              "deb:autoconf@2.73-2#0",
+              "ebuild:app-emacs/autoconf-mode@2.73#0"
+            ],
+            "human": "same_primary_archive",
+            "models": "component_or_split"
+          },
+          {
+            "link": [
+              "deb:libgsm@1.0.24-1#0",
+              "rpm:mingw-gsm@1.0.24-1.fc45#0"
+            ],
+            "human": "same_primary_archive",
+            "models": "component_or_split"
+          },
+          {
+            "link": [
+              "deb:objfw@1.5.7-1#0",
+              "rpm:mingw-objfw@1.5.7-2.fc45#0"
+            ],
+            "human": "same_primary_archive",
+            "models": "component_or_split"
+          }
+        ]
+      }
+    }
+  },
+  "note": "rater_a and rater_b are LLM agents labelling blind to each other; human_raters labelled the same items without seeing the model labels."
+}

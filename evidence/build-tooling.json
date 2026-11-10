@@ -1,0 +1,1925 @@
+{
+  "schema": "pkgbridge-build-tooling/1",
+  "interpretation": "Declared build tooling from literal markers (RULES in the script); 'implicit' means no marker, not an unknown or missing build system.",
+  "summary": {
+    "programs": 130,
+    "class_counts_by_family": {
+      "deb": {
+        "go": 11,
+        "cargo": 13,
+        "implicit": 53,
+        "python": 12,
+        "make": 12,
+        "cmake": 6,
+        "meson": 6,
+        "autotools": 17
+      },
+      "rpm": {
+        "go": 14,
+        "cargo": 15,
+        "autotools": 54,
+        "make": 16,
+        "python": 9,
+        "implicit": 7,
+        "cmake": 8,
+        "meson": 7
+      },
+      "pkgbuild": {
+        "go": 6,
+        "cargo": 15,
+        "autotools": 50,
+        "implicit": 8,
+        "python": 15,
+        "make": 18,
+        "cmake": 9,
+        "meson": 9
+      },
+      "ebuild": {
+        "go": 12,
+        "cargo": 18,
+        "autotools": 47,
+        "python": 14,
+        "cmake": 7,
+        "implicit": 13,
+        "meson": 10,
+        "make": 9
+      },
+      "nix": {
+        "go": 11,
+        "cargo": 14,
+        "autotools": 22,
+        "python": 14,
+        "implicit": 38,
+        "cmake": 9,
+        "make": 15,
+        "meson": 7
+      }
+    },
+    "programs_with_two_or_more_declared": 126,
+    "declared_tooling_agrees": 96,
+    "disagreeing_examples": [
+      {
+        "name": "asciinema",
+        "classes": {
+          "deb": "python",
+          "rpm": "cargo",
+          "pkgbuild": "cargo",
+          "ebuild": "cargo",
+          "nix": "python"
+        }
+      },
+      {
+        "name": "autojump",
+        "classes": {
+          "deb": "implicit",
+          "rpm": "make",
+          "pkgbuild": "implicit",
+          "ebuild": "python",
+          "nix": "implicit"
+        }
+      },
+      {
+        "name": "btop",
+        "classes": {
+          "deb": "implicit",
+          "rpm": "make",
+          "pkgbuild": "make",
+          "ebuild": "cmake",
+          "nix": "cmake"
+        }
+      },
+      {
+        "name": "cabextract",
+        "classes": {
+          "deb": "make",
+          "rpm": "autotools",
+          "pkgbuild": "autotools",
+          "ebuild": "autotools",
+          "nix": "implicit"
+        }
+      },
+      {
+        "name": "calibre",
+        "classes": {
+          "deb": "make",
+          "rpm": "implicit",
+          "pkgbuild": "python",
+          "ebuild": "implicit",
+          "nix": "cmake"
+        }
+      },
+      {
+        "name": "clamav",
+        "classes": {
+          "deb": "make",
+          "rpm": "cmake",
+          "pkgbuild": "cmake",
+          "ebuild": "cargo",
+          "nix": "cmake"
+        }
+      },
+      {
+        "name": "elinks",
+        "classes": {
+          "deb": "make",
+          "rpm": "autotools",
+          "pkgbuild": "meson",
+          "ebuild": "meson",
+          "nix": "autotools"
+        }
+      },
+      {
+        "name": "entr",
+        "classes": {
+          "deb": "make",
+          "rpm": "make",
+          "pkgbuild": "autotools",
+          "ebuild": "implicit",
+          "nix": "implicit"
+        }
+      },
+      {
+        "name": "fdupes",
+        "classes": {
+          "deb": "make",
+          "rpm": "autotools",
+          "pkgbuild": "autotools",
+          "ebuild": "autotools",
+          "nix": "autotools"
+        }
+      },
+      {
+        "name": "fish",
+        "classes": {
+          "deb": "cmake",
+          "rpm": "cmake",
+          "pkgbuild": "cmake",
+          "ebuild": "cargo",
+          "nix": "cmake"
+        }
+      },
+      {
+        "name": "fzf",
+        "classes": {
+          "deb": "go",
+          "rpm": "go",
+          "pkgbuild": "make",
+          "ebuild": "go",
+          "nix": "go"
+        }
+      },
+      {
+        "name": "gh",
+        "classes": {
+          "deb": "go",
+          "rpm": "go",
+          "pkgbuild": "make",
+          "ebuild": "go",
+          "nix": "go"
+        }
+      },
+      {
+        "name": "helm",
+        "classes": {
+          "deb": "implicit",
+          "rpm": "go",
+          "pkgbuild": "go",
+          "ebuild": "go",
+          "nix": "make"
+        }
+      },
+      {
+        "name": "i2c-tools",
+        "classes": {
+          "deb": "make",
+          "rpm": "make",
+          "pkgbuild": "python",
+          "ebuild": "python",
+          "nix": "make"
+        }
+      },
+      {
+        "name": "iperf3",
+        "classes": {
+          "deb": "implicit",
+          "rpm": "autotools",
+          "pkgbuild": "autotools",
+          "ebuild": "autotools",
+          "nix": "python"
+        }
+      },
+      {
+        "name": "irssi",
+        "classes": {
+          "deb": "implicit",
+          "rpm": "autotools",
+          "pkgbuild": "meson",
+          "ebuild": "meson",
+          "nix": "meson"
+        }
+      },
+      {
+        "name": "kitty",
+        "classes": {
+          "deb": "implicit",
+          "rpm": "go",
+          "pkgbuild": "python",
+          "ebuild": "implicit",
+          "nix": "python"
+        }
+      },
+      {
+        "name": "lzop",
+        "classes": {
+          "deb": "implicit",
+          "rpm": "autotools",
+          "pkgbuild": "autotools",
+          "ebuild": "make",
+          "nix": "implicit"
+        }
+      },
+      {
+        "name": "micro",
+        "classes": {
+          "deb": "go",
+          "rpm": "go",
+          "pkgbuild": "make",
+          "ebuild": "go",
+          "nix": "go"
+        }
+      },
+      {
+        "name": "most",
+        "classes": {
+          "deb": "autotools",
+          "rpm": "autotools",
+          "pkgbuild": "autotools",
+          "ebuild": "autotools",
+          "nix": "make"
+        }
+      },
+      {
+        "name": "ncdu",
+        "classes": {
+          "deb": "implicit",
+          "rpm": "autotools",
+          "pkgbuild": "make",
+          "ebuild": "implicit",
+          "nix": "implicit"
+        }
+      },
+      {
+        "name": "nethogs",
+        "classes": {
+          "deb": "implicit",
+          "rpm": "make",
+          "pkgbuild": "make",
+          "ebuild": "meson",
+          "nix": "make"
+        }
+      },
+      {
+        "name": "nmap",
+        "classes": {
+          "deb": "python",
+          "rpm": "autotools",
+          "pkgbuild": "python",
+          "ebuild": "python",
+          "nix": "make"
+        }
+      },
+      {
+        "name": "podman",
+        "classes": {
+          "deb": "go",
+          "rpm": "go",
+          "pkgbuild": "make",
+          "ebuild": "go",
+          "nix": "go"
+        }
+      },
+      {
+        "name": "sysstat",
+        "classes": {
+          "deb": "implicit",
+          "rpm": "autotools",
+          "pkgbuild": "autotools",
+          "ebuild": "autotools",
+          "nix": "make"
+        }
+      },
+      {
+        "name": "tcpdump",
+        "classes": {
+          "deb": "implicit",
+          "rpm": "autotools",
+          "pkgbuild": "cmake",
+          "ebuild": "autotools",
+          "nix": "implicit"
+        }
+      },
+      {
+        "name": "thunderbird",
+        "classes": {
+          "deb": "autotools",
+          "rpm": "make",
+          "pkgbuild": "implicit",
+          "ebuild": "cargo",
+          "nix": "implicit"
+        }
+      },
+      {
+        "name": "w3m",
+        "classes": {
+          "deb": "autotools",
+          "rpm": "autotools",
+          "pkgbuild": "autotools",
+          "ebuild": "autotools",
+          "nix": "make"
+        }
+      },
+      {
+        "name": "yq",
+        "classes": {
+          "deb": "python",
+          "rpm": "go",
+          "pkgbuild": "python",
+          "ebuild": "python",
+          "nix": "python"
+        }
+      },
+      {
+        "name": "zsh",
+        "classes": {
+          "deb": "make",
+          "rpm": "autotools",
+          "pkgbuild": "autotools",
+          "ebuild": "autotools",
+          "nix": "autotools"
+        }
+      }
+    ]
+  },
+  "rows": [
+    {
+      "name": "age",
+      "classes": {
+        "deb": "go",
+        "rpm": "go",
+        "pkgbuild": "go",
+        "ebuild": "go",
+        "nix": "go"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "alacritty",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "aria2",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "asciinema",
+      "classes": {
+        "deb": "python",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "python"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "atuin",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "autojump",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "make",
+        "pkgbuild": "implicit",
+        "ebuild": "python",
+        "nix": "implicit"
+      },
+      "declared_families": 2,
+      "agree": false
+    },
+    {
+      "name": "bat",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "beets",
+      "classes": {
+        "deb": "python",
+        "rpm": "python",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "bmon",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "borg",
+      "classes": {
+        "deb": "python",
+        "rpm": "python",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "python"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "btop",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "cmake",
+        "nix": "cmake"
+      },
+      "declared_families": 4,
+      "agree": false
+    },
+    {
+      "name": "cabextract",
+      "classes": {
+        "deb": "make",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": false
+    },
+    {
+      "name": "calcurse",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": true
+    },
+    {
+      "name": "calibre",
+      "classes": {
+        "deb": "make",
+        "rpm": "implicit",
+        "pkgbuild": "python",
+        "ebuild": "implicit",
+        "nix": "cmake"
+      },
+      "declared_families": 3,
+      "agree": false
+    },
+    {
+      "name": "ccache",
+      "classes": {
+        "deb": "cmake",
+        "rpm": "cmake",
+        "pkgbuild": "cmake",
+        "ebuild": "cmake",
+        "nix": "cmake"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "ccze",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": true
+    },
+    {
+      "name": "chafa",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": true
+    },
+    {
+      "name": "clamav",
+      "classes": {
+        "deb": "make",
+        "rpm": "cmake",
+        "pkgbuild": "cmake",
+        "ebuild": "cargo",
+        "nix": "cmake"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "cloc",
+      "classes": {
+        "deb": "make",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "implicit",
+        "nix": "make"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "colordiff",
+      "classes": {
+        "deb": "make",
+        "rpm": "implicit",
+        "pkgbuild": "make",
+        "ebuild": "implicit",
+        "nix": "implicit"
+      },
+      "declared_families": 2,
+      "agree": true
+    },
+    {
+      "name": "cscope",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": true
+    },
+    {
+      "name": "diffstat",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "implicit",
+        "nix": "implicit"
+      },
+      "declared_families": 2,
+      "agree": true
+    },
+    {
+      "name": "duf",
+      "classes": {
+        "deb": "go",
+        "rpm": "go",
+        "pkgbuild": "go",
+        "ebuild": "go",
+        "nix": "go"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "dust",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "elinks",
+      "classes": {
+        "deb": "make",
+        "rpm": "autotools",
+        "pkgbuild": "meson",
+        "ebuild": "meson",
+        "nix": "autotools"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "entr",
+      "classes": {
+        "deb": "make",
+        "rpm": "make",
+        "pkgbuild": "autotools",
+        "ebuild": "implicit",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": false
+    },
+    {
+      "name": "evince",
+      "classes": {
+        "deb": "meson",
+        "rpm": "meson",
+        "pkgbuild": "meson",
+        "ebuild": "meson",
+        "nix": "meson"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "eza",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "fastfetch",
+      "classes": {
+        "deb": "cmake",
+        "rpm": "cmake",
+        "pkgbuild": "cmake",
+        "ebuild": "cmake",
+        "nix": "cmake"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "fd",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "fdupes",
+      "classes": {
+        "deb": "make",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "ffmpeg",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "fish",
+      "classes": {
+        "deb": "cmake",
+        "rpm": "cmake",
+        "pkgbuild": "cmake",
+        "ebuild": "cargo",
+        "nix": "cmake"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "fswatch",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "fzf",
+      "classes": {
+        "deb": "go",
+        "rpm": "go",
+        "pkgbuild": "make",
+        "ebuild": "go",
+        "nix": "go"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "geary",
+      "classes": {
+        "deb": "meson",
+        "rpm": "meson",
+        "pkgbuild": "meson",
+        "ebuild": "meson",
+        "nix": "meson"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "gh",
+      "classes": {
+        "deb": "go",
+        "rpm": "go",
+        "pkgbuild": "make",
+        "ebuild": "go",
+        "nix": "go"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "gimp",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "meson",
+        "pkgbuild": "meson",
+        "ebuild": "meson",
+        "nix": "meson"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "git-delta",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "git-lfs",
+      "classes": {
+        "deb": "go",
+        "rpm": "go",
+        "pkgbuild": "go",
+        "ebuild": "go",
+        "nix": "go"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "glances",
+      "classes": {
+        "deb": "python",
+        "rpm": "python",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "python"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "gnuplot",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "grc",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "implicit",
+        "pkgbuild": "implicit",
+        "ebuild": "implicit",
+        "nix": "python"
+      },
+      "declared_families": 1,
+      "agree": null
+    },
+    {
+      "name": "helm",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "go",
+        "pkgbuild": "go",
+        "ebuild": "go",
+        "nix": "make"
+      },
+      "declared_families": 4,
+      "agree": false
+    },
+    {
+      "name": "htop",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "httpie",
+      "classes": {
+        "deb": "python",
+        "rpm": "python",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "python"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "hugo",
+      "classes": {
+        "deb": "go",
+        "rpm": "go",
+        "pkgbuild": "go",
+        "ebuild": "go",
+        "nix": "go"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "hunspell",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "hwinfo",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "make",
+        "nix": "make"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "hyperfine",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "i2c-tools",
+      "classes": {
+        "deb": "make",
+        "rpm": "make",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "make"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "iftop",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": true
+    },
+    {
+      "name": "inkscape",
+      "classes": {
+        "deb": "cmake",
+        "rpm": "cmake",
+        "pkgbuild": "cmake",
+        "ebuild": "cmake",
+        "nix": "cmake"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "iotop-c",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "make",
+        "nix": "make"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "iperf3",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "python"
+      },
+      "declared_families": 4,
+      "agree": false
+    },
+    {
+      "name": "ipmitool",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "irssi",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "meson",
+        "ebuild": "meson",
+        "nix": "meson"
+      },
+      "declared_families": 4,
+      "agree": false
+    },
+    {
+      "name": "isync",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "jdupes",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "make",
+        "nix": "make"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "jq",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "just",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "keychain",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "implicit",
+        "nix": "implicit"
+      },
+      "declared_families": 2,
+      "agree": true
+    },
+    {
+      "name": "khard",
+      "classes": {
+        "deb": "python",
+        "rpm": "python",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "python"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "kitty",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "go",
+        "pkgbuild": "python",
+        "ebuild": "implicit",
+        "nix": "python"
+      },
+      "declared_families": 3,
+      "agree": false
+    },
+    {
+      "name": "lftp",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "lm-sensors",
+      "classes": {
+        "deb": "make",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "make",
+        "nix": "make"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "lnav",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": true
+    },
+    {
+      "name": "lsd",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "lsof",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": true
+    },
+    {
+      "name": "lynx",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "lzip",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": true
+    },
+    {
+      "name": "lzop",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "make",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": false
+    },
+    {
+      "name": "mediainfo",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "micro",
+      "classes": {
+        "deb": "go",
+        "rpm": "go",
+        "pkgbuild": "make",
+        "ebuild": "go",
+        "nix": "go"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "mosh",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "most",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "make"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "mpc",
+      "classes": {
+        "deb": "meson",
+        "rpm": "meson",
+        "pkgbuild": "meson",
+        "ebuild": "meson",
+        "nix": "meson"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "mtr",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "mutt",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": true
+    },
+    {
+      "name": "ncdu",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "make",
+        "ebuild": "implicit",
+        "nix": "implicit"
+      },
+      "declared_families": 2,
+      "agree": false
+    },
+    {
+      "name": "ncmpc",
+      "classes": {
+        "deb": "meson",
+        "rpm": "meson",
+        "pkgbuild": "meson",
+        "ebuild": "meson",
+        "nix": "meson"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "ncmpcpp",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "neovim",
+      "classes": {
+        "deb": "cmake",
+        "rpm": "cmake",
+        "pkgbuild": "cmake",
+        "ebuild": "cmake",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "nethogs",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "meson",
+        "nix": "make"
+      },
+      "declared_families": 4,
+      "agree": false
+    },
+    {
+      "name": "nmap",
+      "classes": {
+        "deb": "python",
+        "rpm": "autotools",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "make"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "nnn",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "make",
+        "nix": "make"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "obs-studio",
+      "classes": {
+        "deb": "cmake",
+        "rpm": "cmake",
+        "pkgbuild": "cmake",
+        "ebuild": "cmake",
+        "nix": "cmake"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "pandoc",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "implicit",
+        "pkgbuild": "implicit",
+        "ebuild": "implicit",
+        "nix": "implicit"
+      },
+      "declared_families": 0,
+      "agree": null
+    },
+    {
+      "name": "parallel",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "pass",
+      "classes": {
+        "deb": "make",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "make",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "pgcli",
+      "classes": {
+        "deb": "python",
+        "rpm": "python",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "python"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "pigz",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "make",
+        "nix": "make"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "pinfo",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "plocate",
+      "classes": {
+        "deb": "meson",
+        "rpm": "meson",
+        "pkgbuild": "meson",
+        "ebuild": "meson",
+        "nix": "meson"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "podman",
+      "classes": {
+        "deb": "go",
+        "rpm": "go",
+        "pkgbuild": "make",
+        "ebuild": "go",
+        "nix": "go"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "powertop",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "pre-commit",
+      "classes": {
+        "deb": "python",
+        "rpm": "implicit",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "python"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "procs",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "progress",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "make",
+        "pkgbuild": "make",
+        "ebuild": "make",
+        "nix": "make"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "pv",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "qbittorrent",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "cmake",
+        "pkgbuild": "cmake",
+        "ebuild": "cmake",
+        "nix": "cmake"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "ranger",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "python",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "python"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "rclone",
+      "classes": {
+        "deb": "go",
+        "rpm": "go",
+        "pkgbuild": "implicit",
+        "ebuild": "go",
+        "nix": "go"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "restic",
+      "classes": {
+        "deb": "go",
+        "rpm": "go",
+        "pkgbuild": "go",
+        "ebuild": "go",
+        "nix": "go"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "ripgrep",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "rlwrap",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "sccache",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "screenfetch",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "implicit",
+        "pkgbuild": "implicit",
+        "ebuild": "implicit",
+        "nix": "implicit"
+      },
+      "declared_families": 0,
+      "agree": null
+    },
+    {
+      "name": "shellcheck",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "implicit",
+        "pkgbuild": "implicit",
+        "ebuild": "implicit",
+        "nix": "implicit"
+      },
+      "declared_families": 0,
+      "agree": null
+    },
+    {
+      "name": "socat",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "sox",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "sshpass",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "implicit",
+        "nix": "implicit"
+      },
+      "declared_families": 2,
+      "agree": true
+    },
+    {
+      "name": "stow",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": true
+    },
+    {
+      "name": "strace",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "syncthing",
+      "classes": {
+        "deb": "go",
+        "rpm": "go",
+        "pkgbuild": "implicit",
+        "ebuild": "go",
+        "nix": "go"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "sysstat",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "make"
+      },
+      "declared_families": 4,
+      "agree": false
+    },
+    {
+      "name": "tcpdump",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "cmake",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": false
+    },
+    {
+      "name": "thunderbird",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "make",
+        "pkgbuild": "implicit",
+        "ebuild": "cargo",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": false
+    },
+    {
+      "name": "tig",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "tmux",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "trash-cli",
+      "classes": {
+        "deb": "python",
+        "rpm": "python",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "python"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "valgrind",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "vifm",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "implicit"
+      },
+      "declared_families": 3,
+      "agree": true
+    },
+    {
+      "name": "vlc",
+      "classes": {
+        "deb": "implicit",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "w3m",
+      "classes": {
+        "deb": "autotools",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "make"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "yamllint",
+      "classes": {
+        "deb": "python",
+        "rpm": "python",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "python"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "yq",
+      "classes": {
+        "deb": "python",
+        "rpm": "go",
+        "pkgbuild": "python",
+        "ebuild": "python",
+        "nix": "python"
+      },
+      "declared_families": 5,
+      "agree": false
+    },
+    {
+      "name": "zathura",
+      "classes": {
+        "deb": "meson",
+        "rpm": "meson",
+        "pkgbuild": "meson",
+        "ebuild": "meson",
+        "nix": "implicit"
+      },
+      "declared_families": 4,
+      "agree": true
+    },
+    {
+      "name": "zoxide",
+      "classes": {
+        "deb": "cargo",
+        "rpm": "cargo",
+        "pkgbuild": "cargo",
+        "ebuild": "cargo",
+        "nix": "cargo"
+      },
+      "declared_families": 5,
+      "agree": true
+    },
+    {
+      "name": "zsh",
+      "classes": {
+        "deb": "make",
+        "rpm": "autotools",
+        "pkgbuild": "autotools",
+        "ebuild": "autotools",
+        "nix": "autotools"
+      },
+      "declared_families": 5,
+      "agree": false
+    }
+  ]
+}

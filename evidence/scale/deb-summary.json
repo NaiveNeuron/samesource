@@ -1,0 +1,39 @@
+{
+  "family": "deb",
+  "collector": "scripts/scale/extract_deb.py@a8cbf01",
+  "input": {
+    "path": "frame/debian-Sources.xz",
+    "url": "https://snapshot.debian.org/archive/debian/20261105T000000Z/dists/unstable/main/source/Sources.xz",
+    "sha256": "7ddd166eb39172dbf5394a6de5089e692dffe565d75349cc565f0bc41985f28e",
+    "snapshot": "20261105T000000Z"
+  },
+  "stanzas": 43129,
+  "records": 43129,
+  "source_packages": 41693,
+  "source_packages_with_multiple_versions": 1094,
+  "native_records": 867,
+  "live_vcs_records": 0,
+  "records_with_primary": 43129,
+  "records_with_repack_primary": 4250,
+  "records_with_unstripped_repack_marker": 192,
+  "artifacts": 89587,
+  "artifacts_by_kind": {
+    "patch": 124,
+    "signature": 1638,
+    "tarball": 87825
+  },
+  "artifacts_by_role": {
+    "component": 2558,
+    "packaging": 42262,
+    "primary": 43129,
+    "signature": 1638
+  },
+  "hash_algorithms": {
+    "md5": 89587,
+    "sha256": 89587
+  },
+  "resolution": {
+    "resolved": 43129
+  },
+  "failures": {}
+}

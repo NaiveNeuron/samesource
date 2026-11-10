@@ -1,0 +1,482 @@
+{
+  "schema": "pkgbridge-scale-names/1",
+  "pairs_in_groups_by_name_relation": {
+    "deb-ebuild": {
+      "same_name": 2416,
+      "different_name": 1601,
+      "same_after_ecosystem_prefix": 626
+    },
+    "deb-pkgbuild": {
+      "same_name": 1553,
+      "same_after_ecosystem_prefix": 83,
+      "different_name": 598
+    },
+    "deb-rpm": {
+      "same_name": 3162,
+      "different_name": 1227,
+      "same_after_ecosystem_prefix": 527
+    },
+    "ebuild-pkgbuild": {
+      "same_name": 1671,
+      "different_name": 300,
+      "same_after_ecosystem_prefix": 1116
+    },
+    "ebuild-rpm": {
+      "same_name": 2348,
+      "same_after_ecosystem_prefix": 1922,
+      "different_name": 1015
+    },
+    "pkgbuild-rpm": {
+      "same_name": 1702,
+      "different_name": 277,
+      "same_after_ecosystem_prefix": 397
+    }
+  },
+  "different_name_examples": {
+    "deb-ebuild": [
+      [
+        "deb:libacme-damn-perl@0.09-1",
+        "ebuild:dev-perl/Acme-Damn@0.90.0"
+      ],
+      [
+        "deb:libbusiness-ismn-perl@1.205-1",
+        "ebuild:dev-perl/Business-ISMN@1.205.0"
+      ],
+      [
+        "deb:libtest-base-perl@0.89-3",
+        "ebuild:dev-perl/Test-Base@0.890.0"
+      ],
+      [
+        "deb:libcpan-mini-perl@1.111017-1",
+        "ebuild:dev-perl/CPAN-Mini@1.111.17"
+      ],
+      [
+        "deb:libsnowball-norwegian-perl@1.2-4",
+        "ebuild:dev-perl/Snowball-Norwegian@1.200.0-r2"
+      ],
+      [
+        "deb:libtext-kakasi-perl@2.04-6",
+        "ebuild:dev-perl/Text-Kakasi@2.40.0-r3"
+      ],
+      [
+        "deb:libapache-session-perl@1.94-2",
+        "ebuild:dev-perl/Apache-Session@1.940.0"
+      ],
+      [
+        "deb:libfile-sharedir-install-perl@0.14-2",
+        "ebuild:dev-perl/File-ShareDir-Install@0.140.0"
+      ],
+      [
+        "deb:libdata-structure-util-perl@0.16-2",
+        "ebuild:dev-perl/Data-Structure-Util@0.160.0-r2"
+      ],
+      [
+        "deb:libalien-sdl-perl@1.446-5",
+        "ebuild:dev-perl/Alien-SDL@1.446.0-r1"
+      ],
+      [
+        "deb:libhtml-template-perl@2.97-2",
+        "ebuild:dev-perl/HTML-Template@2.970.0-r1"
+      ],
+      [
+        "deb:libstring-errf-perl@0.009-1",
+        "ebuild:dev-perl/String-Errf@0.9.0-r1"
+      ],
+      [
+        "deb:libgetopt-argvfile-perl@1.11-5",
+        "ebuild:dev-perl/Getopt-ArgvFile@1.110.0-r3"
+      ],
+      [
+        "deb:libwww-shorten-perl@3.094-2",
+        "ebuild:dev-perl/WWW-Shorten@3.94.0"
+      ],
+      [
+        "deb:libdist-zilla-config-slicer-perl@0.202-1",
+        "ebuild:dev-perl/Dist-Zilla-Config-Slicer@0.202.0-r1"
+      ]
+    ],
+    "deb-rpm": [
+      [
+        "deb:imath@3.2.3-5",
+        "rpm:mingw-imath@3.2.3-1.fc46"
+      ],
+      [
+        "deb:libnet-ip-minimal-perl@0.06-2",
+        "rpm:perl-Net-IP-Minimal@0.06-34.fc45"
+      ],
+      [
+        "deb:libtest-tcp-perl@2.22-2",
+        "rpm:perl-Test-TCP@2.22-20.fc45"
+      ],
+      [
+        "deb:libtext-patch-perl@1.8-3",
+        "rpm:perl-Text-Patch@1.8-42.fc45"
+      ],
+      [
+        "deb:libhttp-parser-xs-perl@0.18-1",
+        "rpm:perl-HTTP-Parser-XS@0.18-1.fc46"
+      ],
+      [
+        "deb:libclass-tiny-perl@1.008-2",
+        "rpm:perl-Class-Tiny@1.008-16.fc45"
+      ],
+      [
+        "deb:gtk+3.0@3.24.52-3",
+        "rpm:mingw-gtk3@3.24.52-3.fc45"
+      ],
+      [
+        "deb:libstrictures-perl@2.000006-1",
+        "rpm:perl-strictures@2.000006-24.fc45"
+      ],
+      [
+        "deb:libnet-dbus-glib-perl@0.33.0-4",
+        "rpm:perl-Net-DBus-GLib@0.33.0-54.fc45"
+      ],
+      [
+        "deb:libdbix-introspector-perl@0.001005-2",
+        "rpm:perl-DBIx-Introspector@0.001005-21.fc45"
+      ],
+      [
+        "deb:libtest-perl-critic-perl@1.04-3",
+        "rpm:perl-Test-Perl-Critic@1.04-27.fc45"
+      ],
+      [
+        "deb:libmoosex-types-perl@0.51-4",
+        "rpm:perl-MooseX-Types@0.51-4.fc45"
+      ],
+      [
+        "deb:libmodule-info-perl@0.39-1",
+        "rpm:perl-Module-Info@0.39-5.fc45"
+      ],
+      [
+        "deb:libauthen-ntlm-perl@1.09-2",
+        "rpm:perl-NTLM@1.09-43.fc45"
+      ],
+      [
+        "deb:libauthen-radius-perl@0.37-1",
+        "rpm:perl-Authen-Radius@0.37-2.fc45"
+      ]
+    ],
+    "pkgbuild-rpm": [
+      [
+        "pkgbuild:phonon-vlc@0.12.0-6",
+        "rpm:phonon-backend-vlc@0.12.0-9.fc45"
+      ],
+      [
+        "pkgbuild:haskell-gi-overloading@1.0-5",
+        "rpm:ghc-haskell-gi-overloading@1:1.0-42.fc45"
+      ],
+      [
+        "pkgbuild:xorg-xmodmap@1.0.12-1",
+        "rpm:xmodmap@1.0.12-4.fc45"
+      ],
+      [
+        "pkgbuild:freetype2@2.15.0-1",
+        "rpm:mingw-freetype@2.15.0-1.fc46"
+      ],
+      [
+        "pkgbuild:kwindowsystem@6.31.0-1",
+        "rpm:kf6-kwindowsystem@6.31.0-2.fc46"
+      ],
+      [
+        "pkgbuild:kdbusaddons@6.31.0-1",
+        "rpm:kf6-kdbusaddons@6.31.0-2.fc46"
+      ],
+      [
+        "pkgbuild:qca@2.3.12-1",
+        "rpm:mingw-qca@2.3.12-1.fc46"
+      ],
+      [
+        "pkgbuild:ttf-arphic-ukai@0.2.20080216.2-3",
+        "rpm:cjkuni-ukai-fonts@0.2.20080216.2-11.fc45"
+      ],
+      [
+        "pkgbuild:kfilemetadata@6.31.0-1",
+        "rpm:kf6-kfilemetadata@6.31.0-1.fc46"
+      ],
+      [
+        "pkgbuild:kconfigwidgets@6.31.0-1",
+        "rpm:kf6-kconfigwidgets@6.31.0-2.fc46"
+      ],
+      [
+        "pkgbuild:haskell-src-exts-util@0.2.5-496",
+        "rpm:ghc-haskell-src-exts-util@0.2.5-30.fc45"
+      ],
+      [
+        "pkgbuild:linuxconsole@1.8.1-3",
+        "rpm:linuxconsoletools@1.8.1-12.fc45"
+      ],
+      [
+        "pkgbuild:icu@78.3-1",
+        "rpm:mingw-icu@78.3-2.fc45"
+      ],
+      [
+        "pkgbuild:kidletime@6.31.0-1",
+        "rpm:kf6-kidletime@6.31.0-1.fc46"
+      ],
+      [
+        "pkgbuild:kded@6.31.0-1",
+        "rpm:kf6-kded@6.31.0-1.fc46"
+      ]
+    ],
+    "ebuild-rpm": [
+      [
+        "ebuild:dev-php/libvirt-php@0.5.8-r2",
+        "rpm:php-libvirt@0.5.8-7.fc46"
+      ],
+      [
+        "ebuild:media-libs/gegl@0.4.72",
+        "rpm:gegl04@0.4.72-4.fc46"
+      ],
+      [
+        "ebuild:dev-lang/python@0.3.14.10",
+        "rpm:mingw-python3@3.14.10-1.fc46"
+      ],
+      [
+        "ebuild:dev-python/python-tests@3.14.10",
+        "rpm:python3.14@3.14.10-1.fc46"
+      ],
+      [
+        "ebuild:www-nginx/ngx-vts@0.2.7",
+        "rpm:nginx-mod-vts@0.2.7-1.fc45"
+      ],
+      [
+        "ebuild:dev-util/hipify-clang@7.2.0",
+        "rpm:hipify7.2@7.2.0-2.fc45"
+      ],
+      [
+        "ebuild:app-text/dvipsk@2026.03.01_p77830",
+        "rpm:texlive-base@12:20260301-113.fc45"
+      ],
+      [
+        "ebuild:media-sound/mpg123-base@1.33.6",
+        "rpm:mpg123@1.33.6-3.fc45"
+      ],
+      [
+        "ebuild:app-crypt/asekey@3.7-r1",
+        "rpm:pcsc-lite-asekey@3.7-30.fc45"
+      ],
+      [
+        "ebuild:dev-cpp/libxmlpp@2.42.3",
+        "rpm:libxml++@2.42.3-10.fc46"
+      ],
+      [
+        "ebuild:dev-java/stringprep@2.4",
+        "rpm:ongres-stringprep@2.4-2.fc45"
+      ],
+      [
+        "ebuild:sys-apps/arch-chroot@31",
+        "rpm:arch-install-scripts@31-4.fc45"
+      ],
+      [
+        "ebuild:dev-java/jaxb-api@2.3.3-r2",
+        "rpm:jaxb-api2@2.3.3-22.fc45"
+      ],
+      [
+        "ebuild:dev-texlive/texlive-fontsrecommended@2024_p54074",
+        "rpm:texlive-collection-fontsrecommended@12:svn54074-9.fc45"
+      ],
+      [
+        "ebuild:dev-libs/tree-sitter-tsx@0.23.2",
+        "rpm:tree-sitter-typescript@0.23.2-7.fc45"
+      ]
+    ],
+    "deb-pkgbuild": [
+      [
+        "deb:libarchive-zip-perl@1.68-1",
+        "pkgbuild:perl-archive-zip@1.68-12"
+      ],
+      [
+        "deb:libexporter-tiny-perl@1.006003-1",
+        "pkgbuild:perl-exporter-tiny@1.006003-1"
+      ],
+      [
+        "deb:threadweaver@5.116.0-2",
+        "pkgbuild:threadweaver5@5.116.0-2"
+      ],
+      [
+        "deb:joystick@1:1.8.1-2",
+        "pkgbuild:linuxconsole@1.8.1-3"
+      ],
+      [
+        "deb:libnet-dns-resolver-programmable-perl@0.009-2",
+        "pkgbuild:perl-net-dns-resolver-programmable@0.009-13"
+      ],
+      [
+        "deb:libtest-exception-perl@0.43-3",
+        "pkgbuild:perl-test-exception@0.43-13"
+      ],
+      [
+        "deb:libx11-protocol-other-perl@31-1",
+        "pkgbuild:perl-x11-protocol-other@31-6"
+      ],
+      [
+        "deb:libimport-into-perl@1.002005-2",
+        "pkgbuild:perl-import-into@1.002005-14"
+      ],
+      [
+        "deb:libcolor-calc-perl@1.074-3",
+        "pkgbuild:perl-color-calc@1.074-14"
+      ],
+      [
+        "deb:kitemviews@5.116.0-1",
+        "pkgbuild:kitemviews5@5.116.0-2"
+      ],
+      [
+        "deb:libcrypt-openssl-dsa-perl@0.20-3",
+        "pkgbuild:perl-crypt-openssl-dsa@0.20-9"
+      ],
+      [
+        "deb:ms-gsl@5.0.1-1",
+        "pkgbuild:microsoft-gsl@5.0.1-1"
+      ],
+      [
+        "deb:libxml-regexp-perl@0.04-2",
+        "pkgbuild:perl-xml-regexp@0.04-6"
+      ],
+      [
+        "deb:libshell-guess-perl@0.10-1",
+        "pkgbuild:perl-shell-guess@0.10-3"
+      ],
+      [
+        "deb:libtest-failwarnings-perl@0.8-4",
+        "pkgbuild:perl-test-failwarnings@0.008-11"
+      ]
+    ],
+    "ebuild-pkgbuild": [
+      [
+        "ebuild:x11-apps/xkbevd@1.1.6",
+        "pkgbuild:xorg-xkbevd@1.1.6-1"
+      ],
+      [
+        "ebuild:dev-python/python-multipart@0.0.33",
+        "pkgbuild:python-python-multipart@0.0.33-1"
+      ],
+      [
+        "ebuild:sys-libs/binutils-libs@2.47",
+        "pkgbuild:riscv64-linux-gnu-binutils@2.47-1"
+      ],
+      [
+        "ebuild:llvm-core/mlir@23.1.4",
+        "pkgbuild:llvm@23.1.4-1"
+      ],
+      [
+        "ebuild:media-fonts/ja-ipafonts@003.03",
+        "pkgbuild:otf-ipafont@003.03-9"
+      ],
+      [
+        "ebuild:media-fonts/source-code-pro@2.042-r1",
+        "pkgbuild:adobe-source-code-pro-fonts@2.042u+1.062i+1.026vf-2"
+      ],
+      [
+        "ebuild:dev-debug/gdb@18.1-r2",
+        "pkgbuild:riscv64-elf-gdb@18.1-1"
+      ],
+      [
+        "ebuild:llvm-runtimes/compiler-rt@22.1.8",
+        "pkgbuild:llvm22@22.1.8-2"
+      ],
+      [
+        "ebuild:dev-debug/gdb@17.1",
+        "pkgbuild:or1k-elf-gdb@17.1-2"
+      ],
+      [
+        "ebuild:llvm-runtimes/libunwind@23.1.4-r1",
+        "pkgbuild:llvm@23.1.4-1"
+      ],
+      [
+        "ebuild:dev-util/mingw64-toolchain@14.0.0",
+        "pkgbuild:mingw-w64-headers@14.0.0-1"
+      ],
+      [
+        "ebuild:dev-python/lit@22.1.8",
+        "pkgbuild:llvm22@22.1.8-2"
+      ],
+      [
+        "ebuild:app-backup/borgbackup@1.4.5",
+        "pkgbuild:borg@1.4.5-1"
+      ],
+      [
+        "ebuild:dev-util/mingw64-toolchain@14.0.0",
+        "pkgbuild:mingw-w64-crt@14.0.0-1"
+      ],
+      [
+        "ebuild:dev-lang/pypy3-exe@3.12.8.0.1",
+        "pkgbuild:pypy3@8.0.1-1"
+      ]
+    ]
+  },
+  "seed_regression": [
+    {
+      "program": "ffmpeg",
+      "family": "nix",
+      "verdict": "different_software",
+      "evidence": [
+        "provenance path pkgs/development/ocaml-modules/ffmpeg/default.nix",
+        "nixpkgs/ffmpeg/default.nix:35 description = \"Bindings for the ffmpeg libraries\""
+      ],
+      "found_by": "construct-crosswalk-audit.json",
+      "result": "family not in scaled dataset (Nix)"
+    },
+    {
+      "program": "gnuplot",
+      "family": "nix",
+      "verdict": "different_software",
+      "evidence": [
+        "provenance path pkgs/development/ocaml-modules/gnuplot/default.nix",
+        "nixpkgs/gnuplot/default.nix:27 description = \"OCaml bindings to Gnuplot\""
+      ],
+      "found_by": "provenance path",
+      "result": "family not in scaled dataset (Nix)"
+    },
+    {
+      "program": "iperf3",
+      "family": "nix",
+      "verdict": "different_software",
+      "evidence": [
+        "provenance path pkgs/development/python-modules/iperf3/default.nix",
+        "nixpkgs/iperf3/default.nix:29 description = \"Python wrapper around iperf3\""
+      ],
+      "found_by": "provenance path",
+      "result": "family not in scaled dataset (Nix)"
+    },
+    {
+      "program": "helm",
+      "family": "deb",
+      "verdict": "different_software",
+      "evidence": [
+        "deb/helm/control:8 Homepage: https://emacs-helm.github.io/helm/ (Emacs completion framework)",
+        "rpm/helm spec:7 goipath helm.sh/helm/v4 (Kubernetes Helm, as in Arch and Gentoo)"
+      ],
+      "found_by": "build-tooling disagreement",
+      "records_in_family": [
+        "deb:helm@4.0.9-1"
+      ],
+      "byte_linked_to_same_name_elsewhere": false
+    },
+    {
+      "program": "helm",
+      "family": "nix",
+      "verdict": "different_software",
+      "evidence": [
+        "nixpkgs/helm/default.nix:77 description = \"Free, cross-platform, polyphonic synthesizer\""
+      ],
+      "found_by": "build-tooling disagreement",
+      "result": "family not in scaled dataset (Nix)"
+    },
+    {
+      "program": "yq",
+      "family": "rpm",
+      "verdict": "different_software",
+      "evidence": [
+        "rpm/yq spec:5 goipath github.com/mikefarah/yq/v4 (Go yq)",
+        "deb/yq/control:8 Homepage: https://github.com/kislyuk/yq (Python yq, as in Arch, Gentoo and Nix)"
+      ],
+      "found_by": "build-tooling disagreement",
+      "records_in_family": [
+        "rpm:yq@4.53.3-2.fc45"
+      ],
+      "byte_linked_to_same_name_elsewhere": false
+    }
+  ]
+}

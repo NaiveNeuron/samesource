@@ -1,0 +1,31 @@
+{
+  "schema": "pkgbridge-identity-adjudication/1",
+  "date": "2026-11-05",
+  "scope": "Not exhaustive. Candidates came from the five-entry construct audit, upstream paths in provenance.json (Nix language-binding directories), and build-tooling disagreements in build-tooling.json. Each verdict cites literal recipe lines in the rebuilt corpus.",
+  "rejected_joins": [
+    {"program": "ffmpeg", "family": "nix", "verdict": "different_software",
+     "evidence": ["provenance path pkgs/development/ocaml-modules/ffmpeg/default.nix",
+                  "nixpkgs/ffmpeg/default.nix:35 description = \"Bindings for the ffmpeg libraries\""],
+     "found_by": "construct-crosswalk-audit.json"},
+    {"program": "gnuplot", "family": "nix", "verdict": "different_software",
+     "evidence": ["provenance path pkgs/development/ocaml-modules/gnuplot/default.nix",
+                  "nixpkgs/gnuplot/default.nix:27 description = \"OCaml bindings to Gnuplot\""],
+     "found_by": "provenance path"},
+    {"program": "iperf3", "family": "nix", "verdict": "different_software",
+     "evidence": ["provenance path pkgs/development/python-modules/iperf3/default.nix",
+                  "nixpkgs/iperf3/default.nix:29 description = \"Python wrapper around iperf3\""],
+     "found_by": "provenance path"},
+    {"program": "helm", "family": "deb", "verdict": "different_software",
+     "evidence": ["deb/helm/control:8 Homepage: https://emacs-helm.github.io/helm/ (Emacs completion framework)",
+                  "rpm/helm spec:7 goipath helm.sh/helm/v4 (Kubernetes Helm, as in Arch and Gentoo)"],
+     "found_by": "build-tooling disagreement"},
+    {"program": "helm", "family": "nix", "verdict": "different_software",
+     "evidence": ["nixpkgs/helm/default.nix:77 description = \"Free, cross-platform, polyphonic synthesizer\""],
+     "found_by": "build-tooling disagreement"},
+    {"program": "yq", "family": "rpm", "verdict": "different_software",
+     "evidence": ["rpm/yq spec:5 goipath github.com/mikefarah/yq/v4 (Go yq)",
+                  "deb/yq/control:8 Homepage: https://github.com/kislyuk/yq (Python yq, as in Arch, Gentoo and Nix)"],
+     "found_by": "build-tooling disagreement"}
+  ],
+  "affected_programs": ["ffmpeg", "gnuplot", "helm", "iperf3", "yq"]
+}

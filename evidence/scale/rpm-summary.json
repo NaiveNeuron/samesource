@@ -1,0 +1,57 @@
+{
+  "artifacts": 36334,
+  "artifacts_by_kind": {
+    "crate": 3387,
+    "file": 568,
+    "gem": 392,
+    "other": 172,
+    "patch": 81,
+    "signature": 884,
+    "tarball": 30212,
+    "zip": 638
+  },
+  "artifacts_by_role": {
+    "component": 890,
+    "patch_bundle": 88,
+    "primary": 22956,
+    "signature": 884,
+    "unknown": 11182,
+    "vendor_bundle": 334
+  },
+  "binary_packages": "null in every record: the compose source repodata does not list binary RPM names",
+  "collector": "scripts/scale/extract_rpm.py@a8cbf01",
+  "duplicate_ids": [],
+  "failures_by_category": {},
+  "family": "rpm",
+  "hash_algorithms": {
+    "md5": 2564,
+    "sha512": 33770
+  },
+  "inputs": {
+    "distgit": "https://src.fedoraproject.org",
+    "fedora_primary": "frame/fedora-primary.xml.zst",
+    "fedora_primary_sha256": "906b5e8540c385aa2963f2707bc790c6ba61cded19fbdc53f63f5873a68c7ab2",
+    "koji_hub": "https://koji.fedoraproject.org/kojihub",
+    "raw_cache": "~/.cache/pkgbridge/scale/raw/rpm"
+  },
+  "pinned_by_koji_commit": 23145,
+  "records": 23145,
+  "records_with_artifacts": 23019,
+  "records_with_primary": 22956,
+  "resolution": {
+    "resolved": 23145
+  },
+  "role_rule_notes": [
+    "signature = .asc/.sig/.sign/.gpg/.pgp suffix or a non-archive keyring file",
+    "rust-<crate> packages: the .crate whose name matches the package is primary (the upstream-version one if several); other crates unknown (rust-*) or vendor_bundle",
+    "vendor_bundle = archive filename contains vendor / crate(s) / -nm-prod|-nm-dev / node_modules",
+    "primary otherwise = best-evidenced non-signature, non-vendor, non-patch archive in the dist-git sources file, ranked by: filename contains upstream version, contains a package-name stem, lacks auxiliary marker (docs/data/tests...), then file position (not spec Source index)",
+    "other archives: component if the filename carries the package name or upstream version, else unknown",
+    "lookaside URLs are the Fedora lookaside cache locations derived from the declared digest"
+  ],
+  "schema": "pkgbridge-scale-summary/1",
+  "sources_file_state": {
+    "absent": 126,
+    "present": 23019
+  }
+}

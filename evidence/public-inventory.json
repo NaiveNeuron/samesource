@@ -1,0 +1,884 @@
+{
+  "source_repository": "https://github.com/Aethelsirius/pkgbridge",
+  "source_commit": "1a8ba8a2f0e914756cb76c1274d338db7ed55266",
+  "tracked_worktree_changes": [],
+  "audit_scope": "Static inventory and execution of the existing Nix text parser; no model calls, builds, installations, or functional validation.",
+  "catalog": {
+    "entries": 130,
+    "unique_names": 130,
+    "fields": [
+      "deb",
+      "ebuild",
+      "name",
+      "nix",
+      "pkgbuild",
+      "rpm"
+    ]
+  },
+  "formats": {
+    "deb": {
+      "directory": "dataset/deb",
+      "package_bundles": 130,
+      "recipe_files": 390,
+      "missing_catalog_packages": [],
+      "extra_packages": []
+    },
+    "rpm": {
+      "directory": "dataset/rpm",
+      "package_bundles": 130,
+      "recipe_files": 130,
+      "missing_catalog_packages": [],
+      "extra_packages": []
+    },
+    "pkgbuild": {
+      "directory": "dataset/pkgbuild",
+      "package_bundles": 130,
+      "recipe_files": 130,
+      "missing_catalog_packages": [],
+      "extra_packages": []
+    },
+    "ebuild": {
+      "directory": "dataset/ebuild",
+      "package_bundles": 130,
+      "recipe_files": 130,
+      "missing_catalog_packages": [],
+      "extra_packages": []
+    },
+    "nix": {
+      "directory": "dataset/nixpkgs",
+      "package_bundles": 130,
+      "recipe_files": 130,
+      "missing_catalog_packages": [],
+      "extra_packages": []
+    }
+  },
+  "total_recipe_bundles": 650,
+  "total_recipe_files": 910,
+  "benchmark_assignments": {
+    "count": 130,
+    "distinct_packages": 130,
+    "directions": 20,
+    "direction_counts": {
+      "deb->ebuild": 4,
+      "deb->nix": 8,
+      "deb->pkgbuild": 7,
+      "deb->rpm": 7,
+      "ebuild->deb": 7,
+      "ebuild->nix": 8,
+      "ebuild->pkgbuild": 7,
+      "ebuild->rpm": 7,
+      "nix->deb": 7,
+      "nix->ebuild": 4,
+      "nix->pkgbuild": 7,
+      "nix->rpm": 7,
+      "pkgbuild->deb": 7,
+      "pkgbuild->ebuild": 4,
+      "pkgbuild->nix": 7,
+      "pkgbuild->rpm": 7,
+      "rpm->deb": 7,
+      "rpm->ebuild": 4,
+      "rpm->nix": 7,
+      "rpm->pkgbuild": 7
+    },
+    "multiply_assigned_packages": [],
+    "unassigned_catalog_packages": [],
+    "assignments": [
+      {
+        "package": "lynx",
+        "source": "deb",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "isync",
+        "source": "deb",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "glances",
+        "source": "deb",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "podman",
+        "source": "deb",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "btop",
+        "source": "deb",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "iotop-c",
+        "source": "deb",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "lsd",
+        "source": "deb",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "htop",
+        "source": "deb",
+        "target": "rpm"
+      },
+      {
+        "package": "pgcli",
+        "source": "deb",
+        "target": "rpm"
+      },
+      {
+        "package": "cabextract",
+        "source": "deb",
+        "target": "rpm"
+      },
+      {
+        "package": "fzf",
+        "source": "deb",
+        "target": "rpm"
+      },
+      {
+        "package": "ncdu",
+        "source": "deb",
+        "target": "rpm"
+      },
+      {
+        "package": "fdupes",
+        "source": "deb",
+        "target": "rpm"
+      },
+      {
+        "package": "plocate",
+        "source": "deb",
+        "target": "rpm"
+      },
+      {
+        "package": "fastfetch",
+        "source": "ebuild",
+        "target": "deb"
+      },
+      {
+        "package": "duf",
+        "source": "ebuild",
+        "target": "deb"
+      },
+      {
+        "package": "stow",
+        "source": "ebuild",
+        "target": "deb"
+      },
+      {
+        "package": "ranger",
+        "source": "ebuild",
+        "target": "deb"
+      },
+      {
+        "package": "sccache",
+        "source": "ebuild",
+        "target": "deb"
+      },
+      {
+        "package": "lnav",
+        "source": "ebuild",
+        "target": "deb"
+      },
+      {
+        "package": "sysstat",
+        "source": "ebuild",
+        "target": "deb"
+      },
+      {
+        "package": "alacritty",
+        "source": "ebuild",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "gnuplot",
+        "source": "ebuild",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "httpie",
+        "source": "ebuild",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "syncthing",
+        "source": "ebuild",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "cloc",
+        "source": "ebuild",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "just",
+        "source": "ebuild",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "cscope",
+        "source": "ebuild",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "hugo",
+        "source": "ebuild",
+        "target": "rpm"
+      },
+      {
+        "package": "hyperfine",
+        "source": "ebuild",
+        "target": "rpm"
+      },
+      {
+        "package": "ncmpc",
+        "source": "ebuild",
+        "target": "rpm"
+      },
+      {
+        "package": "i2c-tools",
+        "source": "ebuild",
+        "target": "rpm"
+      },
+      {
+        "package": "colordiff",
+        "source": "ebuild",
+        "target": "rpm"
+      },
+      {
+        "package": "autojump",
+        "source": "ebuild",
+        "target": "rpm"
+      },
+      {
+        "package": "neovim",
+        "source": "ebuild",
+        "target": "rpm"
+      },
+      {
+        "package": "micro",
+        "source": "nix",
+        "target": "deb"
+      },
+      {
+        "package": "vifm",
+        "source": "nix",
+        "target": "deb"
+      },
+      {
+        "package": "inkscape",
+        "source": "nix",
+        "target": "deb"
+      },
+      {
+        "package": "ffmpeg",
+        "source": "nix",
+        "target": "deb"
+      },
+      {
+        "package": "keychain",
+        "source": "nix",
+        "target": "deb"
+      },
+      {
+        "package": "pinfo",
+        "source": "nix",
+        "target": "deb"
+      },
+      {
+        "package": "jq",
+        "source": "nix",
+        "target": "deb"
+      },
+      {
+        "package": "rclone",
+        "source": "nix",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "hunspell",
+        "source": "nix",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "gimp",
+        "source": "nix",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "w3m",
+        "source": "nix",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "git-lfs",
+        "source": "nix",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "nmap",
+        "source": "nix",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "lm-sensors",
+        "source": "nix",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "atuin",
+        "source": "nix",
+        "target": "rpm"
+      },
+      {
+        "package": "obs-studio",
+        "source": "nix",
+        "target": "rpm"
+      },
+      {
+        "package": "beets",
+        "source": "nix",
+        "target": "rpm"
+      },
+      {
+        "package": "helm",
+        "source": "nix",
+        "target": "rpm"
+      },
+      {
+        "package": "strace",
+        "source": "nix",
+        "target": "rpm"
+      },
+      {
+        "package": "thunderbird",
+        "source": "nix",
+        "target": "rpm"
+      },
+      {
+        "package": "pre-commit",
+        "source": "nix",
+        "target": "rpm"
+      },
+      {
+        "package": "jdupes",
+        "source": "pkgbuild",
+        "target": "deb"
+      },
+      {
+        "package": "bmon",
+        "source": "pkgbuild",
+        "target": "deb"
+      },
+      {
+        "package": "fswatch",
+        "source": "pkgbuild",
+        "target": "deb"
+      },
+      {
+        "package": "valgrind",
+        "source": "pkgbuild",
+        "target": "deb"
+      },
+      {
+        "package": "dust",
+        "source": "pkgbuild",
+        "target": "deb"
+      },
+      {
+        "package": "pass",
+        "source": "pkgbuild",
+        "target": "deb"
+      },
+      {
+        "package": "elinks",
+        "source": "pkgbuild",
+        "target": "deb"
+      },
+      {
+        "package": "parallel",
+        "source": "pkgbuild",
+        "target": "nix"
+      },
+      {
+        "package": "calcurse",
+        "source": "pkgbuild",
+        "target": "nix"
+      },
+      {
+        "package": "kitty",
+        "source": "pkgbuild",
+        "target": "nix"
+      },
+      {
+        "package": "ripgrep",
+        "source": "pkgbuild",
+        "target": "nix"
+      },
+      {
+        "package": "sshpass",
+        "source": "pkgbuild",
+        "target": "nix"
+      },
+      {
+        "package": "powertop",
+        "source": "pkgbuild",
+        "target": "nix"
+      },
+      {
+        "package": "tmux",
+        "source": "pkgbuild",
+        "target": "nix"
+      },
+      {
+        "package": "ncmpcpp",
+        "source": "pkgbuild",
+        "target": "rpm"
+      },
+      {
+        "package": "geary",
+        "source": "pkgbuild",
+        "target": "rpm"
+      },
+      {
+        "package": "ccache",
+        "source": "pkgbuild",
+        "target": "rpm"
+      },
+      {
+        "package": "lzop",
+        "source": "pkgbuild",
+        "target": "rpm"
+      },
+      {
+        "package": "trash-cli",
+        "source": "pkgbuild",
+        "target": "rpm"
+      },
+      {
+        "package": "gh",
+        "source": "pkgbuild",
+        "target": "rpm"
+      },
+      {
+        "package": "irssi",
+        "source": "pkgbuild",
+        "target": "rpm"
+      },
+      {
+        "package": "chafa",
+        "source": "rpm",
+        "target": "deb"
+      },
+      {
+        "package": "fd",
+        "source": "rpm",
+        "target": "deb"
+      },
+      {
+        "package": "yq",
+        "source": "rpm",
+        "target": "deb"
+      },
+      {
+        "package": "mutt",
+        "source": "rpm",
+        "target": "deb"
+      },
+      {
+        "package": "pigz",
+        "source": "rpm",
+        "target": "deb"
+      },
+      {
+        "package": "screenfetch",
+        "source": "rpm",
+        "target": "deb"
+      },
+      {
+        "package": "fish",
+        "source": "rpm",
+        "target": "deb"
+      },
+      {
+        "package": "calibre",
+        "source": "rpm",
+        "target": "nix"
+      },
+      {
+        "package": "evince",
+        "source": "rpm",
+        "target": "nix"
+      },
+      {
+        "package": "restic",
+        "source": "rpm",
+        "target": "nix"
+      },
+      {
+        "package": "tig",
+        "source": "rpm",
+        "target": "nix"
+      },
+      {
+        "package": "most",
+        "source": "rpm",
+        "target": "nix"
+      },
+      {
+        "package": "zathura",
+        "source": "rpm",
+        "target": "nix"
+      },
+      {
+        "package": "yamllint",
+        "source": "rpm",
+        "target": "nix"
+      },
+      {
+        "package": "pv",
+        "source": "rpm",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "lzip",
+        "source": "rpm",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "mosh",
+        "source": "rpm",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "socat",
+        "source": "rpm",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "procs",
+        "source": "rpm",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "diffstat",
+        "source": "rpm",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "mpc",
+        "source": "rpm",
+        "target": "pkgbuild"
+      },
+      {
+        "package": "aria2",
+        "source": "deb",
+        "target": "ebuild"
+      },
+      {
+        "package": "progress",
+        "source": "deb",
+        "target": "ebuild"
+      },
+      {
+        "package": "sox",
+        "source": "deb",
+        "target": "ebuild"
+      },
+      {
+        "package": "ipmitool",
+        "source": "deb",
+        "target": "ebuild"
+      },
+      {
+        "package": "zoxide",
+        "source": "nix",
+        "target": "ebuild"
+      },
+      {
+        "package": "iftop",
+        "source": "nix",
+        "target": "ebuild"
+      },
+      {
+        "package": "rlwrap",
+        "source": "nix",
+        "target": "ebuild"
+      },
+      {
+        "package": "ccze",
+        "source": "nix",
+        "target": "ebuild"
+      },
+      {
+        "package": "zsh",
+        "source": "pkgbuild",
+        "target": "ebuild"
+      },
+      {
+        "package": "nnn",
+        "source": "pkgbuild",
+        "target": "ebuild"
+      },
+      {
+        "package": "age",
+        "source": "pkgbuild",
+        "target": "ebuild"
+      },
+      {
+        "package": "bat",
+        "source": "pkgbuild",
+        "target": "ebuild"
+      },
+      {
+        "package": "lftp",
+        "source": "rpm",
+        "target": "ebuild"
+      },
+      {
+        "package": "eza",
+        "source": "rpm",
+        "target": "ebuild"
+      },
+      {
+        "package": "asciinema",
+        "source": "rpm",
+        "target": "ebuild"
+      },
+      {
+        "package": "vlc",
+        "source": "rpm",
+        "target": "ebuild"
+      },
+      {
+        "package": "lsof",
+        "source": "deb",
+        "target": "nix"
+      },
+      {
+        "package": "entr",
+        "source": "deb",
+        "target": "nix"
+      },
+      {
+        "package": "borg",
+        "source": "deb",
+        "target": "nix"
+      },
+      {
+        "package": "nethogs",
+        "source": "deb",
+        "target": "nix"
+      },
+      {
+        "package": "git-delta",
+        "source": "deb",
+        "target": "nix"
+      },
+      {
+        "package": "mtr",
+        "source": "deb",
+        "target": "nix"
+      },
+      {
+        "package": "iperf3",
+        "source": "deb",
+        "target": "nix"
+      },
+      {
+        "package": "mediainfo",
+        "source": "deb",
+        "target": "nix"
+      },
+      {
+        "package": "hwinfo",
+        "source": "ebuild",
+        "target": "nix"
+      },
+      {
+        "package": "grc",
+        "source": "ebuild",
+        "target": "nix"
+      },
+      {
+        "package": "tcpdump",
+        "source": "ebuild",
+        "target": "nix"
+      },
+      {
+        "package": "pandoc",
+        "source": "ebuild",
+        "target": "nix"
+      },
+      {
+        "package": "shellcheck",
+        "source": "ebuild",
+        "target": "nix"
+      },
+      {
+        "package": "khard",
+        "source": "ebuild",
+        "target": "nix"
+      },
+      {
+        "package": "clamav",
+        "source": "ebuild",
+        "target": "nix"
+      },
+      {
+        "package": "qbittorrent",
+        "source": "ebuild",
+        "target": "nix"
+      }
+    ]
+  },
+  "oracle": {
+    "entries": 130,
+    "unique_names": 130,
+    "missing_catalog_packages": [],
+    "help_or_version_like_commands": 128,
+    "other_commands": [
+      {
+        "name": "entr",
+        "test_command": "entr 2>&1"
+      },
+      {
+        "name": "fish",
+        "test_command": "fish -c 'echo hello'"
+      }
+    ],
+    "interpretation": "Command-string classification only; similarity smoke tests do not establish behavioral equivalence."
+  },
+  "nix_parser": {
+    "files_attempted": 130,
+    "files_without_exception": 130,
+    "nonempty_fields": {
+      "name": 125,
+      "version": 124,
+      "sources": 117,
+      "description": 122,
+      "license": 107,
+      "functions": 130,
+      "variables": 0
+    },
+    "exceptions": [],
+    "catalog_name_differences": [
+      {
+        "catalog_name": "alacritty",
+        "extracted_name": "alacritty${lib.optionalString withGraphics \"-graphics\"}"
+      },
+      {
+        "catalog_name": "beets",
+        "extracted_name": ""
+      },
+      {
+        "catalog_name": "borg",
+        "extracted_name": "borgbackup"
+      },
+      {
+        "catalog_name": "ccache",
+        "extracted_name": "ccache-links"
+      },
+      {
+        "catalog_name": "dust",
+        "extracted_name": "du-dust"
+      },
+      {
+        "catalog_name": "git-delta",
+        "extracted_name": "delta"
+      },
+      {
+        "catalog_name": "htop",
+        "extracted_name": "htop\" + lib.optionalString withVimKeys \"-vim"
+      },
+      {
+        "catalog_name": "kitty",
+        "extracted_name": "kitty-go-modules"
+      },
+      {
+        "catalog_name": "mtr",
+        "extracted_name": "mtr${lib.optionalString withGtk \"-gui\"}"
+      },
+      {
+        "catalog_name": "pandoc",
+        "extracted_name": ""
+      },
+      {
+        "catalog_name": "pass",
+        "extracted_name": "password-store"
+      },
+      {
+        "catalog_name": "qbittorrent",
+        "extracted_name": "qbittorrent\" + lib.optionalString (!guiSupport) \"-nox"
+      },
+      {
+        "catalog_name": "syncthing",
+        "extracted_name": "stname"
+      },
+      {
+        "catalog_name": "thunderbird",
+        "extracted_name": ""
+      },
+      {
+        "catalog_name": "vifm",
+        "extracted_name": ""
+      },
+      {
+        "catalog_name": "vlc",
+        "extracted_name": "${optionalString onlyLibVLC \"lib\"}vlc"
+      },
+      {
+        "catalog_name": "zathura",
+        "extracted_name": ""
+      }
+    ],
+    "interpretation": "Field presence and exception counts measure extraction coverage, not correctness. Package aliases also produce legitimate name differences.",
+    "entr_example": {
+      "command": "python3 src/ir.py dataset/nixpkgs/entr/default.nix",
+      "output": {
+        "name": "entr",
+        "version": "5.8",
+        "description": "Run arbitrary commands when files change",
+        "url": "https://eradman.com/entrproject/",
+        "license": "isc",
+        "sources": [
+          "https://eradman.com/entrproject/code/entr-${finalAttrs.version}.tar.gz"
+        ],
+        "dependencies": {
+          "runtime": [],
+          "build": [],
+          "test": [],
+          "optional": []
+        },
+        "functions": {
+          "builder": "stdenv.mkDerivation"
+        },
+        "variables": null,
+        "source_format": "nix",
+        "source_file": "dataset/nixpkgs/entr/default.nix"
+      },
+      "unresolved_source_interpolation": true,
+      "source_contains_postPatch": true,
+      "output_contains_postPatch": false
+    }
+  },
+  "public_availability": {
+    "root_license_files": [],
+    "tracked_results_log": false,
+    "tracked_execution_logs": [],
+    "tracked_generated_outputs": [],
+    "gitignore": [
+      "__pycache__/",
+      ".venv/",
+      "input/",
+      "output/",
+      "completed/",
+      "repos/",
+      "results.log",
+      "logs/"
+    ]
+  }
+}

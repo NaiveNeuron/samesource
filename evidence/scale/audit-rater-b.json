@@ -1,0 +1,1445 @@
+{
+  "rater": "rater-b",
+  "items": [
+    {
+      "link": [
+        "deb:libopenobex@1.7.2-2.3#0",
+        "ebuild:dev-libs/openobex@1.7.2-r3#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the OpenOBEX 1.7.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:haskell-nanospec@0.2.2-7#0",
+        "ebuild:dev-haskell/nanospec@0.2.2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage nanospec 0.2.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libsys-hostname-long-perl@1.5-3#0",
+        "ebuild:dev-perl/Sys-Hostname-Long@1.500.0-r2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package CPAN Sys-Hostname-Long 1.5 as their own module; Gentoo 1.500.0 is version normalization, not a different release or dependency."
+    },
+    {
+      "link": [
+        "deb:usb-modeswitch@2.6.2-2#0",
+        "ebuild:sys-apps/usb_modeswitch@2.6.2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the usb-modeswitch 2.6.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libclass-accessor-lite-perl@0.08-3#0",
+        "ebuild:dev-perl/Class-Accessor-Lite@0.80.0-r2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package CPAN Class-Accessor-Lite 0.08 as their own module; Gentoo 0.80.0 is normalized from the same upstream release."
+    },
+    {
+      "link": [
+        "deb:sshpass@1.10-0.1#0",
+        "ebuild:net-misc/sshpass@1.10#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the sshpass 1.10 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:pcsc-lite@2.5.3-1#0",
+        "ebuild:sys-apps/pcsc-lite@2.5.3#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the pcsc-lite 2.5.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:ipcalc@0.51-1#0",
+        "ebuild:net-misc/ipcalc@0.51-r1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the kjokjo/ipcalc 0.51 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:autoconf@2.73-2#0",
+        "ebuild:app-emacs/autoconf-mode@2.73#0"
+      ],
+      "verdict": "component_or_split",
+      "reason": "Gentoo autoconf-mode selects only lib/emacs from the Autoconf 2.73 archive, whereas Debian autoconf packages the main Autoconf source (Gentoo commit ebeaca6e3863a586790123093406b52fb375810d)."
+    },
+    {
+      "link": [
+        "deb:kakasi@2.3.6-4.2#0",
+        "ebuild:app-i18n/kakasi@2.3.6-r2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the KAKASI 2.3.6 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libtest2-tools-explain-perl@0.02-2#0",
+        "ebuild:dev-perl/Test2-Tools-Explain@0.20.0-r1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package the standalone CPAN Test2-Tools-Explain 0.02 distribution; Gentoo 0.20.0 is normalized, not a component extracted from Test2 itself."
+    },
+    {
+      "link": [
+        "deb:xfce4-sensors-plugin@1.5.0-1#0",
+        "ebuild:xfce-extra/xfce4-sensors-plugin@1.5.0#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Xfce xfce4-sensors-plugin 1.5.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:catch@1.12.2-0.3#0",
+        "ebuild:dev-cpp/catch@1.12.2-r2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Debian catch and Gentoo dev-cpp/catch both use the Catch 1.12.2 framework release; its Catch2 repository URL does not make it a different product."
+    },
+    {
+      "link": [
+        "deb:patchutils@0.4.5-1#0",
+        "ebuild:dev-util/patchutils@0.4.5-r1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the patchutils 0.4.5 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:units@2.27-1#0",
+        "ebuild:sci-calculators/units@2.27#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the GNU Units 2.27 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libcpan-checksums-perl@2.14-2#0",
+        "ebuild:dev-perl/CPAN-Checksums@2.140.0#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN CPAN-Checksums 2.14 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:ocaml-csexp@1.5.2-4#0",
+        "ebuild:dev-ml/csexp@1.5.2-r1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the OCaml csexp 1.5.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libglib-perl@3:1.329.4-1#0",
+        "ebuild:dev-perl/glib-perl@1.329.400#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package the CPAN Glib Perl bindings release Glib-1.3294; Debian 1.329.4 and Gentoo 1.329.400 normalize that version rather than identifying the C GLib library."
+    },
+    {
+      "link": [
+        "deb:liblist-allutils-perl@0.19-1#0",
+        "ebuild:dev-perl/List-AllUtils@0.190.0-r1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN List-AllUtils 0.19 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:metapixel@1.0.2-13#0",
+        "ebuild:media-gfx/metapixel@1.0.2-r2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the metapixel 1.0.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libextutils-helpers-perl@0.028-1#0",
+        "ebuild:dev-perl/ExtUtils-Helpers@0.28.0#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN ExtUtils-Helpers 0.028 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:unidecode@1.4.0-2#0",
+        "ebuild:dev-python/unidecode@1.4.0#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Python Unidecode 1.4.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libhtml-packer-perl@2.110000-1#0",
+        "ebuild:dev-perl/HTML-Packer@2.110.0#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package CPAN HTML-Packer-2.11 as their main source; Debian 2.110000 and Gentoo 2.110.0 are version normalization."
+    },
+    {
+      "link": [
+        "deb:python-kgb@7.3-1#0",
+        "ebuild:dev-python/kgb@7.3#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Python kgb 7.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:sass-grass@0.13.4-6#0",
+        "ebuild:dev-lang/grass@0.13.4#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Debian sass-grass and Gentoo dev-lang/grass both build the connorskees/grass 0.13.4 Sass compiler, not the unrelated GRASS GIS product."
+    },
+    {
+      "link": [
+        "deb:mecab-naist-jdic@0.6.3.b-20111013-11#0",
+        "ebuild:app-dicts/mecab-naist-jdic@0.6.3b_p20111013-r1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package the standalone mecab-naist-jdic 0.6.3b-20111013 dictionary archive as their principal data product, not a split from a shared MeCab program archive."
+    },
+    {
+      "link": [
+        "deb:libperlio-via-timeout-perl@0.32-3#0",
+        "ebuild:dev-perl/PerlIO-via-Timeout@0.320.0-r1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN PerlIO-via-Timeout 0.32 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:prometheus-node-exporter@1.11.1-3#0",
+        "ebuild:app-metrics/node_exporter@1.11.1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Prometheus node_exporter 1.11.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libdist-zilla-plugin-config-git-perl@0.92-3#0",
+        "ebuild:dev-perl/Dist-Zilla-Plugin-Config-Git@0.920.0-r2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Dist-Zilla-Plugin-Config-Git 0.92 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:gkrellweather@2.0.8-3#0",
+        "ebuild:x11-plugins/gkrellweather@2.0.8-r2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the gkrellweather 2.0.8 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:haskell-tasty-hunit@0.10.2-2#0",
+        "pkgbuild:haskell-tasty-hunit@0.10.2-399#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage tasty-hunit 0.10.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:haskell-text-ansi@0.3.0.1-3#0",
+        "pkgbuild:haskell-text-ansi@0.3.0.1-137#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage text-ansi 0.3.0.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:haskell-bencode@0.6.1.1-5#0",
+        "pkgbuild:haskell-bencode@0.6.1.1-370#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage bencode 0.6.1.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:gts@0.7.6+darcs121130-5.2#0",
+        "pkgbuild:gts@0.7.6.121130-5#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package the GTS snapshot dated 121130; 0.7.6+darcs121130 and 0.7.6.121130 denote the same primary snapshot archive."
+    },
+    {
+      "link": [
+        "deb:libpackage-deprecationmanager-perl@0.18-1#0",
+        "pkgbuild:perl-package-deprecationmanager@0.18-6#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Package-DeprecationManager 0.18 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:haskell-integer-logarithms@1.0.4-1#0",
+        "pkgbuild:haskell-integer-logarithms@1.0.4-282#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage integer-logarithms 1.0.4 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:movit@1.7.2-1#0",
+        "pkgbuild:movit@1.7.2-2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Movit 1.7.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:labplot@2.12.1-6#0",
+        "pkgbuild:labplot@2.12.1-10#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the LabPlot 2.12.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:polymake@4.15-2#0",
+        "pkgbuild:polymake@4.15-15#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both build polymake 4.15 from its minimal source distribution; minimal is an upstream archive variant, not evidence of a different product or a vendored dependency."
+    },
+    {
+      "link": [
+        "deb:haskell-hspec-smallcheck@0.5.3-3#0",
+        "pkgbuild:haskell-hspec-smallcheck@0.5.3-212#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage hspec-smallcheck 0.5.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:haskell-hedgehog@1.5-1#0",
+        "pkgbuild:haskell-hedgehog@1.5-295#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage hedgehog 1.5 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libgwenhywfar@5.14.1-4#0",
+        "pkgbuild:gwenhywfar@5.14.1-3#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Debian libgwenhywfar and Arch gwenhywfar both use Gwenhywfar 5.14.1 as their main library source; the lib prefix is a packaging name difference."
+    },
+    {
+      "link": [
+        "deb:xl2tpd@1.3.20-1#0",
+        "pkgbuild:xl2tpd@1.3.20-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the xl2tpd 1.3.20 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:lximage-qt@2.4.0-1#0",
+        "pkgbuild:lximage-qt@2.4.0-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the LXImage-Qt 2.4.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:haskell-mueval@0.9.4-3#0",
+        "pkgbuild:haskell-mueval@0.9.4-154#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage mueval 0.9.4 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libtypes-serialiser-perl@1.01-1#0",
+        "pkgbuild:perl-types-serialiser@1.01-6#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Types-Serialiser 1.01 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:autossh@1.4g-1#0",
+        "pkgbuild:autossh@1.4g-4#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the autossh 1.4g upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:jnettop@0.13.0-5#0",
+        "pkgbuild:jnettop@0.13.0-10#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the jnettop 0.13.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:lxqt-sudo@2.4.0-1#0",
+        "pkgbuild:lxqt-sudo@2.4.0-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the LXQt sudo 2.4.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:barcode@0.99-9#0",
+        "pkgbuild:barcode@0.99-6#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the GNU Barcode 0.99 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:hidapi@0.15.0-2#0",
+        "pkgbuild:hidapi@0.15.0-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the hidapi 0.15.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:haskell-url@2.1.3-13#0",
+        "pkgbuild:haskell-url@2.1.3-335#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage url 2.1.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libextutils-cchecker-perl@0.12-1#0",
+        "pkgbuild:perl-extutils-cchecker@0.12-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN ExtUtils-CChecker 0.12 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libshell-command-perl@0.06-6#0",
+        "pkgbuild:perl-shell-command@0.06-9#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Shell-Command 0.06 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:xdp-tools@1.6.3-1#0",
+        "pkgbuild:xdp-tools@1.6.3-2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the xdp-tools 1.6.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:marknote@1.6.0-2#0",
+        "pkgbuild:marknote@1.6.0-2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the KDE Marknote 1.6.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libtest-pod-coverage-perl@1.10-3#0",
+        "pkgbuild:perl-test-pod-coverage@1.10-5#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Test-Pod-Coverage 1.10 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:pybind11@3.1.0-2#0",
+        "pkgbuild:pybind11@3.1.0-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the pybind11 3.1.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:python-zstandard@0.25.0-1#0",
+        "pkgbuild:python-zstandard@0.25.0-3#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both build indygreg/python-zstandard 0.25.0 itself from the GitHub archive; this link is not to a separately downloaded vendored zstd dependency."
+    },
+    {
+      "link": [
+        "deb:apksigcopier@1.1.1-1#0",
+        "pkgbuild:apksigcopier@1.1.1-5#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the apksigcopier 1.1.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:rust-serde-spanned@1.1.2-1#0",
+        "rpm:rust-serde_spanned@1.1.2-1.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package serde_spanned 1.1.2 as a standalone Rust crate; the Fedora .crate and Debian .orig archive represent its own primary source."
+    },
+    {
+      "link": [
+        "deb:kbounce@4:26.08.2-1#0",
+        "rpm:kbounce@26.08.2-1.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the KDE KBounce 26.08.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:rust-xkeysym@0.2.1-1#0",
+        "rpm:rust-xkeysym@0.2.1-6.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Rust xkeysym crate 0.2.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:rust-x11rb-protocol@0.13.2-1#0",
+        "rpm:rust-x11rb-protocol@0.13.2-3.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package the independently released x11rb-protocol 0.13.2 Rust crate, not a protocol component selected from a larger shared x11rb tarball."
+    },
+    {
+      "link": [
+        "deb:libgsm@1.0.24-1#0",
+        "rpm:mingw-gsm@1.0.24-1.fc45#0"
+      ],
+      "verdict": "component_or_split",
+      "reason": "Fedora mingw-gsm cross-builds GSM 1.0.24 for Windows with mingw32/mingw64 compilers, rather than Debian libgsm's native product (Fedora commit 192d12a50758cdd90ed5af4bd75c0fdf8c502582)."
+    },
+    {
+      "link": [
+        "deb:gnome-packagekit@43.0-4#0",
+        "rpm:gnome-packagekit@43.0-10.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the GNOME PackageKit 43.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:serd@0.32.10-2#0",
+        "rpm:serd@0.32.10-2.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Serd 0.32.10 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libmaxmind-db-reader-xs-perl@1.000009-2#0",
+        "rpm:perl-MaxMind-DB-Reader-XS@1.000009-18.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN MaxMind-DB-Reader-XS 1.000009 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:pitivi@2023.03-6#0",
+        "rpm:pitivi@2023.03-23.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Pitivi 2023.03 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libxml-perl@0.08-4#0",
+        "rpm:perl-libxml-perl@0.08-57.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN libxml-perl 0.08 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libconfig-general-perl@2.67-1#0",
+        "rpm:perl-Config-General@2.67-5.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Config-General 2.67 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:rust-python-pkginfo@0.6.8-2#0",
+        "rpm:rust-python-pkginfo@0.6.8-2.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package the Rust python-pkginfo 0.6.8 crate as their main source, not the unrelated Python pkginfo distribution."
+    },
+    {
+      "link": [
+        "deb:rust-atomic-waker@1.1.2-1#0",
+        "rpm:rust-atomic-waker@1.1.2-7.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Rust atomic-waker crate 1.1.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libcgi-compile-perl@0.27-1#0",
+        "rpm:perl-CGI-Compile@0.27-5.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN CGI-Compile 0.27 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:commonmark@0.9.2-1#0",
+        "rpm:python-CommonMark@0.9.2-1.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Debian commonmark and Fedora python-CommonMark both package the Python CommonMark 0.9.2 distribution as their main source."
+    },
+    {
+      "link": [
+        "deb:rust-stringprep@0.1.5-1#0",
+        "rpm:rust-stringprep@0.1.5-6.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Rust stringprep crate 0.1.5 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:haskell-split@0.2.5-2#0",
+        "rpm:ghc-split@0.2.5-8.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage split 0.2.5 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:objfw@1.5.7-1#0",
+        "rpm:mingw-objfw@1.5.7-2.fc45#0"
+      ],
+      "verdict": "component_or_split",
+      "reason": "Fedora mingw-objfw explicitly builds MinGW/UCRT Windows ports of ObjFW 1.5.7, unlike the native Debian package (Fedora commit 64bd56b89d3902dd21fba6d3738da23ef9902c80)."
+    },
+    {
+      "link": [
+        "deb:ideviceinstaller@1.2.0-1#0",
+        "rpm:ideviceinstaller@1.2.0-2.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the ideviceinstaller 1.2.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:haskell-ansi-wl-pprint@1.0.2-2#0",
+        "rpm:ghc-ansi-wl-pprint@1.0.2-8.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "The matched archive is ansi-wl-pprint-1.0.2, the Haskell library named by both packages; Fedora's additional archive does not change this archive's primary role."
+    },
+    {
+      "link": [
+        "deb:globus-gram-job-manager-condor@3.0-4#0",
+        "rpm:globus-gram-job-manager-condor@3.0-24.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package the separately released Globus GRAM Condor adapter 3.0 archive, rather than extracting different components from a larger Globus tarball."
+    },
+    {
+      "link": [
+        "deb:rust-test-assembler@0.1.6-1#0",
+        "rpm:rust-test-assembler@0.1.6-12.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Rust test-assembler crate 0.1.6 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:auto-complete-el@1.5.1-0.3#0",
+        "rpm:emacs-auto-complete@1.5.1-16.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Debian auto-complete-el and Fedora emacs-auto-complete both package the same standalone Emacs auto-complete 1.5.1 source."
+    },
+    {
+      "link": [
+        "deb:libnet-ip-perl@1.26-4#0",
+        "rpm:perl-Net-IP@1.26-38.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Net-IP 1.26 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:beautifulsoup4@4.15.0-1#0",
+        "rpm:python-beautifulsoup4@4.15.0-3.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Python Beautiful Soup 4.15.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:rust-bincode@2.0.1-1#0",
+        "rpm:rust-bincode@2.0.1-4.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Rust bincode crate 2.0.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:libevent-rpc-perl@1.11-1#0",
+        "rpm:perl-Event-RPC@1.11-4.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Event-RPC 1.11 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:alkimia@8.2.1-2#0",
+        "rpm:libalkimia@8.2.1-6.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Debian alkimia and Fedora libalkimia both build the Alkimia 8.2.1 source release; the lib prefix does not indicate a different upstream product."
+    },
+    {
+      "link": [
+        "deb:libtest-signature-perl@1.11-4#0",
+        "rpm:perl-Test-Signature@1.11-38.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Test-Signature 1.11 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "deb:sec@2.9.4-1#0",
+        "rpm:sec@2.9.4-2.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Simple Event Correlator 2.9.4 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:app-cdr/ccd2iso@0.3-r2#0",
+        "pkgbuild:ccd2iso@0.3-12#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the ccd2iso 0.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:media-libs/libsdl3@3.4.18#0",
+        "pkgbuild:sdl3@3.4.18-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Gentoo libsdl3 and Arch sdl3 both build the SDL3 3.4.18 release archive; the download host and lib prefix differ, not the product."
+    },
+    {
+      "link": [
+        "ebuild:dev-vcs/git-sizer@1.5.0#0",
+        "pkgbuild:git-sizer@1.5.0-3#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the GitHub git-sizer 1.5.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-util/mingw64-runtime@14.0.0#0",
+        "pkgbuild:mingw-w64-winpthreads@14.0.0-1#0"
+      ],
+      "verdict": "component_or_split",
+      "reason": "Arch builds only mingw-w64-libraries/winpthreads from the MinGW-w64 14.0.0 tree, while Gentoo mingw64-runtime packages the broader runtime/headers (Arch commit 335eabb5817d46a9478f07a71aa32dcb6680ce46)."
+    },
+    {
+      "link": [
+        "ebuild:x11-libs/libXmu@1.3.1#0",
+        "pkgbuild:libxmu@1.3.1-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the X.Org libXmu 1.3.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:www-nginx/ngx-modsecurity@1.0.4#0",
+        "pkgbuild:nginx-mod-modsecurity@1:1.0.4-13#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package the ModSecurity-nginx 1.0.4 connector itself; OWASP and SpiderLabs URLs name the same upstream release, not the ModSecurity core library."
+    },
+    {
+      "link": [
+        "ebuild:media-sound/amarok@3.3.3#0",
+        "pkgbuild:amarok@3.3.3-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Amarok 3.3.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:kde-apps/knavalbattle@26.08.3#0",
+        "pkgbuild:knavalbattle@26.08.3-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the KNavalBattle 26.08.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:app-editors/nano@9.3#0",
+        "pkgbuild:nano@9.3-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the GNU nano 9.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-haskell/ghc-paths@0.1.0.12-r1#0",
+        "pkgbuild:haskell-ghc-paths@0.1.0.12-16#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage ghc-paths 0.1.0.12 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-cpp/argparse@3.2#0",
+        "pkgbuild:argparse@3.2-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the p-ranav/argparse C++ library 3.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-haskell/appar@0.1.8-r1#0",
+        "pkgbuild:haskell-appar@0.1.8-18#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage appar 0.1.8 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-debug/gdb@18.1-r2#0",
+        "pkgbuild:riscv64-elf-gdb@18.1-1#0"
+      ],
+      "verdict": "component_or_split",
+      "reason": "Arch riscv64-elf-gdb configures GDB 18.1 with --target=riscv64-elf and installs target-prefixed GDB, rather than Gentoo's native debugger (Arch commit a7bfc87fdfe711123de0f19e3576c647056e9705)."
+    },
+    {
+      "link": [
+        "ebuild:app-editors/bluefish@2.2.19#0",
+        "pkgbuild:bluefish@2.2.19-2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Bluefish 2.2.19 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-util/kdevelop-pg-qt@2.4.0#0",
+        "pkgbuild:kdevelop-pg-qt@2.4.0-2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the KDevelop-pg-qt 2.4.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:app-i18n/unicode-cldr@49.0#0",
+        "pkgbuild:unicode-cldr@49-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package Unicode CLDR common data release 49 as their principal standalone data distribution, not different components selected from a program source archive."
+    },
+    {
+      "link": [
+        "ebuild:app-misc/ddcui@0.6.0#0",
+        "pkgbuild:ddcui@0.6.0-2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the ddcui 0.6.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:kde-misc/kshutdown@6.2#0",
+        "pkgbuild:kshutdown@6.2-2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the KShutdown 6.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:net-wireless/iwd@3.12#0",
+        "pkgbuild:iwd@3.12-2#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the iwd 3.12 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:x11-libs/xtrans@1.6.0#0",
+        "pkgbuild:xtrans@1.6.0-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the X.Org xtrans 1.6.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-haskell/safe@0.3.21#0",
+        "pkgbuild:haskell-safe@0.3.21-175#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage safe 0.3.21 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:kde-apps/analitza@26.08.3#0",
+        "pkgbuild:analitza@26.08.3-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Analitza 26.08.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:app-cdr/bchunk@1.2.2-r1#0",
+        "pkgbuild:bchunk@1.2.2-8#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the bchunk 1.2.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-haskell/pretty-hex@1.1-r1#0",
+        "pkgbuild:haskell-pretty-hex@1.1-13#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage pretty-hex 1.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:kde-frameworks/breeze-icons@6.31.0#0",
+        "pkgbuild:breeze-icons@6.31.0-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package the standalone Breeze Icons 6.31.0 upstream release as their principal icon distribution, not an icon split from a larger KDE source archive."
+    },
+    {
+      "link": [
+        "ebuild:kde-apps/keditbookmarks@26.08.3#0",
+        "pkgbuild:keditbookmarks@26.08.3-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the KEditBookmarks 26.08.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:kde-frameworks/modemmanager-qt@6.31.0#0",
+        "pkgbuild:modemmanager-qt@6.31.0-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the ModemManager-Qt 6.31.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:net-mail/dovecot@2.4.5#0",
+        "pkgbuild:dovecot@2.4.5-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Dovecot 2.4.5 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:net-misc/ipv6calc@4.4.1#0",
+        "pkgbuild:ipv6calc@4.4.1-1#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the ipv6calc 4.4.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-perl/Module-ScanDeps@1.370.0#0",
+        "pkgbuild:perl-module-scandeps@1.37-3#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Module-ScanDeps 1.37 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-ml/trie@1.0.0#0",
+        "rpm:ocaml-trie@1.0.0-37.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the kandu/trie OCaml library 1.0.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:llvm-core/polly@22.1.8#0",
+        "rpm:llvm22@22.1.8-3.fc46#0"
+      ],
+      "verdict": "component_or_split",
+      "reason": "Gentoo polly selects the polly and cmake components from the LLVM 22.1.8 monorepo archive, not the overall llvm22 product (Gentoo commit ebeaca6e3863a586790123093406b52fb375810d)."
+    },
+    {
+      "link": [
+        "ebuild:x11-libs/gtksourceview@4.8.4-r2#0",
+        "rpm:gtksourceview4@4.8.4-13.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Gentoo gtksourceview and Fedora gtksourceview4 both build the complete GtkSourceView 4.8.4 library release; the major-version suffix is naming, not a source split."
+    },
+    {
+      "link": [
+        "ebuild:dev-ml/ocplib-endian@1.2#0",
+        "rpm:ocaml-ocplib-endian@1.2-28.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the OCaml ocplib-endian 1.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:app-misc/uptimed@0.4.7#0",
+        "rpm:uptimed@0.4.7-5.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the uptimed 0.4.7 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:app-arch/snappy@1.2.2-r1#0",
+        "rpm:snappy@1.2.2-6.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Google Snappy 1.2.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-perl/Linux-Inotify2@2.300.0#0",
+        "rpm:perl-Linux-Inotify2@2.3-17.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package CPAN Linux-Inotify2-2.3 as their own module; Gentoo 2.300.0 is normalized from upstream 2.3."
+    },
+    {
+      "link": [
+        "ebuild:dev-perl/File-ShareDir-Install@0.140.0#0",
+        "rpm:perl-File-ShareDir-Install@0.14-11.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN File-ShareDir-Install 0.14 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-python/alembic@1.20.1#0",
+        "rpm:python-alembic@1.20.1-1.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Python Alembic 1.20.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-lang/python@3.15.2_p1#0",
+        "rpm:python3.15@3.15.2-1.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Gentoo Python 3.15.2_p1 and Fedora python3.15 both use the complete CPython 3.15.2 source release; Gentoo's patch suffix does not make it a component."
+    },
+    {
+      "link": [
+        "ebuild:dev-perl/List-SomeUtils@0.590.0#0",
+        "rpm:perl-List-SomeUtils@0.59-10.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN List-SomeUtils 0.59 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-lang/python@3.9.25#0",
+        "rpm:python3.9@3.9.25-16.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both build the complete CPython 3.9.25 interpreter release; Fedora's versioned python3.9 name is a parallel-installable release, not a subproject."
+    },
+    {
+      "link": [
+        "ebuild:media-video/ffmpeg@9.0.2#0",
+        "rpm:ffmpeg@9.0.2-3.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the FFmpeg 9.0.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:games-arcade/whichwayisup@0.7.9_p8#0",
+        "rpm:whichwayisup@0.7.9-26.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package Which Way Is Up from the primary whichwayisup_b079.zip release; Gentoo's _p8 suffix does not denote a different archive product."
+    },
+    {
+      "link": [
+        "ebuild:dev-perl/Data-Hierarchy@0.340.0-r2#0",
+        "rpm:perl-Data-Hierarchy@0.34-52.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Data-Hierarchy 0.34 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:net-libs/libvncserver@0.9.15-r1#0",
+        "rpm:libvncserver@0.9.15-9.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the LibVNCServer 0.9.15 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-python/merge3@1.0.0#0",
+        "rpm:python-merge3@1.0.0-1.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Breezy merge3 Python library 1.0.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-perl/MooseX-Types-JSON@1.10.0#0",
+        "rpm:perl-MooseX-Types-JSON@1.01-14.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package CPAN MooseX-Types-JSON-1.01 as their own module; Gentoo 1.10.0 is normalized from that upstream version."
+    },
+    {
+      "link": [
+        "ebuild:kde-frameworks/kxmlgui@6.31.0#0",
+        "rpm:kf6-kxmlgui@6.31.0-2.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Gentoo kxmlgui and Fedora kf6-kxmlgui both build the standalone KXMLGUI 6.31.0 release; kf6 is a framework-generation packaging prefix."
+    },
+    {
+      "link": [
+        "ebuild:dev-perl/MooseX-Aliases@0.110.0-r2#0",
+        "rpm:perl-MooseX-Aliases@0.11-36.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN MooseX-Aliases 0.11 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-python/pydyf@0.12.1#0",
+        "rpm:python-pydyf@0.12.1-4.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Python pydyf 0.12.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:media-gfx/inkscape@1.4.4#0",
+        "rpm:inkscape@1.4.4-5.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Inkscape 1.4.4 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-python/sortedcontainers@2.4.0-r1#0",
+        "rpm:python-sortedcontainers@2.4.0-29.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Python sortedcontainers 2.4.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-python/humanize@4.16.0#0",
+        "rpm:python-humanize@4.16.0-2.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Python humanize 4.16.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-python/httpx@0.28.1-r1#0",
+        "rpm:python-httpx@0.28.1-14.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the encode/httpx 0.28.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:x11-drivers/xf86-input-wacom@1.2.4#0",
+        "rpm:xorg-x11-drv-wacom@1.2.4-3.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Gentoo xf86-input-wacom and Fedora xorg-x11-drv-wacom both build the X.Org Wacom input driver 1.2.4 source release."
+    },
+    {
+      "link": [
+        "ebuild:dev-cpp/random123@1.14.0#0",
+        "rpm:Random123@1.14.0-20.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the DEShawResearch Random123 1.14.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-python/babelfish@0.6.1#0",
+        "rpm:python-babelfish@0.6.1-11.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Diaoul/babelfish Python library 0.6.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:net-misc/oidc-agent@5.3.8#0",
+        "rpm:oidc-agent@5.3.8-1.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the oidc-agent 5.3.8 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "ebuild:dev-util/mingw64-runtime@14.0.0#0",
+        "rpm:mingw-winpthreads@14.0.0-3.fc46#0"
+      ],
+      "verdict": "component_or_split",
+      "reason": "Fedora builds only mingw-w64-libraries/winpthreads from MinGW-w64 14.0.0, whereas Gentoo mingw64-runtime packages the broader runtime/headers (Fedora commit fca76e22a3429eb4aa73be4d884576b7c0ba170e)."
+    },
+    {
+      "link": [
+        "pkgbuild:libcue@2.3.0-1#0",
+        "rpm:libcue@2.3.0-15.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the libcue 2.3.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:python-mygpoclient@1.10-1#0",
+        "rpm:python-mygpoclient@1.10-9.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Python mygpoclient 1.10 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:python-cvxopt@1.3.3-1#0",
+        "rpm:python-cvxopt@1.3.3-5.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Python CVXOPT 1.3.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:source-highlight@3.1.9-19#0",
+        "rpm:source-highlight@3.1.9-28.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the GNU Source-highlight 3.1.9 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:haskell-text-short@0.1.6.1-133#0",
+        "rpm:ghc-text-short@0.1.6.1-2.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage text-short 0.1.6.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:perl-extutils-cppguess@0.271-1#0",
+        "rpm:perl-ExtUtils-CppGuess@0.271-1.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN ExtUtils-CppGuess 0.271 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:haskell-appar@0.1.8-18#0",
+        "rpm:ghc-appar@0.1.8-31.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage appar 0.1.8 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:python-webencodings@0.5.1-13#0",
+        "rpm:python-webencodings@0.5.1-35.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Python webencodings 0.5.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:egl-gbm@1.1.4-1#0",
+        "rpm:egl-gbm@2:1.1.4-3.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the NVIDIA egl-gbm 1.1.4 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:perl-mail-message@4.05-1#0",
+        "rpm:perl-Mail-Message@4.05-2.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Mail-Message 4.05 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:haskell-mwc-random@0.15.3.0-61#0",
+        "rpm:ghc-mwc-random@0.15.3.0-2.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage mwc-random 0.15.3.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:cryptsetup@2.8.8-1#0",
+        "rpm:cryptsetup@2.8.8-1.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the cryptsetup 2.8.8 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:haskell-digest@0.0.2.1-3#0",
+        "rpm:ghc-digest@0.0.2.1-9.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage digest 0.0.2.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:xf86-video-amdgpu@25.0.0-1#0",
+        "rpm:xorg-x11-drv-amdgpu@25.0.0-3.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Arch xf86-video-amdgpu and Fedora xorg-x11-drv-amdgpu both build the X.Org AMDGPU driver 25.0.0 source release."
+    },
+    {
+      "link": [
+        "pkgbuild:perl-graphics-colornames-www@1.14-8#0",
+        "rpm:perl-Graphics-ColorNames-WWW@1.14-22.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Graphics-ColorNames-WWW 1.14 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:perl-cpan-meta-check@0.018-6#0",
+        "rpm:perl-CPAN-Meta-Check@0.018-8.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN CPAN-Meta-Check 0.018 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:ocaml-bos@0.3.0-1#0",
+        "rpm:ocaml-bos@0.3.0-5.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the OCaml Bos 0.3.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:cmatrix@2.0-4#0",
+        "rpm:cmatrix@2.0-15.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CMatrix 2.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:smokeping@2.9.0-1#0",
+        "rpm:smokeping@2.9.0-16.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the SmokePing 2.9.0 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:perl-email-sender@2.603-1#0",
+        "rpm:perl-Email-Sender@1:2.603-1.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Email-Sender 2.603 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:flatseal@2.4.1-1#0",
+        "rpm:flatseal@2.4.1-2.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Flatseal 2.4.1 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:pageedit@2.7.6-1#0",
+        "rpm:pageedit@2.7.6-2.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Sigil PageEdit 2.7.6 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:perl-devel-cover@1.52-2#0",
+        "rpm:perl-Devel-Cover@1.52-5.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN Devel-Cover 1.52 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:man-pages@6.20-1#0",
+        "rpm:man-pages@6.20-1.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both package the standalone Linux man-pages 6.20 documentation distribution itself, not documentation extracted from a shared Linux kernel source archive."
+    },
+    {
+      "link": [
+        "pkgbuild:bwm-ng@0.6.3-3#0",
+        "rpm:bwm-ng@0.6.3-9.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the bwm-ng 0.6.3 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:virt-what@1.27-1#0",
+        "rpm:virt-what@1.27-6.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the virt-what 1.27 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:kwayland-integration@6.8.2-1#0",
+        "rpm:kwayland-integration@6.8.2-1.fc46#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the KWayland Integration 6.8.2 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:perl-local-lib@2.000029-6#0",
+        "rpm:perl-local-lib@2.000029-12.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN local-lib 2.000029 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:haskell-json@0.11-42#0",
+        "rpm:ghc-json@0.11-8.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the Hackage json 0.11 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    },
+    {
+      "link": [
+        "pkgbuild:perl-datetime-format-w3cdtf@0.09-1#0",
+        "rpm:perl-DateTime-Format-W3CDTF@0.09-1.fc45#0"
+      ],
+      "verdict": "same_primary_archive",
+      "reason": "Both packages use the CPAN DateTime-Format-W3CDTF 0.09 upstream archive as the primary source of the named software, not as a bundled dependency or a different source-tree component."
+    }
+  ]
+}

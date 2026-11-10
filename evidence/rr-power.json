@@ -1,0 +1,42 @@
+{
+  "schema": "pkgbridge-rr-power/1",
+  "assumptions": {
+    "alpha": 0.05,
+    "delta": 0.1,
+    "test": "exact two-sided McNemar",
+    "note": "planning assumptions, not pilot estimates"
+  },
+  "normal_approximation_n_q030": 233.1,
+  "designs": [
+    {
+      "tasks": 120,
+      "discordance": 0.3,
+      "power": 0.454
+    },
+    {
+      "tasks": 240,
+      "discordance": 0.3,
+      "power": 0.786
+    },
+    {
+      "tasks": 252,
+      "discordance": 0.3,
+      "power": 0.806
+    },
+    {
+      "tasks": 252,
+      "discordance": 0.2,
+      "power": 0.944
+    },
+    {
+      "tasks": 252,
+      "discordance": 0.4,
+      "power": 0.681
+    },
+    {
+      "tasks": 252,
+      "discordance": 0.5,
+      "power": 0.581
+    }
+  ]
+}

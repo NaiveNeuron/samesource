@@ -1,0 +1,115 @@
+{
+  "family": "pkgbuild",
+  "collector": "scripts/scale/extract_pkgbuild.py@a8cbf01",
+  "inputs": {
+    "arch_core_db": {
+      "path": "frame/arch-core.db",
+      "sha256": "aec62efbfb59d300204f936a633a59d3c89d6a7e7f94852b8f621b61a253afae"
+    },
+    "arch_extra_db": {
+      "path": "frame/arch-extra.db",
+      "sha256": "ee4725dcfc256112d850a9ce885424811f297f90421a74109eeff3f88f6ba08d"
+    },
+    "arch_state": {
+      "commit": "c41c1e0beaa9676c07b57b545691c3a74ac311e0",
+      "directories": [
+        "core-any",
+        "core-x86_64",
+        "extra-any",
+        "extra-x86_64"
+      ]
+    }
+  },
+  "records": 12345,
+  "records_in_arch_state": 12345,
+  "records_in_repo_db": 12311,
+  "srcinfo_fetched": 12300,
+  "srcinfo_network_requests_this_run": 0,
+  "resolution": {
+    "partial": 341,
+    "resolved": 11959,
+    "unresolved": 45
+  },
+  "live_vcs": 17,
+  "native": 0,
+  "records_with_primary": 12269,
+  "records_without_remote_sources": 31,
+  "artifacts": 23374,
+  "artifacts_by_kind": {
+    "crate": 39,
+    "file": 4882,
+    "other": 914,
+    "patch": 380,
+    "signature": 1850,
+    "tarball": 8314,
+    "vcs": 6665,
+    "zip": 330
+  },
+  "artifacts_by_role": {
+    "component": 1823,
+    "packaging": 5262,
+    "patch_bundle": 6,
+    "primary": 12269,
+    "signature": 1850,
+    "unknown": 2162,
+    "vendor_bundle": 2
+  },
+  "artifacts_by_kind_role": {
+    "crate/primary": 9,
+    "crate/unknown": 30,
+    "file/packaging": 4882,
+    "other/component": 713,
+    "other/primary": 71,
+    "other/unknown": 130,
+    "patch/packaging": 380,
+    "signature/signature": 1850,
+    "tarball/component": 626,
+    "tarball/patch_bundle": 6,
+    "tarball/primary": 7520,
+    "tarball/unknown": 160,
+    "tarball/vendor_bundle": 2,
+    "vcs/component": 435,
+    "vcs/primary": 4544,
+    "vcs/unknown": 1686,
+    "zip/component": 49,
+    "zip/primary": 125,
+    "zip/unknown": 156
+  },
+  "artifacts_by_hash_domain": {
+    "file_bytes": 16709,
+    "vcs": 6665
+  },
+  "hash_algorithms_present": {
+    "blake2b": 7200,
+    "md5": 142,
+    "sha1": 45,
+    "sha224": 5,
+    "sha256": 8974,
+    "sha384": 4,
+    "sha512": 7480
+  },
+  "primary_by_kind": {
+    "crate": 9,
+    "other": 71,
+    "tarball": 7520,
+    "vcs": 4544,
+    "zip": 125
+  },
+  "primary_hash_algorithms": {
+    "blake2b": 4245,
+    "md5": 91,
+    "sha1": 26,
+    "sha224": 1,
+    "sha256": 4856,
+    "sha384": 3,
+    "sha512": 5116
+  },
+  "failures_by_category": {
+    "duplicate_state_entries": 59,
+    "fetch_http_404": 45,
+    "not_in_repo_db": 34,
+    "remote_file_without_digest": 2,
+    "srcinfo_absent_pkgbuild_present": 45,
+    "version_mismatch_state_db": 351
+  }
+}

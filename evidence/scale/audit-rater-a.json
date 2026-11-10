@@ -1,0 +1,1445 @@
+{
+ "rater": "rater-a",
+ "items": [
+  {
+   "link": [
+    "deb:libopenobex@1.7.2-2.3#0",
+    "ebuild:dev-libs/openobex@1.7.2-r3#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libopenobex 1.7.2-2.3 and dev-libs/openobex 1.7.2-r3 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:haskell-nanospec@0.2.2-7#0",
+    "ebuild:dev-haskell/nanospec@0.2.2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-nanospec 0.2.2-7 and dev-haskell/nanospec 0.2.2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libsys-hostname-long-perl@1.5-3#0",
+    "ebuild:dev-perl/Sys-Hostname-Long@1.500.0-r2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libsys-hostname-long-perl 1.5-3 and dev-perl/Sys-Hostname-Long 1.500.0-r2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:usb-modeswitch@2.6.2-2#0",
+    "ebuild:sys-apps/usb_modeswitch@2.6.2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "usb-modeswitch 2.6.2-2 and sys-apps/usb_modeswitch 2.6.2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libclass-accessor-lite-perl@0.08-3#0",
+    "ebuild:dev-perl/Class-Accessor-Lite@0.80.0-r2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libclass-accessor-lite-perl 0.08-3 and dev-perl/Class-Accessor-Lite 0.80.0-r2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:sshpass@1.10-0.1#0",
+    "ebuild:net-misc/sshpass@1.10#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "sshpass 1.10-0.1 and net-misc/sshpass 1.10 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:pcsc-lite@2.5.3-1#0",
+    "ebuild:sys-apps/pcsc-lite@2.5.3#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "pcsc-lite 2.5.3-1 and sys-apps/pcsc-lite 2.5.3 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:ipcalc@0.51-1#0",
+    "ebuild:net-misc/ipcalc@0.51-r1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "ipcalc 0.51-1 and net-misc/ipcalc 0.51-r1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:autoconf@2.73-2#0",
+    "ebuild:app-emacs/autoconf-mode@2.73#0"
+   ],
+   "verdict": "component_or_split",
+   "reason": "Gentoo app-emacs/autoconf-mode uses the autoconf tarball but sets S=lib/emacs and installs only the Emacs autoconf/autotest modes; Debian builds autoconf itself (ebuild@ebeaca6e)."
+  },
+  {
+   "link": [
+    "deb:kakasi@2.3.6-4.2#0",
+    "ebuild:app-i18n/kakasi@2.3.6-r2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "kakasi 2.3.6-4.2 and app-i18n/kakasi 2.3.6-r2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libtest2-tools-explain-perl@0.02-2#0",
+    "ebuild:dev-perl/Test2-Tools-Explain@0.20.0-r1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libtest2-tools-explain-perl 0.02-2 and dev-perl/Test2-Tools-Explain 0.20.0-r1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:xfce4-sensors-plugin@1.5.0-1#0",
+    "ebuild:xfce-extra/xfce4-sensors-plugin@1.5.0#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "xfce4-sensors-plugin 1.5.0-1 and xfce-extra/xfce4-sensors-plugin 1.5.0 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:catch@1.12.2-0.3#0",
+    "ebuild:dev-cpp/catch@1.12.2-r2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "catch 1.12.2-0.3 and dev-cpp/catch 1.12.2-r2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:patchutils@0.4.5-1#0",
+    "ebuild:dev-util/patchutils@0.4.5-r1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "patchutils 0.4.5-1 and dev-util/patchutils 0.4.5-r1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:units@2.27-1#0",
+    "ebuild:sci-calculators/units@2.27#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "units 2.27-1 and sci-calculators/units 2.27 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libcpan-checksums-perl@2.14-2#0",
+    "ebuild:dev-perl/CPAN-Checksums@2.140.0#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libcpan-checksums-perl 2.14-2 and dev-perl/CPAN-Checksums 2.140.0 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:ocaml-csexp@1.5.2-4#0",
+    "ebuild:dev-ml/csexp@1.5.2-r1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "ocaml-csexp 1.5.2-4 and dev-ml/csexp 1.5.2-r1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libglib-perl@3:1.329.4-1#0",
+    "ebuild:dev-perl/glib-perl@1.329.400#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libglib-perl 3:1.329.4-1 and dev-perl/glib-perl 1.329.400 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:liblist-allutils-perl@0.19-1#0",
+    "ebuild:dev-perl/List-AllUtils@0.190.0-r1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "liblist-allutils-perl 0.19-1 and dev-perl/List-AllUtils 0.190.0-r1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:metapixel@1.0.2-13#0",
+    "ebuild:media-gfx/metapixel@1.0.2-r2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "metapixel 1.0.2-13 and media-gfx/metapixel 1.0.2-r2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libextutils-helpers-perl@0.028-1#0",
+    "ebuild:dev-perl/ExtUtils-Helpers@0.28.0#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libextutils-helpers-perl 0.028-1 and dev-perl/ExtUtils-Helpers 0.28.0 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:unidecode@1.4.0-2#0",
+    "ebuild:dev-python/unidecode@1.4.0#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "unidecode 1.4.0-2 and dev-python/unidecode 1.4.0 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libhtml-packer-perl@2.110000-1#0",
+    "ebuild:dev-perl/HTML-Packer@2.110.0#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libhtml-packer-perl 2.110000-1 and dev-perl/HTML-Packer 2.110.0 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:python-kgb@7.3-1#0",
+    "ebuild:dev-python/kgb@7.3#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "python-kgb 7.3-1 and dev-python/kgb 7.3 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:sass-grass@0.13.4-6#0",
+    "ebuild:dev-lang/grass@0.13.4#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "sass-grass 0.13.4-6 and dev-lang/grass 0.13.4 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:mecab-naist-jdic@0.6.3.b-20111013-11#0",
+    "ebuild:app-dicts/mecab-naist-jdic@0.6.3b_p20111013-r1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "Both package the NAIST Japanese dictionary for MeCab from it; data-only on both sides, same product."
+  },
+  {
+   "link": [
+    "deb:libperlio-via-timeout-perl@0.32-3#0",
+    "ebuild:dev-perl/PerlIO-via-Timeout@0.320.0-r1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libperlio-via-timeout-perl 0.32-3 and dev-perl/PerlIO-via-Timeout 0.320.0-r1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:prometheus-node-exporter@1.11.1-3#0",
+    "ebuild:app-metrics/node_exporter@1.11.1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "prometheus-node-exporter 1.11.1-3 and app-metrics/node_exporter 1.11.1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libdist-zilla-plugin-config-git-perl@0.92-3#0",
+    "ebuild:dev-perl/Dist-Zilla-Plugin-Config-Git@0.920.0-r2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libdist-zilla-plugin-config-git-perl 0.92-3 and dev-perl/Dist-Zilla-Plugin-Config-Git 0.920.0-r2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:gkrellweather@2.0.8-3#0",
+    "ebuild:x11-plugins/gkrellweather@2.0.8-r2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "gkrellweather 2.0.8-3 and x11-plugins/gkrellweather 2.0.8-r2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:haskell-tasty-hunit@0.10.2-2#0",
+    "pkgbuild:haskell-tasty-hunit@0.10.2-399#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-tasty-hunit 0.10.2-2 and haskell-tasty-hunit 0.10.2-399 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:haskell-text-ansi@0.3.0.1-3#0",
+    "pkgbuild:haskell-text-ansi@0.3.0.1-137#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-text-ansi 0.3.0.1-3 and haskell-text-ansi 0.3.0.1-137 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:haskell-bencode@0.6.1.1-5#0",
+    "pkgbuild:haskell-bencode@0.6.1.1-370#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-bencode 0.6.1.1-5 and haskell-bencode 0.6.1.1-370 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:gts@0.7.6+darcs121130-5.2#0",
+    "pkgbuild:gts@0.7.6.121130-5#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "gts 0.7.6+darcs121130-5.2 and gts 0.7.6.121130-5 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libpackage-deprecationmanager-perl@0.18-1#0",
+    "pkgbuild:perl-package-deprecationmanager@0.18-6#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libpackage-deprecationmanager-perl 0.18-1 and perl-package-deprecationmanager 0.18-6 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:haskell-integer-logarithms@1.0.4-1#0",
+    "pkgbuild:haskell-integer-logarithms@1.0.4-282#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-integer-logarithms 1.0.4-1 and haskell-integer-logarithms 1.0.4-282 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:movit@1.7.2-1#0",
+    "pkgbuild:movit@1.7.2-2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "movit 1.7.2-1 and movit 1.7.2-2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:labplot@2.12.1-6#0",
+    "pkgbuild:labplot@2.12.1-10#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "labplot 2.12.1-6 and labplot 2.12.1-10 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:polymake@4.15-2#0",
+    "pkgbuild:polymake@4.15-15#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "Debian polymake orig tarball is byte-identical to upstream polymake-4.15-minimal.tar.bz2 that Arch uses; both build polymake 4.15."
+  },
+  {
+   "link": [
+    "deb:haskell-hspec-smallcheck@0.5.3-3#0",
+    "pkgbuild:haskell-hspec-smallcheck@0.5.3-212#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-hspec-smallcheck 0.5.3-3 and haskell-hspec-smallcheck 0.5.3-212 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:haskell-hedgehog@1.5-1#0",
+    "pkgbuild:haskell-hedgehog@1.5-295#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-hedgehog 1.5-1 and haskell-hedgehog 1.5-295 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libgwenhywfar@5.14.1-4#0",
+    "pkgbuild:gwenhywfar@5.14.1-3#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libgwenhywfar 5.14.1-4 and gwenhywfar 5.14.1-3 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:xl2tpd@1.3.20-1#0",
+    "pkgbuild:xl2tpd@1.3.20-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "xl2tpd 1.3.20-1 and xl2tpd 1.3.20-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:lximage-qt@2.4.0-1#0",
+    "pkgbuild:lximage-qt@2.4.0-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "lximage-qt 2.4.0-1 and lximage-qt 2.4.0-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:haskell-mueval@0.9.4-3#0",
+    "pkgbuild:haskell-mueval@0.9.4-154#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-mueval 0.9.4-3 and haskell-mueval 0.9.4-154 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libtypes-serialiser-perl@1.01-1#0",
+    "pkgbuild:perl-types-serialiser@1.01-6#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libtypes-serialiser-perl 1.01-1 and perl-types-serialiser 1.01-6 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:autossh@1.4g-1#0",
+    "pkgbuild:autossh@1.4g-4#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "autossh 1.4g-1 and autossh 1.4g-4 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:jnettop@0.13.0-5#0",
+    "pkgbuild:jnettop@0.13.0-10#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "jnettop 0.13.0-5 and jnettop 0.13.0-10 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:lxqt-sudo@2.4.0-1#0",
+    "pkgbuild:lxqt-sudo@2.4.0-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "lxqt-sudo 2.4.0-1 and lxqt-sudo 2.4.0-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:barcode@0.99-9#0",
+    "pkgbuild:barcode@0.99-6#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "barcode 0.99-9 and barcode 0.99-6 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:hidapi@0.15.0-2#0",
+    "pkgbuild:hidapi@0.15.0-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "hidapi 0.15.0-2 and hidapi 0.15.0-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:haskell-url@2.1.3-13#0",
+    "pkgbuild:haskell-url@2.1.3-335#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-url 2.1.3-13 and haskell-url 2.1.3-335 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libextutils-cchecker-perl@0.12-1#0",
+    "pkgbuild:perl-extutils-cchecker@0.12-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libextutils-cchecker-perl 0.12-1 and perl-extutils-cchecker 0.12-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libshell-command-perl@0.06-6#0",
+    "pkgbuild:perl-shell-command@0.06-9#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libshell-command-perl 0.06-6 and perl-shell-command 0.06-9 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:xdp-tools@1.6.3-1#0",
+    "pkgbuild:xdp-tools@1.6.3-2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "xdp-tools 1.6.3-1 and xdp-tools 1.6.3-2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:marknote@1.6.0-2#0",
+    "pkgbuild:marknote@1.6.0-2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "marknote 1.6.0-2 and marknote 1.6.0-2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libtest-pod-coverage-perl@1.10-3#0",
+    "pkgbuild:perl-test-pod-coverage@1.10-5#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libtest-pod-coverage-perl 1.10-3 and perl-test-pod-coverage 1.10-5 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:pybind11@3.1.0-2#0",
+    "pkgbuild:pybind11@3.1.0-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "pybind11 3.1.0-2 and pybind11 3.1.0-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:python-zstandard@0.25.0-1#0",
+    "pkgbuild:python-zstandard@0.25.0-3#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "python-zstandard 0.25.0-1 and python-zstandard 0.25.0-3 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:apksigcopier@1.1.1-1#0",
+    "pkgbuild:apksigcopier@1.1.1-5#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "apksigcopier 1.1.1-1 and apksigcopier 1.1.1-5 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:rust-serde-spanned@1.1.2-1#0",
+    "rpm:rust-serde_spanned@1.1.2-1.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "rust-serde-spanned 1.1.2-1 and rust-serde_spanned 1.1.2-1.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:kbounce@4:26.08.2-1#0",
+    "rpm:kbounce@26.08.2-1.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "kbounce 4:26.08.2-1 and kbounce 26.08.2-1.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:rust-xkeysym@0.2.1-1#0",
+    "rpm:rust-xkeysym@0.2.1-6.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "rust-xkeysym 0.2.1-1 and rust-xkeysym 0.2.1-6.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:rust-x11rb-protocol@0.13.2-1#0",
+    "rpm:rust-x11rb-protocol@0.13.2-3.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "rust-x11rb-protocol 0.13.2-1 and rust-x11rb-protocol 0.13.2-3.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libgsm@1.0.24-1#0",
+    "rpm:mingw-gsm@1.0.24-1.fc45#0"
+   ],
+   "verdict": "component_or_split",
+   "reason": "Fedora mingw-gsm is a MinGW cross-compiled rebuild of the GSM 06.10 library that Debian libgsm builds natively; same source, different target product."
+  },
+  {
+   "link": [
+    "deb:gnome-packagekit@43.0-4#0",
+    "rpm:gnome-packagekit@43.0-10.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "gnome-packagekit 43.0-4 and gnome-packagekit 43.0-10.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:serd@0.32.10-2#0",
+    "rpm:serd@0.32.10-2.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "serd 0.32.10-2 and serd 0.32.10-2.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libmaxmind-db-reader-xs-perl@1.000009-2#0",
+    "rpm:perl-MaxMind-DB-Reader-XS@1.000009-18.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libmaxmind-db-reader-xs-perl 1.000009-2 and perl-MaxMind-DB-Reader-XS 1.000009-18.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:pitivi@2023.03-6#0",
+    "rpm:pitivi@2023.03-23.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "pitivi 2023.03-6 and pitivi 2023.03-23.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libxml-perl@0.08-4#0",
+    "rpm:perl-libxml-perl@0.08-57.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libxml-perl 0.08-4 and perl-libxml-perl 0.08-57.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libconfig-general-perl@2.67-1#0",
+    "rpm:perl-Config-General@2.67-5.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libconfig-general-perl 2.67-1 and perl-Config-General 2.67-5.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:rust-python-pkginfo@0.6.8-2#0",
+    "rpm:rust-python-pkginfo@0.6.8-2.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "rust-python-pkginfo 0.6.8-2 and rust-python-pkginfo 0.6.8-2.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:rust-atomic-waker@1.1.2-1#0",
+    "rpm:rust-atomic-waker@1.1.2-7.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "rust-atomic-waker 1.1.2-1 and rust-atomic-waker 1.1.2-7.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libcgi-compile-perl@0.27-1#0",
+    "rpm:perl-CGI-Compile@0.27-5.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libcgi-compile-perl 0.27-1 and perl-CGI-Compile 0.27-5.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:commonmark@0.9.2-1#0",
+    "rpm:python-CommonMark@0.9.2-1.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "Debian commonmark (binary python3-commonmark) and Fedora python-CommonMark both build commonmark.py 0.9.2 from it."
+  },
+  {
+   "link": [
+    "deb:rust-stringprep@0.1.5-1#0",
+    "rpm:rust-stringprep@0.1.5-6.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "rust-stringprep 0.1.5-1 and rust-stringprep 0.1.5-6.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:haskell-split@0.2.5-2#0",
+    "rpm:ghc-split@0.2.5-8.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-split 0.2.5-2 and ghc-split 0.2.5-8.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:objfw@1.5.7-1#0",
+    "rpm:mingw-objfw@1.5.7-2.fc45#0"
+   ],
+   "verdict": "component_or_split",
+   "reason": "Fedora mingw-objfw is a MinGW cross-compiled rebuild of ObjFW; Debian objfw is the native build of the same source."
+  },
+  {
+   "link": [
+    "deb:ideviceinstaller@1.2.0-1#0",
+    "rpm:ideviceinstaller@1.2.0-2.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "ideviceinstaller 1.2.0-1 and ideviceinstaller 1.2.0-2.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:haskell-ansi-wl-pprint@1.0.2-2#0",
+    "rpm:ghc-ansi-wl-pprint@1.0.2-8.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-ansi-wl-pprint 1.0.2-2 and ghc-ansi-wl-pprint 1.0.2-8.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:globus-gram-job-manager-condor@3.0-4#0",
+    "rpm:globus-gram-job-manager-condor@3.0-24.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "globus-gram-job-manager-condor 3.0-4 and globus-gram-job-manager-condor 3.0-24.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:rust-test-assembler@0.1.6-1#0",
+    "rpm:rust-test-assembler@0.1.6-12.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "rust-test-assembler 0.1.6-1 and rust-test-assembler 0.1.6-12.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:auto-complete-el@1.5.1-0.3#0",
+    "rpm:emacs-auto-complete@1.5.1-16.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "auto-complete-el 1.5.1-0.3 and emacs-auto-complete 1.5.1-16.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libnet-ip-perl@1.26-4#0",
+    "rpm:perl-Net-IP@1.26-38.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libnet-ip-perl 1.26-4 and perl-Net-IP 1.26-38.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:beautifulsoup4@4.15.0-1#0",
+    "rpm:python-beautifulsoup4@4.15.0-3.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "beautifulsoup4 4.15.0-1 and python-beautifulsoup4 4.15.0-3.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:rust-bincode@2.0.1-1#0",
+    "rpm:rust-bincode@2.0.1-4.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "rust-bincode 2.0.1-1 and rust-bincode 2.0.1-4.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libevent-rpc-perl@1.11-1#0",
+    "rpm:perl-Event-RPC@1.11-4.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libevent-rpc-perl 1.11-1 and perl-Event-RPC 1.11-4.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:alkimia@8.2.1-2#0",
+    "rpm:libalkimia@8.2.1-6.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "alkimia 8.2.1-2 and libalkimia 8.2.1-6.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:libtest-signature-perl@1.11-4#0",
+    "rpm:perl-Test-Signature@1.11-38.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libtest-signature-perl 1.11-4 and perl-Test-Signature 1.11-38.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "deb:sec@2.9.4-1#0",
+    "rpm:sec@2.9.4-2.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "sec 2.9.4-1 and sec 2.9.4-2.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:app-cdr/ccd2iso@0.3-r2#0",
+    "pkgbuild:ccd2iso@0.3-12#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "app-cdr/ccd2iso 0.3-r2 and ccd2iso 0.3-12 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:media-libs/libsdl3@3.4.18#0",
+    "pkgbuild:sdl3@3.4.18-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "media-libs/libsdl3 3.4.18 and sdl3 3.4.18-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-vcs/git-sizer@1.5.0#0",
+    "pkgbuild:git-sizer@1.5.0-3#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-vcs/git-sizer 1.5.0 and git-sizer 1.5.0-3 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-util/mingw64-runtime@14.0.0#0",
+    "pkgbuild:mingw-w64-winpthreads@14.0.0-1#0"
+   ],
+   "verdict": "component_or_split",
+   "reason": "Arch mingw-w64-winpthreads builds only the winpthreads subdirectory of the mingw-w64 tarball (PKGBUILD@335eabb5); Gentoo mingw64-runtime builds the CRT/headers runtime from it."
+  },
+  {
+   "link": [
+    "ebuild:x11-libs/libXmu@1.3.1#0",
+    "pkgbuild:libxmu@1.3.1-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "x11-libs/libXmu 1.3.1 and libxmu 1.3.1-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:www-nginx/ngx-modsecurity@1.0.4#0",
+    "pkgbuild:nginx-mod-modsecurity@1:1.0.4-13#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "Both build the ModSecurity-nginx v1.0.4 connector module from it; Arch builds it against nginx-src, which is a makedepend and not a downloaded archive (PKGBUILD@56d9eb9a)."
+  },
+  {
+   "link": [
+    "ebuild:media-sound/amarok@3.3.3#0",
+    "pkgbuild:amarok@3.3.3-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "media-sound/amarok 3.3.3 and amarok 3.3.3-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:kde-apps/knavalbattle@26.08.3#0",
+    "pkgbuild:knavalbattle@26.08.3-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "kde-apps/knavalbattle 26.08.3 and knavalbattle 26.08.3-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:app-editors/nano@9.3#0",
+    "pkgbuild:nano@9.3-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "app-editors/nano 9.3 and nano 9.3-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-haskell/ghc-paths@0.1.0.12-r1#0",
+    "pkgbuild:haskell-ghc-paths@0.1.0.12-16#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-haskell/ghc-paths 0.1.0.12-r1 and haskell-ghc-paths 0.1.0.12-16 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-cpp/argparse@3.2#0",
+    "pkgbuild:argparse@3.2-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-cpp/argparse 3.2 and argparse 3.2-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-haskell/appar@0.1.8-r1#0",
+    "pkgbuild:haskell-appar@0.1.8-18#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-haskell/appar 0.1.8-r1 and haskell-appar 0.1.8-18 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-debug/gdb@18.1-r2#0",
+    "pkgbuild:riscv64-elf-gdb@18.1-1#0"
+   ],
+   "verdict": "component_or_split",
+   "reason": "Arch riscv64-elf-gdb is a cross-target build of GDB 18.1 for riscv64-elf; Gentoo dev-debug/gdb is the native debugger from the same tarball."
+  },
+  {
+   "link": [
+    "ebuild:app-editors/bluefish@2.2.19#0",
+    "pkgbuild:bluefish@2.2.19-2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "app-editors/bluefish 2.2.19 and bluefish 2.2.19-2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-util/kdevelop-pg-qt@2.4.0#0",
+    "pkgbuild:kdevelop-pg-qt@2.4.0-2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-util/kdevelop-pg-qt 2.4.0 and kdevelop-pg-qt 2.4.0-2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:app-i18n/unicode-cldr@49.0#0",
+    "pkgbuild:unicode-cldr@49-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "Both package the CLDR 49 common data zip as-is; data-only on both sides, same product."
+  },
+  {
+   "link": [
+    "ebuild:app-misc/ddcui@0.6.0#0",
+    "pkgbuild:ddcui@0.6.0-2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "app-misc/ddcui 0.6.0 and ddcui 0.6.0-2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:kde-misc/kshutdown@6.2#0",
+    "pkgbuild:kshutdown@6.2-2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "kde-misc/kshutdown 6.2 and kshutdown 6.2-2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:net-wireless/iwd@3.12#0",
+    "pkgbuild:iwd@3.12-2#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "net-wireless/iwd 3.12 and iwd 3.12-2 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:x11-libs/xtrans@1.6.0#0",
+    "pkgbuild:xtrans@1.6.0-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "x11-libs/xtrans 1.6.0 and xtrans 1.6.0-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-haskell/safe@0.3.21#0",
+    "pkgbuild:haskell-safe@0.3.21-175#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-haskell/safe 0.3.21 and haskell-safe 0.3.21-175 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:kde-apps/analitza@26.08.3#0",
+    "pkgbuild:analitza@26.08.3-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "kde-apps/analitza 26.08.3 and analitza 26.08.3-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:app-cdr/bchunk@1.2.2-r1#0",
+    "pkgbuild:bchunk@1.2.2-8#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "app-cdr/bchunk 1.2.2-r1 and bchunk 1.2.2-8 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-haskell/pretty-hex@1.1-r1#0",
+    "pkgbuild:haskell-pretty-hex@1.1-13#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-haskell/pretty-hex 1.1-r1 and haskell-pretty-hex 1.1-13 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:kde-frameworks/breeze-icons@6.31.0#0",
+    "pkgbuild:breeze-icons@6.31.0-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "Both package the KDE Breeze icon theme 6.31.0; data-only on both sides, same product."
+  },
+  {
+   "link": [
+    "ebuild:kde-apps/keditbookmarks@26.08.3#0",
+    "pkgbuild:keditbookmarks@26.08.3-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "kde-apps/keditbookmarks 26.08.3 and keditbookmarks 26.08.3-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:kde-frameworks/modemmanager-qt@6.31.0#0",
+    "pkgbuild:modemmanager-qt@6.31.0-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "kde-frameworks/modemmanager-qt 6.31.0 and modemmanager-qt 6.31.0-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:net-mail/dovecot@2.4.5#0",
+    "pkgbuild:dovecot@2.4.5-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "net-mail/dovecot 2.4.5 and dovecot 2.4.5-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:net-misc/ipv6calc@4.4.1#0",
+    "pkgbuild:ipv6calc@4.4.1-1#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "net-misc/ipv6calc 4.4.1 and ipv6calc 4.4.1-1 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-perl/Module-ScanDeps@1.370.0#0",
+    "pkgbuild:perl-module-scandeps@1.37-3#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-perl/Module-ScanDeps 1.370.0 and perl-module-scandeps 1.37-3 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-ml/trie@1.0.0#0",
+    "rpm:ocaml-trie@1.0.0-37.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-ml/trie 1.0.0 and ocaml-trie 1.0.0-37.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:llvm-core/polly@22.1.8#0",
+    "rpm:llvm22@22.1.8-3.fc46#0"
+   ],
+   "verdict": "component_or_split",
+   "reason": "Gentoo llvm-core/polly builds only the polly subproject (LLVM_COMPONENTS=(polly cmake)) from the llvm-project monorepo tarball; Fedora llvm22 builds the LLVM toolchain from it."
+  },
+  {
+   "link": [
+    "ebuild:x11-libs/gtksourceview@4.8.4-r2#0",
+    "rpm:gtksourceview4@4.8.4-13.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "x11-libs/gtksourceview 4.8.4-r2 and gtksourceview4 4.8.4-13.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-ml/ocplib-endian@1.2#0",
+    "rpm:ocaml-ocplib-endian@1.2-28.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-ml/ocplib-endian 1.2 and ocaml-ocplib-endian 1.2-28.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:app-misc/uptimed@0.4.7#0",
+    "rpm:uptimed@0.4.7-5.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "app-misc/uptimed 0.4.7 and uptimed 0.4.7-5.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:app-arch/snappy@1.2.2-r1#0",
+    "rpm:snappy@1.2.2-6.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "app-arch/snappy 1.2.2-r1 and snappy 1.2.2-6.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-perl/Linux-Inotify2@2.300.0#0",
+    "rpm:perl-Linux-Inotify2@2.3-17.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-perl/Linux-Inotify2 2.300.0 and perl-Linux-Inotify2 2.3-17.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-perl/File-ShareDir-Install@0.140.0#0",
+    "rpm:perl-File-ShareDir-Install@0.14-11.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-perl/File-ShareDir-Install 0.140.0 and perl-File-ShareDir-Install 0.14-11.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-python/alembic@1.20.1#0",
+    "rpm:python-alembic@1.20.1-1.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-python/alembic 1.20.1 and python-alembic 1.20.1-1.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-lang/python@3.15.2_p1#0",
+    "rpm:python3.15@3.15.2-1.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "Gentoo dev-lang/python 3.15.2_p1 (Gentoo patchset) and Fedora python3.15 both build CPython 3.15.2 from it."
+  },
+  {
+   "link": [
+    "ebuild:dev-perl/List-SomeUtils@0.590.0#0",
+    "rpm:perl-List-SomeUtils@0.59-10.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-perl/List-SomeUtils 0.590.0 and perl-List-SomeUtils 0.59-10.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-lang/python@3.9.25#0",
+    "rpm:python3.9@3.9.25-16.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "Gentoo dev-lang/python 3.9.25 and Fedora python3.9 (alternative interpreter) both build CPython 3.9.25 from it."
+  },
+  {
+   "link": [
+    "ebuild:media-video/ffmpeg@9.0.2#0",
+    "rpm:ffmpeg@9.0.2-3.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "Both build FFmpeg 9.0.2 from the pristine release tarball (Fedora Source0 is ffmpeg.org release; codec set restricted by enable lists)."
+  },
+  {
+   "link": [
+    "ebuild:games-arcade/whichwayisup@0.7.9_p8#0",
+    "rpm:whichwayisup@0.7.9-26.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "games-arcade/whichwayisup 0.7.9_p8 and whichwayisup 0.7.9-26.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-perl/Data-Hierarchy@0.340.0-r2#0",
+    "rpm:perl-Data-Hierarchy@0.34-52.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-perl/Data-Hierarchy 0.340.0-r2 and perl-Data-Hierarchy 0.34-52.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:net-libs/libvncserver@0.9.15-r1#0",
+    "rpm:libvncserver@0.9.15-9.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "net-libs/libvncserver 0.9.15-r1 and libvncserver 0.9.15-9.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-python/merge3@1.0.0#0",
+    "rpm:python-merge3@1.0.0-1.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-python/merge3 1.0.0 and python-merge3 1.0.0-1.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-perl/MooseX-Types-JSON@1.10.0#0",
+    "rpm:perl-MooseX-Types-JSON@1.01-14.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-perl/MooseX-Types-JSON 1.10.0 and perl-MooseX-Types-JSON 1.01-14.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:kde-frameworks/kxmlgui@6.31.0#0",
+    "rpm:kf6-kxmlgui@6.31.0-2.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "kde-frameworks/kxmlgui 6.31.0 and kf6-kxmlgui 6.31.0-2.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-perl/MooseX-Aliases@0.110.0-r2#0",
+    "rpm:perl-MooseX-Aliases@0.11-36.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-perl/MooseX-Aliases 0.110.0-r2 and perl-MooseX-Aliases 0.11-36.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-python/pydyf@0.12.1#0",
+    "rpm:python-pydyf@0.12.1-4.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-python/pydyf 0.12.1 and python-pydyf 0.12.1-4.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:media-gfx/inkscape@1.4.4#0",
+    "rpm:inkscape@1.4.4-5.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "media-gfx/inkscape 1.4.4 and inkscape 1.4.4-5.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-python/sortedcontainers@2.4.0-r1#0",
+    "rpm:python-sortedcontainers@2.4.0-29.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-python/sortedcontainers 2.4.0-r1 and python-sortedcontainers 2.4.0-29.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-python/humanize@4.16.0#0",
+    "rpm:python-humanize@4.16.0-2.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-python/humanize 4.16.0 and python-humanize 4.16.0-2.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-python/httpx@0.28.1-r1#0",
+    "rpm:python-httpx@0.28.1-14.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-python/httpx 0.28.1-r1 and python-httpx 0.28.1-14.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:x11-drivers/xf86-input-wacom@1.2.4#0",
+    "rpm:xorg-x11-drv-wacom@1.2.4-3.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "x11-drivers/xf86-input-wacom 1.2.4 and xorg-x11-drv-wacom 1.2.4-3.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-cpp/random123@1.14.0#0",
+    "rpm:Random123@1.14.0-20.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-cpp/random123 1.14.0 and Random123 1.14.0-20.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-python/babelfish@0.6.1#0",
+    "rpm:python-babelfish@0.6.1-11.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "dev-python/babelfish 0.6.1 and python-babelfish 0.6.1-11.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:net-misc/oidc-agent@5.3.8#0",
+    "rpm:oidc-agent@5.3.8-1.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "net-misc/oidc-agent 5.3.8 and oidc-agent 5.3.8-1.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "ebuild:dev-util/mingw64-runtime@14.0.0#0",
+    "rpm:mingw-winpthreads@14.0.0-3.fc46#0"
+   ],
+   "verdict": "component_or_split",
+   "reason": "Fedora mingw-winpthreads builds only the winpthreads library from the mingw-w64 tarball; Gentoo mingw64-runtime builds the mingw-w64 CRT/headers runtime."
+  },
+  {
+   "link": [
+    "pkgbuild:libcue@2.3.0-1#0",
+    "rpm:libcue@2.3.0-15.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "libcue 2.3.0-1 and libcue 2.3.0-15.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:python-mygpoclient@1.10-1#0",
+    "rpm:python-mygpoclient@1.10-9.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "python-mygpoclient 1.10-1 and python-mygpoclient 1.10-9.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:python-cvxopt@1.3.3-1#0",
+    "rpm:python-cvxopt@1.3.3-5.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "python-cvxopt 1.3.3-1 and python-cvxopt 1.3.3-5.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:source-highlight@3.1.9-19#0",
+    "rpm:source-highlight@3.1.9-28.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "source-highlight 3.1.9-19 and source-highlight 3.1.9-28.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:haskell-text-short@0.1.6.1-133#0",
+    "rpm:ghc-text-short@0.1.6.1-2.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-text-short 0.1.6.1-133 and ghc-text-short 0.1.6.1-2.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:perl-extutils-cppguess@0.271-1#0",
+    "rpm:perl-ExtUtils-CppGuess@0.271-1.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "perl-extutils-cppguess 0.271-1 and perl-ExtUtils-CppGuess 0.271-1.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:haskell-appar@0.1.8-18#0",
+    "rpm:ghc-appar@0.1.8-31.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-appar 0.1.8-18 and ghc-appar 0.1.8-31.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:python-webencodings@0.5.1-13#0",
+    "rpm:python-webencodings@0.5.1-35.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "python-webencodings 0.5.1-13 and python-webencodings 0.5.1-35.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:egl-gbm@1.1.4-1#0",
+    "rpm:egl-gbm@2:1.1.4-3.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "egl-gbm 1.1.4-1 and egl-gbm 2:1.1.4-3.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:perl-mail-message@4.05-1#0",
+    "rpm:perl-Mail-Message@4.05-2.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "perl-mail-message 4.05-1 and perl-Mail-Message 4.05-2.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:haskell-mwc-random@0.15.3.0-61#0",
+    "rpm:ghc-mwc-random@0.15.3.0-2.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-mwc-random 0.15.3.0-61 and ghc-mwc-random 0.15.3.0-2.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:cryptsetup@2.8.8-1#0",
+    "rpm:cryptsetup@2.8.8-1.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "cryptsetup 2.8.8-1 and cryptsetup 2.8.8-1.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:haskell-digest@0.0.2.1-3#0",
+    "rpm:ghc-digest@0.0.2.1-9.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-digest 0.0.2.1-3 and ghc-digest 0.0.2.1-9.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:xf86-video-amdgpu@25.0.0-1#0",
+    "rpm:xorg-x11-drv-amdgpu@25.0.0-3.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "xf86-video-amdgpu 25.0.0-1 and xorg-x11-drv-amdgpu 25.0.0-3.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:perl-graphics-colornames-www@1.14-8#0",
+    "rpm:perl-Graphics-ColorNames-WWW@1.14-22.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "perl-graphics-colornames-www 1.14-8 and perl-Graphics-ColorNames-WWW 1.14-22.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:perl-cpan-meta-check@0.018-6#0",
+    "rpm:perl-CPAN-Meta-Check@0.018-8.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "perl-cpan-meta-check 0.018-6 and perl-CPAN-Meta-Check 0.018-8.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:ocaml-bos@0.3.0-1#0",
+    "rpm:ocaml-bos@0.3.0-5.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "ocaml-bos 0.3.0-1 and ocaml-bos 0.3.0-5.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:cmatrix@2.0-4#0",
+    "rpm:cmatrix@2.0-15.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "cmatrix 2.0-4 and cmatrix 2.0-15.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:smokeping@2.9.0-1#0",
+    "rpm:smokeping@2.9.0-16.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "smokeping 2.9.0-1 and smokeping 2.9.0-16.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:perl-email-sender@2.603-1#0",
+    "rpm:perl-Email-Sender@1:2.603-1.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "perl-email-sender 2.603-1 and perl-Email-Sender 1:2.603-1.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:flatseal@2.4.1-1#0",
+    "rpm:flatseal@2.4.1-2.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "flatseal 2.4.1-1 and flatseal 2.4.1-2.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:pageedit@2.7.6-1#0",
+    "rpm:pageedit@2.7.6-2.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "pageedit 2.7.6-1 and pageedit 2.7.6-2.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:perl-devel-cover@1.52-2#0",
+    "rpm:perl-Devel-Cover@1.52-5.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "perl-devel-cover 1.52-2 and perl-Devel-Cover 1.52-5.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:man-pages@6.20-1#0",
+    "rpm:man-pages@6.20-1.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "Both package the Linux man-pages 6.20 project; documentation-only on both sides, same product."
+  },
+  {
+   "link": [
+    "pkgbuild:bwm-ng@0.6.3-3#0",
+    "rpm:bwm-ng@0.6.3-9.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "bwm-ng 0.6.3-3 and bwm-ng 0.6.3-9.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:virt-what@1.27-1#0",
+    "rpm:virt-what@1.27-6.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "virt-what 1.27-1 and virt-what 1.27-6.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:kwayland-integration@6.8.2-1#0",
+    "rpm:kwayland-integration@6.8.2-1.fc46#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "kwayland-integration 6.8.2-1 and kwayland-integration 6.8.2-1.fc46 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:perl-local-lib@2.000029-6#0",
+    "rpm:perl-local-lib@2.000029-12.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "perl-local-lib 2.000029-6 and perl-local-lib 2.000029-12.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:haskell-json@0.11-42#0",
+    "rpm:ghc-json@0.11-8.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "haskell-json 0.11-42 and ghc-json 0.11-8.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  },
+  {
+   "link": [
+    "pkgbuild:perl-datetime-format-w3cdtf@0.09-1#0",
+    "rpm:perl-DateTime-Format-W3CDTF@0.09-1.fc45#0"
+   ],
+   "verdict": "same_primary_archive",
+   "reason": "perl-datetime-format-w3cdtf 0.09-1 and perl-DateTime-Format-W3CDTF 0.09-1.fc45 are repackagings of the same upstream project/version; the archive is each side's main source."
+  }
+ ]
+}

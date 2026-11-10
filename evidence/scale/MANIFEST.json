@@ -1,0 +1,45 @@
+{
+  "schema": "pkgbridge-scale-manifest/1",
+  "files": {
+    "deb.jsonl": {
+      "sha256": "13a51309eee3ebb18dc765ac888fddb21f6d590276be538231c1d85c7cb0ad68",
+      "bytes": 86961925
+    },
+    "rpm.jsonl": {
+      "sha256": "4d9e32d24ea70d40c7331a314cfa00714526541525ff2fb18d603a13a0643e24",
+      "bytes": 50495062
+    },
+    "pkgbuild.jsonl": {
+      "sha256": "29d3bddc17d45fcb2902d4a1ae596d90ab5c93cf673e2fe636c050c9181b537a",
+      "bytes": 25308911
+    },
+    "ebuild.jsonl": {
+      "sha256": "21678daed0bd5c20e8a86929b1b79c60df22d7fc1203ceb5cf978e5cdf6af883",
+      "bytes": 113941257
+    },
+    "links.jsonl": {
+      "sha256": "cc67749fe8d5ee359d724d01002aa00867892d8d6d9d6966ba27778397dccae7",
+      "bytes": 19291312
+    },
+    "tasks.jsonl": {
+      "sha256": "bf147bf37c8529b67343b47e7e41d126ec7b7a4acf70a8b6190257f712d18131",
+      "bytes": 55851062
+    },
+    "deb-enrichment.jsonl": {
+      "sha256": "1022c8133475e21720ad730853ec34637f0a5859f4d7fa20903a89a8842271ed",
+      "bytes": 10344422
+    },
+    "patches.json": {
+      "sha256": "fd0ea8d69561917e04fddcb47c64a7e47b0e952bf84733ad7d34e55ffecfb1ec",
+      "bytes": 6858158
+    },
+    "groups.jsonl": {
+      "sha256": "c82c7fdf567f4c08a14f32de743bc2ce98ee994a72901b0410986f7732483ce1",
+      "bytes": 2447525
+    },
+    "pkgbuild-enrichment.jsonl": {
+      "sha256": "96029f8cc3dfdecbab6d2826862b2e4892749fdcf747fafd9a718ee19af60da7",
+      "bytes": 1005751
+    }
+  }
+}

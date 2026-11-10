@@ -1,0 +1,88 @@
+{
+  "family": "ebuild",
+  "collector": "scripts/scale/extract_ebuild.py@a8cbf01",
+  "inputs": {
+    "repository": "https://github.com/gentoo-mirror/gentoo",
+    "commit": "ebeaca6e3863a586790123093406b52fb375810d",
+    "cache_entries": 33793
+  },
+  "records": 33793,
+  "duplicate_ids": {},
+  "records_live_vcs": 1838,
+  "records_without_artifacts": 1889,
+  "records_with_file_primary": 29394,
+  "records_with_failure_notes": 513,
+  "artifacts": 130172,
+  "artifacts_by_kind": {
+    "crate": 39119,
+    "file": 4171,
+    "gem": 501,
+    "other": 10579,
+    "patch": 616,
+    "signature": 3498,
+    "tarball": 69111,
+    "vcs": 1347,
+    "zip": 1230
+  },
+  "artifacts_by_role": {
+    "component": 39216,
+    "patch_bundle": 2866,
+    "primary": 30741,
+    "signature": 3498,
+    "unknown": 4959,
+    "vendor_bundle": 48892
+  },
+  "artifacts_by_kind_role": {
+    "crate/component": 10,
+    "crate/primary": 21,
+    "crate/vendor_bundle": 39088,
+    "file/component": 84,
+    "file/patch_bundle": 535,
+    "file/primary": 61,
+    "file/unknown": 3491,
+    "gem/primary": 501,
+    "other/unknown": 1468,
+    "other/vendor_bundle": 9111,
+    "patch/patch_bundle": 616,
+    "signature/signature": 3498,
+    "tarball/component": 38325,
+    "tarball/patch_bundle": 1712,
+    "tarball/primary": 28381,
+    "tarball/vendor_bundle": 693,
+    "vcs/primary": 1347,
+    "zip/component": 797,
+    "zip/patch_bundle": 3,
+    "zip/primary": 430
+  },
+  "artifacts_by_condition": {
+    "conditional": 31975,
+    "unconditional": 98197
+  },
+  "artifacts_without_declared_digest": 1347,
+  "primary_selection_evidence": {
+    "first unconditional upstream archive in SRC_URI (no archive name contains the package name)": 3509,
+    "first unconditional upstream archive in SRC_URI whose name contains the package name": 25885,
+    "live ebuild VCS repository URI assigned in the ebuild": 1347
+  },
+  "artifact_url_schemes": {
+    "ftp://": 129,
+    "git://": 19,
+    "http://": 2169,
+    "https://": 120946,
+    "mirror://": 6050,
+    "null": 856,
+    "svn://": 3
+  },
+  "hash_algorithms_present": {
+    "blake2b": 128825,
+    "sha512": 128825
+  },
+  "resolution": {
+    "partial": 89,
+    "resolved": 31955,
+    "unresolved": 1749
+  },
+  "failures_by_category": {
+    "live_vcs_uri_unextracted": 513
+  }
+}

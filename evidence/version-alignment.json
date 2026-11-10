@@ -1,0 +1,3960 @@
+{
+  "schema": "pkgbridge-version-alignment/1",
+  "interpretation": "Literal recipe versions after light normalisation; unresolved means the value needs macro or language evaluation. Agreement is textual.",
+  "summary": {
+    "identities": 130,
+    "all_five_resolved": 88,
+    "all_five_agree": 3,
+    "unresolved_by_family": {
+      "deb": 0,
+      "rpm": 2,
+      "pkgbuild": 1,
+      "ebuild": 39,
+      "nix": 7
+    },
+    "live_vcs_by_family": {
+      "deb": 0,
+      "rpm": 0,
+      "pkgbuild": 0,
+      "ebuild": 39,
+      "nix": 0
+    },
+    "disagreeing_with_majority_by_family": {
+      "deb": 62,
+      "rpm": 9,
+      "pkgbuild": 2,
+      "ebuild": 9,
+      "nix": 5
+    },
+    "pairwise": {
+      "deb-rpm": {
+        "compared": 128,
+        "agree": 8
+      },
+      "deb-pkgbuild": {
+        "compared": 129,
+        "agree": 5
+      },
+      "deb-ebuild": {
+        "compared": 91,
+        "agree": 5
+      },
+      "deb-nix": {
+        "compared": 123,
+        "agree": 4
+      },
+      "rpm-pkgbuild": {
+        "compared": 127,
+        "agree": 87
+      },
+      "rpm-ebuild": {
+        "compared": 91,
+        "agree": 50
+      },
+      "rpm-nix": {
+        "compared": 121,
+        "agree": 77
+      },
+      "pkgbuild-ebuild": {
+        "compared": 91,
+        "agree": 58
+      },
+      "pkgbuild-nix": {
+        "compared": 122,
+        "agree": 94
+      },
+      "ebuild-nix": {
+        "compared": 88,
+        "agree": 53
+      }
+    },
+    "median_publication_span_days": 1851,
+    "configured_tasks": {
+      "same": 42,
+      "different": 72,
+      "unresolved": 16,
+      "different_involving_deb": 49
+    },
+    "identity": {
+      "rejected_views": 6,
+      "affected_programs": [
+        "ffmpeg",
+        "gnuplot",
+        "helm",
+        "iperf3",
+        "yq"
+      ],
+      "configured_tasks_using_rejected_view": 4,
+      "all_five_resolved_excluding_affected": 85,
+      "all_five_agree_excluding_affected": 3,
+      "configured_tasks_without_rejected_view": {
+        "same": 42,
+        "different": 69,
+        "unresolved": 15
+      }
+    }
+  },
+  "rows": [
+    {
+      "name": "age",
+      "versions": {
+        "deb": "1.0.0~rc1",
+        "rpm": "1.3.1",
+        "pkgbuild": "1.3.1",
+        "ebuild": "1.3.1",
+        "nix": "1.3.1"
+      },
+      "literal_versions": {
+        "deb": "1.0.0~rc1",
+        "rpm": "1.3.1",
+        "pkgbuild": "1.3.1",
+        "ebuild": "1.3.1",
+        "nix": "1.3.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-04-02T20:37:29+00:00",
+        "rpm": "2026-01-05T17:01:41+01:00",
+        "pkgbuild": "2025-12-28T20:16:41+03:00",
+        "ebuild": "2026-03-14T14:48:18Z",
+        "nix": "2026-02-06T23:22:29+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1806
+    },
+    {
+      "name": "alacritty",
+      "versions": {
+        "deb": "0.11.0",
+        "rpm": "0.16.1",
+        "pkgbuild": "0.16.1",
+        "ebuild": null,
+        "nix": "0.16.1"
+      },
+      "literal_versions": {
+        "deb": "0.11.0",
+        "rpm": "0.16.1",
+        "pkgbuild": "0.16.1",
+        "ebuild": "9999",
+        "nix": "0.16.1"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2023-02-02T21:21:52+00:00",
+        "rpm": "2026-01-14T12:00:14Z",
+        "pkgbuild": "2025-12-13T15:30:56+03:00",
+        "ebuild": "2025-11-04T10:36:27+01:00",
+        "nix": "2026-01-25T22:28:09+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1088
+    },
+    {
+      "name": "aria2",
+      "versions": {
+        "deb": "1.35.0",
+        "rpm": "1.37.0",
+        "pkgbuild": "1.37.0",
+        "ebuild": "1.37.0",
+        "nix": "1.37.0"
+      },
+      "literal_versions": {
+        "deb": "1.35.0",
+        "rpm": "1.37.0",
+        "pkgbuild": "1.37.0",
+        "ebuild": "1.37.0",
+        "nix": "1.37.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-12-04T09:17:48+00:00",
+        "rpm": "2026-01-16T07:51:27Z",
+        "pkgbuild": "2026-01-06T14:04:18+09:00",
+        "ebuild": "2026-02-16T07:07:43+01:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1899
+    },
+    {
+      "name": "asciinema",
+      "versions": {
+        "deb": "2.0.2",
+        "rpm": "3.0.0",
+        "pkgbuild": "3.2.0",
+        "ebuild": "3.2.0",
+        "nix": "2.4.0"
+      },
+      "literal_versions": {
+        "deb": "2.0.2",
+        "rpm": "3.0.0",
+        "pkgbuild": "3.2.0",
+        "ebuild": "3.2.0",
+        "nix": "2.4.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-01-02T02:30:40+00:00",
+        "rpm": "2025-10-20T11:16:33+01:00",
+        "pkgbuild": "2026-03-02T01:17:59+03:00",
+        "ebuild": "2026-03-03T09:33:53-08:00",
+        "nix": "2026-02-07T10:06:06+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 1886
+    },
+    {
+      "name": "atuin",
+      "versions": {
+        "deb": "18.6.1",
+        "rpm": "18.11.0",
+        "pkgbuild": "18.13.6",
+        "ebuild": "18.13.2",
+        "nix": "18.13.6"
+      },
+      "literal_versions": {
+        "deb": "18.6.1",
+        "rpm": "18.11.0",
+        "pkgbuild": "18.13.6",
+        "ebuild": "18.13.2",
+        "nix": "18.13.6"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2025-05-12T14:35:38+00:00",
+        "rpm": "2026-02-19T09:26:58+01:00",
+        "pkgbuild": "2026-03-27T22:49:42+03:00",
+        "ebuild": "2026-03-16T08:22:39+01:00",
+        "nix": "2026-03-27T20:26:47+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 319
+    },
+    {
+      "name": "autojump",
+      "versions": {
+        "deb": "22.5.1",
+        "rpm": "22.5.3",
+        "pkgbuild": "22.5.3",
+        "ebuild": "22.5.3",
+        "nix": "22.5.3"
+      },
+      "literal_versions": {
+        "deb": "22.5.1",
+        "rpm": "22.5.3",
+        "pkgbuild": "22.5.3",
+        "ebuild": "22.5.3",
+        "nix": "22.5.3"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-01-02T02:30:40+00:00",
+        "rpm": "2026-01-16T08:07:02Z",
+        "pkgbuild": "2025-07-05T06:38:03-04:00",
+        "ebuild": "2025-02-28T10:06:24-05:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1853
+    },
+    {
+      "name": "bat",
+      "versions": {
+        "deb": "0.12.1",
+        "rpm": "0.26.1",
+        "pkgbuild": "0.26.1",
+        "ebuild": "0.26.1",
+        "nix": "0.26.1"
+      },
+      "literal_versions": {
+        "deb": "0.12.1",
+        "rpm": "0.26.1",
+        "pkgbuild": "0.26.1",
+        "ebuild": "0.26.1",
+        "nix": "0.26.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-12-07T08:50:39+00:00",
+        "rpm": "2026-03-24T00:20:40+01:00",
+        "pkgbuild": "2026-02-16T08:53:00+01:00",
+        "ebuild": "2025-12-24T16:42:23Z",
+        "nix": "2025-12-02T21:51:35Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1932
+    },
+    {
+      "name": "beets",
+      "versions": {
+        "deb": "1.4.9",
+        "rpm": "2.8.0",
+        "pkgbuild": "2.8.0",
+        "ebuild": null,
+        "nix": null
+      },
+      "literal_versions": {
+        "deb": "1.4.9",
+        "rpm": "2.8.0",
+        "pkgbuild": "2.8.0",
+        "ebuild": "9999",
+        "nix": null
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs",
+        "nix": "needs_evaluation"
+      },
+      "published": {
+        "deb": "2020-08-12T21:05:46+00:00",
+        "rpm": "2026-03-29T06:53:25-07:00",
+        "pkgbuild": "2026-03-29T06:51:32Z",
+        "ebuild": "2025-06-01T00:53:12+01:00",
+        "nix": "2025-10-27T15:58:11+02:00"
+      },
+      "resolved_families": 3,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2054
+    },
+    {
+      "name": "bmon",
+      "versions": {
+        "deb": "4.0",
+        "rpm": "4.0",
+        "pkgbuild": "4.0",
+        "ebuild": null,
+        "nix": "4.0"
+      },
+      "literal_versions": {
+        "deb": "4.0",
+        "rpm": "4.0",
+        "pkgbuild": "4.0",
+        "ebuild": "9999",
+        "nix": "4.0"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2020-11-19T21:19:24+00:00",
+        "rpm": "2026-01-16T08:27:05Z",
+        "pkgbuild": "2024-07-11T21:33:15-04:00",
+        "ebuild": "2025-01-01T18:11:26Z",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 1,
+      "all_agree": false,
+      "publication_span_days": 1897
+    },
+    {
+      "name": "borg",
+      "versions": {
+        "deb": "1.1.16",
+        "rpm": "1.4.4",
+        "pkgbuild": "1.4.4",
+        "ebuild": "1.4.3",
+        "nix": "1.4.4"
+      },
+      "literal_versions": {
+        "deb": "1.1.16",
+        "rpm": "1.4.4",
+        "pkgbuild": "1.4.4",
+        "ebuild": "1.4.3",
+        "nix": "1.4.4"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-05-31T15:09:13+00:00",
+        "rpm": "2026-03-31T08:46:17Z",
+        "pkgbuild": "2026-03-19T09:06:50-04:00",
+        "ebuild": "2025-11-07T17:25:22+01:00",
+        "nix": "2026-03-19T09:24:27+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1764
+    },
+    {
+      "name": "btop",
+      "versions": {
+        "deb": "1.2.13",
+        "rpm": "1.4.6",
+        "pkgbuild": "1.4.6",
+        "ebuild": "1.4.6",
+        "nix": "1.4.6"
+      },
+      "literal_versions": {
+        "deb": "1.2.13",
+        "rpm": "1.4.6",
+        "pkgbuild": "1.4.6",
+        "ebuild": "1.4.6",
+        "nix": "1.4.6"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2022-11-07T03:17:08+00:00",
+        "rpm": "2026-02-25T16:10:05-06:00",
+        "pkgbuild": "2026-03-27T02:57:10+08:00",
+        "ebuild": "2026-02-08T01:02:45-05:00",
+        "nix": "2026-01-23T00:56:13+11:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1235
+    },
+    {
+      "name": "cabextract",
+      "versions": {
+        "deb": "1.9",
+        "rpm": "1.11",
+        "pkgbuild": "1.11",
+        "ebuild": null,
+        "nix": "1.11"
+      },
+      "literal_versions": {
+        "deb": "1.9",
+        "rpm": "1.11",
+        "pkgbuild": "1.11",
+        "ebuild": "9999",
+        "nix": "1.11"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2020-02-10T17:14:46+00:00",
+        "rpm": "2026-01-16T08:41:45Z",
+        "pkgbuild": "2024-07-11T21:49:01-04:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2180
+    },
+    {
+      "name": "calcurse",
+      "versions": {
+        "deb": "4.6.0",
+        "rpm": "4.8.2",
+        "pkgbuild": "4.8.2",
+        "ebuild": "4.8.2",
+        "nix": "4.8.2"
+      },
+      "literal_versions": {
+        "deb": "4.6.0",
+        "rpm": "4.8.2",
+        "pkgbuild": "4.8.2",
+        "ebuild": "4.8.2",
+        "nix": "4.8.2"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-07-12T20:52:55+00:00",
+        "rpm": "2026-01-16T08:43:44Z",
+        "pkgbuild": "2025-08-07T16:36:04-04:00",
+        "ebuild": "2025-10-03T02:10:26+01:00",
+        "nix": "2026-02-07T09:59:05+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2035
+    },
+    {
+      "name": "calibre",
+      "versions": {
+        "deb": "5.12.0",
+        "rpm": "9.6.0",
+        "pkgbuild": "8.7.0",
+        "ebuild": "8.15.0",
+        "nix": "9.5.0"
+      },
+      "literal_versions": {
+        "deb": "5.12.0",
+        "rpm": "9.6.0",
+        "pkgbuild": "8.7.0",
+        "ebuild": "8.15.0",
+        "nix": "9.5.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2024-08-25T14:52:53+00:00",
+        "rpm": "2026-03-29T10:41:27-07:00",
+        "pkgbuild": "2026-03-23T18:12:28+01:00",
+        "ebuild": "2025-12-02T12:07:01Z",
+        "nix": "2026-04-01T22:14:29Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 5,
+      "all_agree": false,
+      "publication_span_days": 584
+    },
+    {
+      "name": "ccache",
+      "versions": {
+        "deb": "4.2",
+        "rpm": "4.13.2",
+        "pkgbuild": "4.13.2",
+        "ebuild": "4.13",
+        "nix": "4.13.1"
+      },
+      "literal_versions": {
+        "deb": "4.2",
+        "rpm": "4.13.2",
+        "pkgbuild": "4.13.2",
+        "ebuild": "4.13",
+        "nix": "4.13.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-08T03:31:21+00:00",
+        "rpm": "2026-03-24T12:04:00-05:00",
+        "pkgbuild": "2026-03-26T17:22:28+01:00",
+        "ebuild": "2026-03-06T02:54:40Z",
+        "nix": "2026-03-24T20:59:16+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 1872
+    },
+    {
+      "name": "ccze",
+      "versions": {
+        "deb": "0.2.1",
+        "rpm": "0.2.1",
+        "pkgbuild": "0.2.1",
+        "ebuild": "0.2.1",
+        "nix": "0.2.1-8"
+      },
+      "literal_versions": {
+        "deb": "0.2.1",
+        "rpm": "0.2.1",
+        "pkgbuild": "0.2.1",
+        "ebuild": "0.2.1",
+        "nix": "0.2.1-8"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-07-19T08:41:03+00:00",
+        "rpm": "2023-06-22T16:04:24+02:00",
+        "pkgbuild": "2024-07-11T22:01:33-04:00",
+        "ebuild": "2025-01-01T18:11:26Z",
+        "nix": "2026-01-28T18:53:10+02:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2019
+    },
+    {
+      "name": "chafa",
+      "versions": {
+        "deb": "1.6.0",
+        "rpm": "1.18.1",
+        "pkgbuild": "1.18.1",
+        "ebuild": "1.18.1",
+        "nix": "1.18.1"
+      },
+      "literal_versions": {
+        "deb": "1.6.0",
+        "rpm": "1.18.1",
+        "pkgbuild": "1.18.1",
+        "ebuild": "1.18.1",
+        "nix": "1.18.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-01-15T08:39:04+00:00",
+        "rpm": "2026-03-17T22:52:31Z",
+        "pkgbuild": "2026-03-04T01:33:47+08:00",
+        "ebuild": "2026-03-11T20:25:23-04:00",
+        "nix": "2026-02-08T20:42:08Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1887
+    },
+    {
+      "name": "clamav",
+      "versions": {
+        "deb": "0.103.10",
+        "rpm": "1.4.4",
+        "pkgbuild": "1.5.2",
+        "ebuild": "1.5.2",
+        "nix": "1.4.3"
+      },
+      "literal_versions": {
+        "deb": "0.103.10",
+        "rpm": "1.4.4",
+        "pkgbuild": "1.5.2",
+        "ebuild": "1.5.2",
+        "nix": "1.4.3"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2023-09-10T20:42:20+00:00",
+        "rpm": "2026-03-05T13:45:15-06:00",
+        "pkgbuild": "2026-03-27T17:48:55+08:00",
+        "ebuild": "2026-03-09T11:59:21+10:00",
+        "nix": "2026-02-07T09:59:05+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 928
+    },
+    {
+      "name": "cloc",
+      "versions": {
+        "deb": "1.86",
+        "rpm": "2.08",
+        "pkgbuild": "2.08",
+        "ebuild": "2.00",
+        "nix": "2.08"
+      },
+      "literal_versions": {
+        "deb": "1.86",
+        "rpm": "2.08",
+        "pkgbuild": "2.08",
+        "ebuild": "2.00",
+        "nix": "2.08"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-07-06T08:40:35+00:00",
+        "rpm": "2026-02-16T22:29:22+01:00",
+        "pkgbuild": "2026-02-04T09:24:20+01:00",
+        "ebuild": "2025-03-10T03:05:27Z",
+        "nix": "2026-01-25T06:35:18Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 2051
+    },
+    {
+      "name": "colordiff",
+      "versions": {
+        "deb": "1.0.18",
+        "rpm": "1.0.22",
+        "pkgbuild": "1.0.21",
+        "ebuild": "1.0.22",
+        "nix": "1.0.22"
+      },
+      "literal_versions": {
+        "deb": "1.0.18",
+        "rpm": "1.0.22",
+        "pkgbuild": "1.0.21",
+        "ebuild": "1.0.22",
+        "nix": "1.0.22"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-01-01T21:11:02+00:00",
+        "rpm": "2026-01-17T17:29:21Z",
+        "pkgbuild": "2024-07-11T22:37:55-04:00",
+        "ebuild": "2026-01-18T16:03:18Z",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1854
+    },
+    {
+      "name": "cscope",
+      "versions": {
+        "deb": "15.9",
+        "rpm": "15.9",
+        "pkgbuild": "15.9",
+        "ebuild": "15.9",
+        "nix": "15.9"
+      },
+      "literal_versions": {
+        "deb": "15.9",
+        "rpm": "15.9",
+        "pkgbuild": "15.9",
+        "ebuild": "15.9",
+        "nix": "15.9"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2018-10-26T09:33:58+00:00",
+        "rpm": "2026-03-25T20:53:45+01:00",
+        "pkgbuild": "2024-07-11T22:49:27-04:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-02-07T09:59:05+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 1,
+      "all_agree": true,
+      "publication_span_days": 2707
+    },
+    {
+      "name": "diffstat",
+      "versions": {
+        "deb": "1.64",
+        "rpm": "1.68",
+        "pkgbuild": "1.68",
+        "ebuild": "1.68",
+        "nix": "1.68"
+      },
+      "literal_versions": {
+        "deb": "1.64",
+        "rpm": "1.68",
+        "pkgbuild": "1.68",
+        "ebuild": "1.68",
+        "nix": "1.68"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-01-16T08:35:25+00:00",
+        "rpm": "2026-01-16T09:59:04Z",
+        "pkgbuild": "2025-04-25T09:14:57-04:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1839
+    },
+    {
+      "name": "duf",
+      "versions": {
+        "deb": "0.8.1",
+        "rpm": "0.9.1",
+        "pkgbuild": "0.9.1",
+        "ebuild": "0.9.1",
+        "nix": "0.9.1"
+      },
+      "literal_versions": {
+        "deb": "0.8.1",
+        "rpm": "0.9.1",
+        "pkgbuild": "0.9.1",
+        "ebuild": "0.9.1",
+        "nix": "0.9.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2022-04-18T21:04:40+00:00",
+        "rpm": "2025-12-29T16:43:05+01:00",
+        "pkgbuild": "2025-09-09T19:48:36+03:00",
+        "ebuild": "2025-09-11T03:35:21+01:00",
+        "nix": "2025-11-08T11:50:58-05:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1350
+    },
+    {
+      "name": "dust",
+      "versions": {
+        "deb": "1.2.0",
+        "rpm": "1.2.4",
+        "pkgbuild": "1.2.4",
+        "ebuild": "1.2.3",
+        "nix": "1.2.4"
+      },
+      "literal_versions": {
+        "deb": "1.2.0",
+        "rpm": "1.2.4",
+        "pkgbuild": "1.2.4",
+        "ebuild": "1.2.3",
+        "nix": "1.2.4"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2025-05-15T02:38:07+00:00",
+        "rpm": "2026-03-18T12:03:10Z",
+        "pkgbuild": "2026-02-14T16:25:47+03:00",
+        "ebuild": "2026-02-18T19:21:01-05:00",
+        "nix": "2026-01-09T04:46:19Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 307
+    },
+    {
+      "name": "elinks",
+      "versions": {
+        "deb": "0.13.2",
+        "rpm": "0.19.1",
+        "pkgbuild": "0.19.1",
+        "ebuild": null,
+        "nix": "0.19.0"
+      },
+      "literal_versions": {
+        "deb": "0.13.2",
+        "rpm": "0.19.1",
+        "pkgbuild": "0.19.1",
+        "ebuild": "9999",
+        "nix": "0.19.0"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2020-06-13T14:49:20+00:00",
+        "rpm": "2026-02-09T09:49:17+01:00",
+        "pkgbuild": "2026-03-06T09:12:02+01:00",
+        "ebuild": "2026-02-05T22:54:10Z",
+        "nix": "2026-02-07T21:35:52+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 2091
+    },
+    {
+      "name": "entr",
+      "versions": {
+        "deb": "4.7",
+        "rpm": "5.8",
+        "pkgbuild": "5.8",
+        "ebuild": "5.8",
+        "nix": "5.8"
+      },
+      "literal_versions": {
+        "deb": "4.7",
+        "rpm": "5.8",
+        "pkgbuild": "5.8",
+        "ebuild": "5.8",
+        "nix": "5.8"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-02T15:05:04+00:00",
+        "rpm": "2026-03-03T09:53:29+01:00",
+        "pkgbuild": "2026-03-03T00:05:09+01:00",
+        "ebuild": "2026-03-09T09:36:22+02:00",
+        "nix": "2026-04-01T22:14:29Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1884
+    },
+    {
+      "name": "evince",
+      "versions": {
+        "deb": "3.38.2",
+        "rpm": "48.1",
+        "pkgbuild": "48.1",
+        "ebuild": "48.1",
+        "nix": "48.1"
+      },
+      "literal_versions": {
+        "deb": "3.38.2",
+        "rpm": "48.1",
+        "pkgbuild": "48.1",
+        "ebuild": "48.1",
+        "nix": "48.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-17T02:34:42+00:00",
+        "rpm": "2026-03-19T17:32:54+01:00",
+        "pkgbuild": "2026-03-28T00:24:35+08:00",
+        "ebuild": "2026-01-13T21:24:11Z",
+        "nix": "2025-12-10T18:09:49+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1864
+    },
+    {
+      "name": "eza",
+      "versions": {
+        "deb": "0.21.0",
+        "rpm": "0.23.4",
+        "pkgbuild": "0.23.4",
+        "ebuild": "0.23.4",
+        "nix": "0.23.4"
+      },
+      "literal_versions": {
+        "deb": "0.21.0",
+        "rpm": "0.23.4",
+        "pkgbuild": "0.23.4",
+        "ebuild": "0.23.4",
+        "nix": "0.23.4"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2025-04-07T03:14:54+00:00",
+        "rpm": "2026-03-17T18:21:24+01:00",
+        "pkgbuild": "2026-02-16T09:08:05+01:00",
+        "ebuild": "2026-01-05T18:33:45+02:00",
+        "nix": "2025-10-04T08:53:20+02:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 344
+    },
+    {
+      "name": "fastfetch",
+      "versions": {
+        "deb": "2.40.4",
+        "rpm": "2.61.0",
+        "pkgbuild": "2.61.0",
+        "ebuild": "2.60.0",
+        "nix": "2.61.0"
+      },
+      "literal_versions": {
+        "deb": "2.40.4",
+        "rpm": "2.61.0",
+        "pkgbuild": "2.61.0",
+        "ebuild": "2.60.0",
+        "nix": "2.61.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2025-04-15T21:19:46+00:00",
+        "rpm": "2026-04-03T10:36:32-05:00",
+        "pkgbuild": "2026-03-28T18:53:38+01:00",
+        "ebuild": "2026-02-13T22:57:12Z",
+        "nix": "2026-03-28T14:44:38Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 352
+    },
+    {
+      "name": "fd",
+      "versions": {
+        "deb": "8.2.1",
+        "rpm": "10.4.2",
+        "pkgbuild": "10.4.2",
+        "ebuild": "10.4.2",
+        "nix": "10.4.2"
+      },
+      "literal_versions": {
+        "deb": "8.2.1",
+        "rpm": "10.4.2",
+        "pkgbuild": "10.4.2",
+        "ebuild": "10.4.2",
+        "nix": "10.4.2"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-12-15T14:54:28+00:00",
+        "rpm": "2026-04-03T20:36:12+01:00",
+        "pkgbuild": "2026-03-10T17:30:47+01:00",
+        "ebuild": "2026-03-09T04:04:05+01:00",
+        "nix": "2026-03-11T03:43:46Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1935
+    },
+    {
+      "name": "fdupes",
+      "versions": {
+        "deb": "2.1.2",
+        "rpm": "2.4.0",
+        "pkgbuild": "2.4.0",
+        "ebuild": null,
+        "nix": "2.4.0"
+      },
+      "literal_versions": {
+        "deb": "2.1.2",
+        "rpm": "2.4.0",
+        "pkgbuild": "2.4.0",
+        "ebuild": "9999",
+        "nix": "2.4.0"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-01-14T08:38:43+00:00",
+        "rpm": "2026-01-16T11:11:01Z",
+        "pkgbuild": "2025-06-13T19:14:18+02:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1841
+    },
+    {
+      "name": "ffmpeg",
+      "versions": {
+        "deb": "4.3.7",
+        "rpm": "8.0.1",
+        "pkgbuild": "8.1",
+        "ebuild": null,
+        "nix": null
+      },
+      "literal_versions": {
+        "deb": "4.3.7",
+        "rpm": "8.0.1",
+        "pkgbuild": "8.1",
+        "ebuild": "9999",
+        "nix": null
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs",
+        "nix": "needs_evaluation"
+      },
+      "published": {
+        "deb": "2024-06-29T15:07:53+00:00",
+        "rpm": "2026-03-19T22:15:49+01:00",
+        "pkgbuild": "2026-03-21T13:00:58-04:00",
+        "ebuild": "2026-03-10T22:40:46-04:00",
+        "nix": "2026-01-24T11:53:23+01:00"
+      },
+      "resolved_families": 3,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 630
+    },
+    {
+      "name": "fish",
+      "versions": {
+        "deb": "3.1.2",
+        "rpm": null,
+        "pkgbuild": "4.6.0",
+        "ebuild": null,
+        "nix": "4.6.0"
+      },
+      "literal_versions": {
+        "deb": "3.1.2",
+        "rpm": null,
+        "pkgbuild": "4.6.0",
+        "ebuild": "9999",
+        "nix": "4.6.0"
+      },
+      "unresolved_reasons": {
+        "rpm": "needs_evaluation",
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2022-09-25T00:18:06+00:00",
+        "rpm": "2026-03-28T07:16:46-04:00",
+        "pkgbuild": "2026-04-01T22:54:51+08:00",
+        "ebuild": "2026-03-03T21:45:11Z",
+        "nix": "2026-03-28T10:46:19+01:00"
+      },
+      "resolved_families": 3,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1284
+    },
+    {
+      "name": "fswatch",
+      "versions": {
+        "deb": "1.14.0",
+        "rpm": "1.17.1",
+        "pkgbuild": "1.18.3",
+        "ebuild": "1.18.3",
+        "nix": "1.18.3"
+      },
+      "literal_versions": {
+        "deb": "1.14.0",
+        "rpm": "1.17.1",
+        "pkgbuild": "1.18.3",
+        "ebuild": "1.18.3",
+        "nix": "1.18.3"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-09-21T02:51:52+00:00",
+        "rpm": "2026-01-16T11:38:28Z",
+        "pkgbuild": "2025-02-07T13:50:01+08:00",
+        "ebuild": "2025-02-15T19:51:18+01:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1591
+    },
+    {
+      "name": "fzf",
+      "versions": {
+        "deb": "0.24.3",
+        "rpm": "0.70.0",
+        "pkgbuild": "0.71.0",
+        "ebuild": "0.70.0",
+        "nix": "0.70.0"
+      },
+      "literal_versions": {
+        "deb": "0.24.3",
+        "rpm": "0.70.0",
+        "pkgbuild": "0.71.0",
+        "ebuild": "0.70.0",
+        "nix": "0.70.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-12-02T15:17:34+00:00",
+        "rpm": "2026-03-02T08:47:14Z",
+        "pkgbuild": "2026-04-04T12:05:43+02:00",
+        "ebuild": "2026-02-24T19:03:15+02:00",
+        "nix": "2026-03-02T12:38:06Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1948
+    },
+    {
+      "name": "geary",
+      "versions": {
+        "deb": "3.38.1",
+        "rpm": "46.0",
+        "pkgbuild": "46.0",
+        "ebuild": "46.0",
+        "nix": "46.0"
+      },
+      "literal_versions": {
+        "deb": "3.38.1",
+        "rpm": "46.0",
+        "pkgbuild": "46.0",
+        "ebuild": "46.0",
+        "nix": "46.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-12-12T20:42:29+00:00",
+        "rpm": "2026-03-26T11:17:11+01:00",
+        "pkgbuild": "2025-11-05T14:47:09+01:00",
+        "ebuild": "2025-06-09T04:10:10+01:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1929
+    },
+    {
+      "name": "gh",
+      "versions": {
+        "deb": "2.23.0",
+        "rpm": "2.88.1",
+        "pkgbuild": "2.89.0",
+        "ebuild": null,
+        "nix": "2.89.0"
+      },
+      "literal_versions": {
+        "deb": "2.23.0",
+        "rpm": "2.88.1",
+        "pkgbuild": "2.89.0",
+        "ebuild": "9999",
+        "nix": "2.89.0"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2023-02-28T15:10:36+00:00",
+        "rpm": "2026-03-12T15:48:43Z",
+        "pkgbuild": "2026-03-26T23:10:34+03:00",
+        "ebuild": "2025-08-05T16:05:17-05:00",
+        "nix": "2026-03-27T08:58:54+10:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1122
+    },
+    {
+      "name": "gimp",
+      "versions": {
+        "deb": "2.10.22",
+        "rpm": "3.2.2",
+        "pkgbuild": "3.2.2",
+        "ebuild": null,
+        "nix": "3.0.8"
+      },
+      "literal_versions": {
+        "deb": "2.10.22",
+        "rpm": "3.2.2",
+        "pkgbuild": "3.2.2",
+        "ebuild": "9999",
+        "nix": "3.0.8"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2023-12-27T08:53:25+00:00",
+        "rpm": "2026-03-30T14:21:20+02:00",
+        "pkgbuild": "2026-03-28T11:09:42+01:00",
+        "ebuild": "2026-03-16T13:51:52Z",
+        "nix": "2026-03-19T19:29:59+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 824
+    },
+    {
+      "name": "git-delta",
+      "versions": {
+        "deb": "0.18.2",
+        "rpm": "0.19.1",
+        "pkgbuild": "0.19.2",
+        "ebuild": "0.18.2",
+        "nix": "0.19.2"
+      },
+      "literal_versions": {
+        "deb": "0.18.2",
+        "rpm": "0.19.1",
+        "pkgbuild": "0.19.2",
+        "ebuild": "0.18.2",
+        "nix": "0.19.2"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2025-04-06T14:57:41+00:00",
+        "rpm": "2026-04-02T20:17:36+02:00",
+        "pkgbuild": "2026-03-29T06:45:00Z",
+        "ebuild": "2025-11-04T10:36:27+01:00",
+        "nix": "2026-03-29T03:36:44Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 361
+    },
+    {
+      "name": "git-lfs",
+      "versions": {
+        "deb": "2.13.2",
+        "rpm": "3.7.1",
+        "pkgbuild": "3.7.1",
+        "ebuild": null,
+        "nix": "3.7.1"
+      },
+      "literal_versions": {
+        "deb": "2.13.2",
+        "rpm": "3.7.1",
+        "pkgbuild": "3.7.1",
+        "ebuild": "9999",
+        "nix": "3.7.1"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-01-14T08:38:43+00:00",
+        "rpm": "2025-11-20T22:40:35-05:00",
+        "pkgbuild": "2025-10-18T17:46:03+02:00",
+        "ebuild": "2025-12-19T10:51:56+01:00",
+        "nix": "2026-03-24T11:50:55+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1895
+    },
+    {
+      "name": "glances",
+      "versions": {
+        "deb": "3.3.1.1",
+        "rpm": "4.3.0.8",
+        "pkgbuild": "4.5.3.2",
+        "ebuild": "4.3.1",
+        "nix": "4.5.0.5"
+      },
+      "literal_versions": {
+        "deb": "3.3.1.1",
+        "rpm": "4.3.0.8",
+        "pkgbuild": "4.5.3.2",
+        "ebuild": "4.3.1",
+        "nix": "4.5.0.5"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2023-01-23T04:00:22+00:00",
+        "rpm": "2025-01-16T14:53:25+02:00",
+        "pkgbuild": "2026-03-31T12:49:30+02:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-02-28T18:38:49+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 5,
+      "all_agree": false,
+      "publication_span_days": 1163
+    },
+    {
+      "name": "gnuplot",
+      "versions": {
+        "deb": "5.4.1",
+        "rpm": null,
+        "pkgbuild": "6.0.4",
+        "ebuild": null,
+        "nix": "0.7"
+      },
+      "literal_versions": {
+        "deb": "5.4.1",
+        "rpm": null,
+        "pkgbuild": "6.0.4",
+        "ebuild": "6.1.9999",
+        "nix": "0.7"
+      },
+      "unresolved_reasons": {
+        "rpm": "needs_evaluation",
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2022-02-03T03:17:30+00:00",
+        "rpm": "2026-03-02T15:51:59-05:00",
+        "pkgbuild": "2026-03-28T02:39:15+08:00",
+        "ebuild": "2026-01-13T14:07:07+01:00",
+        "nix": "2025-11-20T09:12:06+01:00"
+      },
+      "resolved_families": 3,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1513
+    },
+    {
+      "name": "grc",
+      "versions": {
+        "deb": "1.11.3",
+        "rpm": "1.13",
+        "pkgbuild": "1.13",
+        "ebuild": "1.13",
+        "nix": "1.13"
+      },
+      "literal_versions": {
+        "deb": "1.11.3",
+        "rpm": "1.13",
+        "pkgbuild": "1.13",
+        "ebuild": "1.13",
+        "nix": "1.13"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-01-02T02:30:40+00:00",
+        "rpm": "2024-07-29T10:42:16+02:00",
+        "pkgbuild": "2024-07-12T12:42:26-04:00",
+        "ebuild": "2025-05-02T05:37:31+01:00",
+        "nix": "2026-02-24T23:43:50+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1879
+    },
+    {
+      "name": "helm",
+      "versions": {
+        "deb": "3.7.0",
+        "rpm": "4.1.1",
+        "pkgbuild": "4.1.3",
+        "ebuild": "3.19.2",
+        "nix": "0.9.0"
+      },
+      "literal_versions": {
+        "deb": "3.7.0",
+        "rpm": "4.1.1",
+        "pkgbuild": "4.1.3",
+        "ebuild": "3.19.2",
+        "nix": "0.9.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-04-17T14:31:22+00:00",
+        "rpm": "2026-02-11T15:57:40+01:00",
+        "pkgbuild": "2026-03-13T22:49:43+01:00",
+        "ebuild": "2026-02-18T19:21:07-05:00",
+        "nix": "2026-02-15T19:42:25+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 5,
+      "all_agree": false,
+      "publication_span_days": 1791
+    },
+    {
+      "name": "htop",
+      "versions": {
+        "deb": "3.0.5",
+        "rpm": "3.4.1",
+        "pkgbuild": "3.4.1",
+        "ebuild": null,
+        "nix": "3.4.1"
+      },
+      "literal_versions": {
+        "deb": "3.0.5",
+        "rpm": "3.4.1",
+        "pkgbuild": "3.4.1",
+        "ebuild": "9999",
+        "nix": "3.4.1"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-05-02T14:39:07+00:00",
+        "rpm": "2025-04-19T16:44:24-05:00",
+        "pkgbuild": "2025-04-10T22:17:17-04:00",
+        "ebuild": "2026-01-13T12:40:03-05:00",
+        "nix": "2026-02-08T17:26:27+02:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1743
+    },
+    {
+      "name": "httpie",
+      "versions": {
+        "deb": "2.2.0",
+        "rpm": "3.2.4",
+        "pkgbuild": "3.2.4",
+        "ebuild": "3.2.4",
+        "nix": "3.2.4"
+      },
+      "literal_versions": {
+        "deb": "2.2.0",
+        "rpm": "3.2.4",
+        "pkgbuild": "3.2.4",
+        "ebuild": "3.2.4",
+        "nix": "3.2.4"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-07-12T20:52:55+00:00",
+        "rpm": "2025-08-26T14:50:16+02:00",
+        "pkgbuild": "2025-12-28T12:31:22+01:00",
+        "ebuild": "2025-05-25T07:00:42+01:00",
+        "nix": "2026-04-01T22:14:29Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2089
+    },
+    {
+      "name": "hugo",
+      "versions": {
+        "deb": "0.80.0",
+        "rpm": "0.159.0",
+        "pkgbuild": "0.160.0",
+        "ebuild": "0.148.2",
+        "nix": "0.159.0"
+      },
+      "literal_versions": {
+        "deb": "0.80.0",
+        "rpm": "0.159.0",
+        "pkgbuild": "0.160.0",
+        "ebuild": "0.148.2",
+        "nix": "0.159.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-09T21:53:49+00:00",
+        "rpm": "2026-04-01T22:32:53-05:00",
+        "pkgbuild": "2026-04-05T09:34:50+02:00",
+        "ebuild": "2025-08-22T20:31:46-07:00",
+        "nix": "2026-03-25T23:09:25+07:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 1880
+    },
+    {
+      "name": "hunspell",
+      "versions": {
+        "deb": "1.7.0",
+        "rpm": "1.7.2",
+        "pkgbuild": "1.7.2",
+        "ebuild": "1.7.2",
+        "nix": "1.7.2"
+      },
+      "literal_versions": {
+        "deb": "1.7.0",
+        "rpm": "1.7.2",
+        "pkgbuild": "1.7.2",
+        "ebuild": "1.7.2",
+        "nix": "1.7.2"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-06-24T20:47:06+00:00",
+        "rpm": "2026-01-16T16:15:37Z",
+        "pkgbuild": "2026-02-14T11:17:43+01:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2025-04-24T15:32:53-04:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2060
+    },
+    {
+      "name": "hwinfo",
+      "versions": {
+        "deb": "21.72",
+        "rpm": "23.2",
+        "pkgbuild": "25.2",
+        "ebuild": "23.2",
+        "nix": "25.2"
+      },
+      "literal_versions": {
+        "deb": "21.72",
+        "rpm": "23.2",
+        "pkgbuild": "25.2",
+        "ebuild": "23.2",
+        "nix": "25.2"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-01-31T14:37:40+00:00",
+        "rpm": "2025-04-24T14:02:29+02:00",
+        "pkgbuild": "2026-02-21T12:51:46+01:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-02-04T13:24:05Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1846
+    },
+    {
+      "name": "hyperfine",
+      "versions": {
+        "deb": "1.15.0",
+        "rpm": "1.20.0",
+        "pkgbuild": "1.20.0",
+        "ebuild": "1.20.0",
+        "nix": "1.20.0"
+      },
+      "literal_versions": {
+        "deb": "1.15.0",
+        "rpm": "1.20.0",
+        "pkgbuild": "1.20.0",
+        "ebuild": "1.20.0",
+        "nix": "1.20.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2023-01-23T04:00:22+00:00",
+        "rpm": "2025-12-16T21:56:05+01:00",
+        "pkgbuild": "2025-11-18T11:56:38+03:00",
+        "ebuild": "2026-01-05T14:35:38-05:00",
+        "nix": "2025-12-20T17:44:32Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1078
+    },
+    {
+      "name": "i2c-tools",
+      "versions": {
+        "deb": "4.2",
+        "rpm": "4.4",
+        "pkgbuild": "4.4",
+        "ebuild": "4.4",
+        "nix": "4.4"
+      },
+      "literal_versions": {
+        "deb": "4.2",
+        "rpm": "4.4",
+        "pkgbuild": "4.4",
+        "ebuild": "4.4",
+        "nix": "4.4"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-10-14T21:18:06+00:00",
+        "rpm": "2026-01-16T16:34:25Z",
+        "pkgbuild": "2025-12-14T14:38:05+01:00",
+        "ebuild": "2025-11-12T09:40:30Z",
+        "nix": "2026-02-22T12:43:51+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1956
+    },
+    {
+      "name": "iftop",
+      "versions": {
+        "deb": "1.0~pre4",
+        "rpm": "1.0",
+        "pkgbuild": "1.0pre4",
+        "ebuild": "1.0_pre4",
+        "nix": "1.0pre4"
+      },
+      "literal_versions": {
+        "deb": "1.0~pre4",
+        "rpm": "1.0",
+        "pkgbuild": "1.0pre4",
+        "ebuild": "1.0_pre4",
+        "nix": "1.0pre4"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-07-22T14:51:19+00:00",
+        "rpm": "2026-01-16T16:41:22Z",
+        "pkgbuild": "2024-07-12T14:28:00-04:00",
+        "ebuild": "2025-12-22T11:30:13Z",
+        "nix": "2026-03-21T12:30:12-04:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 2068
+    },
+    {
+      "name": "inkscape",
+      "versions": {
+        "deb": "1.0.2",
+        "rpm": "1.4.3",
+        "pkgbuild": "1.4.3",
+        "ebuild": null,
+        "nix": "1.4.3"
+      },
+      "literal_versions": {
+        "deb": "1.0.2",
+        "rpm": "1.4.3",
+        "pkgbuild": "1.4.3",
+        "ebuild": "9999",
+        "nix": "1.4.3"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-04-14T21:14:32+00:00",
+        "rpm": "2026-01-20T11:26:03-06:00",
+        "pkgbuild": "2026-04-05T19:17:15+02:00",
+        "ebuild": "2026-01-11T22:08:40+01:00",
+        "nix": "2026-02-06T00:25:41+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1816
+    },
+    {
+      "name": "iotop-c",
+      "versions": {
+        "deb": "1.17",
+        "rpm": "1.31",
+        "pkgbuild": "1.31",
+        "ebuild": "1.31",
+        "nix": "1.31"
+      },
+      "literal_versions": {
+        "deb": "1.17",
+        "rpm": "1.31",
+        "pkgbuild": "1.31",
+        "ebuild": "1.31",
+        "nix": "1.31"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-09-21T20:53:24+00:00",
+        "rpm": "2026-01-21T08:50:24+02:00",
+        "pkgbuild": "2026-01-21T11:14:14+01:00",
+        "ebuild": "2026-01-21T14:28:20+02:00",
+        "nix": "2026-02-07T09:59:05+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1599
+    },
+    {
+      "name": "iperf3",
+      "versions": {
+        "deb": "3.9",
+        "rpm": "3.20",
+        "pkgbuild": "3.20",
+        "ebuild": "3.20",
+        "nix": "0.1.11"
+      },
+      "literal_versions": {
+        "deb": "3.9",
+        "rpm": "3.20",
+        "pkgbuild": "3.20",
+        "ebuild": "3.20",
+        "nix": "0.1.11"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2023-07-22T21:55:46+00:00",
+        "rpm": "2026-01-16T16:52:07Z",
+        "pkgbuild": "2025-11-15T12:18:24+01:00",
+        "ebuild": "2026-01-20T04:45:34-05:00",
+        "nix": "2025-07-18T21:20:35-07:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 912
+    },
+    {
+      "name": "ipmitool",
+      "versions": {
+        "deb": "1.8.18",
+        "rpm": "1.8.19",
+        "pkgbuild": "1.8.19",
+        "ebuild": "1.8.19",
+        "nix": "1.8.19-unstable-2025-02-18"
+      },
+      "literal_versions": {
+        "deb": "1.8.18",
+        "rpm": "1.8.19",
+        "pkgbuild": "1.8.19",
+        "ebuild": "1.8.19",
+        "nix": "1.8.19-unstable-2025-02-18"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-24T14:32:23+00:00",
+        "rpm": "2026-01-16T16:52:22Z",
+        "pkgbuild": "2026-01-21T00:04:02+01:00",
+        "ebuild": "2025-09-02T20:00:12+03:00",
+        "nix": "2026-01-31T21:08:16+11:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1801
+    },
+    {
+      "name": "irssi",
+      "versions": {
+        "deb": "1.2.3",
+        "rpm": "1.4.5",
+        "pkgbuild": "1.4.5",
+        "ebuild": null,
+        "nix": "1.4.5"
+      },
+      "literal_versions": {
+        "deb": "1.2.3",
+        "rpm": "1.4.5",
+        "pkgbuild": "1.4.5",
+        "ebuild": "9999",
+        "nix": "1.4.5"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-04-19T20:35:34+00:00",
+        "rpm": "2026-01-16T16:54:34Z",
+        "pkgbuild": "2025-07-13T19:43:15+02:00",
+        "ebuild": "2026-01-19T02:48:55Z",
+        "nix": "2026-02-24T23:43:50+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1772
+    },
+    {
+      "name": "isync",
+      "versions": {
+        "deb": "1.3.0",
+        "rpm": "1.5.1",
+        "pkgbuild": "1.5.1",
+        "ebuild": null,
+        "nix": "1.5.1"
+      },
+      "literal_versions": {
+        "deb": "1.3.0",
+        "rpm": "1.5.1",
+        "pkgbuild": "1.5.1",
+        "ebuild": "9999",
+        "nix": "1.5.1"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-12-11T21:48:45+00:00",
+        "rpm": "2026-01-16T16:56:03Z",
+        "pkgbuild": "2025-08-11T22:13:01+03:00",
+        "ebuild": "2025-11-04T10:47:05+01:00",
+        "nix": "2026-02-12T13:28:51+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1523
+    },
+    {
+      "name": "jdupes",
+      "versions": {
+        "deb": "1.19.1",
+        "rpm": "1.31.1",
+        "pkgbuild": "1.31.1",
+        "ebuild": null,
+        "nix": "1.31.1"
+      },
+      "literal_versions": {
+        "deb": "1.19.1",
+        "rpm": "1.31.1",
+        "pkgbuild": "1.31.1",
+        "ebuild": "9999",
+        "nix": "1.31.1"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2020-12-01T20:52:19+00:00",
+        "rpm": "2026-02-11T14:51:19-05:00",
+        "pkgbuild": "2025-09-26T23:28:14+02:00",
+        "ebuild": "2025-12-28T00:58:22Z",
+        "nix": "2026-01-31T21:08:16+11:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1897
+    },
+    {
+      "name": "jq",
+      "versions": {
+        "deb": "1.6",
+        "rpm": "1.8.1",
+        "pkgbuild": "1.8.1",
+        "ebuild": "1.8.1",
+        "nix": "1.8.1"
+      },
+      "literal_versions": {
+        "deb": "1.6",
+        "rpm": "1.8.1",
+        "pkgbuild": "1.8.1",
+        "ebuild": "1.8.1",
+        "nix": "1.8.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2025-07-12T14:36:40+00:00",
+        "rpm": "2025-12-16T00:07:28+02:00",
+        "pkgbuild": "2025-12-25T16:39:59+01:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2025-07-24T13:55:40+02:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 166
+    },
+    {
+      "name": "just",
+      "versions": {
+        "deb": "1.40.0",
+        "rpm": "1.47.1",
+        "pkgbuild": "1.49.0",
+        "ebuild": "1.46.0",
+        "nix": "1.48.1"
+      },
+      "literal_versions": {
+        "deb": "1.40.0",
+        "rpm": "1.47.1",
+        "pkgbuild": "1.49.0",
+        "ebuild": "1.46.0",
+        "nix": "1.48.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2025-03-10T04:23:07+00:00",
+        "rpm": "2026-03-22T16:55:34-07:00",
+        "pkgbuild": "2026-04-05T08:12:31+02:00",
+        "ebuild": "2026-01-08T06:00:10Z",
+        "nix": "2026-03-29T01:54:19+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 5,
+      "all_agree": false,
+      "publication_span_days": 391
+    },
+    {
+      "name": "keychain",
+      "versions": {
+        "deb": "2.8.5",
+        "rpm": "2.9.8",
+        "pkgbuild": "2.9.8",
+        "ebuild": "2.9.8",
+        "nix": "2.9.8"
+      },
+      "literal_versions": {
+        "deb": "2.8.5",
+        "rpm": "2.9.8",
+        "pkgbuild": "2.9.8",
+        "ebuild": "2.9.8",
+        "nix": "2.9.8"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-05-07T03:03:02+00:00",
+        "rpm": "2026-03-14T21:55:49Z",
+        "pkgbuild": "2025-11-02T18:06:23+01:00",
+        "ebuild": "2026-03-20T01:54:16Z",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2142
+    },
+    {
+      "name": "khard",
+      "versions": {
+        "deb": "0.17.0",
+        "rpm": "0.20.0",
+        "pkgbuild": "0.20.1",
+        "ebuild": "0.19.1",
+        "nix": "0.20.1"
+      },
+      "literal_versions": {
+        "deb": "0.17.0",
+        "rpm": "0.20.0",
+        "pkgbuild": "0.20.1",
+        "ebuild": "0.19.1",
+        "nix": "0.20.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-08-13T14:49:45+00:00",
+        "rpm": "2026-01-16T17:54:09Z",
+        "pkgbuild": "2026-03-11T14:24:58-04:00",
+        "ebuild": "2025-02-05T17:34:48Z",
+        "nix": "2026-03-29T13:57:15+08:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 2053
+    },
+    {
+      "name": "kitty",
+      "versions": {
+        "deb": "0.19.3",
+        "rpm": "0.45.0",
+        "pkgbuild": "0.46.2",
+        "ebuild": null,
+        "nix": "0.46.1"
+      },
+      "literal_versions": {
+        "deb": "0.19.3",
+        "rpm": "0.45.0",
+        "pkgbuild": "0.46.2",
+        "ebuild": "9999",
+        "nix": "0.46.1"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2020-12-23T02:52:44+00:00",
+        "rpm": "2026-01-31T09:39:30+08:00",
+        "pkgbuild": "2026-03-20T22:59:35-04:00",
+        "ebuild": "2026-03-17T00:55:49-04:00",
+        "nix": "2026-03-16T17:34:26+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 1914
+    },
+    {
+      "name": "lftp",
+      "versions": {
+        "deb": "4.8.4",
+        "rpm": "4.9.3",
+        "pkgbuild": "4.9.3",
+        "ebuild": null,
+        "nix": "4.9.3"
+      },
+      "literal_versions": {
+        "deb": "4.8.4",
+        "rpm": "4.9.3",
+        "pkgbuild": "4.9.3",
+        "ebuild": "9999",
+        "nix": "4.9.3"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2019-01-07T21:07:26+00:00",
+        "rpm": "2026-01-16T18:25:03Z",
+        "pkgbuild": "2026-02-15T20:51:43+01:00",
+        "ebuild": "2025-11-04T10:36:27+01:00",
+        "nix": "2025-12-10T18:09:49+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2595
+    },
+    {
+      "name": "lm-sensors",
+      "versions": {
+        "deb": "3.6.0",
+        "rpm": "3.6.0",
+        "pkgbuild": "3.6.2",
+        "ebuild": "3.6.2",
+        "nix": "3.6.2"
+      },
+      "literal_versions": {
+        "deb": "3.6.0",
+        "rpm": "3.6.0",
+        "pkgbuild": "3.6.2",
+        "ebuild": "3.6.2",
+        "nix": "3.6.2"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2022-10-15T15:02:49+00:00",
+        "rpm": "2026-01-16T20:01:09Z",
+        "pkgbuild": "2025-06-04T05:50:48Z",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2025-07-24T13:55:40+02:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1189
+    },
+    {
+      "name": "lnav",
+      "versions": {
+        "deb": "0.9.0",
+        "rpm": "0.13.2",
+        "pkgbuild": "0.13.2",
+        "ebuild": "0.11.2",
+        "nix": "0.13.2"
+      },
+      "literal_versions": {
+        "deb": "0.9.0",
+        "rpm": "0.13.2",
+        "pkgbuild": "0.13.2",
+        "ebuild": "0.11.2",
+        "nix": "0.13.2"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-12-30T14:48:29+00:00",
+        "rpm": "2026-01-16T20:01:39Z",
+        "pkgbuild": "2025-09-19T09:51:17+03:00",
+        "ebuild": "2025-11-04T09:01:15+01:00",
+        "nix": "2026-01-30T15:08:02+02:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1856
+    },
+    {
+      "name": "lsd",
+      "versions": {
+        "deb": "0.23.1",
+        "rpm": "1.2.0",
+        "pkgbuild": "1.2.0",
+        "ebuild": "1.2.0",
+        "nix": "1.2.0"
+      },
+      "literal_versions": {
+        "deb": "0.23.1",
+        "rpm": "1.2.0",
+        "pkgbuild": "1.2.0",
+        "ebuild": "1.2.0",
+        "nix": "1.2.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2023-01-27T15:08:58+00:00",
+        "rpm": "2026-03-18T11:58:08Z",
+        "pkgbuild": "2026-03-06T23:11:24+08:00",
+        "ebuild": "2025-11-07T23:38:04+02:00",
+        "nix": "2026-02-07T09:53:17+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1145
+    },
+    {
+      "name": "lsof",
+      "versions": {
+        "deb": "4.93.2",
+        "rpm": "4.99.6",
+        "pkgbuild": "4.99.6",
+        "ebuild": "4.99.5",
+        "nix": "4.99.5"
+      },
+      "literal_versions": {
+        "deb": "4.93.2",
+        "rpm": "4.99.6",
+        "pkgbuild": "4.99.6",
+        "ebuild": "4.99.5",
+        "nix": "4.99.5"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-11-29T15:16:54+00:00",
+        "rpm": "2026-03-09T16:35:57+01:00",
+        "pkgbuild": "2026-03-04T11:42:20+01:00",
+        "ebuild": "2025-09-02T20:00:14+03:00",
+        "nix": "2026-02-22T12:43:51+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1926
+    },
+    {
+      "name": "lynx",
+      "versions": {
+        "deb": "2.9.0dev.6",
+        "rpm": "2.9.2",
+        "pkgbuild": "2.9.2",
+        "ebuild": "2.9.2",
+        "nix": "2.9.2"
+      },
+      "literal_versions": {
+        "deb": "2.9.0dev.6",
+        "rpm": "2.9.2",
+        "pkgbuild": "2.9.2",
+        "ebuild": "2.9.2",
+        "nix": "2.9.2"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-08-10T02:33:12+00:00",
+        "rpm": "2026-01-16T20:22:40Z",
+        "pkgbuild": "2025-06-02T16:03:31+03:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1633
+    },
+    {
+      "name": "lzip",
+      "versions": {
+        "deb": "1.22",
+        "rpm": "1.26",
+        "pkgbuild": "1.26",
+        "ebuild": "1.26",
+        "nix": "1.25"
+      },
+      "literal_versions": {
+        "deb": "1.22",
+        "rpm": "1.26",
+        "pkgbuild": "1.26",
+        "ebuild": "1.26",
+        "nix": "1.25"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-08T21:31:47+00:00",
+        "rpm": "2026-03-17T15:09:19-05:00",
+        "pkgbuild": "2026-03-20T19:03:09+01:00",
+        "ebuild": "2026-03-19T18:00:19+01:00",
+        "nix": "2026-03-03T14:04:50Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1865
+    },
+    {
+      "name": "lzop",
+      "versions": {
+        "deb": "1.04",
+        "rpm": "1.04",
+        "pkgbuild": "1.04",
+        "ebuild": "1.04",
+        "nix": "1.04"
+      },
+      "literal_versions": {
+        "deb": "1.04",
+        "rpm": "1.04",
+        "pkgbuild": "1.04",
+        "ebuild": "1.04",
+        "nix": "1.04"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-11-18T02:57:35+00:00",
+        "rpm": "2026-01-16T20:23:33Z",
+        "pkgbuild": "2024-07-12T18:19:26-04:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 1,
+      "all_agree": true,
+      "publication_span_days": 1898
+    },
+    {
+      "name": "mediainfo",
+      "versions": {
+        "deb": "20.09",
+        "rpm": "25.10",
+        "pkgbuild": "26.01",
+        "ebuild": "24.11",
+        "nix": "26.01"
+      },
+      "literal_versions": {
+        "deb": "20.09",
+        "rpm": "25.10",
+        "pkgbuild": "26.01",
+        "ebuild": "24.11",
+        "nix": "26.01"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-10-19T08:49:20+00:00",
+        "rpm": "2026-01-16T20:45:43Z",
+        "pkgbuild": "2026-02-05T07:22:02Z",
+        "ebuild": "2025-11-04T10:36:27+01:00",
+        "nix": "2026-02-10T04:27:46Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 1939
+    },
+    {
+      "name": "micro",
+      "versions": {
+        "deb": "2.0.8",
+        "rpm": "2.0.15",
+        "pkgbuild": "2.0.15",
+        "ebuild": "2.0.13",
+        "nix": "2.0.15"
+      },
+      "literal_versions": {
+        "deb": "2.0.8",
+        "rpm": "2.0.15",
+        "pkgbuild": "2.0.15",
+        "ebuild": "2.0.13",
+        "nix": "2.0.15"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-11-24T21:26:47+00:00",
+        "rpm": "2026-02-18T23:12:38+01:00",
+        "pkgbuild": "2026-01-28T07:18:33+01:00",
+        "ebuild": "2025-01-01T18:11:26Z",
+        "nix": "2026-01-28T15:10:34+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1912
+    },
+    {
+      "name": "mosh",
+      "versions": {
+        "deb": "1.3.2",
+        "rpm": "1.4.0",
+        "pkgbuild": "1.4.0",
+        "ebuild": "1.4.0",
+        "nix": "1.4.0"
+      },
+      "literal_versions": {
+        "deb": "1.3.2",
+        "rpm": "1.4.0",
+        "pkgbuild": "1.4.0",
+        "ebuild": "1.4.0",
+        "nix": "1.4.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2018-08-22T21:43:57+00:00",
+        "rpm": "2026-01-16T21:37:16Z",
+        "pkgbuild": "2026-03-28T02:17:45+01:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2774
+    },
+    {
+      "name": "most",
+      "versions": {
+        "deb": "5.0.0a",
+        "rpm": "5.2.0",
+        "pkgbuild": "5.2.0",
+        "ebuild": "5.2.0",
+        "nix": "5.2.0"
+      },
+      "literal_versions": {
+        "deb": "5.0.0a",
+        "rpm": "5.2.0",
+        "pkgbuild": "5.2.0",
+        "ebuild": "5.2.0",
+        "nix": "5.2.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2016-12-26T03:28:39+00:00",
+        "rpm": "2026-01-16T21:37:28Z",
+        "pkgbuild": "2025-08-07T06:04:45+08:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-01-30T15:10:00+02:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 3322
+    },
+    {
+      "name": "mpc",
+      "versions": {
+        "deb": "0.33",
+        "rpm": "0.35",
+        "pkgbuild": "0.35",
+        "ebuild": "0.35",
+        "nix": "0.35"
+      },
+      "literal_versions": {
+        "deb": "0.33",
+        "rpm": "0.35",
+        "pkgbuild": "0.35",
+        "ebuild": "0.35",
+        "nix": "0.35"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2019-11-07T15:22:30+00:00",
+        "rpm": "2026-01-16T21:39:55Z",
+        "pkgbuild": "2023-12-22T20:48:08+01:00",
+        "ebuild": "2025-01-01T18:11:26Z",
+        "nix": "2025-10-05T10:50:41+02:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2262
+    },
+    {
+      "name": "mtr",
+      "versions": {
+        "deb": "0.94",
+        "rpm": "0.95",
+        "pkgbuild": "0.96",
+        "ebuild": null,
+        "nix": "0.96"
+      },
+      "literal_versions": {
+        "deb": "0.94",
+        "rpm": "0.95",
+        "pkgbuild": "0.96",
+        "ebuild": "9999",
+        "nix": "0.96"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-10-01T21:01:41+00:00",
+        "rpm": "2026-01-16T21:45:20Z",
+        "pkgbuild": "2025-10-17T20:23:31+02:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-01-30T16:09:26+02:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1581
+    },
+    {
+      "name": "mutt",
+      "versions": {
+        "deb": "2.0.5",
+        "rpm": "2.3.1",
+        "pkgbuild": "2.3.1",
+        "ebuild": "2.3.0",
+        "nix": "2.3.1"
+      },
+      "literal_versions": {
+        "deb": "2.0.5",
+        "rpm": "2.3.1",
+        "pkgbuild": "2.3.1",
+        "ebuild": "2.3.0",
+        "nix": "2.3.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2023-09-12T20:54:23+00:00",
+        "rpm": "2026-03-22T10:24:46+01:00",
+        "pkgbuild": "2026-03-20T09:34:55+01:00",
+        "ebuild": "2026-01-05T11:06:18+01:00",
+        "nix": "2026-03-21T06:47:49Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 921
+    },
+    {
+      "name": "ncdu",
+      "versions": {
+        "deb": "1.15.1",
+        "rpm": "2.9.2",
+        "pkgbuild": "2.9.2",
+        "ebuild": "2.9.2",
+        "nix": "2.9.2"
+      },
+      "literal_versions": {
+        "deb": "1.15.1",
+        "rpm": "2.9.2",
+        "pkgbuild": "2.9.2",
+        "ebuild": "2.9.2",
+        "nix": "2.9.2"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-08-09T14:53:01+00:00",
+        "rpm": "2026-01-16T21:56:56Z",
+        "pkgbuild": "2025-10-29T00:07:11+11:00",
+        "ebuild": "2025-09-25T18:52:04+02:00",
+        "nix": "2026-01-14T06:22:18-08:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1986
+    },
+    {
+      "name": "ncmpc",
+      "versions": {
+        "deb": "0.45",
+        "rpm": "0.52",
+        "pkgbuild": "0.52",
+        "ebuild": "0.52",
+        "nix": "0.52"
+      },
+      "literal_versions": {
+        "deb": "0.45",
+        "rpm": "0.52",
+        "pkgbuild": "0.52",
+        "ebuild": "0.52",
+        "nix": "0.52"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-14T08:29:11+00:00",
+        "rpm": "2025-03-16T10:25:26-04:00",
+        "pkgbuild": "2025-10-04T12:10:32+02:00",
+        "ebuild": "2025-12-01T11:47:28+02:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1810
+    },
+    {
+      "name": "ncmpcpp",
+      "versions": {
+        "deb": "0.9.2",
+        "rpm": "0.10.1",
+        "pkgbuild": "0.10.1",
+        "ebuild": null,
+        "nix": "0.10.1"
+      },
+      "literal_versions": {
+        "deb": "0.9.2",
+        "rpm": "0.10.1",
+        "pkgbuild": "0.10.1",
+        "ebuild": "9999",
+        "nix": "0.10.1"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-02-11T20:51:47+00:00",
+        "rpm": "2026-01-25T01:36:56-05:00",
+        "pkgbuild": "2026-03-24T16:02:18+01:00",
+        "ebuild": "2025-01-01T18:11:26Z",
+        "nix": "2026-02-25T20:08:11+02:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1866
+    },
+    {
+      "name": "neovim",
+      "versions": {
+        "deb": "0.4.4",
+        "rpm": "0.12.0",
+        "pkgbuild": "0.12.1",
+        "ebuild": null,
+        "nix": null
+      },
+      "literal_versions": {
+        "deb": "0.4.4",
+        "rpm": "0.12.0",
+        "pkgbuild": "0.12.1",
+        "ebuild": "9999",
+        "nix": null
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs",
+        "nix": "needs_evaluation"
+      },
+      "published": {
+        "deb": "2020-08-06T02:48:20+00:00",
+        "rpm": "2026-03-30T18:10:34+02:00",
+        "pkgbuild": "2026-04-06T19:18:22+02:00",
+        "ebuild": "2026-03-04T00:57:28Z",
+        "nix": "2026-03-25T16:04:33+01:00"
+      },
+      "resolved_families": 3,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 2069
+    },
+    {
+      "name": "nethogs",
+      "versions": {
+        "deb": "0.8.5",
+        "rpm": "0.8.8",
+        "pkgbuild": "0.8.8",
+        "ebuild": "0.8.8",
+        "nix": "0.8.8"
+      },
+      "literal_versions": {
+        "deb": "0.8.5",
+        "rpm": "0.8.8",
+        "pkgbuild": "0.8.8",
+        "ebuild": "0.8.8",
+        "nix": "0.8.8"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2016-12-04T15:44:43+00:00",
+        "rpm": "2026-01-16T22:02:57Z",
+        "pkgbuild": "2025-03-01T17:06:15+03:00",
+        "ebuild": "2025-03-08T20:54:27+02:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 3343
+    },
+    {
+      "name": "nmap",
+      "versions": {
+        "deb": "7.91+dfsg1+really7.80",
+        "rpm": "7.92",
+        "pkgbuild": "7.99",
+        "ebuild": null,
+        "nix": "7.99"
+      },
+      "literal_versions": {
+        "deb": "7.91+dfsg1+really7.80",
+        "rpm": "7.92",
+        "pkgbuild": "7.99",
+        "ebuild": "9999",
+        "nix": "7.99"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-03-17T21:30:53+00:00",
+        "rpm": "2024-12-02T19:27:35-05:00",
+        "pkgbuild": "2026-04-01T17:29:03Z",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-03-27T12:31:07Z"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1840
+    },
+    {
+      "name": "nnn",
+      "versions": {
+        "deb": "3.5",
+        "rpm": "5.2",
+        "pkgbuild": "5.2",
+        "ebuild": "5.1",
+        "nix": "5.2"
+      },
+      "literal_versions": {
+        "deb": "3.5",
+        "rpm": "5.2",
+        "pkgbuild": "5.2",
+        "ebuild": "5.1",
+        "nix": "5.2"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-11-18T08:51:04+00:00",
+        "rpm": "2026-02-17T12:47:48+01:00",
+        "pkgbuild": "2026-03-03T03:41:47+08:00",
+        "ebuild": "2025-10-03T22:19:17+01:00",
+        "nix": "2026-02-22T00:55:49+04:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1930
+    },
+    {
+      "name": "obs-studio",
+      "versions": {
+        "deb": "26.1.2",
+        "rpm": "32.1.1",
+        "pkgbuild": "32.1.0",
+        "ebuild": null,
+        "nix": "6533"
+      },
+      "literal_versions": {
+        "deb": "26.1.2",
+        "rpm": "32.1.1",
+        "pkgbuild": "32.1.0",
+        "ebuild": "9999",
+        "nix": "6533"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-06-02T02:35:32+00:00",
+        "rpm": "2026-04-03T18:26:31+09:00",
+        "pkgbuild": "2026-03-23T22:23:12+01:00",
+        "ebuild": "2026-03-17T19:30:36+02:00",
+        "nix": "2026-03-16T23:18:09+07:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 1766
+    },
+    {
+      "name": "pandoc",
+      "versions": {
+        "deb": "2.9.2.1",
+        "rpm": "3.7.0.2",
+        "pkgbuild": "3.6",
+        "ebuild": "3.1.8",
+        "nix": null
+      },
+      "literal_versions": {
+        "deb": "2.9.2.1",
+        "rpm": "3.7.0.2",
+        "pkgbuild": "3.6",
+        "ebuild": "3.1.8",
+        "nix": null
+      },
+      "unresolved_reasons": {
+        "nix": "needs_evaluation"
+      },
+      "published": {
+        "deb": "2023-09-24T21:00:45+00:00",
+        "rpm": "2026-01-29T00:39:27+08:00",
+        "pkgbuild": "2026-04-05T05:26:58+08:00",
+        "ebuild": "2025-05-15T09:09:47+02:00",
+        "nix": "2025-05-10T08:13:04+02:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 923
+    },
+    {
+      "name": "parallel",
+      "versions": {
+        "deb": "20161222",
+        "rpm": "20260322",
+        "pkgbuild": "20260322",
+        "ebuild": "20250722",
+        "nix": "20260122"
+      },
+      "literal_versions": {
+        "deb": "20161222",
+        "rpm": "20260322",
+        "pkgbuild": "20260322",
+        "ebuild": "20250722",
+        "nix": "20260122"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2018-12-02T03:31:15+00:00",
+        "rpm": "2026-03-29T19:43:31-03:00",
+        "pkgbuild": "2026-03-31T21:19:08Z",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-03-05T00:27:11Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 2676
+    },
+    {
+      "name": "pass",
+      "versions": {
+        "deb": "1.7.3",
+        "rpm": "1.7.4",
+        "pkgbuild": "1.7.4",
+        "ebuild": null,
+        "nix": "1.7.4"
+      },
+      "literal_versions": {
+        "deb": "1.7.3",
+        "rpm": "1.7.4",
+        "pkgbuild": "1.7.4",
+        "ebuild": "9999",
+        "nix": "1.7.4"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2019-02-06T21:13:14+00:00",
+        "rpm": "2026-01-16T23:19:31Z",
+        "pkgbuild": "2025-01-26T17:49:56-08:00",
+        "ebuild": "2026-01-25T16:04:06+01:00",
+        "nix": "2026-02-24T23:43:50+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2575
+    },
+    {
+      "name": "pgcli",
+      "versions": {
+        "deb": "3.5.0",
+        "rpm": "4.4.0",
+        "pkgbuild": "4.4.0",
+        "ebuild": "4.1.0",
+        "nix": "4.4.0"
+      },
+      "literal_versions": {
+        "deb": "3.5.0",
+        "rpm": "4.4.0",
+        "pkgbuild": "4.4.0",
+        "ebuild": "4.1.0",
+        "nix": "4.4.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2023-01-23T15:38:28+00:00",
+        "rpm": "2026-02-24T17:45:54+01:00",
+        "pkgbuild": "2025-12-25T21:05:57Z",
+        "ebuild": "2025-04-26T23:13:59+01:00",
+        "nix": "2026-01-07T23:24:10+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1128
+    },
+    {
+      "name": "pigz",
+      "versions": {
+        "deb": "2.6",
+        "rpm": "2.8",
+        "pkgbuild": "2.8",
+        "ebuild": "2.8",
+        "nix": "2.8"
+      },
+      "literal_versions": {
+        "deb": "2.6",
+        "rpm": "2.8",
+        "pkgbuild": "2.8",
+        "ebuild": "2.8",
+        "nix": "2.8"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-06T14:54:10+00:00",
+        "rpm": "2023-08-20T17:01:51-03:00",
+        "pkgbuild": "2024-07-13T12:11:01-04:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1818
+    },
+    {
+      "name": "pinfo",
+      "versions": {
+        "deb": "0.6.13",
+        "rpm": "0.6.13",
+        "pkgbuild": "0.6.13",
+        "ebuild": "0.6.13",
+        "nix": "0.6.13"
+      },
+      "literal_versions": {
+        "deb": "0.6.13",
+        "rpm": "0.6.13",
+        "pkgbuild": "0.6.13",
+        "ebuild": "0.6.13",
+        "nix": "0.6.13"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-10-30T21:44:08+00:00",
+        "rpm": "2026-01-17T05:21:30Z",
+        "pkgbuild": "2025-07-25T10:26:18+02:00",
+        "ebuild": "2025-09-02T20:00:14+03:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 1,
+      "all_agree": true,
+      "publication_span_days": 1917
+    },
+    {
+      "name": "plocate",
+      "versions": {
+        "deb": "1.1.8",
+        "rpm": "1.1.24",
+        "pkgbuild": "1.1.24",
+        "ebuild": "1.1.24",
+        "nix": "1.1.24"
+      },
+      "literal_versions": {
+        "deb": "1.1.8",
+        "rpm": "1.1.24",
+        "pkgbuild": "1.1.24",
+        "ebuild": "1.1.24",
+        "nix": "1.1.24"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-11-21T21:10:35+00:00",
+        "rpm": "2026-04-01T20:16:21+02:00",
+        "pkgbuild": "2026-01-14T18:56:19+01:00",
+        "ebuild": "2026-03-05T09:40:07+01:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1591
+    },
+    {
+      "name": "podman",
+      "versions": {
+        "deb": "5.4.2",
+        "rpm": "5.8.1",
+        "pkgbuild": "5.8.1",
+        "ebuild": null,
+        "nix": "5.8.1"
+      },
+      "literal_versions": {
+        "deb": "5.4.2",
+        "rpm": "5.8.1",
+        "pkgbuild": "5.8.1",
+        "ebuild": "9999",
+        "nix": "5.8.1"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2025-07-08T08:41:35+00:00",
+        "rpm": "2026-03-11T20:04:47Z",
+        "pkgbuild": "2026-04-03T11:24:07+02:00",
+        "ebuild": "2025-07-07T21:00:00-07:00",
+        "nix": "2026-03-12T00:43:51Z"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 269
+    },
+    {
+      "name": "powertop",
+      "versions": {
+        "deb": "2.11",
+        "rpm": "2.15",
+        "pkgbuild": "2.15",
+        "ebuild": null,
+        "nix": "2.15"
+      },
+      "literal_versions": {
+        "deb": "2.11",
+        "rpm": "2.15",
+        "pkgbuild": "2.15",
+        "ebuild": "9999",
+        "nix": "2.15"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2020-01-03T21:01:19+00:00",
+        "rpm": "2026-01-17T05:43:06Z",
+        "pkgbuild": "2024-07-13T12:32:16-04:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-02-07T09:59:05+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2226
+    },
+    {
+      "name": "pre-commit",
+      "versions": {
+        "deb": "2.10.1",
+        "rpm": "4.5.1",
+        "pkgbuild": "4.5.1",
+        "ebuild": "4.5.1",
+        "nix": "4.5.1"
+      },
+      "literal_versions": {
+        "deb": "2.10.1",
+        "rpm": "4.5.1",
+        "pkgbuild": "4.5.1",
+        "ebuild": "4.5.1",
+        "nix": "4.5.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-08T15:11:16+00:00",
+        "rpm": "2025-12-16T22:19:30Z",
+        "pkgbuild": "2026-01-25T14:14:28+01:00",
+        "ebuild": "2026-01-31T15:03:49+01:00",
+        "nix": "2026-02-07T10:06:06+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1824
+    },
+    {
+      "name": "procs",
+      "versions": {
+        "deb": "0.14.10",
+        "rpm": "0.14.10",
+        "pkgbuild": "0.14.11",
+        "ebuild": "0.14.9",
+        "nix": "0.14.11"
+      },
+      "literal_versions": {
+        "deb": "0.14.10",
+        "rpm": "0.14.10",
+        "pkgbuild": "0.14.11",
+        "ebuild": "0.14.9",
+        "nix": "0.14.11"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2025-05-15T02:38:07+00:00",
+        "rpm": "2026-01-03T21:41:07Z",
+        "pkgbuild": "2026-02-27T14:54:09+03:00",
+        "ebuild": "2025-12-28T11:28:14Z",
+        "nix": "2026-02-27T05:01:05Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 288
+    },
+    {
+      "name": "progress",
+      "versions": {
+        "deb": "0.15",
+        "rpm": "0.17",
+        "pkgbuild": "0.17",
+        "ebuild": "0.17",
+        "nix": "0.17"
+      },
+      "literal_versions": {
+        "deb": "0.15",
+        "rpm": "0.17",
+        "pkgbuild": "0.17",
+        "ebuild": "0.17",
+        "nix": "0.17"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-06-12T14:47:43+00:00",
+        "rpm": "2026-02-03T19:13:43+01:00",
+        "pkgbuild": "2023-10-18T10:59:50+03:00",
+        "ebuild": "2026-02-11T21:59:21-05:00",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2070
+    },
+    {
+      "name": "pv",
+      "versions": {
+        "deb": "1.6.6",
+        "rpm": "1.10.5",
+        "pkgbuild": "1.10.5",
+        "ebuild": null,
+        "nix": "1.10.5"
+      },
+      "literal_versions": {
+        "deb": "1.6.6",
+        "rpm": "1.10.5",
+        "pkgbuild": "1.10.5",
+        "ebuild": "9999",
+        "nix": "1.10.5"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2017-07-21T03:22:26+00:00",
+        "rpm": "2026-03-25T21:50:36-04:00",
+        "pkgbuild": "2026-03-22T14:12:18-04:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-03-23T00:35:07Z"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 3169
+    },
+    {
+      "name": "qbittorrent",
+      "versions": {
+        "deb": "4.2.5",
+        "rpm": "5.1.4",
+        "pkgbuild": "5.1.4",
+        "ebuild": null,
+        "nix": "5.1.4"
+      },
+      "literal_versions": {
+        "deb": "4.2.5",
+        "rpm": "5.1.4",
+        "pkgbuild": "5.1.4",
+        "ebuild": "9999",
+        "nix": "5.1.4"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2020-06-17T15:00:38+00:00",
+        "rpm": "2026-01-17T10:43:10Z",
+        "pkgbuild": "2026-03-28T00:36:30+01:00",
+        "ebuild": "2026-01-20T18:53:41-05:00",
+        "nix": "2025-11-20T04:17:01Z"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2109
+    },
+    {
+      "name": "ranger",
+      "versions": {
+        "deb": "1.9.3",
+        "rpm": "1.9.4",
+        "pkgbuild": "1.9.4",
+        "ebuild": null,
+        "nix": "1.9.4-unstable-2026-02-25"
+      },
+      "literal_versions": {
+        "deb": "1.9.3",
+        "rpm": "1.9.4",
+        "pkgbuild": "1.9.4",
+        "ebuild": "9999",
+        "nix": "1.9.4-unstable-2026-02-25"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2020-12-08T08:55:39+00:00",
+        "rpm": "2026-01-17T11:07:53Z",
+        "pkgbuild": "2025-12-14T17:13:24+01:00",
+        "ebuild": "2025-06-30T11:26:05-04:00",
+        "nix": "2026-03-04T19:17:54Z"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1912
+    },
+    {
+      "name": "rclone",
+      "versions": {
+        "deb": "1.53.3",
+        "rpm": "1.73.1",
+        "pkgbuild": "1.73.3",
+        "ebuild": "1.73.2",
+        "nix": "1.73.3"
+      },
+      "literal_versions": {
+        "deb": "1.53.3",
+        "rpm": "1.73.1",
+        "pkgbuild": "1.73.3",
+        "ebuild": "1.73.2",
+        "nix": "1.73.3"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-11-27T09:29:59+00:00",
+        "rpm": "2026-02-17T20:21:21Z",
+        "pkgbuild": "2026-03-23T18:20:31-04:00",
+        "ebuild": "2026-01-31T15:03:48+01:00",
+        "nix": "2026-03-26T04:25:35Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 1944
+    },
+    {
+      "name": "restic",
+      "versions": {
+        "deb": "0.11.0",
+        "rpm": "0.18.1",
+        "pkgbuild": "0.18.1",
+        "ebuild": "0.18.1",
+        "nix": "0.18.1"
+      },
+      "literal_versions": {
+        "deb": "0.11.0",
+        "rpm": "0.18.1",
+        "pkgbuild": "0.18.1",
+        "ebuild": "0.18.1",
+        "nix": "0.18.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-05T15:17:55+00:00",
+        "rpm": "2025-11-24T17:01:39+01:00",
+        "pkgbuild": "2026-02-02T16:54:41+01:00",
+        "ebuild": "2026-02-15T10:00:11Z",
+        "nix": "2026-03-03T14:04:50Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1851
+    },
+    {
+      "name": "ripgrep",
+      "versions": {
+        "deb": "12.1.1",
+        "rpm": "14.1.1",
+        "pkgbuild": "15.1.0",
+        "ebuild": "15.1.0",
+        "nix": "15.1.0"
+      },
+      "literal_versions": {
+        "deb": "12.1.1",
+        "rpm": "14.1.1",
+        "pkgbuild": "15.1.0",
+        "ebuild": "15.1.0",
+        "nix": "15.1.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-06-20T14:53:54+00:00",
+        "rpm": "2024-10-19T11:36:51+02:00",
+        "pkgbuild": "2026-02-14T23:05:05+01:00",
+        "ebuild": "2025-11-07T23:38:01+02:00",
+        "nix": "2026-02-07T09:53:17+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 2065
+    },
+    {
+      "name": "rlwrap",
+      "versions": {
+        "deb": "0.43",
+        "rpm": "0.47.1",
+        "pkgbuild": "0.48",
+        "ebuild": "0.48",
+        "nix": "0.48"
+      },
+      "literal_versions": {
+        "deb": "0.43",
+        "rpm": "0.47.1",
+        "pkgbuild": "0.48",
+        "ebuild": "0.48",
+        "nix": "0.48"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2018-02-26T09:45:08+00:00",
+        "rpm": "2025-11-05T21:38:15Z",
+        "pkgbuild": "2025-11-14T04:02:43Z",
+        "ebuild": "2026-01-05T07:03:12-05:00",
+        "nix": "2025-12-14T00:58:07Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 2870
+    },
+    {
+      "name": "sccache",
+      "versions": {
+        "deb": "0.4.0~~pre6",
+        "rpm": "0.14.0",
+        "pkgbuild": "0.14.0",
+        "ebuild": "0.14.0",
+        "nix": "0.14.0"
+      },
+      "literal_versions": {
+        "deb": "0.4.0~~pre6",
+        "rpm": "0.14.0",
+        "pkgbuild": "0.14.0",
+        "ebuild": "0.14.0",
+        "nix": "0.14.0"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2023-01-27T03:06:54+00:00",
+        "rpm": "2026-03-26T13:00:50+01:00",
+        "pkgbuild": "2026-03-11T22:35:09+01:00",
+        "ebuild": "2026-03-11T20:25:18-04:00",
+        "nix": "2026-02-09T17:57:11Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1154
+    },
+    {
+      "name": "screenfetch",
+      "versions": {
+        "deb": "3.9.1+20210523",
+        "rpm": "3.9.1",
+        "pkgbuild": "3.9.9",
+        "ebuild": "3.9.9",
+        "nix": "3.9.9"
+      },
+      "literal_versions": {
+        "deb": "3.9.1+20210523",
+        "rpm": "3.9.1",
+        "pkgbuild": "3.9.9",
+        "ebuild": "3.9.9",
+        "nix": "3.9.9"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2022-09-24T11:49:13+00:00",
+        "rpm": "2026-01-17T17:47:10Z",
+        "pkgbuild": "2024-12-04T18:33:58-05:00",
+        "ebuild": "2025-03-08T20:54:06+02:00",
+        "nix": "2026-01-30T15:37:56+02:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1224
+    },
+    {
+      "name": "shellcheck",
+      "versions": {
+        "deb": "0.7.1",
+        "rpm": "0.11.0",
+        "pkgbuild": "0.11.0",
+        "ebuild": "0.9.0",
+        "nix": null
+      },
+      "literal_versions": {
+        "deb": "0.7.1",
+        "rpm": "0.11.0",
+        "pkgbuild": "0.11.0",
+        "ebuild": "0.9.0",
+        "nix": null
+      },
+      "unresolved_reasons": {
+        "nix": "needs_evaluation"
+      },
+      "published": {
+        "deb": "2021-09-19T14:52:55+00:00",
+        "rpm": "2026-01-30T21:49:48+08:00",
+        "pkgbuild": "2026-04-05T05:30:26+08:00",
+        "ebuild": "2025-01-01T18:11:26Z",
+        "nix": "2025-01-01T18:34:11+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1658
+    },
+    {
+      "name": "socat",
+      "versions": {
+        "deb": "1.7.4.1",
+        "rpm": "1.8.1.0",
+        "pkgbuild": "1.8.1.1",
+        "ebuild": "1.8.1.1",
+        "nix": "1.8.1.1"
+      },
+      "literal_versions": {
+        "deb": "1.7.4.1",
+        "rpm": "1.8.1.0",
+        "pkgbuild": "1.8.1.1",
+        "ebuild": "1.8.1.1",
+        "nix": "1.8.1.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-03T20:35:59+00:00",
+        "rpm": "2025-12-09T14:39:45+01:00",
+        "pkgbuild": "2026-02-16T00:13:28+01:00",
+        "ebuild": "2026-02-03T22:35:13-05:00",
+        "nix": "2026-02-17T20:16:27Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1839
+    },
+    {
+      "name": "sox",
+      "versions": {
+        "deb": "14.4.2+git20190427",
+        "rpm": "14.4.2.0",
+        "pkgbuild": "14.7.1.1",
+        "ebuild": "14.7.0.9",
+        "nix": "unstable-2021-05-09"
+      },
+      "literal_versions": {
+        "deb": "14.4.2+git20190427",
+        "rpm": "14.4.2.0",
+        "pkgbuild": "14.7.1.1",
+        "ebuild": "14.7.0.9",
+        "nix": "unstable-2021-05-09"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2023-03-17T20:50:11+00:00",
+        "rpm": "2026-01-17T18:19:27Z",
+        "pkgbuild": "2026-03-13T07:03:24Z",
+        "ebuild": "2026-02-27T18:22:07Z",
+        "nix": "2026-03-06T17:35:25+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 5,
+      "all_agree": false,
+      "publication_span_days": 1091
+    },
+    {
+      "name": "sshpass",
+      "versions": {
+        "deb": "1.09",
+        "rpm": "1.09",
+        "pkgbuild": "1.10",
+        "ebuild": "1.10",
+        "nix": "1.10"
+      },
+      "literal_versions": {
+        "deb": "1.09",
+        "rpm": "1.09",
+        "pkgbuild": "1.10",
+        "ebuild": "1.10",
+        "nix": "1.10"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-01-30T02:42:53+00:00",
+        "rpm": "2026-01-17T18:29:04Z",
+        "pkgbuild": "2024-07-13T19:26:20-04:00",
+        "ebuild": "2025-01-01T18:11:26Z",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1825
+    },
+    {
+      "name": "stow",
+      "versions": {
+        "deb": "2.3.1",
+        "rpm": "2.4.1",
+        "pkgbuild": "2.4.1",
+        "ebuild": "2.4.1",
+        "nix": "2.4.1"
+      },
+      "literal_versions": {
+        "deb": "2.3.1",
+        "rpm": "2.4.1",
+        "pkgbuild": "2.4.1",
+        "ebuild": "2.4.1",
+        "nix": "2.4.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2019-09-09T04:45:41+00:00",
+        "rpm": "2024-11-11T12:49:23-06:00",
+        "pkgbuild": "2024-09-11T17:46:52-07:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2025-12-10T18:09:49+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 2293
+    },
+    {
+      "name": "strace",
+      "versions": {
+        "deb": "5.10",
+        "rpm": "6.19",
+        "pkgbuild": "6.19",
+        "ebuild": null,
+        "nix": "6.19"
+      },
+      "literal_versions": {
+        "deb": "5.10",
+        "rpm": "6.19",
+        "pkgbuild": "6.19",
+        "ebuild": "9999",
+        "nix": "6.19"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-01-01T21:11:02+00:00",
+        "rpm": "2026-02-10T15:45:36Z",
+        "pkgbuild": "2026-02-11T06:18:09+01:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-02-11T21:28:16Z"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1867
+    },
+    {
+      "name": "syncthing",
+      "versions": {
+        "deb": "1.12.1",
+        "rpm": "2.0.14",
+        "pkgbuild": "2.0.15",
+        "ebuild": "2.0.15",
+        "nix": "2.0.12"
+      },
+      "literal_versions": {
+        "deb": "1.12.1",
+        "rpm": "2.0.14",
+        "pkgbuild": "2.0.15",
+        "ebuild": "2.0.15",
+        "nix": "2.0.12"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-07-24T03:30:23+00:00",
+        "rpm": "2026-02-17T14:35:26-06:00",
+        "pkgbuild": "2026-03-03T14:00:12+03:00",
+        "ebuild": "2026-01-06T14:39:34+01:00",
+        "nix": "2026-02-19T00:45:13+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 1683
+    },
+    {
+      "name": "sysstat",
+      "versions": {
+        "deb": "12.5.2",
+        "rpm": "12.7.9",
+        "pkgbuild": "12.7.9",
+        "ebuild": "12.6.2",
+        "nix": "12.7.7"
+      },
+      "literal_versions": {
+        "deb": "12.5.2",
+        "rpm": "12.7.9",
+        "pkgbuild": "12.7.9",
+        "ebuild": "12.6.2",
+        "nix": "12.7.7"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-03T03:02:41+00:00",
+        "rpm": "2026-01-17T18:48:07Z",
+        "pkgbuild": "2025-12-07T10:36:36+01:00",
+        "ebuild": "2025-09-02T20:00:14+03:00",
+        "nix": "2026-01-22T15:01:26+02:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 4,
+      "all_agree": false,
+      "publication_span_days": 1814
+    },
+    {
+      "name": "tcpdump",
+      "versions": {
+        "deb": "4.99.0",
+        "rpm": "4.99.6",
+        "pkgbuild": "4.99.6",
+        "ebuild": null,
+        "nix": "4.99.6"
+      },
+      "literal_versions": {
+        "deb": "4.99.0",
+        "rpm": "4.99.6",
+        "pkgbuild": "4.99.6",
+        "ebuild": "9999",
+        "nix": "4.99.6"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2022-05-29T21:25:04+00:00",
+        "rpm": "2026-02-13T17:35:11+01:00",
+        "pkgbuild": "2025-12-31T09:37:11+01:00",
+        "ebuild": "2026-01-04T03:39:37Z",
+        "nix": "2026-01-30T02:36:22+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1355
+    },
+    {
+      "name": "thunderbird",
+      "versions": {
+        "deb": "91.13.0",
+        "rpm": "149.0.1",
+        "pkgbuild": "149.0.1",
+        "ebuild": "148.0.1",
+        "nix": null
+      },
+      "literal_versions": {
+        "deb": "91.13.0",
+        "rpm": "149.0.1",
+        "pkgbuild": "149.0.1",
+        "ebuild": "148.0.1",
+        "nix": null
+      },
+      "unresolved_reasons": {
+        "nix": "needs_evaluation"
+      },
+      "published": {
+        "deb": "2022-09-03T15:59:35+00:00",
+        "rpm": "2026-04-02T12:05:59+02:00",
+        "pkgbuild": "2026-03-28T17:43:28Z",
+        "ebuild": "2026-02-25T10:59:25+02:00",
+        "nix": "2025-07-24T13:55:40+02:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1306
+    },
+    {
+      "name": "tig",
+      "versions": {
+        "deb": "2.5.1",
+        "rpm": "2.6.0",
+        "pkgbuild": "2.6.0",
+        "ebuild": null,
+        "nix": "2.6.0"
+      },
+      "literal_versions": {
+        "deb": "2.5.1",
+        "rpm": "2.6.0",
+        "pkgbuild": "2.6.0",
+        "ebuild": "9999",
+        "nix": "2.6.0"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-01-06T20:45:13+00:00",
+        "rpm": "2025-09-17T06:06:43-05:00",
+        "pkgbuild": "2025-09-16T17:13:52-04:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-02-11T03:34:18-05:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1861
+    },
+    {
+      "name": "tmux",
+      "versions": {
+        "deb": "3.1c",
+        "rpm": "3.6a",
+        "pkgbuild": "3.6_a",
+        "ebuild": null,
+        "nix": "3.6a"
+      },
+      "literal_versions": {
+        "deb": "3.1c",
+        "rpm": "3.6a",
+        "pkgbuild": "3.6_a",
+        "ebuild": "9999",
+        "nix": "3.6a"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2021-09-19T14:52:55+00:00",
+        "rpm": "2026-02-23T14:09:49-03:00",
+        "pkgbuild": "2025-12-05T08:02:52+01:00",
+        "ebuild": "2026-01-06T08:05:23Z",
+        "nix": "2026-01-21T21:48:49-05:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1618
+    },
+    {
+      "name": "trash-cli",
+      "versions": {
+        "deb": "0.17.1.14",
+        "rpm": "0.24.5.26",
+        "pkgbuild": "0.24.5.26",
+        "ebuild": "0.24.5.26",
+        "nix": "0.24.5.26"
+      },
+      "literal_versions": {
+        "deb": "0.17.1.14",
+        "rpm": "0.24.5.26",
+        "pkgbuild": "0.24.5.26",
+        "ebuild": "0.24.5.26",
+        "nix": "0.24.5.26"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-15T14:56:37+00:00",
+        "rpm": "2026-03-06T21:15:28+01:00",
+        "pkgbuild": "2025-12-16T21:07:22+01:00",
+        "ebuild": "2025-04-26T22:11:04+03:00",
+        "nix": "2026-02-07T10:06:06+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1845
+    },
+    {
+      "name": "valgrind",
+      "versions": {
+        "deb": "3.16.1",
+        "rpm": "3.26.0",
+        "pkgbuild": "3.25.1",
+        "ebuild": null,
+        "nix": "3.26.0"
+      },
+      "literal_versions": {
+        "deb": "3.16.1",
+        "rpm": "3.26.0",
+        "pkgbuild": "3.25.1",
+        "ebuild": "9999",
+        "nix": "3.26.0"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2020-06-28T20:44:44+00:00",
+        "rpm": "2026-01-29T12:59:20+01:00",
+        "pkgbuild": "2026-02-09T18:14:44+01:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-01-10T22:50:43+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 2051
+    },
+    {
+      "name": "vifm",
+      "versions": {
+        "deb": "0.10.1",
+        "rpm": "0.14.3",
+        "pkgbuild": "0.14.3",
+        "ebuild": null,
+        "nix": "0.14.3"
+      },
+      "literal_versions": {
+        "deb": "0.10.1",
+        "rpm": "0.14.3",
+        "pkgbuild": "0.14.3",
+        "ebuild": "9999",
+        "nix": "0.14.3"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2020-08-20T08:45:55+00:00",
+        "rpm": "2025-06-12T18:20:21+03:00",
+        "pkgbuild": "2025-08-28T09:08:49+02:00",
+        "ebuild": "2025-05-31T22:07:10+01:00",
+        "nix": "2026-02-06T00:24:34+01:00"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1995
+    },
+    {
+      "name": "vlc",
+      "versions": {
+        "deb": "3.0.21",
+        "rpm": "3.0.23",
+        "pkgbuild": null,
+        "ebuild": null,
+        "nix": "3.0.23-2"
+      },
+      "literal_versions": {
+        "deb": "3.0.21",
+        "rpm": "3.0.23",
+        "pkgbuild": null,
+        "ebuild": "9999",
+        "nix": "3.0.23-2"
+      },
+      "unresolved_reasons": {
+        "pkgbuild": "needs_evaluation",
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2024-06-13T02:41:56+00:00",
+        "rpm": "2026-03-23T23:27:00-04:00",
+        "pkgbuild": "2026-04-02T02:59:53+08:00",
+        "ebuild": "2026-02-18T23:52:09+01:00",
+        "nix": "2026-03-03T14:04:50Z"
+      },
+      "resolved_families": 3,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 657
+    },
+    {
+      "name": "w3m",
+      "versions": {
+        "deb": "0.5.3+git20210102",
+        "rpm": "0.5.3",
+        "pkgbuild": "0.5.6",
+        "ebuild": "0.5.6",
+        "nix": "0.5.6"
+      },
+      "literal_versions": {
+        "deb": "0.5.3+git20210102",
+        "rpm": "0.5.3",
+        "pkgbuild": "0.5.6",
+        "ebuild": "0.5.6",
+        "nix": "0.5.6"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2023-02-12T21:07:35+00:00",
+        "rpm": "2026-01-17T20:05:55Z",
+        "pkgbuild": "2026-02-16T08:50:19+01:00",
+        "ebuild": "2026-02-15T14:14:16Z",
+        "nix": "2026-03-03T14:04:50Z"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1114
+    },
+    {
+      "name": "yamllint",
+      "versions": {
+        "deb": "1.26.0",
+        "rpm": "1.38.0",
+        "pkgbuild": "1.38.0",
+        "ebuild": "1.38.0",
+        "nix": "1.37.1"
+      },
+      "literal_versions": {
+        "deb": "1.26.0",
+        "rpm": "1.38.0",
+        "pkgbuild": "1.38.0",
+        "ebuild": "1.38.0",
+        "nix": "1.37.1"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2021-02-06T20:44:45+00:00",
+        "rpm": "2026-01-22T15:46:35+01:00",
+        "pkgbuild": "2026-01-13T18:13:08+01:00",
+        "ebuild": "2026-02-27T14:23:07Z",
+        "nix": "2026-01-11T09:34:20-08:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1846
+    },
+    {
+      "name": "yq",
+      "versions": {
+        "deb": "3.1.0",
+        "rpm": "4.47.1",
+        "pkgbuild": "3.4.3",
+        "ebuild": "3.4.3",
+        "nix": "3.4.3"
+      },
+      "literal_versions": {
+        "deb": "3.1.0",
+        "rpm": "4.47.1",
+        "pkgbuild": "3.4.3",
+        "ebuild": "3.4.3",
+        "nix": "3.4.3"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2023-01-24T18:41:27+00:00",
+        "rpm": "2025-08-29T16:21:01+02:00",
+        "pkgbuild": "2025-12-16T11:59:27+01:00",
+        "ebuild": "2025-02-28T20:21:07+02:00",
+        "nix": "2025-12-10T18:09:49+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1056
+    },
+    {
+      "name": "zathura",
+      "versions": {
+        "deb": "0.4.7",
+        "rpm": "0.5.14",
+        "pkgbuild": "2026.03.27",
+        "ebuild": null,
+        "nix": null
+      },
+      "literal_versions": {
+        "deb": "0.4.7",
+        "rpm": "0.5.14",
+        "pkgbuild": "2026.03.27",
+        "ebuild": "9999",
+        "nix": null
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs",
+        "nix": "needs_evaluation"
+      },
+      "published": {
+        "deb": "2020-09-04T02:43:31+00:00",
+        "rpm": "2026-01-17T21:05:50Z",
+        "pkgbuild": "2026-03-28T12:51:25+01:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2025-12-07T17:37:26+01:00"
+      },
+      "resolved_families": 3,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 2031
+    },
+    {
+      "name": "zoxide",
+      "versions": {
+        "deb": "0.4.3",
+        "rpm": "0.9.8",
+        "pkgbuild": "0.9.9",
+        "ebuild": "0.9.8",
+        "nix": "0.9.9"
+      },
+      "literal_versions": {
+        "deb": "0.4.3",
+        "rpm": "0.9.8",
+        "pkgbuild": "0.9.9",
+        "ebuild": "0.9.8",
+        "nix": "0.9.9"
+      },
+      "unresolved_reasons": {},
+      "published": {
+        "deb": "2020-11-13T15:27:00+00:00",
+        "rpm": "2025-08-18T06:56:36-04:00",
+        "pkgbuild": "2026-02-14T16:06:48+03:00",
+        "ebuild": "2025-06-11T20:26:33+02:00",
+        "nix": "2026-03-16T12:54:53+01:00"
+      },
+      "resolved_families": 5,
+      "distinct_versions": 3,
+      "all_agree": false,
+      "publication_span_days": 1948
+    },
+    {
+      "name": "zsh",
+      "versions": {
+        "deb": "5.8",
+        "rpm": "5.9",
+        "pkgbuild": "5.9",
+        "ebuild": null,
+        "nix": "5.9"
+      },
+      "literal_versions": {
+        "deb": "5.8",
+        "rpm": "5.9",
+        "pkgbuild": "5.9",
+        "ebuild": "9999",
+        "nix": "5.9"
+      },
+      "unresolved_reasons": {
+        "ebuild": "live_vcs"
+      },
+      "published": {
+        "deb": "2022-02-18T21:32:06+00:00",
+        "rpm": "2026-03-24T10:31:31+01:00",
+        "pkgbuild": "2024-06-21T13:39:11+02:00",
+        "ebuild": "2025-12-19T10:51:55+01:00",
+        "nix": "2026-03-03T14:04:50Z"
+      },
+      "resolved_families": 4,
+      "distinct_versions": 2,
+      "all_agree": false,
+      "publication_span_days": 1494
+    }
+  ]
+}

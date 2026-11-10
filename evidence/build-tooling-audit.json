@@ -1,0 +1,394 @@
+{
+  "schema": "pkgbridge-build-tooling-audit/1",
+  "seed": {
+    "source": "sha256 of evidence/provenance.json bytes",
+    "sha256": "23b770c8c380e4f7a5e60c02054b893693cec153508ff09cc81e0fc3dc4482db",
+    "rng": "Python random.Random(int(sha256, 16)); random.sample over sorted program directory names, family order deb, rpm, pkgbuild, ebuild, nixpkgs"
+  },
+  "per_family": 6,
+  "label_set": [
+    "cargo",
+    "go",
+    "python",
+    "meson",
+    "cmake",
+    "autotools",
+    "make",
+    "implicit"
+  ],
+  "sample": [
+    {
+      "family": "deb",
+      "program": "entr",
+      "files": [
+        "control",
+        "entr.dsc",
+        "rules"
+      ],
+      "blind_label": "make",
+      "justification": "rules:20 `dh $@ --buildsystem=makefile` (explicit).",
+      "classifier_label": "make"
+    },
+    {
+      "family": "deb",
+      "program": "hunspell",
+      "files": [
+        "control",
+        "hunspell.dsc",
+        "rules"
+      ],
+      "blind_label": "autotools",
+      "justification": "rules:8 plain `dh $@`; rules:11-12 pass configure options `--with-ui --with-readline` to dh_auto_configure, evidencing a ./configure script; no autotools package in Build-Depends (control:8-13), so this rests on rules evidence only.",
+      "classifier_label": "implicit"
+    },
+    {
+      "family": "deb",
+      "program": "parallel",
+      "files": [
+        "control",
+        "parallel.dsc",
+        "rules"
+      ],
+      "blind_label": "autotools",
+      "justification": "rules:9 plain `dh $@`; control:6 Build-Depends `autoconf`.",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "deb",
+      "program": "rclone",
+      "files": [
+        "control",
+        "rclone.dsc",
+        "rules"
+      ],
+      "blind_label": "go",
+      "justification": "rules:24 `dh $@ --buildsystem=golang`; control:8 Build-Depends dh-golang.",
+      "classifier_label": "go"
+    },
+    {
+      "family": "deb",
+      "program": "stow",
+      "files": [
+        "control",
+        "rules",
+        "stow.dsc"
+      ],
+      "blind_label": "autotools",
+      "justification": "rules:7 plain `dh $@`; rules:10 `dh_auto_configure -- --with-pmdir=...` passes a configure option; Build-Depends (control:5) has no autotools package.",
+      "classifier_label": "implicit"
+    },
+    {
+      "family": "deb",
+      "program": "tig",
+      "files": [
+        "control",
+        "rules",
+        "tig.dsc"
+      ],
+      "blind_label": "autotools",
+      "justification": "rules:25 explicit `./configure --host=... --build=...`, then rules:37 `$(MAKE) all doc`; hand-written rules, no dh sequencer.",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "rpm",
+      "program": "evince",
+      "files": [
+        "evince.spec"
+      ],
+      "blind_label": "meson",
+      "justification": "evince.spec:166 `%meson`, :189 `%meson_build`, :192 `%meson_install`.",
+      "classifier_label": "meson"
+    },
+    {
+      "family": "rpm",
+      "program": "lsd",
+      "files": [
+        "lsd.spec"
+      ],
+      "blind_label": "cargo",
+      "justification": "lsd.spec:75 `%cargo_build`; :21 BuildRequires cargo-rpm-macros.",
+      "classifier_label": "cargo"
+    },
+    {
+      "family": "rpm",
+      "program": "lsof",
+      "files": [
+        "lsof.spec"
+      ],
+      "blind_label": "autotools",
+      "justification": "lsof.spec:38 `%configure --with-selinux ...`; :26-27 BuildRequires automake, autoconf.",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "rpm",
+      "program": "stow",
+      "files": [
+        "stow.spec"
+      ],
+      "blind_label": "autotools",
+      "justification": "stow.spec:66 `%configure --docdir=... --with-pmdir=...`, :70 `%make_install`.",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "rpm",
+      "program": "tmux",
+      "files": [
+        "tmux.spec"
+      ],
+      "blind_label": "autotools",
+      "justification": "tmux.spec:36 `%configure --enable-sixel ...`, :37 `%make_build`.",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "rpm",
+      "program": "vifm",
+      "files": [
+        "vifm.spec"
+      ],
+      "blind_label": "autotools",
+      "justification": "vifm.spec:58 `%configure`, :74 `%make_build`; :19-20 BuildRequires autoconf, automake.",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "pkgbuild",
+      "program": "age",
+      "files": [
+        "PKGBUILD"
+      ],
+      "blind_label": "go",
+      "justification": "PKGBUILD:19 `go build -trimpath ...` in build().",
+      "classifier_label": "go"
+    },
+    {
+      "family": "pkgbuild",
+      "program": "fd",
+      "files": [
+        "PKGBUILD"
+      ],
+      "blind_label": "cargo",
+      "justification": "PKGBUILD:25 `cargo build --release --locked --offline` in build().",
+      "classifier_label": "cargo"
+    },
+    {
+      "family": "pkgbuild",
+      "program": "fish",
+      "files": [
+        "PKGBUILD"
+      ],
+      "blind_label": "cmake",
+      "justification": "PKGBUILD:50 `cmake \"${cmake_options[@]}\"` then :52 `make -C build` (cmake-generated).",
+      "classifier_label": "cmake"
+    },
+    {
+      "family": "pkgbuild",
+      "program": "gh",
+      "files": [
+        "PKGBUILD"
+      ],
+      "blind_label": "go",
+      "justification": "PKGBUILD:39 build() calls `make GH_VERSION=... bin/gh manpages`, but :37 exports GOFLAGS and :33-36 CGO_* and :14 makedepends go; make is a wrapper around the Go toolchain. A literal 'command in build()' reading would give make.",
+      "classifier_label": "make"
+    },
+    {
+      "family": "pkgbuild",
+      "program": "iperf3",
+      "files": [
+        "PKGBUILD"
+      ],
+      "blind_label": "autotools",
+      "justification": "PKGBUILD:29 `./configure --prefix=/usr`, :30 `make`.",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "pkgbuild",
+      "program": "socat",
+      "files": [
+        "PKGBUILD"
+      ],
+      "blind_label": "autotools",
+      "justification": "PKGBUILD:29 `./configure --prefix=/usr --mandir=...`, :33 `make`.",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "ebuild",
+      "program": "atuin",
+      "files": [
+        "atuin-18.13.2.ebuild"
+      ],
+      "blind_label": "cargo",
+      "justification": "atuin-18.13.2.ebuild:13 `inherit cargo ...`; :62 `cargo_src_compile`.",
+      "classifier_label": "cargo"
+    },
+    {
+      "family": "ebuild",
+      "program": "calcurse",
+      "files": [
+        "calcurse-4.8.2.ebuild"
+      ],
+      "blind_label": "autotools",
+      "justification": "calcurse-4.8.2.ebuild:43 `ECONF_SOURCE=\"${S}\" econf` in src_configure; :8 inherits only python-single-r1 (for a contrib script).",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "ebuild",
+      "program": "ffmpeg",
+      "files": [
+        "ffmpeg-9999.ebuild"
+      ],
+      "blind_label": "make",
+      "justification": "ffmpeg-9999.ebuild:408 runs `${S}/configure` with comment '# not autotools-based' (hand-written configure), :593 `emake V=1`; :6 inherits no build-system eclass.",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "ebuild",
+      "program": "khard",
+      "files": [
+        "khard-0.19.1.ebuild"
+      ],
+      "blind_label": "python",
+      "justification": "khard-0.19.1.ebuild:8 `inherit distutils-r1`; :6 DISTUTILS_USE_PEP517=setuptools.",
+      "classifier_label": "python"
+    },
+    {
+      "family": "ebuild",
+      "program": "lm-sensors",
+      "files": [
+        "lm-sensors-3.6.2.ebuild"
+      ],
+      "blind_label": "make",
+      "justification": "lm-sensors-3.6.2.ebuild:138 `emake CC=... CXX=...` in multilib_src_compile; :6 inherits no build-system eclass, no econf.",
+      "classifier_label": "make"
+    },
+    {
+      "family": "ebuild",
+      "program": "stow",
+      "files": [
+        "stow-2.4.1.ebuild"
+      ],
+      "blind_label": "autotools",
+      "justification": "stow-2.4.1.ebuild:32 `econf \"--with-pmdir=${VENDOR_LIB}\"`; :7 inherits perl-functions (helpers only).",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "nixpkgs",
+      "program": "ccache",
+      "files": [
+        "default.nix"
+      ],
+      "blind_label": "cmake",
+      "justification": "default.nix:73 nativeBuildInputs includes `cmake`; :84 cmakeFlags.",
+      "classifier_label": "cmake"
+    },
+    {
+      "family": "nixpkgs",
+      "program": "elinks",
+      "files": [
+        "default.nix"
+      ],
+      "blind_label": "autotools",
+      "justification": "default.nix:65 nativeBuildInputs `autoreconfHook`; :70 configureFlags.",
+      "classifier_label": "autotools"
+    },
+    {
+      "family": "nixpkgs",
+      "program": "fish",
+      "files": [
+        "default.nix"
+      ],
+      "blind_label": "cmake",
+      "justification": "default.nix:278 nativeBuildInputs `cmake` (with :280 ninja, :283 cargoSetupHook); :297 cmakeFlags; cmake drives the cargo build.",
+      "classifier_label": "cmake"
+    },
+    {
+      "family": "nixpkgs",
+      "program": "pass",
+      "files": [
+        "default.nix"
+      ],
+      "blind_label": "implicit",
+      "justification": "default.nix:83 `stdenv.mkDerivation` with :98 nativeBuildInputs only `makeWrapper`; no build hook, relies on default phases (:102 installFlags feed default make install).",
+      "classifier_label": "implicit"
+    },
+    {
+      "family": "nixpkgs",
+      "program": "rclone",
+      "files": [
+        "default.nix"
+      ],
+      "blind_label": "go",
+      "justification": "default.nix:18 `buildGoModule`.",
+      "classifier_label": "go"
+    },
+    {
+      "family": "nixpkgs",
+      "program": "zoxide",
+      "files": [
+        "default.nix"
+      ],
+      "blind_label": "cargo",
+      "justification": "default.nix:16 `rustPlatform.buildRustPackage`; :36 cargoHash.",
+      "classifier_label": "cargo"
+    }
+  ],
+  "labelling_protocol": "Labels assigned by reading each sampled recipe before opening evidence/build-tooling.json or scripts/build_tooling.py; definitions as in the audit brief. Line references are 1-based into the stored recipe file. Labels were saved to this file before the comparison stage ran and were not changed afterwards.",
+  "comparison": {
+    "classifier_source": "evidence/build-tooling.json rows[].classes (family key 'nix' for nixpkgs)",
+    "per_family": {
+      "deb": {
+        "agree": 4,
+        "n": 6
+      },
+      "rpm": {
+        "agree": 6,
+        "n": 6
+      },
+      "pkgbuild": {
+        "agree": 5,
+        "n": 6
+      },
+      "ebuild": {
+        "agree": 5,
+        "n": 6
+      },
+      "nixpkgs": {
+        "agree": 6,
+        "n": 6
+      }
+    },
+    "overall": {
+      "agree": 26,
+      "n": 30,
+      "rate": 0.8667
+    },
+    "disagreements": [
+      {
+        "family": "deb",
+        "program": "hunspell",
+        "blind_label": "autotools",
+        "classifier_label": "implicit",
+        "justification": "rules:8 plain `dh $@`; rules:11-12 pass configure options `--with-ui --with-readline` to dh_auto_configure, evidencing a ./configure script; no autotools package in Build-Depends (control:8-13), so this rests on rules evidence only."
+      },
+      {
+        "family": "deb",
+        "program": "stow",
+        "blind_label": "autotools",
+        "classifier_label": "implicit",
+        "justification": "rules:7 plain `dh $@`; rules:10 `dh_auto_configure -- --with-pmdir=...` passes a configure option; Build-Depends (control:5) has no autotools package."
+      },
+      {
+        "family": "pkgbuild",
+        "program": "gh",
+        "blind_label": "go",
+        "classifier_label": "make",
+        "justification": "PKGBUILD:39 build() calls `make GH_VERSION=... bin/gh manpages`, but :37 exports GOFLAGS and :33-36 CGO_* and :14 makedepends go; make is a wrapper around the Go toolchain. A literal 'command in build()' reading would give make."
+      },
+      {
+        "family": "ebuild",
+        "program": "ffmpeg",
+        "blind_label": "make",
+        "classifier_label": "autotools",
+        "justification": "ffmpeg-9999.ebuild:408 runs `${S}/configure` with comment '# not autotools-based' (hand-written configure), :593 `emake V=1`; :6 inherits no build-system eclass."
+      }
+    ]
+  }
+}

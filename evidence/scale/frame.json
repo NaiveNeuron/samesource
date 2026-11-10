@@ -1,0 +1,38 @@
+{
+  "schema": "pkgbridge-scale-frame/1",
+  "date": "2026-11-05",
+  "debian_snapshot": "20261105T000000Z",
+  "fedora_compose": "Fedora-Rawhide-20261105.n.0",
+  "files": {
+    "debian_sources": {
+      "url": "https://snapshot.debian.org/archive/debian/20261105T000000Z/dists/unstable/main/source/Sources.xz",
+      "path": "frame/debian-Sources.xz",
+      "sha256": "7ddd166eb39172dbf5394a6de5089e692dffe565d75349cc565f0bc41985f28e"
+    },
+    "fedora_primary": {
+      "url": "https://kojipkgs.fedoraproject.org/compose/rawhide/Fedora-Rawhide-20261105.n.0/compose/Everything/source/tree/repodata/906b5e8540c385aa2963f2707bc790c6ba61cded19fbdc53f63f5873a68c7ab2-primary.xml.zst",
+      "path": "frame/fedora-primary.xml.zst",
+      "sha256": "906b5e8540c385aa2963f2707bc790c6ba61cded19fbdc53f63f5873a68c7ab2"
+    },
+    "arch_core_db": {
+      "url": "https://archive.archlinux.org/repos/2026/11/05/core/os/x86_64/core.db",
+      "path": "frame/arch-core.db",
+      "sha256": "aec62efbfb59d300204f936a633a59d3c89d6a7e7f94852b8f621b61a253afae"
+    },
+    "arch_extra_db": {
+      "url": "https://archive.archlinux.org/repos/2026/11/05/extra/os/x86_64/extra.db",
+      "path": "frame/arch-extra.db",
+      "sha256": "ee4725dcfc256112d850a9ce885424811f297f90421a74109eeff3f88f6ba08d"
+    }
+  },
+  "repositories": {
+    "arch_state": {
+      "url": "https://gitlab.archlinux.org/archlinux/packaging/state.git",
+      "commit": "c41c1e0beaa9676c07b57b545691c3a74ac311e0"
+    },
+    "gentoo": {
+      "url": "https://github.com/gentoo-mirror/gentoo.git",
+      "commit": "ebeaca6e3863a586790123093406b52fb375810d"
+    }
+  }
+}
