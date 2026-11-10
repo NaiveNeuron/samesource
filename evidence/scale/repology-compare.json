@@ -1,0 +1,174 @@
+{
+  "schema": "pkgbridge-scale-repology-compare/1",
+  "frame_date": "2026-11-05",
+  "repology_queried": "2026-11-10",
+  "repositories": {
+    "deb": "debian_unstable",
+    "rpm": "fedora_rawhide",
+    "pkgbuild": "arch",
+    "ebuild": "gentoo"
+  },
+  "items": 180,
+  "outcomes": {
+    "same_project": 173,
+    "different_project": 7,
+    "unresolved": 0
+  },
+  "population_weighted": {
+    "same_project": 0.952,
+    "different_project": 0.048,
+    "unresolved": 0.0
+  },
+  "same_project_weighted_ci95": [
+    0.9173,
+    0.9866
+  ],
+  "audit_by_outcome": {
+    "same_primary_archive": {
+      "same_project": 168,
+      "different_project": 5
+    },
+    "component_or_split": {
+      "same_project": 5,
+      "different_project": 2
+    }
+  },
+  "per_pair": {
+    "deb-pkgbuild": {
+      "sampled": 30,
+      "population": 2234,
+      "same_project": 30,
+      "different_project": 0,
+      "unresolved": 0
+    },
+    "deb-rpm": {
+      "sampled": 30,
+      "population": 4871,
+      "same_project": 28,
+      "different_project": 2,
+      "unresolved": 0
+    },
+    "deb-ebuild": {
+      "sampled": 30,
+      "population": 4643,
+      "same_project": 27,
+      "different_project": 3,
+      "unresolved": 0
+    },
+    "ebuild-rpm": {
+      "sampled": 30,
+      "population": 5285,
+      "same_project": 29,
+      "different_project": 1,
+      "unresolved": 0
+    },
+    "ebuild-pkgbuild": {
+      "sampled": 30,
+      "population": 2970,
+      "same_project": 29,
+      "different_project": 1,
+      "unresolved": 0
+    },
+    "pkgbuild-rpm": {
+      "sampled": 30,
+      "population": 2159,
+      "same_project": 30,
+      "different_project": 0,
+      "unresolved": 0
+    }
+  },
+  "not_same_project": [
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:libglib-perl@3:1.329.4-1#0",
+        "ebuild:dev-perl/glib-perl@1.329.400#0"
+      ],
+      "projects": [
+        "perl:glib",
+        "perl:glib-perl"
+      ],
+      "outcome": "different_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:unidecode@1.4.0-2#0",
+        "ebuild:dev-python/unidecode@1.4.0#0"
+      ],
+      "projects": [
+        "unidecode",
+        "python:unidecode"
+      ],
+      "outcome": "different_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:sass-grass@0.13.4-6#0",
+        "ebuild:dev-lang/grass@0.13.4#0"
+      ],
+      "projects": [
+        "sass-grass",
+        "grass-sass-compiler"
+      ],
+      "outcome": "different_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:libxml-perl@0.08-4#0",
+        "rpm:perl-libxml-perl@0.08-57.fc45#0"
+      ],
+      "projects": [
+        "perl:xml",
+        "perl:libxml-perl"
+      ],
+      "outcome": "different_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:commonmark@0.9.2-1#0",
+        "rpm:python-CommonMark@0.9.2-1.fc45#0"
+      ],
+      "projects": [
+        "commonmark",
+        "python:commonmark"
+      ],
+      "outcome": "different_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:dev-util/mingw64-runtime@14.0.0#0",
+        "pkgbuild:mingw-w64-winpthreads@14.0.0-1#0"
+      ],
+      "projects": [
+        "mingw-w64",
+        "mingw-w64-winpthreads"
+      ],
+      "outcome": "different_project",
+      "audit": "component_or_split"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:llvm-core/polly@22.1.8#0",
+        "rpm:llvm22@22.1.8-3.fc46#0"
+      ],
+      "projects": [
+        "polly-llvm-opt",
+        "llvm"
+      ],
+      "outcome": "different_project",
+      "audit": "component_or_split"
+    }
+  ],
+  "note": "Repology is queried live, so differences can also reflect changes after the frame date."
+}

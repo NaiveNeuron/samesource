@@ -9,13 +9,13 @@ pinned packaging state, so the recipes themselves can be retrieved.
 ## Quick start
 
 The tables are attached to the
-[v1.0.0 release](https://github.com/NaiveNeuron/samesource/releases/tag/v1.0.0):
+[v1.0.1 release](https://github.com/NaiveNeuron/samesource/releases/tag/v1.0.1):
 `samesource.sqlite.zst` (SQLite), `samesource-parquet.tar` (Parquet), and
 `samesource-jsonl.tar.zst` (the extracted records the tables are built from),
 with `SHA256SUMS`.
 
 ```sh
-gh release download v1.0.0 -R NaiveNeuron/samesource && shasum -a 256 -c SHA256SUMS
+gh release download v1.0.1 -R NaiveNeuron/samesource && shasum -a 256 -c SHA256SUMS
 zstd -d samesource.sqlite.zst
 sqlite3 samesource.sqlite "SELECT families, COUNT(*) FROM groups GROUP BY 1 ORDER BY 2 DESC;"
 sqlite3 samesource.sqlite < examples/queries.sql

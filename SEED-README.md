@@ -64,7 +64,7 @@ programs only.
 ## Rights
 
 Recipes are fetched from the distributions and remain under their terms. The
-licence for the scripts in this artifact is chosen by its authors (see
-`LICENSE`). The 130-program selection originates from PkgBridge
+scripts in this artifact are under the MIT licence (`LICENSE`) and the derived
+data under CC BY-NC 4.0 (`LICENSE-DATA`). The 130-program selection originates from PkgBridge
 (https://github.com/Aethelsirius/pkgbridge) and the thesis of M. D. Szasz
 (Comenius University in Bratislava, 2026).
