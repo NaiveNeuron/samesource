@@ -94,7 +94,7 @@ Patch counts are declarations, not observed source changes.
 
 ## Validation
 
-Rater A was an Anthropic Claude model and rater B was OpenAI GPT-6.1 Sol, each
+Rater A was Anthropic Claude Opus 5.5 and rater B was OpenAI GPT-6.1 Sol, each
 run as an agent with the written rubric and no access to the other's labels.
 
 `evidence/scale/audit-sheet.json` holds 180 sampled links (30 per distribution
