@@ -3,7 +3,7 @@
 This artifact accompanies the MSR 2027 Data and Tool Showcase paper
 *A Provenance-Traced, Reconstructible Corpus of Cross-Distribution Package
 Recipes*. It rebuilds the 130-program, five-ecosystem recipe corpus of
-PkgBridge (commit `1a8ba8a2`, from an earlier thesis) from the distributions'
+PkgBridge (commit `1a8ba8a2`, from an earlier semestral project) from the distributions'
 own public histories, audits version alignment, and runs calibrated native
 build checks. It contains no complete recipe files (the identity audit quotes
 short excerpts) and no PkgBridge code: every recipe is downloaded from its
@@ -50,7 +50,7 @@ Each control writes `stages.env` and logs under
 
 S source verified against a recorded hash; B native build exits 0; M built
 package contains the expected paths; I installs in a fresh container from the
-same image; K the PkgBridge smoke command exits 0 (exit status only; the thesis
+same image; K the PkgBridge smoke command exits 0 (exit status only; the project's oracle
 also compared its output with the distribution package's); F a prespecified
 behaviour check exits 0. Later stages are `not_evaluated` after S or B fails.
 
@@ -67,5 +67,5 @@ programs only.
 Recipes are fetched from the distributions and remain under their terms. The
 scripts in this artifact are under the MIT licence (`LICENSE`) and the derived
 data under CC BY-NC 4.0 (`LICENSE-DATA`). The 130-program selection originates from PkgBridge
-(https://github.com/Aethelsirius/pkgbridge) and the thesis of M. D. Szasz
+(https://github.com/Aethelsirius/pkgbridge) and the semestral project of M. D. Szász
 (Comenius University in Bratislava, 2026).
