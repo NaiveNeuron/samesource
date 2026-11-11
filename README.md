@@ -9,13 +9,13 @@ pinned packaging state, so the recipes themselves can be retrieved.
 ## Quick start
 
 The tables are attached to the
-[v1.0.1 release](https://github.com/NaiveNeuron/samesource/releases/tag/v1.0.1):
+[v1.0.2 release](https://github.com/NaiveNeuron/samesource/releases/tag/v1.0.2):
 `samesource.sqlite.zst` (SQLite), `samesource-parquet.tar` (Parquet), and
 `samesource-jsonl.tar.zst` (the extracted records the tables are built from),
 with `SHA256SUMS`.
 
 ```sh
-gh release download v1.0.1 -R NaiveNeuron/samesource && shasum -a 256 -c SHA256SUMS
+gh release download v1.0.2 -R NaiveNeuron/samesource && shasum -a 256 -c SHA256SUMS
 zstd -d samesource.sqlite.zst
 sqlite3 samesource.sqlite "SELECT families, COUNT(*) FROM groups GROUP BY 1 ORDER BY 2 DESC;"
 sqlite3 samesource.sqlite < examples/queries.sql
@@ -37,14 +37,52 @@ DuckDB, pandas, or Polars can read the same tables from `parquet/`.
 | `tasks` | directional translation task | `task_id`, `group_id`, `split` (train, dev, test; per group), `tier`, `source_id`, `target_id`, `source_family`, `target_family`, `same_upstream_version_string` |
 | `patch_declarations` | grouped record | `record_id`, `declared_patches`, `evidence` |
 
-## How it was built
+## How it was built, and how to rebuild it
 
-`scripts/scale/frame.py` pins the inputs (`evidence/scale/frame.json`); one
-extractor per family writes JSONL records; `enrich_deb.py` and
-`enrich_arch.py` stream archives to bridge SHA-256-only digests; `link.py`,
-`names.py`, `patches.py`, `mismatch_causes.py`, and `tasks.py` derive the
-analyses; `release.py` builds SQLite and Parquet. `evidence/scale/MANIFEST.json`
-pins the SHA-256 of every large file.
+Needs Python 3.11+, Git, `zstd`, and `sqlite3`; Parquet export also needs
+`pip install duckdb`. The scripts read and write `evidence/scale/` inside
+this repository and keep downloads in `~/.cache/pkgbridge/scale/`.
+
+**Recompute the analyses and tables from the released records** (minutes,
+offline):
+
+```sh
+gh release download v1.0.2 -R NaiveNeuron/samesource && shasum -a 256 -c SHA256SUMS
+tar --zstd -xf samesource-jsonl.tar.zst -C evidence/scale/   # *.jsonl records and links
+python3 scripts/scale/link.py              # links.jsonl, groups, census.json
+python3 scripts/scale/names.py             # names.json
+python3 scripts/scale/mismatch_causes.py   # mismatch-causes.json
+python3 scripts/scale/tasks.py             # tasks.jsonl, tasks-summary.json
+python3 scripts/scale/audit_agreement.py   # audit-summary.json
+python3 scripts/scale/repology_compare.py  # replays the recorded Repology answers
+python3 scripts/scale/release.py           # output/dataset/samesource.sqlite (+ parquet/)
+```
+
+`evidence/scale/MANIFEST.json` pins the SHA-256 of every large file, and
+`census.json` should come out identical. `patches.py` is not in this list
+because it reads the recipes themselves (next block).
+
+**Rebuild from the distributions** (hours, online; the pins are the ones in
+`evidence/scale/frame.json`):
+
+```sh
+python3 scripts/scale/frame.py --date 2026-11-05 \
+    --fedora-compose Fedora-Rawhide-20261105.n.0 \
+    --arch-state-commit c41c1e0beaa9676c07b57b545691c3a74ac311e0 \
+    --gentoo-commit ebeaca6e3863a586790123093406b52fb375810d
+python3 scripts/scale/extract_deb.py
+python3 scripts/scale/extract_rpm.py        # asks Koji for each build's commit
+python3 scripts/scale/extract_pkgbuild.py   # slowest: GitLab rate limits
+python3 scripts/scale/extract_ebuild.py
+python3 scripts/scale/enrich_deb.py         # streams about 29 GB of archives
+python3 scripts/scale/enrich_arch.py
+python3 scripts/scale/link.py
+python3 scripts/scale/patches.py            # fetches packaging files of grouped records
+```
+
+Then run the first block from `names.py` on. The snapshot services are
+public, but they are live: a rebuild depends on snapshot.debian.org, Koji,
+the Arch Linux Archive, and the two Git hosts still serving these pins.
 
 ## What a link does and does not mean
 
@@ -55,6 +93,9 @@ not mean different software. VCS sources are recorded but not compared.
 Patch counts are declarations, not observed source changes.
 
 ## Validation
+
+Rater A was an Anthropic Claude model and rater B was OpenAI GPT-6.1 Sol, each
+run as an agent with the written rubric and no access to the other's labels.
 
 `evidence/scale/audit-sheet.json` holds 180 sampled links (30 per distribution
 pair). `audit-rater-a.json` and `audit-rater-b.json` are two labellings by LLM

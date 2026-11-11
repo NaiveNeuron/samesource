@@ -170,5 +170,2347 @@
       "audit": "component_or_split"
     }
   ],
+  "observations": [
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:libopenobex@1.7.2-2.3#0",
+        "ebuild:dev-libs/openobex@1.7.2-r3#0"
+      ],
+      "projects": [
+        "openobex",
+        "openobex"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:haskell-nanospec@0.2.2-7#0",
+        "ebuild:dev-haskell/nanospec@0.2.2#0"
+      ],
+      "projects": [
+        "haskell:nanospec",
+        "haskell:nanospec"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:libsys-hostname-long-perl@1.5-3#0",
+        "ebuild:dev-perl/Sys-Hostname-Long@1.500.0-r2#0"
+      ],
+      "projects": [
+        "perl:sys-hostname-long",
+        "perl:sys-hostname-long"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:usb-modeswitch@2.6.2-2#0",
+        "ebuild:sys-apps/usb_modeswitch@2.6.2#0"
+      ],
+      "projects": [
+        "usb-modeswitch",
+        "usb-modeswitch"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:libclass-accessor-lite-perl@0.08-3#0",
+        "ebuild:dev-perl/Class-Accessor-Lite@0.80.0-r2#0"
+      ],
+      "projects": [
+        "perl:class-accessor-lite",
+        "perl:class-accessor-lite"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:sshpass@1.10-0.1#0",
+        "ebuild:net-misc/sshpass@1.10#0"
+      ],
+      "projects": [
+        "sshpass",
+        "sshpass"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:pcsc-lite@2.5.3-1#0",
+        "ebuild:sys-apps/pcsc-lite@2.5.3#0"
+      ],
+      "projects": [
+        "pcsc-lite",
+        "pcsc-lite"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:ipcalc@0.51-1#0",
+        "ebuild:net-misc/ipcalc@0.51-r1#0"
+      ],
+      "projects": [
+        "ipcalc-kjokjo",
+        "ipcalc-kjokjo"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:autoconf@2.73-2#0",
+        "ebuild:app-emacs/autoconf-mode@2.73#0"
+      ],
+      "projects": [
+        "autoconf",
+        "autoconf"
+      ],
+      "outcome": "same_project",
+      "audit": "component_or_split"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:kakasi@2.3.6-4.2#0",
+        "ebuild:app-i18n/kakasi@2.3.6-r2#0"
+      ],
+      "projects": [
+        "kakasi",
+        "kakasi"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:libtest2-tools-explain-perl@0.02-2#0",
+        "ebuild:dev-perl/Test2-Tools-Explain@0.20.0-r1#0"
+      ],
+      "projects": [
+        "perl:test2-tools-explain",
+        "perl:test2-tools-explain"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:xfce4-sensors-plugin@1.5.0-1#0",
+        "ebuild:xfce-extra/xfce4-sensors-plugin@1.5.0#0"
+      ],
+      "projects": [
+        "xfce4-sensors-plugin",
+        "xfce4-sensors-plugin"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:catch@1.12.2-0.3#0",
+        "ebuild:dev-cpp/catch@1.12.2-r2#0"
+      ],
+      "projects": [
+        "catch",
+        "catch"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:patchutils@0.4.5-1#0",
+        "ebuild:dev-util/patchutils@0.4.5-r1#0"
+      ],
+      "projects": [
+        "patchutils",
+        "patchutils"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:units@2.27-1#0",
+        "ebuild:sci-calculators/units@2.27#0"
+      ],
+      "projects": [
+        "gnu-units",
+        "gnu-units"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:libcpan-checksums-perl@2.14-2#0",
+        "ebuild:dev-perl/CPAN-Checksums@2.140.0#0"
+      ],
+      "projects": [
+        "perl:cpan-checksums",
+        "perl:cpan-checksums"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:ocaml-csexp@1.5.2-4#0",
+        "ebuild:dev-ml/csexp@1.5.2-r1#0"
+      ],
+      "projects": [
+        "ocaml:csexp",
+        "ocaml:csexp"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:libglib-perl@3:1.329.4-1#0",
+        "ebuild:dev-perl/glib-perl@1.329.400#0"
+      ],
+      "projects": [
+        "perl:glib",
+        "perl:glib-perl"
+      ],
+      "outcome": "different_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:liblist-allutils-perl@0.19-1#0",
+        "ebuild:dev-perl/List-AllUtils@0.190.0-r1#0"
+      ],
+      "projects": [
+        "perl:list-allutils",
+        "perl:list-allutils"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:metapixel@1.0.2-13#0",
+        "ebuild:media-gfx/metapixel@1.0.2-r2#0"
+      ],
+      "projects": [
+        "metapixel",
+        "metapixel"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:libextutils-helpers-perl@0.028-1#0",
+        "ebuild:dev-perl/ExtUtils-Helpers@0.28.0#0"
+      ],
+      "projects": [
+        "perl:extutils-helpers",
+        "perl:extutils-helpers"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:unidecode@1.4.0-2#0",
+        "ebuild:dev-python/unidecode@1.4.0#0"
+      ],
+      "projects": [
+        "unidecode",
+        "python:unidecode"
+      ],
+      "outcome": "different_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:libhtml-packer-perl@2.110000-1#0",
+        "ebuild:dev-perl/HTML-Packer@2.110.0#0"
+      ],
+      "projects": [
+        "perl:html-packer",
+        "perl:html-packer"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:python-kgb@7.3-1#0",
+        "ebuild:dev-python/kgb@7.3#0"
+      ],
+      "projects": [
+        "python:kgb",
+        "python:kgb"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:sass-grass@0.13.4-6#0",
+        "ebuild:dev-lang/grass@0.13.4#0"
+      ],
+      "projects": [
+        "sass-grass",
+        "grass-sass-compiler"
+      ],
+      "outcome": "different_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:mecab-naist-jdic@0.6.3.b-20111013-11#0",
+        "ebuild:app-dicts/mecab-naist-jdic@0.6.3b_p20111013-r1#0"
+      ],
+      "projects": [
+        "mecab-naist-jdic",
+        "mecab-naist-jdic"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:libperlio-via-timeout-perl@0.32-3#0",
+        "ebuild:dev-perl/PerlIO-via-Timeout@0.320.0-r1#0"
+      ],
+      "projects": [
+        "perl:perlio-via-timeout",
+        "perl:perlio-via-timeout"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:prometheus-node-exporter@1.11.1-3#0",
+        "ebuild:app-metrics/node_exporter@1.11.1#0"
+      ],
+      "projects": [
+        "prometheus-node-exporter",
+        "prometheus-node-exporter"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:libdist-zilla-plugin-config-git-perl@0.92-3#0",
+        "ebuild:dev-perl/Dist-Zilla-Plugin-Config-Git@0.920.0-r2#0"
+      ],
+      "projects": [
+        "perl:dist-zilla-plugin-config-git",
+        "perl:dist-zilla-plugin-config-git"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-ebuild",
+      "link": [
+        "deb:gkrellweather@2.0.8-3#0",
+        "ebuild:x11-plugins/gkrellweather@2.0.8-r2#0"
+      ],
+      "projects": [
+        "gkrellweather",
+        "gkrellweather"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:haskell-tasty-hunit@0.10.2-2#0",
+        "pkgbuild:haskell-tasty-hunit@0.10.2-399#0"
+      ],
+      "projects": [
+        "haskell:tasty-hunit",
+        "haskell:tasty-hunit"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:haskell-text-ansi@0.3.0.1-3#0",
+        "pkgbuild:haskell-text-ansi@0.3.0.1-137#0"
+      ],
+      "projects": [
+        "haskell:text-ansi",
+        "haskell:text-ansi"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:haskell-bencode@0.6.1.1-5#0",
+        "pkgbuild:haskell-bencode@0.6.1.1-370#0"
+      ],
+      "projects": [
+        "haskell:bencode",
+        "haskell:bencode"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:gts@0.7.6+darcs121130-5.2#0",
+        "pkgbuild:gts@0.7.6.121130-5#0"
+      ],
+      "projects": [
+        "gts-triangulated-surface",
+        "gts-triangulated-surface"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:libpackage-deprecationmanager-perl@0.18-1#0",
+        "pkgbuild:perl-package-deprecationmanager@0.18-6#0"
+      ],
+      "projects": [
+        "perl:package-deprecationmanager",
+        "perl:package-deprecationmanager"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:haskell-integer-logarithms@1.0.4-1#0",
+        "pkgbuild:haskell-integer-logarithms@1.0.4-282#0"
+      ],
+      "projects": [
+        "haskell:integer-logarithms",
+        "haskell:integer-logarithms"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:movit@1.7.2-1#0",
+        "pkgbuild:movit@1.7.2-2#0"
+      ],
+      "projects": [
+        "movit",
+        "movit"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:labplot@2.12.1-6#0",
+        "pkgbuild:labplot@2.12.1-10#0"
+      ],
+      "projects": [
+        "labplot",
+        "labplot"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:polymake@4.15-2#0",
+        "pkgbuild:polymake@4.15-15#0"
+      ],
+      "projects": [
+        "polymake",
+        "polymake"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:haskell-hspec-smallcheck@0.5.3-3#0",
+        "pkgbuild:haskell-hspec-smallcheck@0.5.3-212#0"
+      ],
+      "projects": [
+        "haskell:hspec-smallcheck",
+        "haskell:hspec-smallcheck"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:haskell-hedgehog@1.5-1#0",
+        "pkgbuild:haskell-hedgehog@1.5-295#0"
+      ],
+      "projects": [
+        "haskell:hedgehog",
+        "haskell:hedgehog"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:libgwenhywfar@5.14.1-4#0",
+        "pkgbuild:gwenhywfar@5.14.1-3#0"
+      ],
+      "projects": [
+        "gwenhywfar",
+        "gwenhywfar"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:xl2tpd@1.3.20-1#0",
+        "pkgbuild:xl2tpd@1.3.20-1#0"
+      ],
+      "projects": [
+        "xl2tpd",
+        "xl2tpd"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:lximage-qt@2.4.0-1#0",
+        "pkgbuild:lximage-qt@2.4.0-1#0"
+      ],
+      "projects": [
+        "lximage-qt",
+        "lximage-qt"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:haskell-mueval@0.9.4-3#0",
+        "pkgbuild:haskell-mueval@0.9.4-154#0"
+      ],
+      "projects": [
+        "haskell:mueval",
+        "haskell:mueval"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:libtypes-serialiser-perl@1.01-1#0",
+        "pkgbuild:perl-types-serialiser@1.01-6#0"
+      ],
+      "projects": [
+        "perl:types-serialiser",
+        "perl:types-serialiser"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:autossh@1.4g-1#0",
+        "pkgbuild:autossh@1.4g-4#0"
+      ],
+      "projects": [
+        "autossh",
+        "autossh"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:jnettop@0.13.0-5#0",
+        "pkgbuild:jnettop@0.13.0-10#0"
+      ],
+      "projects": [
+        "jnettop",
+        "jnettop"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:lxqt-sudo@2.4.0-1#0",
+        "pkgbuild:lxqt-sudo@2.4.0-1#0"
+      ],
+      "projects": [
+        "lxqt-sudo",
+        "lxqt-sudo"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:barcode@0.99-9#0",
+        "pkgbuild:barcode@0.99-6#0"
+      ],
+      "projects": [
+        "barcode",
+        "barcode"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:hidapi@0.15.0-2#0",
+        "pkgbuild:hidapi@0.15.0-1#0"
+      ],
+      "projects": [
+        "hidapi",
+        "hidapi"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:haskell-url@2.1.3-13#0",
+        "pkgbuild:haskell-url@2.1.3-335#0"
+      ],
+      "projects": [
+        "haskell:url",
+        "haskell:url"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:libextutils-cchecker-perl@0.12-1#0",
+        "pkgbuild:perl-extutils-cchecker@0.12-1#0"
+      ],
+      "projects": [
+        "perl:extutils-cchecker",
+        "perl:extutils-cchecker"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:libshell-command-perl@0.06-6#0",
+        "pkgbuild:perl-shell-command@0.06-9#0"
+      ],
+      "projects": [
+        "perl:shell-command",
+        "perl:shell-command"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:xdp-tools@1.6.3-1#0",
+        "pkgbuild:xdp-tools@1.6.3-2#0"
+      ],
+      "projects": [
+        "xdp-tools",
+        "xdp-tools"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:marknote@1.6.0-2#0",
+        "pkgbuild:marknote@1.6.0-2#0"
+      ],
+      "projects": [
+        "marknote",
+        "marknote"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:libtest-pod-coverage-perl@1.10-3#0",
+        "pkgbuild:perl-test-pod-coverage@1.10-5#0"
+      ],
+      "projects": [
+        "perl:test-pod-coverage",
+        "perl:test-pod-coverage"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:pybind11@3.1.0-2#0",
+        "pkgbuild:pybind11@3.1.0-1#0"
+      ],
+      "projects": [
+        "python:pybind11",
+        "python:pybind11"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:python-zstandard@0.25.0-1#0",
+        "pkgbuild:python-zstandard@0.25.0-3#0"
+      ],
+      "projects": [
+        "python:zstandard",
+        "python:zstandard"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-pkgbuild",
+      "link": [
+        "deb:apksigcopier@1.1.1-1#0",
+        "pkgbuild:apksigcopier@1.1.1-5#0"
+      ],
+      "projects": [
+        "apksigcopier",
+        "apksigcopier"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:rust-serde-spanned@1.1.2-1#0",
+        "rpm:rust-serde_spanned@1.1.2-1.fc46#0"
+      ],
+      "projects": [
+        "rust:serde-spanned",
+        "rust:serde-spanned"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:kbounce@4:26.08.2-1#0",
+        "rpm:kbounce@26.08.2-1.fc46#0"
+      ],
+      "projects": [
+        "kbounce",
+        "kbounce"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:rust-xkeysym@0.2.1-1#0",
+        "rpm:rust-xkeysym@0.2.1-6.fc45#0"
+      ],
+      "projects": [
+        "rust:xkeysym",
+        "rust:xkeysym"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:rust-x11rb-protocol@0.13.2-1#0",
+        "rpm:rust-x11rb-protocol@0.13.2-3.fc45#0"
+      ],
+      "projects": [
+        "rust:x11rb-protocol",
+        "rust:x11rb-protocol"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:libgsm@1.0.24-1#0",
+        "rpm:mingw-gsm@1.0.24-1.fc45#0"
+      ],
+      "projects": [
+        "gsm",
+        "gsm"
+      ],
+      "outcome": "same_project",
+      "audit": "component_or_split"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:gnome-packagekit@43.0-4#0",
+        "rpm:gnome-packagekit@43.0-10.fc45#0"
+      ],
+      "projects": [
+        "gnome-packagekit",
+        "gnome-packagekit"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:serd@0.32.10-2#0",
+        "rpm:serd@0.32.10-2.fc45#0"
+      ],
+      "projects": [
+        "serd",
+        "serd"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:libmaxmind-db-reader-xs-perl@1.000009-2#0",
+        "rpm:perl-MaxMind-DB-Reader-XS@1.000009-18.fc45#0"
+      ],
+      "projects": [
+        "perl:maxmind-db-reader-xs",
+        "perl:maxmind-db-reader-xs"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:pitivi@2023.03-6#0",
+        "rpm:pitivi@2023.03-23.fc45#0"
+      ],
+      "projects": [
+        "pitivi",
+        "pitivi"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:libxml-perl@0.08-4#0",
+        "rpm:perl-libxml-perl@0.08-57.fc45#0"
+      ],
+      "projects": [
+        "perl:xml",
+        "perl:libxml-perl"
+      ],
+      "outcome": "different_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:libconfig-general-perl@2.67-1#0",
+        "rpm:perl-Config-General@2.67-5.fc45#0"
+      ],
+      "projects": [
+        "perl:config-general",
+        "perl:config-general"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:rust-python-pkginfo@0.6.8-2#0",
+        "rpm:rust-python-pkginfo@0.6.8-2.fc45#0"
+      ],
+      "projects": [
+        "rust:python-pkginfo",
+        "rust:python-pkginfo"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:rust-atomic-waker@1.1.2-1#0",
+        "rpm:rust-atomic-waker@1.1.2-7.fc45#0"
+      ],
+      "projects": [
+        "rust:atomic-waker",
+        "rust:atomic-waker"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:libcgi-compile-perl@0.27-1#0",
+        "rpm:perl-CGI-Compile@0.27-5.fc45#0"
+      ],
+      "projects": [
+        "perl:cgi-compile",
+        "perl:cgi-compile"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:commonmark@0.9.2-1#0",
+        "rpm:python-CommonMark@0.9.2-1.fc45#0"
+      ],
+      "projects": [
+        "commonmark",
+        "python:commonmark"
+      ],
+      "outcome": "different_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:rust-stringprep@0.1.5-1#0",
+        "rpm:rust-stringprep@0.1.5-6.fc45#0"
+      ],
+      "projects": [
+        "rust:stringprep",
+        "rust:stringprep"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:haskell-split@0.2.5-2#0",
+        "rpm:ghc-split@0.2.5-8.fc45#0"
+      ],
+      "projects": [
+        "haskell:split",
+        "haskell:split"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:objfw@1.5.7-1#0",
+        "rpm:mingw-objfw@1.5.7-2.fc45#0"
+      ],
+      "projects": [
+        "objfw",
+        "objfw"
+      ],
+      "outcome": "same_project",
+      "audit": "component_or_split"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:ideviceinstaller@1.2.0-1#0",
+        "rpm:ideviceinstaller@1.2.0-2.fc45#0"
+      ],
+      "projects": [
+        "ideviceinstaller",
+        "ideviceinstaller"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:haskell-ansi-wl-pprint@1.0.2-2#0",
+        "rpm:ghc-ansi-wl-pprint@1.0.2-8.fc45#0"
+      ],
+      "projects": [
+        "haskell:ansi-wl-pprint",
+        "haskell:ansi-wl-pprint"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:globus-gram-job-manager-condor@3.0-4#0",
+        "rpm:globus-gram-job-manager-condor@3.0-24.fc45#0"
+      ],
+      "projects": [
+        "globus-gram-job-manager-condor",
+        "globus-gram-job-manager-condor"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:rust-test-assembler@0.1.6-1#0",
+        "rpm:rust-test-assembler@0.1.6-12.fc45#0"
+      ],
+      "projects": [
+        "rust:test-assembler",
+        "rust:test-assembler"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:auto-complete-el@1.5.1-0.3#0",
+        "rpm:emacs-auto-complete@1.5.1-16.fc45#0"
+      ],
+      "projects": [
+        "emacs:auto-complete",
+        "emacs:auto-complete"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:libnet-ip-perl@1.26-4#0",
+        "rpm:perl-Net-IP@1.26-38.fc45#0"
+      ],
+      "projects": [
+        "perl:net-ip",
+        "perl:net-ip"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:beautifulsoup4@4.15.0-1#0",
+        "rpm:python-beautifulsoup4@4.15.0-3.fc46#0"
+      ],
+      "projects": [
+        "python:beautifulsoup4",
+        "python:beautifulsoup4"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:rust-bincode@2.0.1-1#0",
+        "rpm:rust-bincode@2.0.1-4.fc45#0"
+      ],
+      "projects": [
+        "rust:bincode",
+        "rust:bincode"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:libevent-rpc-perl@1.11-1#0",
+        "rpm:perl-Event-RPC@1.11-4.fc45#0"
+      ],
+      "projects": [
+        "perl:event-rpc",
+        "perl:event-rpc"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:alkimia@8.2.1-2#0",
+        "rpm:libalkimia@8.2.1-6.fc45#0"
+      ],
+      "projects": [
+        "alkimia",
+        "alkimia"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:libtest-signature-perl@1.11-4#0",
+        "rpm:perl-Test-Signature@1.11-38.fc46#0"
+      ],
+      "projects": [
+        "perl:test-signature",
+        "perl:test-signature"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "deb-rpm",
+      "link": [
+        "deb:sec@2.9.4-1#0",
+        "rpm:sec@2.9.4-2.fc45#0"
+      ],
+      "projects": [
+        "sec",
+        "sec"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:app-cdr/ccd2iso@0.3-r2#0",
+        "pkgbuild:ccd2iso@0.3-12#0"
+      ],
+      "projects": [
+        "ccd2iso",
+        "ccd2iso"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:media-libs/libsdl3@3.4.18#0",
+        "pkgbuild:sdl3@3.4.18-1#0"
+      ],
+      "projects": [
+        "sdl3",
+        "sdl3"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:dev-vcs/git-sizer@1.5.0#0",
+        "pkgbuild:git-sizer@1.5.0-3#0"
+      ],
+      "projects": [
+        "git-sizer",
+        "git-sizer"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:dev-util/mingw64-runtime@14.0.0#0",
+        "pkgbuild:mingw-w64-winpthreads@14.0.0-1#0"
+      ],
+      "projects": [
+        "mingw-w64",
+        "mingw-w64-winpthreads"
+      ],
+      "outcome": "different_project",
+      "audit": "component_or_split"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:x11-libs/libXmu@1.3.1#0",
+        "pkgbuild:libxmu@1.3.1-1#0"
+      ],
+      "projects": [
+        "libxmu",
+        "libxmu"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:www-nginx/ngx-modsecurity@1.0.4#0",
+        "pkgbuild:nginx-mod-modsecurity@1:1.0.4-13#0"
+      ],
+      "projects": [
+        "nginx:modsecurity",
+        "nginx:modsecurity"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:media-sound/amarok@3.3.3#0",
+        "pkgbuild:amarok@3.3.3-1#0"
+      ],
+      "projects": [
+        "amarok",
+        "amarok"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:kde-apps/knavalbattle@26.08.3#0",
+        "pkgbuild:knavalbattle@26.08.3-1#0"
+      ],
+      "projects": [
+        "knavalbattle",
+        "knavalbattle"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:app-editors/nano@9.3#0",
+        "pkgbuild:nano@9.3-1#0"
+      ],
+      "projects": [
+        "nano",
+        "nano"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:dev-haskell/ghc-paths@0.1.0.12-r1#0",
+        "pkgbuild:haskell-ghc-paths@0.1.0.12-16#0"
+      ],
+      "projects": [
+        "haskell:ghc-paths",
+        "haskell:ghc-paths"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:dev-cpp/argparse@3.2#0",
+        "pkgbuild:argparse@3.2-1#0"
+      ],
+      "projects": [
+        "argparse-p-ranav",
+        "argparse-p-ranav"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:dev-haskell/appar@0.1.8-r1#0",
+        "pkgbuild:haskell-appar@0.1.8-18#0"
+      ],
+      "projects": [
+        "haskell:appar",
+        "haskell:appar"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:dev-debug/gdb@18.1-r2#0",
+        "pkgbuild:riscv64-elf-gdb@18.1-1#0"
+      ],
+      "projects": [
+        "gdb",
+        "gdb"
+      ],
+      "outcome": "same_project",
+      "audit": "component_or_split"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:app-editors/bluefish@2.2.19#0",
+        "pkgbuild:bluefish@2.2.19-2#0"
+      ],
+      "projects": [
+        "bluefish",
+        "bluefish"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:dev-util/kdevelop-pg-qt@2.4.0#0",
+        "pkgbuild:kdevelop-pg-qt@2.4.0-2#0"
+      ],
+      "projects": [
+        "kdevelop-pg-qt",
+        "kdevelop-pg-qt"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:app-i18n/unicode-cldr@49.0#0",
+        "pkgbuild:unicode-cldr@49-1#0"
+      ],
+      "projects": [
+        "unicode-cldr",
+        "unicode-cldr"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:app-misc/ddcui@0.6.0#0",
+        "pkgbuild:ddcui@0.6.0-2#0"
+      ],
+      "projects": [
+        "ddcui",
+        "ddcui"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:kde-misc/kshutdown@6.2#0",
+        "pkgbuild:kshutdown@6.2-2#0"
+      ],
+      "projects": [
+        "kshutdown",
+        "kshutdown"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:net-wireless/iwd@3.12#0",
+        "pkgbuild:iwd@3.12-2#0"
+      ],
+      "projects": [
+        "iwd",
+        "iwd"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:x11-libs/xtrans@1.6.0#0",
+        "pkgbuild:xtrans@1.6.0-1#0"
+      ],
+      "projects": [
+        "xtrans",
+        "xtrans"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:dev-haskell/safe@0.3.21#0",
+        "pkgbuild:haskell-safe@0.3.21-175#0"
+      ],
+      "projects": [
+        "haskell:safe",
+        "haskell:safe"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:kde-apps/analitza@26.08.3#0",
+        "pkgbuild:analitza@26.08.3-1#0"
+      ],
+      "projects": [
+        "analitza",
+        "analitza"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:app-cdr/bchunk@1.2.2-r1#0",
+        "pkgbuild:bchunk@1.2.2-8#0"
+      ],
+      "projects": [
+        "bchunk",
+        "bchunk"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:dev-haskell/pretty-hex@1.1-r1#0",
+        "pkgbuild:haskell-pretty-hex@1.1-13#0"
+      ],
+      "projects": [
+        "haskell:pretty-hex",
+        "haskell:pretty-hex"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:kde-frameworks/breeze-icons@6.31.0#0",
+        "pkgbuild:breeze-icons@6.31.0-1#0"
+      ],
+      "projects": [
+        "breeze-icons",
+        "breeze-icons"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:kde-apps/keditbookmarks@26.08.3#0",
+        "pkgbuild:keditbookmarks@26.08.3-1#0"
+      ],
+      "projects": [
+        "keditbookmarks",
+        "keditbookmarks"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:kde-frameworks/modemmanager-qt@6.31.0#0",
+        "pkgbuild:modemmanager-qt@6.31.0-1#0"
+      ],
+      "projects": [
+        "modemmanager-qt",
+        "modemmanager-qt"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:net-mail/dovecot@2.4.5#0",
+        "pkgbuild:dovecot@2.4.5-1#0"
+      ],
+      "projects": [
+        "dovecot",
+        "dovecot"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:net-misc/ipv6calc@4.4.1#0",
+        "pkgbuild:ipv6calc@4.4.1-1#0"
+      ],
+      "projects": [
+        "ipv6calc",
+        "ipv6calc"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-pkgbuild",
+      "link": [
+        "ebuild:dev-perl/Module-ScanDeps@1.370.0#0",
+        "pkgbuild:perl-module-scandeps@1.37-3#0"
+      ],
+      "projects": [
+        "perl:module-scandeps",
+        "perl:module-scandeps"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-ml/trie@1.0.0#0",
+        "rpm:ocaml-trie@1.0.0-37.fc46#0"
+      ],
+      "projects": [
+        "ocaml:trie",
+        "ocaml:trie"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:llvm-core/polly@22.1.8#0",
+        "rpm:llvm22@22.1.8-3.fc46#0"
+      ],
+      "projects": [
+        "polly-llvm-opt",
+        "llvm"
+      ],
+      "outcome": "different_project",
+      "audit": "component_or_split"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:x11-libs/gtksourceview@4.8.4-r2#0",
+        "rpm:gtksourceview4@4.8.4-13.fc46#0"
+      ],
+      "projects": [
+        "gtksourceview",
+        "gtksourceview"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-ml/ocplib-endian@1.2#0",
+        "rpm:ocaml-ocplib-endian@1.2-28.fc46#0"
+      ],
+      "projects": [
+        "ocaml:ocplib-endian",
+        "ocaml:ocplib-endian"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:app-misc/uptimed@0.4.7#0",
+        "rpm:uptimed@0.4.7-5.fc45#0"
+      ],
+      "projects": [
+        "uptimed",
+        "uptimed"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:app-arch/snappy@1.2.2-r1#0",
+        "rpm:snappy@1.2.2-6.fc45#0"
+      ],
+      "projects": [
+        "snappy-compression",
+        "snappy-compression"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-perl/Linux-Inotify2@2.300.0#0",
+        "rpm:perl-Linux-Inotify2@2.3-17.fc45#0"
+      ],
+      "projects": [
+        "perl:linux-inotify2",
+        "perl:linux-inotify2"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-perl/File-ShareDir-Install@0.140.0#0",
+        "rpm:perl-File-ShareDir-Install@0.14-11.fc45#0"
+      ],
+      "projects": [
+        "perl:file-sharedir-install",
+        "perl:file-sharedir-install"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-python/alembic@1.20.1#0",
+        "rpm:python-alembic@1.20.1-1.fc46#0"
+      ],
+      "projects": [
+        "python:alembic",
+        "python:alembic"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-lang/python@3.15.2_p1#0",
+        "rpm:python3.15@3.15.2-1.fc46#0"
+      ],
+      "projects": [
+        "python",
+        "python"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-perl/List-SomeUtils@0.590.0#0",
+        "rpm:perl-List-SomeUtils@0.59-10.fc45#0"
+      ],
+      "projects": [
+        "perl:list-someutils",
+        "perl:list-someutils"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-lang/python@3.9.25#0",
+        "rpm:python3.9@3.9.25-16.fc46#0"
+      ],
+      "projects": [
+        "python",
+        "python"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:media-video/ffmpeg@9.0.2#0",
+        "rpm:ffmpeg@9.0.2-3.fc46#0"
+      ],
+      "projects": [
+        "ffmpeg",
+        "ffmpeg"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:games-arcade/whichwayisup@0.7.9_p8#0",
+        "rpm:whichwayisup@0.7.9-26.fc45#0"
+      ],
+      "projects": [
+        "whichwayisup",
+        "whichwayisup"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-perl/Data-Hierarchy@0.340.0-r2#0",
+        "rpm:perl-Data-Hierarchy@0.34-52.fc45#0"
+      ],
+      "projects": [
+        "perl:data-hierarchy",
+        "perl:data-hierarchy"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:net-libs/libvncserver@0.9.15-r1#0",
+        "rpm:libvncserver@0.9.15-9.fc46#0"
+      ],
+      "projects": [
+        "libvncserver",
+        "libvncserver"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-python/merge3@1.0.0#0",
+        "rpm:python-merge3@1.0.0-1.fc46#0"
+      ],
+      "projects": [
+        "python:merge3",
+        "python:merge3"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-perl/MooseX-Types-JSON@1.10.0#0",
+        "rpm:perl-MooseX-Types-JSON@1.01-14.fc45#0"
+      ],
+      "projects": [
+        "perl:moosex-types-json",
+        "perl:moosex-types-json"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:kde-frameworks/kxmlgui@6.31.0#0",
+        "rpm:kf6-kxmlgui@6.31.0-2.fc46#0"
+      ],
+      "projects": [
+        "kxmlgui",
+        "kxmlgui"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-perl/MooseX-Aliases@0.110.0-r2#0",
+        "rpm:perl-MooseX-Aliases@0.11-36.fc46#0"
+      ],
+      "projects": [
+        "perl:moosex-aliases",
+        "perl:moosex-aliases"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-python/pydyf@0.12.1#0",
+        "rpm:python-pydyf@0.12.1-4.fc45#0"
+      ],
+      "projects": [
+        "python:pydyf",
+        "python:pydyf"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:media-gfx/inkscape@1.4.4#0",
+        "rpm:inkscape@1.4.4-5.fc46#0"
+      ],
+      "projects": [
+        "inkscape",
+        "inkscape"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-python/sortedcontainers@2.4.0-r1#0",
+        "rpm:python-sortedcontainers@2.4.0-29.fc45#0"
+      ],
+      "projects": [
+        "python:sortedcontainers",
+        "python:sortedcontainers"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-python/humanize@4.16.0#0",
+        "rpm:python-humanize@4.16.0-2.fc45#0"
+      ],
+      "projects": [
+        "python:humanize",
+        "python:humanize"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-python/httpx@0.28.1-r1#0",
+        "rpm:python-httpx@0.28.1-14.fc45#0"
+      ],
+      "projects": [
+        "python:httpx",
+        "python:httpx"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:x11-drivers/xf86-input-wacom@1.2.4#0",
+        "rpm:xorg-x11-drv-wacom@1.2.4-3.fc45#0"
+      ],
+      "projects": [
+        "xdrv:wacom",
+        "xdrv:wacom"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-cpp/random123@1.14.0#0",
+        "rpm:Random123@1.14.0-20.fc45#0"
+      ],
+      "projects": [
+        "random123",
+        "random123"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-python/babelfish@0.6.1#0",
+        "rpm:python-babelfish@0.6.1-11.fc45#0"
+      ],
+      "projects": [
+        "python:babelfish",
+        "python:babelfish"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:net-misc/oidc-agent@5.3.8#0",
+        "rpm:oidc-agent@5.3.8-1.fc46#0"
+      ],
+      "projects": [
+        "oidc-agent",
+        "oidc-agent"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "ebuild-rpm",
+      "link": [
+        "ebuild:dev-util/mingw64-runtime@14.0.0#0",
+        "rpm:mingw-winpthreads@14.0.0-3.fc46#0"
+      ],
+      "projects": [
+        "mingw-w64",
+        "mingw-w64"
+      ],
+      "outcome": "same_project",
+      "audit": "component_or_split"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:libcue@2.3.0-1#0",
+        "rpm:libcue@2.3.0-15.fc45#0"
+      ],
+      "projects": [
+        "libcue",
+        "libcue"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:python-mygpoclient@1.10-1#0",
+        "rpm:python-mygpoclient@1.10-9.fc45#0"
+      ],
+      "projects": [
+        "python:mygpoclient",
+        "python:mygpoclient"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:python-cvxopt@1.3.3-1#0",
+        "rpm:python-cvxopt@1.3.3-5.fc45#0"
+      ],
+      "projects": [
+        "python:cvxopt",
+        "python:cvxopt"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:source-highlight@3.1.9-19#0",
+        "rpm:source-highlight@3.1.9-28.fc45#0"
+      ],
+      "projects": [
+        "source-highlight",
+        "source-highlight"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:haskell-text-short@0.1.6.1-133#0",
+        "rpm:ghc-text-short@0.1.6.1-2.fc45#0"
+      ],
+      "projects": [
+        "haskell:text-short",
+        "haskell:text-short"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:perl-extutils-cppguess@0.271-1#0",
+        "rpm:perl-ExtUtils-CppGuess@0.271-1.fc45#0"
+      ],
+      "projects": [
+        "perl:extutils-cppguess",
+        "perl:extutils-cppguess"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:haskell-appar@0.1.8-18#0",
+        "rpm:ghc-appar@0.1.8-31.fc45#0"
+      ],
+      "projects": [
+        "haskell:appar",
+        "haskell:appar"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:python-webencodings@0.5.1-13#0",
+        "rpm:python-webencodings@0.5.1-35.fc45#0"
+      ],
+      "projects": [
+        "python:webencodings",
+        "python:webencodings"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:egl-gbm@1.1.4-1#0",
+        "rpm:egl-gbm@2:1.1.4-3.fc46#0"
+      ],
+      "projects": [
+        "egl-gbm",
+        "egl-gbm"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:perl-mail-message@4.05-1#0",
+        "rpm:perl-Mail-Message@4.05-2.fc45#0"
+      ],
+      "projects": [
+        "perl:mail-message",
+        "perl:mail-message"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:haskell-mwc-random@0.15.3.0-61#0",
+        "rpm:ghc-mwc-random@0.15.3.0-2.fc45#0"
+      ],
+      "projects": [
+        "haskell:mwc-random",
+        "haskell:mwc-random"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:cryptsetup@2.8.8-1#0",
+        "rpm:cryptsetup@2.8.8-1.fc46#0"
+      ],
+      "projects": [
+        "cryptsetup",
+        "cryptsetup"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:haskell-digest@0.0.2.1-3#0",
+        "rpm:ghc-digest@0.0.2.1-9.fc45#0"
+      ],
+      "projects": [
+        "haskell:digest",
+        "haskell:digest"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:xf86-video-amdgpu@25.0.0-1#0",
+        "rpm:xorg-x11-drv-amdgpu@25.0.0-3.fc45#0"
+      ],
+      "projects": [
+        "xdrv:amdgpu",
+        "xdrv:amdgpu"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:perl-graphics-colornames-www@1.14-8#0",
+        "rpm:perl-Graphics-ColorNames-WWW@1.14-22.fc45#0"
+      ],
+      "projects": [
+        "perl:graphics-colornames-www",
+        "perl:graphics-colornames-www"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:perl-cpan-meta-check@0.018-6#0",
+        "rpm:perl-CPAN-Meta-Check@0.018-8.fc45#0"
+      ],
+      "projects": [
+        "perl:cpan-meta-check",
+        "perl:cpan-meta-check"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:ocaml-bos@0.3.0-1#0",
+        "rpm:ocaml-bos@0.3.0-5.fc46#0"
+      ],
+      "projects": [
+        "ocaml:bos",
+        "ocaml:bos"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:cmatrix@2.0-4#0",
+        "rpm:cmatrix@2.0-15.fc45#0"
+      ],
+      "projects": [
+        "cmatrix",
+        "cmatrix"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:smokeping@2.9.0-1#0",
+        "rpm:smokeping@2.9.0-16.fc45#0"
+      ],
+      "projects": [
+        "smokeping",
+        "smokeping"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:perl-email-sender@2.603-1#0",
+        "rpm:perl-Email-Sender@1:2.603-1.fc46#0"
+      ],
+      "projects": [
+        "perl:email-sender",
+        "perl:email-sender"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:flatseal@2.4.1-1#0",
+        "rpm:flatseal@2.4.1-2.fc45#0"
+      ],
+      "projects": [
+        "flatseal",
+        "flatseal"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:pageedit@2.7.6-1#0",
+        "rpm:pageedit@2.7.6-2.fc45#0"
+      ],
+      "projects": [
+        "pageedit",
+        "pageedit"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:perl-devel-cover@1.52-2#0",
+        "rpm:perl-Devel-Cover@1.52-5.fc45#0"
+      ],
+      "projects": [
+        "perl:devel-cover",
+        "perl:devel-cover"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:man-pages@6.20-1#0",
+        "rpm:man-pages@6.20-1.fc46#0"
+      ],
+      "projects": [
+        "manpages",
+        "manpages"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:bwm-ng@0.6.3-3#0",
+        "rpm:bwm-ng@0.6.3-9.fc45#0"
+      ],
+      "projects": [
+        "bwm-ng",
+        "bwm-ng"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:virt-what@1.27-1#0",
+        "rpm:virt-what@1.27-6.fc45#0"
+      ],
+      "projects": [
+        "virt-what",
+        "virt-what"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:kwayland-integration@6.8.2-1#0",
+        "rpm:kwayland-integration@6.8.2-1.fc46#0"
+      ],
+      "projects": [
+        "kwayland-integration",
+        "kwayland-integration"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:perl-local-lib@2.000029-6#0",
+        "rpm:perl-local-lib@2.000029-12.fc45#0"
+      ],
+      "projects": [
+        "perl:local-lib",
+        "perl:local-lib"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:haskell-json@0.11-42#0",
+        "rpm:ghc-json@0.11-8.fc45#0"
+      ],
+      "projects": [
+        "haskell:json",
+        "haskell:json"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    },
+    {
+      "pair": "pkgbuild-rpm",
+      "link": [
+        "pkgbuild:perl-datetime-format-w3cdtf@0.09-1#0",
+        "rpm:perl-DateTime-Format-W3CDTF@0.09-1.fc45#0"
+      ],
+      "projects": [
+        "perl:datetime-format-w3cdtf",
+        "perl:datetime-format-w3cdtf"
+      ],
+      "outcome": "same_project",
+      "audit": "same_primary_archive"
+    }
+  ],
   "note": "Repology is queried live, so differences can also reflect changes after the frame date."
 }

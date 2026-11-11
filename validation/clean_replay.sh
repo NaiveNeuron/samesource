@@ -36,4 +36,5 @@ result = {
 }
 (root / "evidence" / "clean-replay.json").write_text(json.dumps(result, indent=2) + "\n")
 print(json.dumps(result, indent=2))
+sys.exit(0 if result["rebuilt_tree_matches_recorded"] and result["alignment_summary_matches_recorded"] else 1)
 EOF

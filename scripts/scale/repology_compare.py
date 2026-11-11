@@ -31,8 +31,27 @@ REPO = {"deb": "debian_unstable", "rpm": "fedora_rawhide", "pkgbuild": "arch", "
 AGENT = "samesource-research/1.0 (https://github.com/NaiveNeuron/samesource)"
 
 
+def recorded() -> dict[tuple[str, str], str | None]:
+    """Projects already stored in repology-compare.json, so the released
+    comparison can be recomputed without querying Repology again."""
+    path = SCALE / "repology-compare.json"
+    if not path.exists():
+        return {}
+    out = {}
+    for row in json.loads(path.read_text()).get("observations", []):
+        for artifact, project in zip(row["link"], row["projects"]):
+            family, rest = artifact.split(":", 1)
+            out[family, rest.rsplit("@", 1)[0]] = project
+    return out
+
+
+RECORDED = recorded()
+
+
 def project_of(family: str, name: str) -> str | None:
     """Repology project of a source package, or None when Repology has none."""
+    if (family, name) in RECORDED:
+        return RECORDED[family, name]
     cache = CACHE / f"{family}--{name.replace('/', '__')}.json"
     if cache.exists():
         return json.loads(cache.read_text())["project"]
@@ -85,6 +104,10 @@ def main() -> None:
         cross.setdefault(r["audit"], {}).setdefault(r["outcome"], 0)
         cross[r["audit"]][r["outcome"]] += 1
 
+    previous = SCALE / "repology-compare.json"
+    # A replay from recorded observations keeps the date of the original queries.
+    queried = (json.loads(previous.read_text())["repology_queried"] if RECORDED
+               else datetime.now(timezone.utc).date().isoformat())
     population = sheet["population_by_pair"]
     total = sum(population.values())
     per_pair, weighted, variance = {}, {}, 0.0
@@ -102,7 +125,7 @@ def main() -> None:
     summary = {
         "schema": "pkgbridge-scale-repology-compare/1",
         "frame_date": frame.get("date") or frame.get("snapshot_date"),
-        "repology_queried": datetime.now(timezone.utc).date().isoformat(),
+        "repology_queried": queried,
         "repositories": REPO,
         "items": len(rows),
         "outcomes": {o: sum(r["outcome"] == o for r in rows) for o in weighted},
@@ -112,6 +135,7 @@ def main() -> None:
         "audit_by_outcome": cross,
         "per_pair": per_pair,
         "not_same_project": [r for r in rows if r["outcome"] != "same_project"],
+        "observations": rows,
         "note": "Repology is queried live, so differences can also reflect changes after the frame date.",
     }
     (SCALE / "repology-compare.json").write_text(json.dumps(summary, indent=2) + "\n")

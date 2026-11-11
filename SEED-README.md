@@ -12,8 +12,9 @@ distribution and verified by hash.
 ## Requirements
 
 - Python 3.10 or later (standard library only) and Git, for the corpus.
-- Docker with `linux/amd64` emulation for the Arch controls; the Fedora
-  control runs on the host architecture. About 5 GB of image and cache space.
+- Docker that can run `linux/amd64` (Debian and Arch controls) and
+  `linux/arm64` (Fedora control) images; enable emulation for the one that is
+  not native. About 5 GB of image and cache space.
 - Network access to src.fedoraproject.org, gitlab.archlinux.org,
   aur.archlinux.org, raw.githubusercontent.com, snapshot.debian.org, and
   archive.archlinux.org.

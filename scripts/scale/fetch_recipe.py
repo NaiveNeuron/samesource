@@ -28,7 +28,10 @@ import hashlib
 import time
 
 AGENT = {"User-Agent": "samesource-fetch (research dataset)"}
-DEFAULT_DB = Path(__file__).resolve().parents[2] / "output" / "dataset" / "samesource.sqlite"
+# The release unpacks samesource.sqlite into the working directory.
+DEFAULT_DB = next((p for p in (Path("samesource.sqlite"),
+                               Path(__file__).resolve().parents[2] / "output" / "dataset" / "samesource.sqlite")
+                   if p.exists()), Path("samesource.sqlite"))
 
 
 def get(url: str) -> bytes:
@@ -43,12 +46,18 @@ def get(url: str) -> bytes:
     raise RuntimeError("unreachable")
 
 
-def arch_project(pkgbase: str) -> str:
-    # GitLab path rule used by Arch devtools.
-    name = pkgbase.replace("+", "plus")
-    if name == "tree":
-        return "unix-tree"
-    return name
+def dsc_sha256(dsc: bytes) -> dict[str, str]:
+    """File name -> SHA-256 from the Checksums-Sha256 field of a .dsc."""
+    sums, inside = {}, False
+    for line in dsc.decode(errors="replace").splitlines():
+        if line.startswith("Checksums-Sha256:"):
+            inside = True
+        elif inside and line.startswith(" "):
+            digest, _size, name = line.split()
+            sums[name] = digest
+        elif inside:
+            break
+    return sums
 
 
 def fetch(db: sqlite3.Connection, rid: str, out: Path) -> list[str]:
@@ -71,11 +80,20 @@ def fetch(db: sqlite3.Connection, rid: str, out: Path) -> list[str]:
             raise SystemExit(f"{rid}: .dsc digest does not match the record")
         (dest / Path(pointer).name).write_bytes(dsc)
         written.append(Path(pointer).name)
+        sums = dsc_sha256(dsc)
         for art_name, url in db.execute(
                 "SELECT a.name, a.url FROM artifacts a JOIN records r ON r.id = a.record_id "
                 "WHERE a.record_id=? AND (a.role = 'packaging' OR (r.native = 1 AND a.role = 'primary'))",
                 (rid,)):
-            (dest / art_name).write_bytes(get(url))
+            # Prefer the frozen snapshot directory of the .dsc; accept the live
+            # mirror only as a fallback. Either way the .dsc digest decides.
+            try:
+                data = get(pointer.rsplit("/", 1)[0] + "/" + art_name)
+            except urllib.error.HTTPError:
+                data = get(url)
+            if hashlib.sha256(data).hexdigest() != sums.get(art_name):
+                raise SystemExit(f"{rid}: {art_name} does not match the .dsc")
+            (dest / art_name).write_bytes(data)
             written.append(art_name)
     elif family == "rpm":
         subprocess.run(["git", "init", "-q", str(dest)], check=True)
@@ -83,9 +101,9 @@ def fetch(db: sqlite3.Connection, rid: str, out: Path) -> list[str]:
         subprocess.run(["git", "-C", str(dest), "checkout", "-q", "FETCH_HEAD"], check=True)
         written = sorted(p.name for p in dest.iterdir() if p.name != ".git")
     elif family == "pkgbuild":
-        project = arch_project(name)
-        url = (f"https://gitlab.archlinux.org/archlinux/packaging/packages/{project}/-/archive/"
-               f"{commit}/{project}-{commit}.tar.gz")
+        base = repo.removesuffix(".git")
+        project = base.rsplit("/", 1)[-1]
+        url = f"{base}/-/archive/{commit}/{project}-{commit}.tar.gz"
         with tarfile.open(fileobj=io.BytesIO(get(url))) as t:
             t.extractall(dest, filter="data")
         written = [str(p.relative_to(dest)) for p in dest.rglob("*") if p.is_file()]
@@ -99,9 +117,9 @@ def fetch(db: sqlite3.Connection, rid: str, out: Path) -> list[str]:
         try:
             stack = [json.loads(get(api.format(files_dir)))]
         except urllib.error.HTTPError as exc:
+            if exc.code != 404:  # 404 means the package has no files/ directory
+                raise SystemExit(f"{rid}: files/ not retrieved (GitHub API HTTP {exc.code})") from exc
             stack = []
-            if exc.code != 404:
-                written.append(f"files/ not retrieved (GitHub API HTTP {exc.code})")
         while stack:
             for e in stack.pop():
                 if e["type"] == "dir":

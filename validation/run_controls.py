@@ -237,6 +237,9 @@ def main() -> None:
         "provenance_manifest_sha256": sha256(args.manifest.read_bytes()),
         "runs": ordered,
     }, indent=2) + "\n")
+    # A recorded disagreement must not look like a successful replay.
+    if not all(r["agrees_with_expectation"] for r in ordered):
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
