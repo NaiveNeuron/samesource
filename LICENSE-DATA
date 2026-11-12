@@ -1,5 +1,5 @@
 The SameSource data (the SQLite and Parquet tables, the JSONL records, and
-the files under evidence/) are (c) 2026 Milan Daniel Szász and Marek Šuppa
+the files under evidence/) are (c) 2026 Milan Daniel Szasz and Marek Šuppa
 and licensed under CC BY-NC 4.0. The scripts are under the MIT licence
 (LICENSE). Package recipes and upstream archives are referenced, not
 included; they remain under their own licences.

@@ -67,5 +67,5 @@ programs only.
 Recipes are fetched from the distributions and remain under their terms. The
 scripts in this artifact are under the MIT licence (`LICENSE`) and the derived
 data under CC BY-NC 4.0 (`LICENSE-DATA`). The 130-program selection originates from PkgBridge
-(https://github.com/Aethelsirius/pkgbridge) and the bachelor thesis of M. D. Szász
+(https://github.com/Aethelsirius/pkgbridge) and the bachelor thesis of M. D. Szasz
 (Comenius University in Bratislava, 2026).

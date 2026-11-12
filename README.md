@@ -9,13 +9,13 @@ pinned packaging state, so the recipes themselves can be retrieved.
 ## Quick start
 
 The tables are attached to the
-[v1.0.2 release](https://github.com/NaiveNeuron/samesource/releases/tag/v1.0.2):
+[v1.0.3 release](https://github.com/NaiveNeuron/samesource/releases/tag/v1.0.3):
 `samesource.sqlite.zst` (SQLite), `samesource-parquet.tar` (Parquet), and
 `samesource-jsonl.tar.zst` (the extracted records the tables are built from),
 with `SHA256SUMS`.
 
 ```sh
-gh release download v1.0.2 -R NaiveNeuron/samesource && shasum -a 256 -c SHA256SUMS
+gh release download v1.0.3 -R NaiveNeuron/samesource && shasum -a 256 -c SHA256SUMS
 zstd -d samesource.sqlite.zst
 sqlite3 samesource.sqlite "SELECT families, COUNT(*) FROM groups GROUP BY 1 ORDER BY 2 DESC;"
 sqlite3 samesource.sqlite < examples/queries.sql
@@ -47,7 +47,7 @@ this repository and keep downloads in `~/.cache/pkgbridge/scale/`.
 offline):
 
 ```sh
-gh release download v1.0.2 -R NaiveNeuron/samesource && shasum -a 256 -c SHA256SUMS
+gh release download v1.0.3 -R NaiveNeuron/samesource && shasum -a 256 -c SHA256SUMS
 tar --zstd -xf samesource-jsonl.tar.zst -C evidence/scale/   # *.jsonl records and links
 python3 scripts/scale/link.py              # links.jsonl, groups, census.json
 python3 scripts/scale/names.py             # names.json

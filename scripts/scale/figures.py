@@ -36,10 +36,11 @@ def main() -> None:
             if share >= 6:
                 ax.text(left + share / 2, row, f"{round(share)}%", ha="center", va="center", color=ink, fontsize=7)
             left += share
-    ax.set_yticks(range(len(order)), ["–".join(NAMES[f] for f in p.split("-")) for p in order])
+    ax.set_yticks(range(len(order)), ["–".join(NAMES[f] for f in p.split("-")) + f" ({sum(pairs[p].values()):,})"
+                                      for p in order])
     ax.invert_yaxis()
     ax.set_xlim(0, 100)
-    ax.set_xlabel("Package pairs that build from the same archive (%)")
+    ax.set_xlabel("Share of the pairs that build from the same archive (%)")
     ax.legend(ncol=3, loc="lower center", bbox_to_anchor=(0.36, 0.98), frameon=False, fontsize=7,
               handlelength=1, columnspacing=1)
     fig.savefig(PROJECT / "figures" / "names-bars.pdf", bbox_inches="tight", pad_inches=0.01)
